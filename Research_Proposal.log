@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  3 APR 2021 23:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  4 APR 2021 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -64,7 +64,41 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count175
 \l__pdf_internal_box=\box45
 )
-(./Research_Proposal.aux)
+(./Research_Proposal.aux
+
+LaTeX Warning: Label `s2sle' multiply defined.
+
+
+LaTeX Warning: Label `s2sle' multiply defined.
+
+
+LaTeX Warning: Label `s2sle' multiply defined.
+
+
+LaTeX Warning: Label `s2sle' multiply defined.
+
+
+LaTeX Warning: Label `s2sle' multiply defined.
+
+
+LaTeX Warning: Label `s2sle' multiply defined.
+
+
+LaTeX Warning: Label `s2sle' multiply defined.
+
+
+LaTeX Warning: Label `s2sle' multiply defined.
+
+
+LaTeX Warning: Label `s2sle' multiply defined.
+
+
+LaTeX Warning: Label `s2sle' multiply defined.
+
+
+LaTeX Warning: Label `s2sle' multiply defined.
+
+)
 \openout1 = `Research_Proposal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -81,8 +115,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count176
 \scratchdimen=\dimen139
@@ -125,26 +158,107 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `Research_Proposal.toc'.
 
  [2] [3] [4]
-(./Research_Proposal.bbl) [5] (./Research_Proposal.aux) ) 
+(./Research_Proposal.bbl [5] [6]
+Underfull \hbox (badness 1127) in paragraph at lines 31--32
+[]\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
+er,
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 34--35
+[]\OT1/cmr/m/n/10.95 Bahdanau, D., Cho, K. and Ben-gio, Y., 2014. Neu-ral ma-ch
+ine
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 49--50
+[]\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
+er,
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 52--53
+[]\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
+er,
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 55--56
+[]\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
+er,
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 58--59
+[]\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
+er,
+ []
+
+[7]
+Underfull \hbox (badness 1127) in paragraph at lines 61--62
+[]\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
+er,
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 64--65
+[]\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
+er,
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 67--68
+[]\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
+er,
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 70--71
+[]\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
+er,
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 73--74
+[]\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
+er,
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 76--77
+[]\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
+er,
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 79--80
+[]\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
+er,
+ []
+
+) [8] (./Research_Proposal.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1248 strings out of 483183
- 18397 string characters out of 5966291
- 245829 words of memory out of 5000000
- 16283 multiletter control sequences out of 15000+600000
- 538587 words of font info for 47 fonts, out of 8000000 for 9000
+ 1260 strings out of 483183
+ 18520 string characters out of 5966291
+ 246907 words of memory out of 5000000
+ 16295 multiletter control sequences out of 15000+600000
+ 538933 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,6n,29p,579b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmti10.pfb>
-Output written on Research_Proposal.pdf (5 pages, 95615 bytes).
+ 38i,6n,29p,713b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Research_Proposal.pdf (8 pages, 106642 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

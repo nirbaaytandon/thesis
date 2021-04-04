@@ -18,7 +18,7 @@ Project Supervisor: Mr. Ankit Jha
 
 
 \begin{abstract}
-Attention based Transformer architectures have become the norm of modern day Natural Language Processing. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}\cite{atayl}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of our work will be to explore a new kind of Transformer architecture. Compare \& contrast its performance against the SQuAD 2.0 Dataset\cite{dataset} based other architectures such as BERT\cite{bert}, RoBERTa\cite{roberta}, ALBERT.
+Attention based Transformer architectures have become the norm of modern day Natural Language Processing. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}\cite{atayl}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of our work will be to explore a new kind of Transformer architecture. Compare \& contrast its performance against the SQuAD 2.0 Dataset\cite{dataset} based other architectures such as BERT\cite{bert}, RoBERTa\cite{roberta}, etc. **Add additional details around how neural nets \& lstms compare to transformers. Fill in the final objective of the research proposal**
 \end{abstract}
 \newpage
 \tableofcontents
@@ -38,11 +38,22 @@ Highlighted below are some of the questions that we will answer through our rese
 \newpage
 \section{Aims \& Objectives}
 
-Through our research we aim to establish the efficiency of our new Transformer architecture. We shall implement the existing models that are available via libraries such as HuggingFace, PyTorch \& Tensorflow, run the SQuAD 2.0\cite{dataset}, to obtain benchmark scores \& then compare the results with our proposed architecture. We hope to establish our proposed transformer architecture as a competent enough contender to be used within both industry \& academia.
+Through our research we aim to establish the efficiency of our new Transformer architecture. We shall implement the existing models that are available via libraries such as HuggingFace\cite{hfTransformers}, PyTorch \& Tensorflow, run the SQuAD 2.0\cite{dataset}, to obtain benchmark scores \& then compare the results with our proposed architecture. We hope to establish our proposed transformer architecture as a competent enough contender to be used within both industry \& academia.
 \section{Research Methodology}
+
+To implement this research we shall break the project down into 5 phases. These are outlined below.
+\subsection{Literature Review}
+In this phase we will review the research that has been published already around the different kinds of architectures, shortlist some of the most widely used ones, compare their results using the SQuAD2.0 \cite{dataset} \& outline the pros and cons of each of these architectures. The rationale is to review \& understand as much of the research as possible so that we can avoid potential pitfalls, not duplicate our efforts by reinventing the wheel \& organize a better approach to perform our research.\textit{ **to add some pointers about how existing research has been done**}
+\subsection{Research Benchmarks}
+Here we shall focus on obtaining benchmark scores for the shortlisted architectures above using the dataset\cite{dataset}. The parameters used will be validation \& test set scores of the models. The training shall be carried out on each of the models for a 100(\textit{**TBD, 100 epochs per model for Squad will take over 100 hours of training, not sure if its worth it**}) epochs. We shall also look at the specificity/recall of these results to better understand if our work was done correctly or not.
+\subsection{Architecture Creation}
+\subsection{Architecture Refinement}
+\subsection{Research Findings}
+\subsection{Conclusion}
 \section{Expected Outcomes}
 \section{Requirements \& Resources}
 \section{Research Plan}
+
 \bibliographystyle{plain}
 \bibliography{Research_Proposal}
 
