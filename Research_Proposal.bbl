@@ -15,7 +15,7 @@ Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M., Z
 \bibitem{hfTransformers}
 Huggingface.co. 2021. Transformers — transformers 4.4.2 documentation. [online] Available at: <https://huggingface.co/transformers/> [Accessed 4 April 2021].
 
-\bibitem{gradient}
+\bibitem{lstm}
 Hochreiter, S., Bengio, Y., Frasconi, P. and Schmidhuber, J., 2001. Gradient flow in recurrent nets: the difficulty of learning long-term dependencies.
 
 \bibitem{contextualEmbeddings}
@@ -42,12 +42,6 @@ Levy, O., Seo, M., Choi, E. and Zettlemoyer, L., 2017. Zero-shot relation extrac
 \bibitem{yih}
 Yih, S.W.T., Chang, M.W., Meek, C. and Pastusiak, A., 2013. Question answering using enhanced lexical semantic models.
 
-\bibitem{wiese}
-Weissenborn, D., Wiese, G. and Seiffe, L., 2017. Making neural qa as simple as possible but not simpler. arXiv preprint arXiv:1703.04816.
-
-\bibitem{graves}
-Graves, A., 2013. Generating sequences with recurrent neural networks. arXiv preprint arXiv:1308.0850.
-
 \bibitem{schmid}
 Schmidhuber, J., 2015. Deep learning in neural networks: An overview. Neural networks, 61, pp.85-117.
 
@@ -62,6 +56,13 @@ Zhang, Z., Yang, J. and Zhao, H., 2020. Retrospective reader for machine reading
 
 \bibitem{albert}
 Lan, Z., Chen, M., Goodman, S., Gimpel, K., Sharma, P. and Soricut, R., 2019. Albert: A lite bert for self-supervised learning of language representations. arXiv preprint arXiv:1909.11942.
+
+\bibitem{graves}
+Graves, A., 2013. Generating sequences with recurrent neural networks. arXiv preprint arXiv:1308.0850.
+
+\bibitem{wiese}
+Weissenborn, D., Wiese, G. and Seiffe, L., 2017. Making neural qa as simple as possible but not simpler. arXiv preprint arXiv:1703.04816.
+
 
 \bibitem{adaptive}
 Baevski, A. and Auli, M., 2018. Adaptive input representations for neural language modeling. arXiv preprint arXiv:1809.10853.

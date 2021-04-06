@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  5 APR 2021 00:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  6 APR 2021 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -140,7 +140,7 @@ ine
 [7]) [8] (./Research_Proposal.aux) ) 
 Here is how much of TeX's memory you used:
  1268 strings out of 483183
- 18592 string characters out of 5966291
+ 18588 string characters out of 5966291
  246900 words of memory out of 5000000
  16303 multiletter control sequences out of 15000+600000
  538933 words of font info for 48 fonts, out of 8000000 for 9000
@@ -152,7 +152,7 @@ public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Research_Proposal.pdf (8 pages, 107535 bytes).
+Output written on Research_Proposal.pdf (8 pages, 107550 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
