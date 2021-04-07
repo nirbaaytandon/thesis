@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  6 APR 2021 20:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  7 APR 2021 09:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -124,8 +124,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `Research_Proposal.toc'.
 
- [2] [3] [4]
-(./Research_Proposal.bbl [5] [6]
+ [2] [3] [4] [5]
+Overfull \hbox (23.87909pt too wide) in paragraph at lines 71--79
+\OT1/cmr/m/n/10.95 mu-sic com-po-si-tion (e.g., Mozer 1992). With con-ven-tiona
+l Back-Propagation
+ []
+
+[6] [7] [8] [9] [10] (./Research_Proposal.bbl [11] [12]
 Underfull \hbox (badness 1127) in paragraph at lines 31--32
 []\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
 er,
@@ -137,25 +142,25 @@ Underfull \hbox (badness 1028) in paragraph at lines 34--35
 ine
  []
 
-[7]) [8] (./Research_Proposal.aux) ) 
+[13]) [14] (./Research_Proposal.aux) ) 
 Here is how much of TeX's memory you used:
- 1268 strings out of 483183
- 18588 string characters out of 5966291
- 246900 words of memory out of 5000000
- 16303 multiletter control sequences out of 15000+600000
+ 1269 strings out of 483183
+ 18598 string characters out of 5966291
+ 250905 words of memory out of 5000000
+ 16304 multiletter control sequences out of 15000+600000
  538933 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,6n,29p,713b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Research_Proposal.pdf (8 pages, 107550 bytes).
+ 38i,6n,29p,1476b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Research_Proposal.pdf (14 pages, 124742 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 74 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
