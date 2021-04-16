@@ -1,15 +1,16 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{}%
-\contentsline {section}{\numberline {2}Background \& Related Research}{3}{}%
-\contentsline {subsection}{\numberline {2.1}Background}{3}{}%
-\contentsline {subsection}{\numberline {2.2}Related Research}{3}{}%
-\contentsline {section}{\numberline {3}Research Questions}{4}{}%
-\contentsline {section}{\numberline {4}Aims \& Objectives}{5}{}%
-\contentsline {section}{\numberline {5}Research Methodology}{5}{}%
-\contentsline {subsection}{\numberline {5.1}Literature Review}{5}{}%
-\contentsline {subsection}{\numberline {5.2}Research Benchmarks}{5}{}%
-\contentsline {subsection}{\numberline {5.3}Architecture Creation}{5}{}%
-\contentsline {subsection}{\numberline {5.4}Research Findings}{6}{}%
-\contentsline {subsection}{\numberline {5.5}Conclusion}{6}{}%
-\contentsline {section}{\numberline {6}Expected Outcomes}{6}{}%
-\contentsline {section}{\numberline {7}Requirements \& Resources}{6}{}%
-\contentsline {section}{\numberline {8}Research Plan}{6}{}%
+\contentsline {section}{\numberline {1}Introduction}{3}%
+\contentsline {section}{\numberline {2}Background \& Related Research}{3}%
+\contentsline {subsection}{\numberline {2.1}Background}{3}%
+\contentsline {subsection}{\numberline {2.2}Related Research}{3}%
+\contentsline {subsection}{\numberline {2.3}Related Research}{4}%
+\contentsline {section}{\numberline {3}Aims \& Objectives}{11}%
+\contentsline {section}{\numberline {4}Research Methodology}{11}%
+\contentsline {subsection}{\numberline {4.1}Literature Review}{11}%
+\contentsline {subsection}{\numberline {4.2}Research Benchmarks}{11}%
+\contentsline {subsection}{\numberline {4.3}Architecture Creation}{12}%
+\contentsline {subsection}{\numberline {4.4}Architecture Refinement}{12}%
+\contentsline {subsection}{\numberline {4.5}Research Findings}{12}%
+\contentsline {subsection}{\numberline {4.6}Conclusion}{12}%
+\contentsline {section}{\numberline {5}Expected Outcomes}{12}%
+\contentsline {section}{\numberline {6}Requirements \& Resources}{12}%
+\contentsline {section}{\numberline {7}Research Plan}{12}%
