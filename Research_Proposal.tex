@@ -18,24 +18,26 @@ Project Supervisor: Mr. Ankit Jha
 
 
 \begin{abstract}
-Attention based Transformer architectures have become the norm of modern day Natural Language Processing. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}\cite{atayl}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of our work will be to explore a new kind of Transformer architecture. Compare \& contrast its performance against the SQuAD 2.0 Dataset\cite{dataset} based other architectures such as BERT\cite{bert}, RoBERTa\cite{roberta}, etc. Through our research we aim to produce a new Transformer Architecture that allows **Add additional details around how neural nets \& lstms compare to transformers. Fill in the final objective of the research proposal*
+Attention based Transformer architectures have become the norm of modern day Natural Language Processing. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}\cite{atayl}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of our work will be to explore a new kind of Transformer architecture. Compare \& contrast its performance against the SQuAD 2.0 Dataset\cite{dataset} based other architectures such as BERT\cite{bert}, RoBERTa\cite{roberta}, etc. Through our research we aim to produce a new Transformer Architecture that has a better performance than existing models for the purposes of Question Answering in a conversational manner.
 \end{abstract}
 \newpage
 \tableofcontents
 \newpage
-\section{Introduction}\label{Introduction}
+\section{Introduction}\label{introduction}
 
-\section{Background \& Related Research}\label{Section-Frameworks}
+The area of Natural language Processing has taken significant leaps in the last two decades. Work done towards improving the ability of machine learning models to first recognise words, then sentences, followed by contextual understanding has led to a number of interesting \& novel approaches in the field. From early on neural networks to creating Long Short-Term Memory architectures\cite{originallstm} by Sepp Hochreiter \& Jurgen Schmidhuber helped in the mid 90's that resolved the vanishing gradient problem of classical neural networks, we have come a long way.
+
+The latest advancements in this field come from Google's research lab in the form of \textit{Transformers}\cite{atayl}. In their paper "Attention Is All You Need"\cite{atayl} Vasvani \& team demonstrated how replacing the encoder-decoder architecture based recurrent layers with multi-headed self attention based ones that remove the need of recurrence and convolutions entirely.
+
+We have divided our research proposal into 7 sections.
+In Section \ref{introduction} we shall take a look at briefly introducing the concept \& why our work is necessary. Next, in Section \ref{backRR}, we outline the background work that has already been done in this field and how some of the papers relate to the work that has been done. We use this as an opportunity to highlight some of the shortcomings in current architectures \& modelling techniques. In Section \ref{aims} we briefly outline the aim of our proposed research. In Section \ref{researchMeth} we define in some detail the work that we will do to establish our research \& how we plan to quantify the work that shall be done. In Section \ref{expectedoutcomes} we have highlighted that our goal is to produce a new transformer architecture that performs better at Question Answering based tasks \& is capable of doing so in a conversational manner.
+In Section \ref{resources} we have outlined the minimum hardware requirements along with the resources available to the author. Finally in Section \ref{plan} we submit a Gantt Chart to outline our plan against the number of weeks.
+
+
+\section{Background \& Related Research}\label{backRR}
 
 \subsection{Background}
 ..is this just literature review now?
-\subsection{Related Research}
-Below is just papers that have been read and their summary.
-
-\begin{itemize}
-	\item Transformers were produced as a result of a simplification process carried out in \cite{atayl}.
-\end{itemize}
-\newpage
 \subsection{Related Research}
 
 *** Some papers have messed up formatting of references. Correct before final.**
@@ -111,23 +113,38 @@ Below is just papers that have been read and their summary.
 **Loads of stuff missing still. Need to list out paper by LSTM, YIH, etc.
 \newpage
 \newpage
-\section{Aims \& Objectives}
+\section{Aims \& Objectives}\label{aims}
 
 Through our research we aim to establish the efficiency of our new Transformer architecture. We shall implement the existing models that are available via libraries such as HuggingFace\cite{hfTransformers}, PyTorch \& Tensorflow, run the SQuAD 2.0\cite{dataset}, to obtain benchmark scores \& then compare the results with our proposed architecture. We hope to establish our proposed transformer architecture as a competent enough contender to be used within both industry \& academia.
-\section{Research Methodology}
+\section{Research Methodology}\label{researchMeth}
 
 To implement this research we shall break the project down into 5 phases. These are outlined below.
-\subsection{Literature Review}
+\subsection{Literature Review}\label{litrev}
 In this phase we will review the research that has been published already around the different kinds of architectures, shortlist some of the most widely used ones, compare their results using the SQuAD2.0 \cite{dataset} \& outline the pros and cons of each of these architectures. The rationale is to review \& understand as much of the research as possible so that we can avoid potential pitfalls, not duplicate our efforts by reinventing the wheel \& organize a better approach to perform our research.\textit{ **to add some pointers about how existing research has been done**}
-\subsection{Research Benchmarks}
+\subsection{Research Benchmarks}\label{benchmarks}
 Here we shall focus on obtaining benchmark scores for the shortlisted architectures above using the dataset\cite{dataset}. The parameters used will be validation \& test set scores of the models. The training shall be carried out on each of the models for a 100(\textit{**TBD, 100 epochs per model for Squad will take over 100 hours of training, not sure if its worth it**}) epochs. We shall also look at the specificity/recall of these results to better understand if our work was done correctly or not.
-\subsection{Architecture Creation}
-\subsection{Architecture Refinement}
-\subsection{Research Findings}
-\subsection{Conclusion}
-\section{Expected Outcomes}
-\section{Requirements \& Resources}
-\section{Research Plan}
+\subsection{Architecture Creation}\label{architecturecreation}
+\subsection{Architecture Refinement}\label{refinement}
+\subsection{Research Findings}\label{findings}
+\subsection{Conclusion}\label{conclusions}
+\section{Expected Outcomes}\label{expectedoutcomes}
+
+We expect that our created model is at-par, if not better performing than existing models for Question Answering based problems.
+\section{Requirements \& Resources}\label{resources}
+
+To successfully deliver on our research we will be utilizing the following hardware:
+\begin{itemize}
+    \item EVGA GeForce RTX 2070 SUPER KO GAMING, 08G-P4-2072-KR, 8GB GDDR6, Dual Fans\cite{2070}. This graphics card is based on the Nvidia "Turing" architecture \& has 2560 CuDA cores.
+    \item Intel 10700 processor. 8 cores, 16 threads, 16M cache\cite{intel}.
+    \item VENGEANCE® LPX 8GB (1 x 8GB) DDR4 DRAM 2400MHz C14 Memory Kit - Black\cite{ram}. 8GB x 4, 32 GB total.
+    \item Minimum 650W power supply.
+    \item Minimum B550 Motherboard architecture. We use Asus Prime B550 motherboard\cite{asus}.
+\end{itemize}
+
+The above hardware is available to the author \& any changes to the same will be notified/highlighted in the subsequent reports.
+\section{Research Plan}\label{plan}
+
+Attached below is the Gantt Chart highlighting the research plan stages \& timelines.
 \bibliographystyle{plain}
 \bibliography{Research_Proposal}
 
