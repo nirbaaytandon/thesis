@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  17 APR 2021 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  17 APR 2021 21:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,6 +22,13 @@ File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count175
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
@@ -61,39 +68,38 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count175
+\l__kernel_color_stack_int=\count176
 \l__pdf_internal_box=\box45
 )
-(./Research_Proposal.aux)
+No file Research_Proposal.aux.
 \openout1 = `Research_Proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count176
+\scratchcounter=\count177
 \scratchdimen=\dimen139
 \scratchbox=\box46
-\nofMPsegments=\count177
-\nofMParguments=\count178
+\nofMPsegments=\count178
+\nofMParguments=\count179
 \everyMPshowfont=\toks15
-\MPscratchCnt=\count179
+\MPscratchCnt=\count180
 \MPscratchDim=\dimen140
-\MPnumerator=\count180
-\makeMPintoPDFobject=\count181
+\MPnumerator=\count181
+\makeMPintoPDFobject=\count182
 \everyMPtoPDFconversion=\toks16
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -105,124 +111,280 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 17.
+(Font)              <12> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 17.
+(Font)              <8> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 17.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 17
+(Font)              <6> on input line 20.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 20
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./Research_Proposal.t
-oc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `atayl' on page 2 undefined on input line 24.
+
+
+Package natbib Warning: Citation `bert' on page 2 undefined on input line 24.
+
+
+Package natbib Warning: Citation `roberta' on page 2 undefined on input line 24
+.
+
+
+Package natbib Warning: Citation `dataset' on page 2 undefined on input line 24
+.
+
+[2] (./Research_Proposal.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 3.
 )
 \tf@toc=\write3
 \openout3 = `Research_Proposal.toc'.
 
- [3] [4] [5]
-[6] [7] [8]
+ [3]
+
+LaTeX Warning: Reference `introduction' on page 4 undefined on input line 33.
+
+
+LaTeX Warning: Reference `backRR' on page 4 undefined on input line 33.
+
+
+LaTeX Warning: Reference `aims' on page 4 undefined on input line 33.
+
+
+LaTeX Warning: Reference `researchMeth' on page 4 undefined on input line 33.
+
+
+LaTeX Warning: Reference `expectedoutcomes' on page 4 undefined on input line 3
+3.
+
+
+LaTeX Warning: Reference `resources' on page 4 undefined on input line 34.
+
+
+LaTeX Warning: Reference `plan' on page 4 undefined on input line 34.
+
+
+LaTeX Warning: Reference `back' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Reference `rr' on page 4 undefined on input line 37.
+
+
+Package natbib Warning: Citation `originallstm' on page 4 undefined on input li
+ne 39.
+
+
+Package natbib Warning: Citation `atayl' on page 4 undefined on input line 41.
+
+
+Package natbib Warning: Citation `atayl' on page 4 undefined on input line 41.
+
+[4]
+
+Package natbib Warning: Citation `lstm' on page 5 undefined on input line 46.
+
+
+Package natbib Warning: Citation `recurrent' on page 5 undefined on input line 
+46.
+
+
+Package natbib Warning: Citation `atayl' on page 5 undefined on input line 47.
+
+
+Package natbib Warning: Citation `atayl' on page 5 undefined on input line 50.
+
+
+Package natbib Warning: Citation `wsj' on page 5 undefined on input line 50.
+
+
+Package natbib Warning: Citation `dataset' on page 5 undefined on input line 52
+.
+
+
+Package natbib Warning: Citation `bert' on page 5 undefined on input line 53.
+
+
+Package natbib Warning: Citation `roberta' on page 5 undefined on input line 54
+.
+
+
+Package natbib Warning: Citation `albert' on page 5 undefined on input line 55.
+
+
+
+Package natbib Warning: Citation `schmid' on page 5 undefined on input line 56.
+
+
+[5]
+
+Package natbib Warning: Citation `levy' on page 6 undefined on input line 57.
+
+
+Package natbib Warning: Citation `zhang' on page 6 undefined on input line 58.
+
+
+Package natbib Warning: Citation `contextualized' on page 6 undefined on input 
+line 59.
+
+[6]
+
+Package natbib Warning: Citation `dataset' on page 7 undefined on input line 66
+.
+
+
+Package natbib Warning: Citation `hfTransformers' on page 7 undefined on input 
+line 69.
+
+
+Package natbib Warning: Citation `dataset' on page 7 undefined on input line 69
+.
+
+
+Package natbib Warning: Citation `dataset' on page 7 undefined on input line 84
+.
+
+[7]
+
+Package natbib Warning: Citation `dataset' on page 8 undefined on input line 92
+.
+
+
+Package natbib Warning: Citation `dataset' on page 8 undefined on input line 10
+1.
+
+
+Package natbib Warning: Citation `2070' on page 8 undefined on input line 113.
+
+[8]
+
+Package natbib Warning: Citation `intel' on page 9 undefined on input line 114.
+
+
+
+Package natbib Warning: Citation `ram' on page 9 undefined on input line 115.
+
 <g2.png, id=34, 964.60374pt x 426.59375pt>
 File: g2.png Graphic file (type png)
 <use g2.png>
-Package pdftex.def Info: g2.png  used on input line 121.
+Package pdftex.def Info: g2.png  used on input line 124.
 (pdftex.def)             Requested size: 512.16483pt x 341.4512pt.
- [9] [10 <./g2.png>] (./Research_Proposal.bbl
-Underfull \hbox (badness 1127) in paragraph at lines 34--35
-[]\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
-er,
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 37--38
-[]\OT1/cmr/m/n/10.95 Bahdanau, D., Cho, K. and Ben-gio, Y., 2014. Neu-ral ma-ch
-ine
- []
-
-[11] [12]
-Underfull \hbox (badness 8151) in paragraph at lines 78--79
+[9] [10 <./g2.png>] (./Research_Proposal.bbl [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 []\OT1/cmr/m/n/10.95 EVGA. 2021. EVGA - EU - Prod-ucts - EVGA GeForce
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 \OT1/cmr/m/n/10.95 RTX 2070 SU-PER KO GAM-ING, 08G-P4-2072-KR, 8GB
  []
 
 
-Underfull \hbox (badness 7362) in paragraph at lines 78--79
+Underfull \hbox (badness 7595) in paragraph at lines 82--83
 \OT1/cmr/m/n/10.95 GDDR6, Dual Fans - 08G-P4-2072-KR. [on-line] Avail-able at:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 \OT1/cmr/m/n/10.95 <https://eu.evga.com/products/product.aspx?pn=08G-P4-2072-KR
 >
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 2142) in paragraph at lines 85--86
 []\OT1/cmr/m/n/10.95 Ark.intel.com. 2021. In-tel\TS1/cmr/m/n/10.95 ® \OT1/cmr/m
-/n/10.95 Core\TS1/cmr/m/n/10.95 — \OT1/cmr/m/n/10.95 i7-10700 Pro-ces-sor (16M
+/n/10.95 Core\TS1/cmr/m/n/10.95 — \OT1/cmr/m/n/10.95 i7-10700 Pro-ces-sor (16M 
+Cache,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 5050) in paragraph at lines 85--86
+\OT1/cmr/m/n/10.95 up to 4.80 GHz) Prod-uct Spec-i-fi-ca-tions. [on-line] Avail
+-able at:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 \OT1/cmr/m/n/10.95 <https://ark.intel.com/content/www/us/en/ark/products/199316
 /intel-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 \OT1/cmr/m/n/10.95 core-i7-10700-processor-16m-cache-up-to-4-80-ghz.html> [Ac-c
 essed 16
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 84--85
+Underfull \hbox (badness 3029) in paragraph at lines 88--89
+[]\OT1/cmr/m/n/10.95 Corsair.com. 2021. VENGEANCE\TS1/cmr/m/n/10.95 ® \OT1/cmr/
+m/n/10.95 LPX 8GB (1 x 8GB) DDR4
+ []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 88--89
 \OT1/cmr/m/n/10.95 DRAM 2400MHz C14 Mem-ory Kit - Black. [on-line] Avail-able a
 t:
  []
 
 
-Overfull \hbox (38.01779pt too wide) in paragraph at lines 84--85
+Overfull \hbox (37.40947pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/n/10.95 <https://www.corsair.com/uk/en/Categories/Products/Memory/VE
 NGEANCE-
  []
 
+)
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
-[]\OT1/cmr/m/n/10.95 ASUS Global. 2021. [on-line] Avail-able at:
- []
+Package natbib Warning: There were undefined citations.
+
+[13] (./Research_Proposal.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
-\OT1/cmr/m/n/10.95 <https://www.asus.com/Motherboards-Components/Motherboards/A
-ll-
- []
+! Package natbib Error: Bibliography not compatible with author-year citations.
 
-) [13] (./Research_Proposal.aux) ) 
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ...mand\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
+
+)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1296 strings out of 483183
- 18849 string characters out of 5966291
- 247016 words of memory out of 5000000
- 16328 multiletter control sequences out of 15000+600000
+ 1687 strings out of 483183
+ 23758 string characters out of 5966291
+ 252508 words of memory out of 5000000
+ 16717 multiletter control sequences out of 15000+600000
  539274 words of font info for 49 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,6n,29p,904b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/nirbhay/.texlive2019/texmf-var/fonts/
-pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Research_Proposal.pdf (13 pages, 152252 bytes).
+ 38i,6n,30p,904b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/nirbhay/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.6
+00pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Research_Proposal.pdf (13 pages, 152674 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream

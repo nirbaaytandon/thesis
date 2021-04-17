@@ -1,7 +1,10 @@
 
 \documentclass[11pt]{article}
 
+\usepackage[square,sort,comma,numbers]{natbib}
 
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear,open={(},close={)}}
 \usepackage{epsfig}
 \usepackage{latexsym}
 \usepackage{graphicx}
@@ -18,7 +21,7 @@
 
 \newpage
 \begin{abstract}
-Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}\cite{atayl}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of our work will be to explore a new kind of Transformer architecture. Compare \& contrast its performance against other architectures such as BERT\cite{bert}, RoBERTa\cite{roberta}, etc. that are also based on SQuAD 2.0 Dataset\cite{dataset}. Through our research, we aim to produce a new Transformer Architecture that has a better performance than existing models for Question Answering in a conversational manner.
+Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}\citet*{atayl}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of our work will be to explore a new kind of Transformer architecture. Compare \& contrast its performance against other architectures such as BERT\cite{bert}, RoBERTa\cite{roberta}, etc. that are also based on SQuAD 2.0 Dataset\cite{dataset}. Through our research, we aim to produce a new Transformer Architecture that has a better performance than existing models for Question Answering in a conversational manner.
 \end{abstract}
 \newpage
 \tableofcontents
@@ -107,9 +110,9 @@ We expect that our created model is at-par, if not better performing than existi
 
 To successfully deliver on our research we will be utilizing the following hardware:
 \begin{itemize}
-    \item EVGA GeForce RTX 2070 SUPER KO GAMING, 08G-P4-2072-KR, 8GB GDDR6, Dual Fans\cite{2070}. This graphics card is based on the Nvidia "Turing" architecture \& has 2560 CuDA cores.
-    \item Intel 10700 processor. 8 cores, 16 threads, 16M cache\cite{intel}.
-    \item VENGEANCE® LPX 8GB (1 x 8GB) DDR4 DRAM 2400MHz C14 Memory Kit - Black\cite{ram}. 8GB x 4, 32 GB total.
+    \item EVGA GeForce RTX 2070 SUPER KO GAMING, 08G-P4-2072-KR, 8GB GDDR6, Dual Fans\citet{2070}. This graphics card is based on the Nvidia "Turing" architecture \& has 2560 CuDA cores.
+    \item Intel 10700 processor. 8 cores, 16 threads, 16M cache\citet{intel}.
+    \item VENGEANCE® LPX 8GB (1 x 8GB) DDR4 DRAM 2400MHz C14 Memory Kit - Black\citet{ram}. 8GB x 4, 32 GB total.
     \item Ubuntu 20.04 Operating System
     \item package names
 \end{itemize}
@@ -120,7 +123,7 @@ The above hardware is available to the author \& any changes to the same will be
 Shown on the next page is the Gantt Chart highlighting the research stages \& timelines.\\
 \includegraphics[width=180mm,height=120mm,angle=90]{g2.png}
 \newpage
-\bibliographystyle{plain}
+\bibliographystyle{harvard}
 \bibliography{Research_Proposal}
 
 \end{document}
