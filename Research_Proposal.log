@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  17 APR 2021 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  17 APR 2021 16:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -124,122 +124,107 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `Research_Proposal.toc'.
 
- [2] [3]
-
-LaTeX Warning: Citation `schuster' on page 4 undefined on input line 49.
-
-[4] [5] [6]
-Overfull \hbox (23.87909pt too wide) in paragraph at lines 79--87
-\OT1/cmr/m/n/10.95 mu-sic com-po-si-tion (e.g., Mozer 1992). With con-ven-tiona
-l Back-Propagation
- []
-
-[7] [8] [9] [10] [11] [12]
-<g2.png, id=48, 723.45282pt x 297.36093pt>
+ [2] [3] [4] [5]
+[6] [7]
+<g2.png, id=31, 723.45282pt x 297.36093pt>
 File: g2.png Graphic file (type png)
 <use g2.png>
-Package pdftex.def Info: g2.png  used on input line 181.
+Package pdftex.def Info: g2.png  used on input line 134.
 (pdftex.def)             Requested size: 512.15381pt x 341.44969pt.
- [13] [14 <./g2.png>] (./Research_Proposal.bbl
-Underfull \hbox (badness 1127) in paragraph at lines 31--32
+ [8] [9 <./g2.png>] (./Research_Proposal.bbl
+Underfull \hbox (badness 1127) in paragraph at lines 34--35
 []\OT1/cmr/m/n/10.95 Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kais
 er,
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 34--35
+Underfull \hbox (badness 1028) in paragraph at lines 37--38
 []\OT1/cmr/m/n/10.95 Bahdanau, D., Cho, K. and Ben-gio, Y., 2014. Neu-ral ma-ch
 ine
  []
 
-[15] [16]
-Underfull \hbox (badness 8151) in paragraph at lines 75--76
+[10] [11]
+Underfull \hbox (badness 8151) in paragraph at lines 78--79
 []\OT1/cmr/m/n/10.95 EVGA. 2021. EVGA - EU - Prod-ucts - EVGA GeForce
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 \OT1/cmr/m/n/10.95 RTX 2070 SU-PER KO GAM-ING, 08G-P4-2072-KR, 8GB
  []
 
 
-Underfull \hbox (badness 7362) in paragraph at lines 75--76
+Underfull \hbox (badness 7362) in paragraph at lines 78--79
 \OT1/cmr/m/n/10.95 GDDR6, Dual Fans - 08G-P4-2072-KR. [on-line] Avail-able at:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 \OT1/cmr/m/n/10.95 <https://eu.evga.com/products/product.aspx?pn=08G-P4-2072-KR
 >
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 []\OT1/cmr/m/n/10.95 Ark.intel.com. 2021. In-tel\TS1/cmr/m/n/10.95 ® \OT1/cmr/m
 /n/10.95 Core\TS1/cmr/m/n/10.95 — \OT1/cmr/m/n/10.95 i7-10700 Pro-ces-sor (16M
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 \OT1/cmr/m/n/10.95 <https://ark.intel.com/content/www/us/en/ark/products/199316
 /intel-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 \OT1/cmr/m/n/10.95 core-i7-10700-processor-16m-cache-up-to-4-80-ghz.html> [Ac-c
 essed 16
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 81--82
+Underfull \hbox (badness 1092) in paragraph at lines 84--85
 \OT1/cmr/m/n/10.95 DRAM 2400MHz C14 Mem-ory Kit - Black. [on-line] Avail-able a
 t:
  []
 
 
-Overfull \hbox (38.01779pt too wide) in paragraph at lines 81--82
+Overfull \hbox (38.01779pt too wide) in paragraph at lines 84--85
 \OT1/cmr/m/n/10.95 <https://www.corsair.com/uk/en/Categories/Products/Memory/VE
 NGEANCE-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 []\OT1/cmr/m/n/10.95 ASUS Global. 2021. [on-line] Avail-able at:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 \OT1/cmr/m/n/10.95 <https://www.asus.com/Motherboards-Components/Motherboards/A
 ll-
  []
 
-) [17] (./Research_Proposal.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+) [12] (./Research_Proposal.aux) ) 
 Here is how much of TeX's memory you used:
  1298 strings out of 483183
- 18874 string characters out of 5966291
- 251043 words of memory out of 5000000
- 16331 multiletter control sequences out of 15000+600000
+ 18873 string characters out of 5966291
+ 247036 words of memory out of 5000000
+ 16330 multiletter control sequences out of 15000+600000
  539274 words of font info for 49 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,6n,29p,1485b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/nirbhay/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.6
-00pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmti10.pfb>
-Output written on Research_Proposal.pdf (17 pages, 289907 bytes).
+ 38i,6n,29p,904b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/nirbhay/.texlive2019/texmf-var/fonts/
+pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Research_Proposal.pdf (12 pages, 260831 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
