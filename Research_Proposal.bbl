@@ -1,93 +1,122 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-\bibitem{atayl}
-Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, Aidan N, Kaiser, L. and Polosukhin, I. (2017). Attention Is All You Need. [online] arXiv.org. Available at: https://arxiv.org/abs/1706.03762.
 
-\bibitem{dataset}
-Rajpurkar, P., Jia, R. and Liang, P., 2018. Know what you don't know: Unanswerable questions for SQuAD. arXiv preprint arXiv:1806.03822.
+\bibitem[Akbik et~al.(2018)Akbik, Blythe, and Vollgraf]{contextual}
+A.~Akbik, D.~Blythe, and R.~Vollgraf.
+\newblock Contextual string embeddings for sequence labeling.
+\newblock In \emph{Proceedings of the 27th international conference on
+  computational linguistics}, pages 1638--1649, 2018.
 
-\bibitem{wsj}
-Marcus, M., Santorini, B. and Marcinkiewicz, M.A., 1993. Building a large annotated corpus of English: The Penn Treebank.
+\bibitem[Corsair()]{Ram}
+Corsair.
+\newblock Vengeance® lpx 8gb (1 x 8gb) ddr4 dram 2400mhz c14 memory kit -
+  black.
+\newblock URL
+  \url{https://www.corsair.com/uk/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK8GX4M1A2400C14}.
+\newblock Accessed: 2021-04-16.
 
-\bibitem{bert}
-Devlin, J., Chang, M.W., Lee, K. and Toutanova, K., 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805.
+\bibitem[Devlin et~al.(2018)Devlin, Chang, Lee, and Toutanova]{bert}
+J.~Devlin, M.-W. Chang, K.~Lee, and K.~Toutanova.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock \emph{arXiv preprint arXiv:1810.04805}, 2018.
 
-\bibitem{roberta}
-Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M., Zettlemoyer, L. and Stoyanov, V., 2019. Roberta: A robustly optimized bert pretraining approach. arXiv preprint arXiv:1907.11692.
+\bibitem[Evga()]{evga}
+Evga.
+\newblock Evga geforce rtx 2070 super ko gaming, 08g-p4-2072-kr, 8gb gddr6,
+  dual fans.
+\newblock URL
+  \url{https://eu.evga.com/products/product.aspx?pn=08G-P4-2072-KR}.
+\newblock Accessed: 2021-04-16.
 
-\bibitem{hfTransformers}
-Huggingface.co. 2021. Transformers — transformers 4.4.2 documentation. [online] Available at: <https://huggingface.co/transformers/> [Accessed 4 April 2021].
+\bibitem[Hochreiter et~al.(2001)Hochreiter, Bengio, Frasconi, Schmidhuber,
+  et~al.]{lstm}
+S.~Hochreiter, Y.~Bengio, P.~Frasconi, J.~Schmidhuber, et~al.
+\newblock Gradient flow in recurrent nets: the difficulty of learning long-term
+  dependencies, 2001.
 
-\bibitem{lstm}
-Hochreiter, S., Bengio, Y., Frasconi, P. and Schmidhuber, J., 2001. Gradient flow in recurrent nets: the difficulty of learning long-term dependencies.
+\bibitem[Intel()]{intel}
+Intel.
+\newblock Intel® core™ i7-10700 processor (16m cache, up to 4.80 ghz) -
+  product specifications.
+\newblock URL
+  \url{https://www.intel.co.uk/content/www/uk/en/products/sku/199316/intel-core-i710700-processor-16m-cache-up-to-4-80-ghz/specifications.html}.
 
-\bibitem{contextualEmbeddings}
-Akbik, A., Blythe, D. and Vollgraf, R., 2018, August. Contextual string embeddings for sequence labeling. In Proceedings of the 27th international conference on computational linguistics (pp. 1638-1649).
+\bibitem[Lan et~al.(2019)Lan, Chen, Goodman, Gimpel, Sharma, and
+  Soricut]{albert}
+Z.~Lan, M.~Chen, S.~Goodman, K.~Gimpel, P.~Sharma, and R.~Soricut.
+\newblock Albert: A lite bert for self-supervised learning of language
+  representations.
+\newblock \emph{arXiv preprint arXiv:1909.11942}, 2019.
 
-\bibitem{rfou}
-Al-Rfou, R., Choe, D., Constant, N., Guo, M. and Jones, L., 2019, July. Character-level language modeling with deeper self-attention. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 33, No. 01, pp. 3159-3166).
+\bibitem[Levy et~al.(2017)Levy, Seo, Choi, and Zettlemoyer]{levy}
+O.~Levy, M.~Seo, E.~Choi, and L.~Zettlemoyer.
+\newblock Zero-shot relation extraction via reading comprehension.
+\newblock \emph{arXiv preprint arXiv:1706.04115}, 2017.
 
-\bibitem{recurrent}
-Zhou, J., Cao, Y., Wang, X., Li, P. and Xu, W., 2016. Deep recurrent models with fast-forward connections for neural machine translation. Transactions of the Association for Computational Linguistics, 4, pp.371-383.
+\bibitem[Liu et~al.(2019)Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis,
+  Zettlemoyer, and Stoyanov]{roberta}
+Y.~Liu, M.~Ott, N.~Goyal, J.~Du, M.~Joshi, D.~Chen, O.~Levy, M.~Lewis,
+  L.~Zettlemoyer, and V.~Stoyanov.
+\newblock Roberta: A robustly optimized bert pretraining approach.
+\newblock \emph{arXiv preprint arXiv:1907.11692}, 2019.
 
-\bibitem{s2sle}
-Luong, M.T., Le, Q.V., Sutskever, I., Vinyals, O. and Kaiser, L., 2015. Multi-task sequence to sequence learning. arXiv preprint arXiv:1511.06114.
+\bibitem[Marcus et~al.(1993)Marcus, Santorini, and Marcinkiewicz]{wsj}
+M.~Marcus, B.~Santorini, and M.~A. Marcinkiewicz.
+\newblock Building a large annotated corpus of english: The penn treebank.
+\newblock 1993.
 
-\bibitem{bengio}
-Bahdanau, D., Cho, K. and Bengio, Y., 2014. Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473.
+\bibitem[Rajpurkar et~al.(2018)Rajpurkar, Jia, and Liang]{dataset}
+P.~Rajpurkar, R.~Jia, and P.~Liang.
+\newblock Know what you don't know: Unanswerable questions for squad.
+\newblock \emph{CoRR}, abs/1806.03822, 2018.
+\newblock URL \url{http://arxiv.org/abs/1806.03822}.
 
-\bibitem{zhang}
-Zhang, Y., Zhong, V., Chen, D., Angeli, G. and Manning, C.D., 2017, September. Position-aware attention and supervised data improve slot filling. In Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing (pp. 35-45).
+\bibitem[Schmidhuber(2015)]{schmid}
+J.~Schmidhuber.
+\newblock Deep learning in neural networks: An overview.
+\newblock \emph{Neural networks}, 61:\penalty0 85--117, 2015.
 
-\bibitem{levy}
-Levy, O., Seo, M., Choi, E. and Zettlemoyer, L., 2017. Zero-shot relation extraction via reading comprehension. arXiv preprint arXiv:1706.04115.
+\bibitem[Schmidhuber and Hochreiter(1997)]{originallstm}
+J.~Schmidhuber and S.~Hochreiter.
+\newblock Long short-term memory.
+\newblock \emph{Neural Comput}, 9\penalty0 (8):\penalty0 1735--1780, 1997.
 
-\bibitem{yih}
-Yih, S.W.T., Chang, M.W., Meek, C. and Pastusiak, A., 2013. Question answering using enhanced lexical semantic models.
+\bibitem[Team()]{hfTransformers}
+T.~H.~F. Team.
 
-\bibitem{schmid}
-Schmidhuber, J., 2015. Deep learning in neural networks: An overview. Neural networks, 61, pp.85-117.
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{atayl}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
+  L.~Kaiser, and I.~Polosukhin.
+\newblock Attention is all you need.
+\newblock \emph{arXiv preprint arXiv:1706.03762}, 2017.
 
-\bibitem{chung}
-Chung, M.I., Kushner, W. and Damoulakis, J., 1985, April. Word boundary detection and speech recognition of noisy speech by means of iterative noise cancellation techniques. In ICASSP'85. IEEE International Conference on Acoustics, Speech, and Signal Processing (Vol. 10, pp. 1838-1838). IEEE.
+\bibitem[Weissenborn et~al.(2017)Weissenborn, Wiese, and Seiffe]{fastQA}
+D.~Weissenborn, G.~Wiese, and L.~Seiffe.
+\newblock Fastqa: {A} simple and efficient neural architecture for question
+  answering.
+\newblock \emph{CoRR}, abs/1703.04816, 2017.
+\newblock URL \url{http://arxiv.org/abs/1703.04816}.
 
-\bibitem{contextualized}
-Peters, M.E., Neumann, M., Iyyer, M., Gardner, M., Clark, C., Lee, K. and Zettlemoyer, L., 2018. Deep contextualized word representations. arXiv preprint arXiv:1802.05365.
+\bibitem[Zhang et~al.(2017)Zhang, Zhong, Chen, Angeli, and Manning]{zhang}
+Y.~Zhang, V.~Zhong, D.~Chen, G.~Angeli, and C.~D. Manning.
+\newblock Position-aware attention and supervised data improve slot filling.
+\newblock In \emph{Proceedings of the 2017 Conference on Empirical Methods in
+  Natural Language Processing}, pages 35--45, Copenhagen, Denmark, Sept. 2017.
+  Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/D17-1004}.
+\newblock URL \url{https://www.aclweb.org/anthology/D17-1004}.
 
-\bibitem{zhang2}
-Zhang, Z., Yang, J. and Zhao, H., 2020. Retrospective reader for machine reading comprehension. arXiv preprint arXiv:2001.09694.
-
-\bibitem{albert}
-Lan, Z., Chen, M., Goodman, S., Gimpel, K., Sharma, P. and Soricut, R., 2019. Albert: A lite bert for self-supervised learning of language representations. arXiv preprint arXiv:1909.11942.
-
-\bibitem{graves}
-Graves, A., 2013. Generating sequences with recurrent neural networks. arXiv preprint arXiv:1308.0850.
-
-\bibitem{wiese}
-Weissenborn, D., Wiese, G. and Seiffe, L., 2017. Making neural qa as simple as possible but not simpler. arXiv preprint arXiv:1703.04816.
-
-
-\bibitem{adaptive}
-Baevski, A. and Auli, M., 2018. Adaptive input representations for neural language modeling. arXiv preprint arXiv:1809.10853.
-
-\bibitem{sgnet}
-Zhang, Z., Wu, Y., Zhou, J., Duan, S., Zhao, H. and Wang, R., 2020, April. Sg-net: Syntax-guided machine reading comprehension. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 34, No. 05, pp. 9636-9643).
-
-
-\bibitem{2070}
-EVGA. 2021. EVGA - EU - Products - EVGA GeForce RTX 2070 SUPER KO GAMING, 08G-P4-2072-KR, 8GB GDDR6, Dual Fans - 08G-P4-2072-KR. [online] Available at: <https://eu.evga.com/products/product.aspx?pn=08G-P4-2072-KR> [Accessed 16 April 2021].
-
-\bibitem{intel}
-Ark.intel.com. 2021. Intel® Core™ i7-10700 Processor (16M Cache, up to 4.80 GHz) Product Specifications. [online] Available at: <https://ark.intel.com/content/www/us/en/ark/products/199316/intel-core-i7-10700-processor-16m-cache-up-to-4-80-ghz.html> [Accessed 16 April 2021].
-
-\bibitem{ram}
-Corsair.com. 2021. VENGEANCE® LPX 8GB (1 x 8GB) DDR4 DRAM 2400MHz C14 Memory Kit - Black. [online] Available at: <https://www.corsair.com/uk/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK8GX4M1A2400C14> [Accessed 16 April 2021].
-
-\bibitem{originallstm}
-Hochreiter, S. and Schmidhuber, J., 1997. Long short-term memory. Neural computation, 9(8), pp.1735-1780.
+\bibitem[Zhou et~al.(2016)Zhou, Cao, Wang, Li, and Xu]{recurrent}
+J.~Zhou, Y.~Cao, X.~Wang, P.~Li, and W.~Xu.
+\newblock Deep recurrent models with fast-forward connections for neural
+  machine translation.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  4:\penalty0 371--383, 2016.
 
 \end{thebibliography}
