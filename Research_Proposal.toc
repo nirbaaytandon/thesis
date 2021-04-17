@@ -1,15 +1,14 @@
-\contentsline {section}{\numberline {1}Introduction}{3}%
-\contentsline {section}{\numberline {2}Background \& Related Research}{3}%
+\contentsline {section}{\numberline {1}Introduction}{4}%
+\contentsline {section}{\numberline {2}Background \& Related Research}{4}%
 \contentsline {subsection}{\numberline {2.1}Background}{4}%
-\contentsline {subsection}{\numberline {2.2}Related Research}{4}%
-\contentsline {section}{\numberline {3}Aims \& Objectives}{6}%
-\contentsline {section}{\numberline {4}Research Methodology}{6}%
-\contentsline {subsection}{\numberline {4.1}Literature Review}{6}%
+\contentsline {subsection}{\numberline {2.2}Related Research}{5}%
+\contentsline {section}{\numberline {3}Aims \& Objectives}{7}%
+\contentsline {section}{\numberline {4}Research Methodology}{7}%
+\contentsline {subsection}{\numberline {4.1}Research Dataset}{7}%
 \contentsline {subsection}{\numberline {4.2}Research Benchmarks}{7}%
-\contentsline {subsection}{\numberline {4.3}Architecture Creation}{7}%
-\contentsline {subsection}{\numberline {4.4}Architecture Refinement}{7}%
-\contentsline {subsection}{\numberline {4.5}Research Findings}{7}%
-\contentsline {subsection}{\numberline {4.6}Conclusion}{7}%
+\contentsline {subsection}{\numberline {4.3}Architecture Creation}{8}%
+\contentsline {subsection}{\numberline {4.4}Architecture Refinement}{8}%
+\contentsline {subsection}{\numberline {4.5}Model Evaluation}{8}%
 \contentsline {section}{\numberline {5}Expected Outcomes}{8}%
-\contentsline {section}{\numberline {6}Requirements \& Resources}{8}%
-\contentsline {section}{\numberline {7}Research Plan}{8}%
+\contentsline {section}{\numberline {6}Requirements \& Resources}{9}%
+\contentsline {section}{\numberline {7}Research Plan}{9}%
