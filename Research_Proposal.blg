@@ -3,23 +3,35 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Research_Proposal.aux
 The style file: plain.bst
 I couldn't open database file Research_Proposal.bib
----line 17 of file Research_Proposal.aux
+---line 60 of file Research_Proposal.aux
  : \bibdata{Research_Proposal
  :                           }
 I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 18 of file Research_Proposal.aux
- : \bibstyle
- :          {harvard}
-I'm skipping whatever remains of this command
 I found no database files---while reading file Research_Proposal.aux
 Warning--I didn't find a database entry for "atayl"
-Warning--I didn't find a database entry for "dataset"
 Warning--I didn't find a database entry for "bert"
 Warning--I didn't find a database entry for "roberta"
+Warning--I didn't find a database entry for "dataset"
+Warning--I didn't find a database entry for "originallstm"
+Warning--I didn't find a database entry for "chung"
+Warning--I didn't find a database entry for "lstm"
+Warning--I didn't find a database entry for "recurrent"
+Warning--I didn't find a database entry for "schuster"
+Warning--I didn't find a database entry for "albert"
+Warning--I didn't find a database entry for "schmid"
+Warning--I didn't find a database entry for "levy"
+Warning--I didn't find a database entry for "wiese"
+Warning--I didn't find a database entry for "zhang2"
+Warning--I didn't find a database entry for "zhang"
+Warning--I didn't find a database entry for "contextualized"
 Warning--I didn't find a database entry for "hfTransformers"
+Warning--I didn't find a database entry for "2070"
+Warning--I didn't find a database entry for "intel"
+Warning--I didn't find a database entry for "ram"
+Warning--I didn't find a database entry for "asus"
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            502 strings with 4058 characters,
+            518 strings with 4158 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
@@ -58,4 +70,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There were 3 error messages)
+(There were 2 error messages)
