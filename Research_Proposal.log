@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  18 APR 2021 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  18 APR 2021 16:19
 entering extended mode
 **./Research_Proposal.tex
 (Research_Proposal.tex
@@ -628,44 +628,59 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write5
 \openout5 = `Research_Proposal.toc'.
 
- [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+ [3] (Research_Proposal.lof)
+\tf@lof=\write6
+\openout6 = `Research_Proposal.lof'.
+
+ [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-[5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 96--103
+[6]
+<transformer.png, id=145, 508.90125pt x 599.99156pt>
+File: transformer.png Graphic file (type png)
+<use transformer.png>
+Package pdftex.def Info: transformer.png  used on input line 65.
+(pdftex.def)             Requested size: 203.55688pt x 239.99237pt.
+<multihead.png, id=154, 746.03719pt x 436.63126pt>
+File: multihead.png Graphic file (type png)
+<use multihead.png>
+Package pdftex.def Info: multihead.png  used on input line 74.
+(pdftex.def)             Requested size: 298.40958pt x 174.6494pt.
+ [7 <./transformer.png>] [8 <./multihead.png>] [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 128--135
 
  []
 
 
-Overfull \hbox (14.09998pt too wide) in paragraph at lines 96--103
+Overfull \hbox (14.09998pt too wide) in paragraph at lines 128--135
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--103
+Underfull \hbox (badness 10000) in paragraph at lines 128--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--103
+Underfull \hbox (badness 10000) in paragraph at lines 128--135
 
  []
 
 
-Overfull \hbox (1.25621pt too wide) in paragraph at lines 108--109
+Overfull \hbox (1.25621pt too wide) in paragraph at lines 140--141
 []\OT1/cmr/m/n/10.95 To use this dataset cor-rectly we shall per-form the fol-l
 ow-ing pre-processing
  []
 
-[8] [9]
-<g2.png, id=254, 964.60374pt x 426.59375pt>
+[11] [12]
+<g2.png, id=278, 964.60374pt x 426.59375pt>
 File: g2.png Graphic file (type png)
 <use g2.png>
-Package pdftex.def Info: g2.png  used on input line 162.
+Package pdftex.def Info: g2.png  used on input line 194.
 (pdftex.def)             Requested size: 512.16483pt x 341.4512pt.
- [10] [11 <./g2.png>] (Research_Proposal.bbl
+ [13] [14 <./g2.png>] (Research_Proposal.bbl
 Underfull \hbox (badness 1533) in paragraph at lines 15--21
 \OT1/cmtt/m/n/10.95 Products / Memory / VENGEANCE-[]LPX / p / CMK8GX4M1A2400C14
 $[]\OT1/cmr/m/n/10.95 .  Ac-cessed:
@@ -701,24 +716,24 @@ Underfull \hbox (badness 4291) in paragraph at lines 74--77
 s : / / rajpurkar . github . io /
  []
 
-[12]
+[15]
 Underfull \hbox (badness 2409) in paragraph at lines 102--106
 []\OT1/cmr/m/n/10.95 T. H. F. Team.  Trans-form-ers.  URL []$\OT1/cmtt/m/n/10.9
 5 https : / / huggingface . co /
  []
 
-) [13] (Research_Proposal.aux)
+) [16] (Research_Proposal.aux)
 Package rerunfilecheck Info: File `Research_Proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 7EE248486B6EACD6D217EF50F335CE92;855.
  ) 
 Here is how much of TeX's memory you used:
- 17103 strings out of 479799
- 341409 string characters out of 2869722
- 610883 words of memory out of 3000000
- 33691 multiletter control sequences out of 15000+200000
+ 17129 strings out of 479799
+ 341768 string characters out of 2869722
+ 610964 words of memory out of 3000000
+ 33706 multiletter control sequences out of 15000+200000
  542192 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,6n,96p,907b,451s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 85i,8n,96p,901b,451s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\nirbh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -728,9 +743,9 @@ ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/nirbh/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/nirbh/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Research_Proposal.pdf (13 pages, 227853 bytes).
+Output written on Research_Proposal.pdf (16 pages, 370099 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 89 named destinations out of 1000 (max. 500000)
+ 140 words of extra memory for PDF output out of 10000 (max. 10000000)
 

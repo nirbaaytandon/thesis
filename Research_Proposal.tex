@@ -25,18 +25,22 @@
 	
 	\newpage
 	\begin{abstract}
-		Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need} \citep{atayl}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of our work will be to explore a new kind of Transformer architecture. Compare \& contrast its performance against other architectures such as BERT \citep{bert}, RoBERTa \citep{roberta}, etc. that are also based on SQuAD 2.0 Dataset, \citep{dataset}. Through our research, we aim to produce a new Transformer Architecture that has a better performance than existing models for Question Answering in a conversational manner.
+		Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of our work will be to explore a new kind of Transformer architecture. Compare \& contrast its performance against other architectures such as BERT, DistilBERT, ALBERT etc. that are also based on SQuAD 2.0 Dataset. Through our research, we aim to produce a new Transformer Architecture that has a better performance than existing models for Question Answering in a conversational manner.
 	\end{abstract}
 	\newpage
 	\tableofcontents
 	\newpage
+	\listoffigures
+	\newpage
 	\section{Introduction}\label{introduction}
 	
-	Question-Answering based systems have gained a lot of popularity, especially in the form of "chatbots". These systems depend highly on contextual understanding of the input, the training corpus \& the question asked. They use this knowledge to output an answer that can help the user with whatever their query is. Recurrent neural networks and architectures based on them, have been able to provide great advancements in the field of Question-answering \& chatbots in general. However, there is often observed a behaviour of over-fitting \& lack of contextual understanding of the question. This, coupled with long training times \& extremely complex mathematical model designs, have often kept the field of Natural Language Processing slightly obscured from the masses. 
-	\\ We wish to change that. Through our work, we would like to aim at creating a sustainable, fast, easy to understand Transformer architecture for the purpose of Question Answering. An advancement on the work done by the team at Google \citep{atayl}.
+	Question-Answering based systems have gained a lot of popularity, especially in the form of "chatbots". These systems depend highly on contextual understanding of the input, the training corpus \& the question asked. They use this knowledge to output an answer that can help the user with whatever their query is. Recurrent neural networks and architectures based on them, have been able to provide great advancements in the field of Question-answering \& chatbots in general. However, there is a behaviour of over-fitting \& lack in contextual understanding of the question. This, coupled with long training times \& extremely complex mathematical model designs, have often kept the field of Natural Language Processing slightly obscured from the masses. 
+	\\
+	We wish to change that. Through our work, we would like to aim at creating a sustainable, fast, easy to understand Transformer architecture for the purpose of Question Answering. An advancement on the work done by the team at Google  \citep{atayl}.
+	
 	We have divided our research proposal into 7 sections.
-	In Section \ref{introduction} we shall take a look at briefly introducing the concept \& why our work is necessary. Next, in Section \ref{backRR}, we outline the background work that has already been done in this field and how some of the papers relate to the work that has been done. We use this as an opportunity to highlight some of the shortcomings in current architectures \& modelling techniques. In Section \ref{aims} we briefly outline the aim of our proposed research. In Section \ref{researchMeth} we define in some detail the work that we will do to establish our research \& how we plan to quantify the work that shall be done. In Section \ref{expectedoutcomes} we have highlighted that our goal is to produce a new transformer architecture that performs better at Question Answering based tasks \& is capable of doing so in a conversational manner.
-	In Section \ref{resources} we have outlined the minimum hardware requirements along with the resources available to the author. Finally, in Section \ref{plan} we submit a Gantt Chart to outline our plan against the number of weeks.
+	In Section \ref{introduction}, we shall take a look at briefly introducing the concept \& why our work is necessary. Next, in Section \ref{backRR}, we outline the background work that has already been done in this field and how some of the papers relate to the work that has been done. We use this as an opportunity to highlight some of the shortcomings in current architectures \& modelling techniques. In Section \ref{aims}, we briefly outline the aim of our proposed research. In Section \ref{researchMeth}, we define in some detail the work that we will do to establish our research \& how we plan to quantify the work that shall be done. Section \ref{expectedoutcomes}, highlights our goal, which is to produce a new transformer architecture that performs better at Question Answering based tasks \& is capable of doing so in a conversational manner.
+	In Section \ref{resources}, we have outlined the minimum hardware requirements along with the resources available to the author. Finally, in Section \ref{plan} we submit a Gantt Chart to outline our plan against the number of weeks.
 	
 	\section{Background \& Related Research}\label{backRR}
 	In this section, we shall highlight why this research has been conducted, what has led us this far \& some of the interesting challenges that it poses. In \ref{back}, we briefly look at the history of Natural Language Processing \& how some of the challenges were addressed. In \ref{rr}, we look at the most interesting \& latest research that has gone into creating the Transformer architecture, identify some of the common patterns \& use that information to strategise our model in other sections.
@@ -46,17 +50,45 @@
 	The latest advancements in this field come from Google's research lab in the form of \textit{Transformers}. In their paper Attention Is All You Need\citep{atayl} Vasvani et. al demonstrated how replacing the \textit{encoder-decoder} based recurrent layers with \textit{multi-headed self-attention} based ones removes the need for recurrence and convolutions entirely. We look into this in a bit more detail later.\\
 	
 	
+		
 	\subsection{Related Research}\label{rr}
 	Outlined below are some of the most important pieces of research in the field of Natural Language Processing based neural networks, long short-term memory architectures \& transformers.
 	\begin{enumerate}
+		\item The SQuAD 2.0 Dataset by \citep{dataset}, was developed with funding from Facebook to help address some major issues with existing datasets. Key pain points of these being a focus on questions that can be easily answered or use of automatically generated, unanswerable questions which are easily identifiable.\\
+		The SQuAD 2.0 dataset resolves this by combining the SQuAD dataset along with 50,000 crowd worker generated unanswerable questions. The most important feature of these being that the unanswerable questions must look similar to answerable ones. For a model to be successful on this new dataset, it must be able to answer all possibly answerable questions as well as determine when no answers are provided for a question in the given paragraph \& abstain from answering. A comparative study done for a natural language understanding task that obtained an 86\% score on SQuAD 1.1, only got 66\% on the new 2.0 dataset.
+		The dataset helps bridge the gap between true natural language understanding \& machine understanding by using the concept of Relevance. Through comparisons with various datasets such as RACE, MCTest, QASENT etc. they have identified the missing links like negative examples, antonyms \& helped fill the gap. This dataset forces the models to understand whether a paragraph span has the answer to the question posed. 
+		
 		\item Work done in the field of Long short-term \& gated recurrent \citep{lstm} \& \citep{recurrent} neural networks, in particular, has been established as a state of the art approach in sequence modelling, transduction problems such as language modelling and machine translation.
 		In their paper Attention Is All You Need,\citep{atayl} the team set out to resolve problems in the parallelization \& increased compute times of recurrent models. The inherently sequential nature highlights the issues in memory constraints, leading to reduced batch sizes.
-		The architecture for a \textit{Transformer} in this paper is outlined as having an encoder that maps input sequences to a continuous representation. This is then decoded into an output sequence of symbols one at a time. Each step is auto-regressive, i.e. it consumes the previously generated symbols as additional input when creating the next. This is similar to an ensemble tree architecture. Stacks of 6 encoder layers \& 6 decoder layers is used.\\
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[scale=0.4]{transformer.png}
+			\label{fig1}
+			\caption{Transformer Architecture built by \cite{atayl}}
+		\end{figure}
+		The architecture for a \textit{Transformer} in this paper is outlined as having an encoder that maps input sequences to a continuous representation. The architecture can be seen above in Figure 1. This is then decoded into an output sequence of symbols one at a time. Each step is auto-regressive, i.e. it consumes the previously generated symbols as additional input when creating the next. This is similar to an ensemble tree architecture. Stacks of 6 encoder layers \& 6 decoder layers is used.\\
 		The encoder layers each have 2 sub-layers of a multi-head self-attention \& the other a simple, position-wise fully connected feed-forward network layer.\\
-		The decoder layer is similar to the encoder layer \& has an additional 3rd sub-layer that performs multi-head attention over the output of the encoders. There is also normalization \&  the outputs are prevented from attending to subsequent positions. \\ The attention mechanism can be described as mapping a query to a set of key-value pairs\citep{atayl}. The evaluations performed on the Wall Street Journal dataset\citep{wsj}, using 40k sentences, showed that even without task-specific tuning the model had better results.
+		The decoder layer is similar to the encoder layer \& has an additional 3rd sub-layer that performs multi-head attention over the output of the encoders. There is also normalization \&  the outputs are prevented from attending to subsequent positions. \\ The attention mechanism can be described as mapping a query to a set of key-value pairs\citep{atayl}. This can bee seen from \ref{fig2}. \\The evaluations performed on the Wall Street Journal dataset\citep{wsj}, using 40k sentences, showed that even without task-specific tuning the model had better results.
+		\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.4]{multihead.png}
+	\label{fig2}
+	\caption{Scale Dot \& Multihead Attention Models\cite{atayl}}
+\end{figure}
+		\item bert  Language model pre-training has been shown to be effective for improving many natural language processing tasks (Dai and Le, 2015; Peters et al, 2018a; Radford et al, 2018; Howard and Ruder, 2018).
+		The two approaches share the same objective function during pre-training, where they use unidirectional language models to learn general language representations. The authors present BERT fine-tuning results on 11 NLP tasks. 4.1 GLUE
 		
-		\item Squad\citep{dataset}
-		\item bert \citep{bert}
+		The General Language Understanding Evaluation (GLUE) benchmark (Wang et al, 2018a) is a collection of diverse natural language understanding tasks.
+		The authors present BERT fine-tuning results on 11 NLP tasks.
+		The General Language Understanding Evaluation (GLUE) benchmark (Wang et al, 2018a) is a collection of diverse natural language understanding tasks.
+		To fine-tune on GLUE, the authors represent the input sequence as described, and use the final hidden vector where C belongs to set RH, corresponding to the first input token ([CLS]) as the aggregate representation.
+		The only new parameters introduced during fine-tuning are classification layer weights W belongs to RKxH, where K is the number of labels.
+		Results: The best performing method concatenates the token representations from the top four hidden layers of the pre-trained Transformer, which is only 0.3 F1 behind fine-tuning the entire model.
+		This demonstrates that BERT is effective for both finetuning and feature-based approaches.
+		Using only the RND strategy performs much worse than the strategy as well
+		Conclusion: Recent empirical improvements due to transfer learning with language models have demonstrated that rich, unsupervised pre-training is an integral part of many language understanding systems.
+		These results enable even low-resource tasks to benefit from deep unidirectional architectures.
+		The authors' major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks. \citep{bert}
 		\item fastqa \citep{fastQA}
 		\item roberta \citep{roberta}
 		\item alert \citep{albert}
@@ -115,7 +147,7 @@
 		\item Adding answer tokens based on their encoded positions
 	\end{enumerate}	
 	\subsection{Research Benchmarks}\label{benchmarks}
-	Here we shall focus on obtaining benchmark scores for the shortlisted architectures i.e BERT \citep{bert}, Albert \cite{albert} \& DistilBERT \citep{distil}, on the above dataset \citep{dataset}. 
+	Here we shall focus on obtaining benchmark scores for the shortlisted architectures i.e BERT \citep{bert}, DistilBERT \citep{distil} \& Albert \cite{albert}, on the above dataset \citep{dataset}. 
 	
 	We shall use the F1, Exact Match \& Accuracy scores to determine if our model has performed better or not.
 	
