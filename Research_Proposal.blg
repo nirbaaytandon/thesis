@@ -5,55 +5,51 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: abbrvnat.bst
 Reallocating 'name_of_file' (item size: 1) to 18 items.
 Database file #1: Research_Proposal.bib
-I was expecting a `,' or a `}'---line 144 of file Research_Proposal.bib
- :  
- :  title={Transformers},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--empty year in Ram
 Warning--empty year in evga
 Warning--empty year in intel
 Warning--empty journal in wsj
+Warning--empty year in squad
 Warning--empty year in hfTransformers
-You've used 18 entries,
+You've used 20 entries,
             2773 wiz_defined-function locations,
-            689 strings with 7981 characters,
-and the built_in function-call counts, 8725 in all, are:
-= -- 733
-> -- 637
-< -- 8
-+ -- 216
-- -- 198
-* -- 715
-:= -- 1375
-add.period$ -- 58
-call.type$ -- 18
-change.case$ -- 118
-chr.to.int$ -- 18
-cite$ -- 41
-duplicate$ -- 363
-empty$ -- 636
-format.name$ -- 218
-if$ -- 1792
+            702 strings with 8384 characters,
+and the built_in function-call counts, 9537 in all, are:
+= -- 807
+> -- 686
+< -- 9
++ -- 233
+- -- 213
+* -- 775
+:= -- 1507
+add.period$ -- 68
+call.type$ -- 20
+change.case$ -- 130
+chr.to.int$ -- 20
+cite$ -- 46
+duplicate$ -- 398
+empty$ -- 699
+format.name$ -- 235
+if$ -- 1960
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 13
-newline$ -- 101
-num.names$ -- 72
-pop$ -- 262
+missing$ -- 14
+newline$ -- 115
+num.names$ -- 80
+pop$ -- 289
 preamble$ -- 1
-purify$ -- 101
+purify$ -- 110
 quote$ -- 0
-skip$ -- 310
+skip$ -- 334
 stack$ -- 0
-substring$ -- 178
-swap$ -- 37
+substring$ -- 182
+swap$ -- 39
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 198
-warning$ -- 5
-while$ -- 66
+type$ -- 220
+warning$ -- 6
+while$ -- 72
 width$ -- 0
-write$ -- 233
-(There was 1 error message)
+write$ -- 265
+(There were 6 warnings)

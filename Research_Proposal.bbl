@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -70,11 +70,23 @@ M.~Marcus, B.~Santorini, and M.~A. Marcinkiewicz.
 \newblock Building a large annotated corpus of english: The penn treebank.
 \newblock 1993.
 
+\bibitem[Rajpurkar()]{squad}
+P.~Rajpurkar.
+\newblock Squad2.0.
+\newblock URL \url{https://rajpurkar.github.io/SQuAD-explorer/}.
+
 \bibitem[Rajpurkar et~al.(2018)Rajpurkar, Jia, and Liang]{dataset}
 P.~Rajpurkar, R.~Jia, and P.~Liang.
 \newblock Know what you don't know: Unanswerable questions for squad.
 \newblock \emph{CoRR}, abs/1806.03822, 2018.
 \newblock URL \url{http://arxiv.org/abs/1806.03822}.
+
+\bibitem[Sanh et~al.(2019)Sanh, Debut, Chaumond, and Wolf]{distil}
+V.~Sanh, L.~Debut, J.~Chaumond, and T.~Wolf.
+\newblock Distilbert, a distilled version of {BERT:} smaller, faster, cheaper
+  and lighter.
+\newblock \emph{CoRR}, abs/1910.01108, 2019.
+\newblock URL \url{http://arxiv.org/abs/1910.01108}.
 
 \bibitem[Schmidhuber(2015)]{schmid}
 J.~Schmidhuber.
@@ -88,6 +100,9 @@ J.~Schmidhuber and S.~Hochreiter.
 
 \bibitem[Team()]{hfTransformers}
 T.~H.~F. Team.
+\newblock Transformers.
+\newblock URL \url{https://huggingface.co/transformers/}.
+\newblock Accessed: 2021-04-16.
 
 \bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
   Kaiser, and Polosukhin]{atayl}
