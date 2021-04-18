@@ -1,5 +1,5 @@
 \contentsline {section}{\numberline {1}Introduction}{5}{section.1}%
-\contentsline {section}{\numberline {2}Background and Related Research}{5}{section.2}%
+\contentsline {section}{\numberline {2}Background and Related Research}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Background}{6}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Related Research}{6}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Aims and Objectives}{10}{section.3}%
@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {4.1}Research Dataset}{11}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Research Benchmarks}{12}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Architecture Creation}{12}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Architecture Refinement}{13}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Architecture Refinement}{12}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Model Evaluation}{13}{subsection.4.5}%
 \contentsline {section}{\numberline {5}Expected Outcomes}{13}{section.5}%
 \contentsline {section}{\numberline {6}Requirements and Resources}{13}{section.6}%
