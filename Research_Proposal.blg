@@ -1,9 +1,7 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Research_Proposal.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: abbrvnat.bst
-Reallocating 'name_of_file' (item size: 1) to 18 items.
 Database file #1: Research_Proposal.bib
 Warning--empty year in Ram
 Warning--empty year in evga
@@ -11,45 +9,45 @@ Warning--empty year in intel
 Warning--empty journal in wsj
 Warning--empty year in squad
 Warning--empty year in hfTransformers
-You've used 20 entries,
+You've used 18 entries,
             2773 wiz_defined-function locations,
-            702 strings with 8384 characters,
-and the built_in function-call counts, 9537 in all, are:
-= -- 807
-> -- 686
-< -- 9
-+ -- 233
-- -- 213
-* -- 775
-:= -- 1507
-add.period$ -- 68
-call.type$ -- 20
-change.case$ -- 130
-chr.to.int$ -- 20
-cite$ -- 46
-duplicate$ -- 398
-empty$ -- 699
-format.name$ -- 235
-if$ -- 1960
+            685 strings with 7820 characters,
+and the built_in function-call counts, 8086 in all, are:
+= -- 665
+> -- 610
+< -- 7
++ -- 207
+- -- 189
+* -- 655
+:= -- 1304
+add.period$ -- 59
+call.type$ -- 18
+change.case$ -- 116
+chr.to.int$ -- 18
+cite$ -- 42
+duplicate$ -- 331
+empty$ -- 585
+format.name$ -- 211
+if$ -- 1638
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 14
-newline$ -- 115
-num.names$ -- 80
-pop$ -- 289
+missing$ -- 12
+newline$ -- 103
+num.names$ -- 72
+pop$ -- 259
 preamble$ -- 1
-purify$ -- 110
+purify$ -- 98
 quote$ -- 0
-skip$ -- 334
+skip$ -- 281
 stack$ -- 0
-substring$ -- 182
-swap$ -- 39
-text.length$ -- 2
+substring$ -- 92
+swap$ -- 17
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 220
+type$ -- 198
 warning$ -- 6
-while$ -- 72
+while$ -- 58
 width$ -- 0
-write$ -- 265
+write$ -- 232
 (There were 6 warnings)

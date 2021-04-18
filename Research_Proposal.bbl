@@ -1,15 +1,9 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Akbik et~al.(2018)Akbik, Blythe, and Vollgraf]{contextual}
-A.~Akbik, D.~Blythe, and R.~Vollgraf.
-\newblock Contextual string embeddings for sequence labeling.
-\newblock In \emph{Proceedings of the 27th international conference on
-  computational linguistics}, pages 1638--1649, 2018.
 
 \bibitem[Corsair()]{Ram}
 Corsair.
@@ -18,6 +12,11 @@ Corsair.
 \newblock URL
   \url{https://www.corsair.com/uk/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK8GX4M1A2400C14}.
 \newblock Accessed: 2021-04-16.
+
+\bibitem[Dai and Le(2015)]{dai}
+A.~M. Dai and Q.~V. Le.
+\newblock Semi-supervised sequence learning.
+\newblock \emph{arXiv preprint arXiv:1511.01432}, 2015.
 
 \bibitem[Devlin et~al.(2018)Devlin, Chang, Lee, and Toutanova]{bert}
 J.~Devlin, M.-W. Chang, K.~Lee, and K.~Toutanova.
@@ -53,11 +52,6 @@ Z.~Lan, M.~Chen, S.~Goodman, K.~Gimpel, P.~Sharma, and R.~Soricut.
   representations.
 \newblock \emph{arXiv preprint arXiv:1909.11942}, 2019.
 
-\bibitem[Levy et~al.(2017)Levy, Seo, Choi, and Zettlemoyer]{levy}
-O.~Levy, M.~Seo, E.~Choi, and L.~Zettlemoyer.
-\newblock Zero-shot relation extraction via reading comprehension.
-\newblock \emph{arXiv preprint arXiv:1706.04115}, 2017.
-
 \bibitem[Liu et~al.(2019)Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis,
   Zettlemoyer, and Stoyanov]{roberta}
 Y.~Liu, M.~Ott, N.~Goyal, J.~Du, M.~Joshi, D.~Chen, O.~Levy, M.~Lewis,
@@ -88,11 +82,6 @@ V.~Sanh, L.~Debut, J.~Chaumond, and T.~Wolf.
 \newblock \emph{CoRR}, abs/1910.01108, 2019.
 \newblock URL \url{http://arxiv.org/abs/1910.01108}.
 
-\bibitem[Schmidhuber(2015)]{schmid}
-J.~Schmidhuber.
-\newblock Deep learning in neural networks: An overview.
-\newblock \emph{Neural networks}, 61:\penalty0 85--117, 2015.
-
 \bibitem[Schmidhuber and Hochreiter(1997)]{originallstm}
 J.~Schmidhuber and S.~Hochreiter.
 \newblock Long short-term memory.
@@ -111,21 +100,18 @@ A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
 \newblock Attention is all you need.
 \newblock \emph{arXiv preprint arXiv:1706.03762}, 2017.
 
+\bibitem[Wang et~al.(2018)Wang, Yan, and Wu]{wang}
+W.~Wang, M.~Yan, and C.~Wu.
+\newblock Multi-granularity hierarchical attention fusion networks for reading
+  comprehension and question answering.
+\newblock \emph{arXiv preprint arXiv:1811.11934}, 2018.
+
 \bibitem[Weissenborn et~al.(2017)Weissenborn, Wiese, and Seiffe]{fastQA}
 D.~Weissenborn, G.~Wiese, and L.~Seiffe.
 \newblock Fastqa: {A} simple and efficient neural architecture for question
   answering.
 \newblock \emph{CoRR}, abs/1703.04816, 2017.
 \newblock URL \url{http://arxiv.org/abs/1703.04816}.
-
-\bibitem[Zhang et~al.(2017)Zhang, Zhong, Chen, Angeli, and Manning]{zhang}
-Y.~Zhang, V.~Zhong, D.~Chen, G.~Angeli, and C.~D. Manning.
-\newblock Position-aware attention and supervised data improve slot filling.
-\newblock In \emph{Proceedings of the 2017 Conference on Empirical Methods in
-  Natural Language Processing}, pages 35--45, Copenhagen, Denmark, Sept. 2017.
-  Association for Computational Linguistics.
-\newblock \doi{10.18653/v1/D17-1004}.
-\newblock URL \url{https://www.aclweb.org/anthology/D17-1004}.
 
 \bibitem[Zhou et~al.(2016)Zhou, Cao, Wang, Li, and Xu]{recurrent}
 J.~Zhou, Y.~Cao, X.~Wang, P.~Li, and W.~Xu.
