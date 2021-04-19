@@ -14,6 +14,9 @@
 %\usepackage{refcheck}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \captionsetup{justification=centering,margin=2cm}
+
+\let\caption=\mycaption
+
 \begin{document}
 
 	\title{Research Proposal}
@@ -22,7 +25,8 @@
 		Research Title:\\Develop New Transformer Architecture For \\ Question and Answering(QandA)
 	}
 	\date{}
-	\maketitle
+\clearpage \maketitle
+\thispagestyle{empty}
 
 	\newpage
 	\begin{abstract}
@@ -30,8 +34,13 @@
 	\end{abstract}
 	\newpage
 	\tableofcontents
+  \cleardoublepage
+\addcontentsline{toc}{section}{\listfigurename}
+	\let\oldnumberline\numberline%
+\renewcommand{\numberline}{\figurename~\oldnumberline}
+\listoffigures
 	\newpage
-	\listoffigures
+
 	\newpage
 	\section{Introduction}\label{introduction}
 
@@ -67,7 +76,7 @@
 			\centering
 			\includegraphics[scale=0.25]{transformer.png}
 			\label{fig1}
-			\caption{Transformer Architecture built by \citep{atayl}}
+			\caption{Transformer Architecture \citep{atayl}}
 		\end{figure}
 		The architecture for a \textit{Transformer} in this paper is outlined as having an encoder that maps input sequences to a continuous representation. The architecture can be seen above in Figure 1. This is then decoded into an output sequence of symbols one at a time. Each step is auto-regressive, i.e. it consumes the previously generated symbols as additional input when creating the next. This is similar to an ensemble model. Stacks of 6 encoder layers and 6 decoder layers is used.\\
 		The encoder layers each have 2 sub-layers of a multi-head self-attention and the other a simple, position-wise fully connected feed-forward network layer.\\
@@ -109,7 +118,7 @@
 	We shall:
 	\begin{enumerate}
 		\item Implement the existing models that are available via libraries such as HuggingFace \citep{hfTransformers}, PyTorch and Tensorflow on the dataset
-		\item Obtain F1, validation, etc. scores for existing models and treat them as our benchmark scores
+		\item Obtain F1, Exact Match(EM), Recall and Training Time scores for existing models and treat them as our benchmark scores
 		\item Identify drawbacks of the current architectures
 		\item Design our architecture and evaluate its performance
 		\item Fine-tune the architecture, re-evaluate and report improvements
@@ -174,7 +183,18 @@
 	\subsection{Model Evaluation}
 	The training shall be carried out using the train-test loss plot to identify the optimal number of epochs for which our model needs to be run. This will also be done for the selected model architectures.
 
-    The main parameters we will use for model evaluation are F1, Exact Match(EM), Recall and Training Time.
+    The main parameters we will use for model evaluation are F1, Exact Match(EM), Recall and Training Time. Let us look at how some of these are calculated.
+    
+    \begin{enumerate}
+    	\item \textbf{F1-Metric}: The F1-metric or F-measure is a weighted measure used to learn the whole story about the performance of a model, which can't be obtained using just Precision or Recall.
+    	\begin{center}
+    		$F1 = \frac{2*Precision*Recall}{Precision + Recall}$    		
+    	\end{center}
+    \item \textbf{Recall}: Recall is the ability of a model to identify an answer correctly. It is also referred to as \textit{True Positive Rate} or \textit{Sensitivity}. It is given by:
+        	\begin{center}
+    	$Recall = \frac{True Positive}{True Positive + False Negative}$    		
+    \end{center}
+    \end{enumerate}
 
     These metrics will help us reiterate and quantify correctly if our model has improved performance or not.
 
