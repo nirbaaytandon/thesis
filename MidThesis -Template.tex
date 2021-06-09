@@ -1,0 +1,57 @@
+\documentclass[12pt]{report}
+
+\usepackage[square,sort,comma,numbers]{natbib}
+
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear,open={(},close={)}}
+\usepackage[utf8]{inputenc}
+\usepackage{epsfig}
+\usepackage{latexsym}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage[center]{caption}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\bfseries\centering}{\huge Chapter \thechapter}{1em}{\Huge}
+
+\usepackage[page,toc,titletoc,title]{appendix}
+%\usepackage{refcheck}
+\usepackage{datetime}
+
+\newdateformat{monthyeardate}{%
+    \monthname[\THEMONTH], \THEYEAR}
+
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\captionsetup{justification=centering,margin=2cm}
+\begin{document}
+
+    \title{SampleTitle}
+
+    \author{Your Name Here}
+
+    \date{\vfill \monthyeardate\today}
+        \maketitle
+
+
+    \newpage
+    \tableofcontents
+    \newpage
+    \listoffigures
+    \chapter{\centering Introduction}\label{c1}
+
+    \chapter{\centering Literature Review}\label{c2}
+    \section{Section 2.1}\label{c21}
+    \section{Section 2.2}\label{c22}
+    \section{Section 2.3}\label{c23}
+    \chapter{\centering Chapter 3}\label{c3}
+    \section{Section 3.1}\label{c31}
+    \section{Section 3.2}\label{c32}
+    \chapter{\centering Chapter 4}\label{c4}
+    \section{Section 4.1}\label{c41}
+    \section{Section 4.2}\label{c42}
+    \section{Section 4.3}\label{c43}
+    \begin{appendices}
+        \chapter{Research Proposal}\label{rp}
+
+    \end{appendices}
+        \bibliography{MidThesisTemplate}
+\end{document}

@@ -1,0 +1,11 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Transformer Architecture built by \citep {atayl}\relax }}{8}{figure.caption.3}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Scale Dot and Multihead Attention Models \cite {atayl}\relax }}{9}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Pre-training and Fine Tuning procedures for BERT \citep {bert}\relax }}{9}{figure.caption.5}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Transformer Architecture built by \citep {atayl}\relax }}{17}{figure.caption.7}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Scale Dot and Multihead Attention Models \cite {atayl}\relax }}{18}{figure.caption.8}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Pre-training and Fine Tuning procedures for BERT \citep {bert}\relax }}{19}{figure.caption.9}%

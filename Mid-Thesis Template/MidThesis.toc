@@ -1,0 +1,32 @@
+\contentsline {chapter}{\numberline {1}\centering Introduction}{4}{chapter.1}%
+\contentsline {chapter}{\numberline {2}\centering Literature Review}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Literature Review}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}}{6}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Literature Review}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Literature Review}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Literature Review}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Literature Review}{10}{section.2.5}%
+\contentsline {chapter}{\numberline {3}\centering Research Methodology}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data Selection}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Existing Models And Benchmarks}{11}{section.3.3}%
+\contentsline {chapter}{\numberline {4}\centering Architecture Creation}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Architecture Refinement}{12}{section.4.3}%
+\contentsline {chapter}{Appendices}{13}{section*.6}%
+\contentsline {chapter}{Appendix \numberline {A}Research Proposal}{14}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Introduction}{14}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Background and Related Research}{15}{section.1.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Background}{15}{subsection.1.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Related Research}{16}{subsection.1.A.2.2}%
+\contentsline {section}{\numberline {A.3}Aims and Objectives}{20}{section.1.A.3}%
+\contentsline {section}{\numberline {A.4}Research Methodology}{20}{section.1.A.4}%
+\contentsline {subsection}{\numberline {A.4.1}Research Dataset}{20}{subsection.1.A.4.1}%
+\contentsline {subsection}{\numberline {A.4.2}Research Benchmarks}{21}{subsection.1.A.4.2}%
+\contentsline {subsection}{\numberline {A.4.3}Architecture Creation}{22}{subsection.1.A.4.3}%
+\contentsline {subsection}{\numberline {A.4.4}Architecture Refinement}{22}{subsection.1.A.4.4}%
+\contentsline {subsection}{\numberline {A.4.5}Model Evaluation}{22}{subsection.1.A.4.5}%
+\contentsline {section}{\numberline {A.5}Expected Outcomes}{23}{section.1.A.5}%
+\contentsline {section}{\numberline {A.6}Requirements and Resources}{23}{section.1.A.6}%
+\contentsline {section}{\numberline {A.7}Research Plan}{23}{section.1.A.7}%
