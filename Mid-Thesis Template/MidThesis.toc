@@ -21,20 +21,4 @@
 \contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{13}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Architecture Refinement}{13}{section.4.3}%
 \contentsline {chapter}{Appendices}{14}{section*.7}%
-\contentsline {chapter}{Appendix \numberline {A}Research Proposal}{15}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Introduction}{15}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Background and Related Research}{16}{section.1.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Background}{16}{subsection.1.A.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Related Research}{17}{subsection.1.A.2.2}%
-\contentsline {section}{\numberline {A.3}Aims and Objectives}{21}{section.1.A.3}%
-\contentsline {section}{\numberline {A.4}Research Methodology}{21}{section.1.A.4}%
-\contentsline {subsection}{\numberline {A.4.1}Research Dataset}{21}{subsection.1.A.4.1}%
-\contentsline {subsection}{\numberline {A.4.2}Research Benchmarks}{22}{subsection.1.A.4.2}%
-\contentsline {subsection}{\numberline {A.4.3}Architecture Creation}{23}{subsection.1.A.4.3}%
-\contentsline {subsection}{\numberline {A.4.4}Architecture Refinement}{23}{subsection.1.A.4.4}%
-\contentsline {subsection}{\numberline {A.4.5}Model Evaluation}{23}{subsection.1.A.4.5}%
-\contentsline {section}{\numberline {A.5}Expected Outcomes}{24}{section.1.A.5}%
-\contentsline {section}{\numberline {A.6}Requirements and Resources}{24}{section.1.A.6}%
-\contentsline {section}{\numberline {A.7}Research Plan}{24}{section.1.A.7}%
-\contentsline {section}{List Of Acronyms}{26}{section*.11}%
-\contentsline {chapter}{Bibliography}{27}{appendix*.12}%
+\contentsline {chapter}{Bibliography}{32}{appendix*.8}%

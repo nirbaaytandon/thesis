@@ -1,5 +1,8 @@
 \documentclass[12pt]{report}
-
+% arara: pdflatex: { draft: true }
+% arara: makeglossaries
+% arara: pdflatex: { synctex: true }
+% arara: pdflatex: { synctex: true }
 \usepackage[square,sort,comma,numbers]{natbib}
 
 \bibliographystyle{abbrvnat}
@@ -12,9 +15,25 @@
 \usepackage[center]{caption}
 \usepackage{titlesec}
 \titleformat{\chapter}[display]{\bfseries\centering}{\huge Chapter \thechapter}{1em}{\Huge}
+%Load the package
+\usepackage[
+nonumberlist, %do not show page numbers
+acronym,      %generate acronym listing   -> Not used in this example (see line with %%% )
+toc,          %show listings as entries in table of contents
+section,%use section level for toc entries
+nopostdot]     %sont show . at the end
+{glossaries}
+\newglossary[slg]{symbols}{syi}{syg}{List of symbols}
+\newglossary{abbrev}{abs}{abo}{List of Abbreviations}
+\renewcommand*{\glspostdescription}{}
+%Activate glossary commands
+\makeglossaries
+%Load nomenclature and glossary files
+\usepackage[nottoc]{tocbibind}
+
 
 \usepackage[page,toc,titletoc,title]{appendix}
-%\usepackage{refcheck}
+\usepackage{refcheck}
 \usepackage{datetime}
 
 \newdateformat{monthyeardate}{%
@@ -24,34 +43,69 @@
 \captionsetup{justification=centering,margin=2cm}
 \begin{document}
 
-    \title{SampleTitle}
 
-    \author{Your Name Here}
+    \title{Develop New Transformer Architecture For \\ Question and Answering(QandA)}
+
+    \author{Nirbhay P. Tandon}
 
     \date{\vfill \monthyeardate\today}
-        \maketitle
+    \maketitle
 
 
+    \newpage
     \newpage
     \tableofcontents
     \newpage
     \listoffigures
+    \listoftables
+
     \chapter{\centering Introduction}\label{c1}
-
+        \section{Background Of The Study}\label{11}
+        \section{Aims And Objectives}\label{12}
+        \section{Scope Of The Study}\label{13}
+        \section{Significance Of The Study}\label{14}
+        \section{Structure Of The Study}\label{15}
     \chapter{\centering Literature Review}\label{c2}
-    \section{Section 2.1}\label{c21}
-    \section{Section 2.2}\label{c22}
-    \section{Section 2.3}\label{c23}
-    \chapter{\centering Chapter 3}\label{c3}
-    \section{Section 3.1}\label{c31}
-    \section{Section 3.2}\label{c32}
-    \chapter{\centering Chapter 4}\label{c4}
-    \section{Section 4.1}\label{c41}
-    \section{Section 4.2}\label{c42}
-    \section{Section 4.3}\label{c43}
-    \begin{appendices}
-        \chapter{Research Proposal}\label{rp}
+        \section{Question Answering Using Neural Nets}\label{21}
+        \section{Question Answering Using LSTMs}\label{22}
+        \begin{enumerate}
+            \item \cite{lstm}
+             \item   \cite{lstmoriginal}
+            \item   \cite{schmid}
+          \item  \cite{lstmhaighextractive}
+           \item \cite{lstmhu2016question}
+         \item   \cite{lstmintent}
+         \item \cite{fastQA}
 
+        \end{enumerate}
+
+        \section{Question Answering Using Transformers}\label{23}
+            \begin{enumerate}
+                \item \cite{atayl}
+                \item \cite{bert}
+                \item \cite{albert}
+                \item \cite{roberta}
+                \item \cite{distil}
+                \item \cite{squad}
+                \item
+                \item
+            \end{enumerate}
+        \section{Comparison Of Techniques}\label{24}
+        \section{Summary}\label{25}
+        \citep{RAM}
+
+    \chapter{\centering Research Methodology}\label{c3}
+    \textbf{DONT DO ANY ANALYSIS HERE}
+    \section{Data Selection}\label{c31}
+    \section{Data Pre-processing And Transformation}\label{c32}
+    \section{Existing Models And Benchmarks}\label{c33}
+    \chapter{\centering Architecture Creation}\label{c4}
+    \section{Drawbacks Of Current Architectures}\label{c41}
+    \section{Proposed Architecture Improvements}\label{c42}
+    \section{Architecture Refinement}\label{c43}
+    \begin{appendices}
     \end{appendices}
-        \bibliography{MidThesisTemplate}
+    \printglossary[type=\acronymtype,title=List Of Acronyms]
+    \bibliography{MidThesisTemplate}
+
 \end{document}

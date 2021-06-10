@@ -1,14 +1,24 @@
-\contentsline {chapter}{\numberline {1}\centering Introduction}{3}{chapter.1}%
-\contentsline {chapter}{\numberline {2}\centering Literature Review}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Section 2.1}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Section 2.2}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Section 2.3}{4}{section.2.3}%
-\contentsline {chapter}{\numberline {3}\centering Chapter 3}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Section 3.1}{5}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Section 3.2}{5}{section.3.2}%
-\contentsline {chapter}{\numberline {4}\centering Chapter 4}{6}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Section 4.1}{6}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Section 4.2}{6}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Section 4.3}{6}{section.4.3}%
-\contentsline {chapter}{Appendices}{7}{section*.3}%
-\contentsline {chapter}{Appendix \numberline {A}Research Proposal}{8}{appendix.1.A}%
+\contentsline {chapter}{List of Figures}{3}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{4}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}\centering Introduction}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Background Of The Study}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Aims And Objectives}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Scope Of The Study}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Significance Of The Study}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Structure Of The Study}{5}{section.1.5}%
+\contentsline {chapter}{\numberline {2}\centering Literature Review}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Question Answering Using Neural Nets}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Question Answering Using LSTMs}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Question Answering Using Transformers}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Comparison Of Techniques}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Summary}{7}{section.2.5}%
+\contentsline {chapter}{\numberline {3}\centering Research Methodology}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data Selection}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Existing Models And Benchmarks}{8}{section.3.3}%
+\contentsline {chapter}{\numberline {4}\centering Architecture Creation}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{9}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Architecture Refinement}{9}{section.4.3}%
+\contentsline {chapter}{Appendices}{10}{section*.4}%
+\contentsline {chapter}{Bibliography}{12}{appendix*.5}%

@@ -1,56 +1,9 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Corsair()]{Ram}
-Corsair.
-\newblock Vengeance® lpx 8gb (1 x 8gb) ddr4 dram 2400mhz c14 memory kit -
-  black.
-\newblock URL
-  \url{https://www.corsair.com/uk/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK8GX4M1A2400C14}.
-\newblock Accessed: 2021-04-16.
-
-\bibitem[Dai and Le(2015)]{dai}
-A.~M. Dai and Q.~V. Le.
-\newblock Semi-supervised sequence learning.
-\newblock \emph{arXiv preprint arXiv:1511.01432}, 2015.
-
-\bibitem[Devlin et~al.(2018)Devlin, Chang, Lee, and Toutanova]{bert}
-J.~Devlin, M.-W. Chang, K.~Lee, and K.~Toutanova.
-\newblock Bert: Pre-training of deep bidirectional transformers for language
-  understanding.
-\newblock \emph{arXiv preprint arXiv:1810.04805}, 2018.
-
-\bibitem[Evga()]{evga}
-Evga.
-\newblock Evga geforce rtx 2070 super ko gaming, 08g-p4-2072-kr, 8gb gddr6,
-  dual fans.
-\newblock URL
-  \url{https://eu.evga.com/products/product.aspx?pn=08G-P4-2072-KR}.
-\newblock Accessed: 2021-04-16.
-
-\bibitem[Hochreiter et~al.(2001)Hochreiter, Bengio, Frasconi, Schmidhuber,
-  et~al.]{lstm}
-S.~Hochreiter, Y.~Bengio, P.~Frasconi, J.~Schmidhuber, et~al.
-\newblock Gradient flow in recurrent nets: the difficulty of learning long-term
-  dependencies, 2001.
-
-\bibitem[Intel()]{intel}
-Intel.
-\newblock Intel® core™ i7-10700 processor (16m cache, up to 4.80 ghz) -
-  product specifications.
-\newblock URL
-  \url{https://www.intel.co.uk/content/www/uk/en/products/sku/199316/intel-core-i710700-processor-16m-cache-up-to-4-80-ghz/specifications.html}.
-
-\bibitem[Lan et~al.(2019)Lan, Chen, Goodman, Gimpel, Sharma, and
-  Soricut]{albert}
-Z.~Lan, M.~Chen, S.~Goodman, K.~Gimpel, P.~Sharma, and R.~Soricut.
-\newblock Albert: A lite bert for self-supervised learning of language
-  representations.
-\newblock \emph{arXiv preprint arXiv:1909.11942}, 2019.
 
 \bibitem[Liu et~al.(2019)Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis,
   Zettlemoyer, and Stoyanov]{roberta}
@@ -59,39 +12,47 @@ Y.~Liu, M.~Ott, N.~Goyal, J.~Du, M.~Joshi, D.~Chen, O.~Levy, M.~Lewis,
 \newblock Roberta: A robustly optimized bert pretraining approach.
 \newblock \emph{arXiv preprint arXiv:1907.11692}, 2019.
 
+\bibitem[Lan et~al.(2019)Lan, Chen, Goodman, Gimpel, Sharma, and
+  Soricut]{albert}
+Z.~Lan, M.~Chen, S.~Goodman, K.~Gimpel, P.~Sharma, and R.~Soricut.
+\newblock Albert: A lite bert for self-supervised learning of language
+  representations.
+\newblock \emph{arXiv preprint arXiv:1909.11942}, 2019.
+
+\bibitem[Tan et~al.(2015)Tan, Xiang, and Zhou]{haighextractive}
+M.~Tan, B.~Xiang, and B.~Zhou.
+\newblock Lstm-based deep learning models for non-factoid answer selection.
+\newblock \emph{CoRR}, abs/1511.04108, 2015.
+\newblock URL \url{http://arxiv.org/abs/1511.04108}.
+
+\bibitem[Dai and Le(2015)]{dai}
+A.~M. Dai and Q.~V. Le.
+\newblock Semi-supervised sequence learning.
+\newblock \emph{arXiv preprint arXiv:1511.01432}, 2015.
+
+\bibitem[Wang et~al.(2018)Wang, Yan, and Wu]{wang}
+W.~Wang, M.~Yan, and C.~Wu.
+\newblock Multi-granularity hierarchical attention fusion networks for reading
+  comprehension and question answering.
+\newblock \emph{arXiv preprint arXiv:1811.11934}, 2018.
+
+\bibitem[Zhou et~al.(2016)Zhou, Cao, Wang, Li, and Xu]{recurrent}
+J.~Zhou, Y.~Cao, X.~Wang, P.~Li, and W.~Xu.
+\newblock Deep recurrent models with fast-forward connections for neural
+  machine translation.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  4:\penalty0 371--383, 2016.
+
+\bibitem[Devlin et~al.(2018)Devlin, Chang, Lee, and Toutanova]{bert}
+J.~Devlin, M.-W. Chang, K.~Lee, and K.~Toutanova.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock \emph{arXiv preprint arXiv:1810.04805}, 2018.
+
 \bibitem[Marcus et~al.(1993)Marcus, Santorini, and Marcinkiewicz]{wsj}
 M.~Marcus, B.~Santorini, and M.~A. Marcinkiewicz.
 \newblock Building a large annotated corpus of english: The penn treebank.
 \newblock 1993.
-
-\bibitem[Rajpurkar()]{squad}
-P.~Rajpurkar.
-\newblock Squad2.0.
-\newblock URL \url{https://rajpurkar.github.io/SQuAD-explorer/}.
-
-\bibitem[Rajpurkar et~al.(2018)Rajpurkar, Jia, and Liang]{dataset}
-P.~Rajpurkar, R.~Jia, and P.~Liang.
-\newblock Know what you don't know: Unanswerable questions for squad.
-\newblock \emph{CoRR}, abs/1806.03822, 2018.
-\newblock URL \url{http://arxiv.org/abs/1806.03822}.
-
-\bibitem[Sanh et~al.(2019)Sanh, Debut, Chaumond, and Wolf]{distil}
-V.~Sanh, L.~Debut, J.~Chaumond, and T.~Wolf.
-\newblock Distilbert, a distilled version of {BERT:} smaller, faster, cheaper
-  and lighter.
-\newblock \emph{CoRR}, abs/1910.01108, 2019.
-\newblock URL \url{http://arxiv.org/abs/1910.01108}.
-
-\bibitem[Schmidhuber and Hochreiter(1997)]{originallstm}
-J.~Schmidhuber and S.~Hochreiter.
-\newblock Long short-term memory.
-\newblock \emph{Neural Comput}, 9\penalty0 (8):\penalty0 1735--1780, 1997.
-
-\bibitem[Team()]{hfTransformers}
-T.~H.~F. Team.
-\newblock Transformers.
-\newblock URL \url{https://huggingface.co/transformers/}.
-\newblock Accessed: 2021-04-16.
 
 \bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
   Kaiser, and Polosukhin]{atayl}
@@ -100,11 +61,17 @@ A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
 \newblock Attention is all you need.
 \newblock \emph{arXiv preprint arXiv:1706.03762}, 2017.
 
-\bibitem[Wang et~al.(2018)Wang, Yan, and Wu]{wang}
-W.~Wang, M.~Yan, and C.~Wu.
-\newblock Multi-granularity hierarchical attention fusion networks for reading
-  comprehension and question answering.
-\newblock \emph{arXiv preprint arXiv:1811.11934}, 2018.
+\bibitem[Rajpurkar et~al.(2018)Rajpurkar, Jia, and Liang]{dataset}
+P.~Rajpurkar, R.~Jia, and P.~Liang.
+\newblock Know what you don't know: Unanswerable questions for squad.
+\newblock \emph{CoRR}, abs/1806.03822, 2018.
+\newblock URL \url{http://arxiv.org/abs/1806.03822}.
+
+\bibitem[Hochreiter et~al.(2001)Hochreiter, Bengio, Frasconi, Schmidhuber,
+  et~al.]{lstm}
+S.~Hochreiter, Y.~Bengio, P.~Frasconi, J.~Schmidhuber, et~al.
+\newblock Gradient flow in recurrent nets: the difficulty of learning long-term
+  dependencies, 2001.
 
 \bibitem[Weissenborn et~al.(2017)Weissenborn, Wiese, and Seiffe]{fastQA}
 D.~Weissenborn, G.~Wiese, and L.~Seiffe.
@@ -112,12 +79,5 @@ D.~Weissenborn, G.~Wiese, and L.~Seiffe.
   answering.
 \newblock \emph{CoRR}, abs/1703.04816, 2017.
 \newblock URL \url{http://arxiv.org/abs/1703.04816}.
-
-\bibitem[Zhou et~al.(2016)Zhou, Cao, Wang, Li, and Xu]{recurrent}
-J.~Zhou, Y.~Cao, X.~Wang, P.~Li, and W.~Xu.
-\newblock Deep recurrent models with fast-forward connections for neural
-  machine translation.
-\newblock \emph{Transactions of the Association for Computational Linguistics},
-  4:\penalty0 371--383, 2016.
 
 \end{thebibliography}
