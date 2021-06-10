@@ -1,0 +1,13 @@
+
+\begin{thenomenclature} 
+\nomgroup{A}
+  \item [{BPPTs}]\begingroup Back-Propagation Through Time\nomeqref {0}\nompageref{1}
+  \item [{LSTMs}]\begingroup Long Short-Term Memory Architectures\nomeqref {0}\nompageref{1}
+  \item [{MCTest}]\begingroup Machine Comprehension of Text\nomeqref {0}\nompageref{1}
+  \item [{NLP}]\begingroup Natural Language Processing\nomeqref {0}\nompageref{1}
+  \item [{NLU}]\begingroup Natural Language Understanding\nomeqref {0}\nompageref{1}
+  \item [{QASENT}]\begingroup A challenge dataset for open-domain question answering\nomeqref {0}\nompageref{1}
+  \item [{RACE}]\begingroup ReAding Comprehension Dataset From Examinations\nomeqref {0}\nompageref{1}
+  \item [{RNNs}]\begingroup Recurrent Neural Networks\nomeqref {0}\nompageref{1}
+
+\end{thenomenclature}

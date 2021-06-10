@@ -1,8 +1,12 @@
+%% VLTT = Very Light Transformer Traversal
+% VAULT = Very Albert-like Uniform Lite Transformer
+
 \documentclass[12pt]{report}
 % arara: pdflatex: { draft: true }
 % arara: makeglossaries
 % arara: pdflatex: { synctex: true }
 % arara: pdflatex: { synctex: true }
+% add makeIndex:makeIndex  makeindex %.nlo -s nomencl.ist -o %.nls to commands when running in
 \usepackage[square,sort,comma,numbers]{natbib}
 
 \bibliographystyle{abbrvnat}
@@ -15,25 +19,14 @@
 \usepackage[center]{caption}
 \usepackage{titlesec}
 \titleformat{\chapter}[display]{\bfseries\centering}{\huge Chapter \thechapter}{1em}{\Huge}
-%Load the package
-\usepackage[
-nonumberlist, %do not show page numbers
-acronym,      %generate acronym listing   -> Not used in this example (see line with %%% )
-toc,          %show listings as entries in table of contents
-section,%use section level for toc entries
-nopostdot]     %sont show . at the end
-{glossaries}
-\newglossary[slg]{symbols}{syi}{syg}{List of symbols}
-\newglossary{abbrev}{abs}{abo}{List of Abbreviations}
-\renewcommand*{\glspostdescription}{}
-%Activate glossary commands
-\makeglossaries
 %Load nomenclature and glossary files
 \usepackage[nottoc]{tocbibind}
-
+\usepackage[intoc]{nomencl}
+\makenomenclature
+\renewcommand{\nomname}{List of Abbreviations}
 
 \usepackage[page,toc,titletoc,title]{appendix}
-\usepackage{refcheck}
+%\usepackage{refcheck}
 \usepackage{datetime}
 
 \newdateformat{monthyeardate}{%
@@ -41,8 +34,20 @@ nopostdot]     %sont show . at the end
 
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \captionsetup{justification=centering,margin=2cm}
-\begin{document}
 
+
+\begin{document}
+%Nomenclature
+
+\nomenclature{RNNs}{Recurrent Neural Networks}
+\nomenclature{LSTMs}{Long Short-Term Memory Architectures}
+\nomenclature{NLP}{Natural Language Processing}
+\nomenclature{NLU}{Natural Language Understanding}
+\nomenclature{RACE}{ReAding Comprehension Dataset From Examinations}
+\nomenclature{MCTest}{Machine Comprehension of Text}
+\nomenclature{QASENT}{A challenge dataset for open-domain question answering}
+\nomenclature{BPPTs}{Back-Propagation Through Time}
+%
 
     \title{Develop New Transformer Architecture For \\ Question and Answering(QandA)}
 
@@ -58,6 +63,8 @@ nopostdot]     %sont show . at the end
     \newpage
     \listoffigures
     \listoftables
+    \printnomenclature
+
 
     \chapter{\centering Introduction}\label{c1}
         \section{Background Of The Study}\label{11}
@@ -68,14 +75,18 @@ nopostdot]     %sont show . at the end
     \chapter{\centering Literature Review}\label{c2}
         \section{Question Answering Using Neural Nets}\label{21}
         \section{Question Answering Using LSTMs}\label{22}
+        To be able to accurately assess the aims of this thesis that have been highlighted in \ref{12}, we must take a deeper look at the work done in the field of Long Short-Term Memory Architecture based models and their importance in NLP.
+
+        In this part of the literature review, our purpose is to highlight how LSTMs came to be \& their particular usage in the field of Question Answering.
         \begin{enumerate}
+            \item   In 1997 \cite{lstmoriginal} introduced to the world a gradient descent based model in the form of Long Short-Term Memory. They set out to solve the problem of the vanishing gradient which was often seen in "Back-Propagation Through Time"(BPPTs) based neural networks. Extensive studies done on this, some by Hochreiter himself, showed that the problem of vanishing gradients is a real one. It was also seen that in case of BPTTs, the error back-flow mechanisms would either blow up or also suffer from vanishing gradients leading to either oscillating weights or learning to bridge long time gaps would not work. To remediate this, the authors introduced the concept of a \textit{constant} error flow through the internal states of special units.
             \item \cite{lstm}
-             \item   \cite{lstmoriginal}
             \item   \cite{schmid}
-          \item  \cite{lstmhaighextractive}
-           \item \cite{lstmhu2016question}
-         \item   \cite{lstmintent}
-         \item \cite{fastQA}
+            \item  \cite{lstmhaighextractive}
+            \item \cite{lstmhu2016question}
+            \item   \cite{lstmintent}
+            \item \cite{fastQA}
+
 
         \end{enumerate}
 
@@ -105,7 +116,6 @@ nopostdot]     %sont show . at the end
     \section{Architecture Refinement}\label{c43}
     \begin{appendices}
     \end{appendices}
-    \printglossary[type=\acronymtype,title=List Of Acronyms]
-    \bibliography{MidThesisTemplate}
+\bibliography{MidThesisTemplate}
 
 \end{document}
