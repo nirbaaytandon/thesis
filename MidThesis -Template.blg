@@ -1,21 +1,53 @@
-This is 8-bit Big BibTeX version 0.99d
-Implementation:  C for Unix
-Release version: 3.71 (04 mar 2019)
-
-Error: cannot open CS file: 88591lat.csf
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: MidThesis -Template.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: abbrvnat.bst
-Reallocated glb_str_ptr (elt_size=8) to 10 items from 0.
-Reallocated global_strs (elt_size=200001) to 10 items from 0.
-Reallocated glb_str_end (elt_size=8) to 10 items from 0.
+Reallocating 'name_of_file' (item size: 1) to 18 items.
 Database file #1: MidThesisTemplate.bib
+Warning--I didn't find a database entry for "originallstm"
+Warning--empty journal in wsj
 Warning--empty year in squad
-
-Here's how much of BibTeX's memory you used:
- Cites:                14 out of 750
- Fields:               44 out of 5000
- Hash table:       199794 out of 200000
- Strings:             671 out of 200000
- Free string pool:   7168 out of 65000
- Wizard functions:   2773 out of 3000
-(There was 1 warning)
+Warning--empty year in hfTransformers
+You've used 20 entries,
+            2773 wiz_defined-function locations,
+            703 strings with 8146 characters,
+and the built_in function-call counts, 9206 in all, are:
+= -- 769
+> -- 699
+< -- 7
++ -- 236
+- -- 216
+* -- 762
+:= -- 1495
+add.period$ -- 67
+call.type$ -- 20
+change.case$ -- 131
+chr.to.int$ -- 20
+cite$ -- 43
+duplicate$ -- 380
+empty$ -- 651
+format.name$ -- 242
+if$ -- 1864
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 16
+newline$ -- 115
+num.names$ -- 80
+pop$ -- 262
+preamble$ -- 1
+purify$ -- 111
+quote$ -- 0
+skip$ -- 324
+stack$ -- 0
+substring$ -- 118
+swap$ -- 19
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 220
+warning$ -- 3
+while$ -- 66
+width$ -- 0
+write$ -- 267
+(There were 4 warnings)

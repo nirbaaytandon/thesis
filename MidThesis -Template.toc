@@ -1,25 +1,27 @@
 \contentsline {chapter}{List of Figures}{3}{chapter*.2}%
 \contentsline {chapter}{List of Tables}{4}{chapter*.3}%
 \contentsline {chapter}{\nonumberline List of Abbreviations}{5}{chapter*.4}%
-\contentsline {chapter}{\numberline {1}\centering Introduction}{6}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Background Of The Study}{6}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Aims And Objectives}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Scope Of The Study}{6}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Significance Of The Study}{6}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Structure Of The Study}{6}{section.1.5}%
-\contentsline {chapter}{\numberline {2}\centering Literature Review}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Question Answering Using Neural Nets}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Question Answering Using LSTMs}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Question Answering Using Transformers}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Comparison Of Techniques}{8}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Summary}{8}{section.2.5}%
-\contentsline {chapter}{\numberline {3}\centering Research Methodology}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data Selection}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{9}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Existing Models And Benchmarks}{9}{section.3.3}%
-\contentsline {chapter}{\numberline {4}\centering Architecture Creation}{10}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{10}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{10}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Architecture Refinement}{10}{section.4.3}%
-\contentsline {chapter}{Appendices}{11}{section*.5}%
-\contentsline {chapter}{Bibliography}{12}{appendix*.6}%
+\contentsline {chapter}{\numberline {1}\centering Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Background Of The Study}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Background}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Related Research}{3}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Aims And Objectives}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Scope Of The Study}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Significance Of The Study}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Structure Of The Study}{3}{section.1.5}%
+\contentsline {chapter}{\numberline {2}\centering Literature Review}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Question Answering Using Neural Nets}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Question Answering Using LSTMs}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Question Answering Using Transformers}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Comparison Of Techniques}{9}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Summary}{9}{section.2.5}%
+\contentsline {chapter}{\numberline {3}\centering Research Methodology}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data Selection}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Existing Models And Benchmarks}{11}{section.3.3}%
+\contentsline {chapter}{\numberline {4}\centering Architecture Creation}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Architecture Refinement}{12}{section.4.3}%
+\contentsline {chapter}{Appendices}{13}{section*.8}%
+\contentsline {chapter}{Bibliography}{14}{appendix*.9}%
