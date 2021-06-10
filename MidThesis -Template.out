@@ -13,15 +13,17 @@
 \BOOKMARK [1][-]{section.2.1}{Question Answering Using Neural Nets}{chapter.2}% 13
 \BOOKMARK [1][-]{section.2.2}{Question Answering Using LSTMs}{chapter.2}% 14
 \BOOKMARK [1][-]{section.2.3}{Question Answering Using Transformers}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.4}{Comparison Of Techniques}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.5}{Summary}{chapter.2}% 17
-\BOOKMARK [0][-]{chapter.3}{=Research Methodology}{}% 18
-\BOOKMARK [1][-]{section.3.1}{Data Selection}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.2}{Data Pre-processing And Transformation}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.3}{Existing Models And Benchmarks}{chapter.3}% 21
-\BOOKMARK [0][-]{chapter.4}{=Architecture Creation}{}% 22
-\BOOKMARK [1][-]{section.4.1}{Drawbacks Of Current Architectures}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.2}{Proposed Architecture Improvements}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.3}{Architecture Refinement}{chapter.4}% 25
-\BOOKMARK [0][-]{section*.8}{Appendices}{}% 26
-\BOOKMARK [0][-]{appendix*.9}{Bibliography}{}% 27
+\BOOKMARK [2][-]{subsection.2.3.1}{Self Attention}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.2}{Improvements of Transformer Architectures}{section.2.3}% 17
+\BOOKMARK [1][-]{section.2.4}{Comparison Of Techniques}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.5}{Summary}{chapter.2}% 19
+\BOOKMARK [0][-]{chapter.3}{=Research Methodology}{}% 20
+\BOOKMARK [1][-]{section.3.1}{Data Selection}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.2}{Data Pre-processing And Transformation}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.3}{Existing Models And Benchmarks}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{=Architecture Creation}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Drawbacks Of Current Architectures}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.2}{Proposed Architecture Improvements}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.3}{Architecture Refinement}{chapter.4}% 27
+\BOOKMARK [0][-]{section*.8}{Appendices}{}% 28
+\BOOKMARK [0][-]{appendix*.9}{Bibliography}{}% 29

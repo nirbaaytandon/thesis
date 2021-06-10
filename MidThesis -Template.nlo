@@ -6,3 +6,4 @@
 \nomenclatureentry{aMCTest@[{MCTest}]\begingroup Machine Comprehension of Text\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{aQASENT@[{QASENT}]\begingroup A challenge dataset for open-domain question answering\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{aBPPTs@[{BPPTs}]\begingroup Back-Propagation Through Time\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aSQuAD@[{SQuAD}]\begingroup Stanford Question Answering Dataset\nomeqref {0}|nompageref}{1}

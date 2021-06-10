@@ -47,6 +47,7 @@
 \nomenclature{MCTest}{Machine Comprehension of Text}
 \nomenclature{QASENT}{A challenge dataset for open-domain question answering}
 \nomenclature{BPPTs}{Back-Propagation Through Time}
+\nomenclature{SQuAD}{Stanford Question Answering Dataset}
 %
 
     \title{Develop New Transformer Architecture For \\ Question and Answering(QandA)}
@@ -64,7 +65,7 @@
     \listoffigures
     \listoftables
     \printnomenclature
-	\begin{abstract}
+	\begin{abstract}		
 		Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of our work will be to create a new kind of Transformer architecture. Compare and contrast its performance against other architectures such as BERT, DistilBERT, ALBERT etc. using the SQuAD 2.0 Dataset. Through our research, we aim to produce a new architecture that has a better performance than existing models specifically for Question Answering based applications.
 	\end{abstract}
 
@@ -109,76 +110,70 @@
     \chapter{\centering Literature Review}\label{c2}
         \section{Question Answering Using Neural Nets}\label{21}
         \section{Question Answering Using LSTMs}\label{22}
-        To be able to accurately assess the aims of this thesis that have been highlighted in \ref{12}, we must take a deeper look at the work done in the field of Long Short-Term Memory Architecture based models and their importance in NLP.
-
-        In this part of the literature review, our purpose is to highlight how LSTMs came to be \& their particular usage in the field of Question Answering.
-        \begin{enumerate}
-            \item   In 1997 \cite{lstmoriginal} introduced to the world a gradient descent based model in the form of Long Short-Term Memory. They set out to solve the problem of the vanishing gradient which was often seen in "Back-Propagation Through Time"(BPPTs) based neural networks. Extensive studies done on this, some by Hochreiter himself, showed that the problem of vanishing gradients is a real one. It was also seen that in case of BPTTs, the error back-flow mechanisms would either blow up or also suffer from vanishing gradients leading to either oscillating weights or learning to bridge long time gaps would not work. To remediate this, the authors introduced the concept of a \textit{constant} error flow through the internal states of special units.
-            \item \cite{lstm}
-            \item   \cite{schmid}
-            \item  \cite{lstmhaighextractive}
-            \item \cite{lstmhu2016question}
-            \item   \cite{lstmintent}
-            \item \cite{fastQA}
-        \end{enumerate}
-
-        \section{Question Answering Using Transformers}\label{23}
-        
-
-            \begin{enumerate}
-            		\item The SQuAD 2.0 Dataset \citep{dataset}, was developed with funding from Facebook to help address some major issues with existing datasets. Most datasets focus on questions that can be easily answered or use of automatically generated, unanswerable questions which are easily identifiable.\\
-            		The SQuAD 2.0 dataset resolves this by combining the SQuAD dataset along with 50,000 crowd worker generated unanswerable questions. The key feature of these being that the unanswerable questions must look similar to answerable ones. For a model to be successful on this new dataset, it must be able to answer all possibly answerable questions as well as determine when no answers are provided for a question in the given paragraph and abstain from answering. A comparative study was done for a Natural Language Understanding(NLU) task that obtained an 86\% score on SQuAD 1.1, only got 66\% on the new 2.0 dataset.
-            		The dataset helps bridge the gap between true NLU and machine understanding by using the concept of Relevance. Through comparisons with various datasets such as RACE, MCTest, QASENT etc. they have identified the missing links like negative examples, antonyms and helped fill the gap. This dataset forces the models to understand whether a paragraph span has the answer to the question posed.
-            		
-            		\item Work done in the field of Long short-term and gated recurrent \citep{lstm} and \citep{recurrent} neural networks, in particular, has been established as a state of the art approach in sequence modelling, transduction problems such as language modelling and machine translation.
-            		In their paper Attention Is All You Need,\citep{atayl} the team set out to resolve problems in the parallelization and increased compute times of recurrent models. The inherently sequential nature of RNNs causes issues in memory constraints, leading to reduced batch sizes.\\
-            		\begin{figure}[h!]
-            			\centering
-            			\includegraphics[scale=0.25]{transformer.png}
-            			\label{fig1}
-            			\caption{Transformer Architecture built by \citep{atayl}}
-            		\end{figure}
-            		The architecture for a \textit{Transformer} in this paper is outlined as having an encoder that maps input sequences to a continuous representation. The architecture can be seen above in Figure 1. This is then decoded into an output sequence of symbols one at a time. Each step is auto-regressive, i.e. it consumes the previously generated symbols as additional input when creating the next. This is similar to an ensemble model. Stacks of 6 encoder layers and 6 decoder layers is used.\\
-            		The encoder layers each have 2 sub-layers of a multi-head self-attention and the other a simple, position-wise fully connected feed-forward network layer.\\
-            		The decoder layer is similar to the encoder layer and has an additional 3rd sub-layer that performs multi-head attention over the output of the encoders. There is also normalization and  the outputs are prevented from attending to subsequent positions. \\ The attention mechanism can be described as mapping a query to a set of key-value pairs. This can be seen from Figure 2, below. \\The evaluations performed on the Wall Street Journal dataset\citep{wsj}, using 40k sentences, showed that even without task-specific tuning the model had better results with a fraction of the training cost.
-            		\begin{figure}[h!]
-            			\centering
-            			\includegraphics[scale=0.4]{multihead.png}
-            			\label{fig2}
-            			\caption{Scale Dot and Multihead Attention Models \cite{atayl}}
-            		\end{figure}
-            		\item The paper on BERT, which is \textit{Bidirectional Encoder Representations from Transformers} \citep{bert}, introduces a new language model. This model is truly fascinating in many ways. First and foremost it is designed to pre-train deep bidirectional representations using unlabelled data. This is done by jointly conditioning context in all layers to the right and left. This pre-training allows the model to be fine-tuned simply using one additional output layer. These features make this model conceptually simple and very powerful empirically.
-            		
-            		BERT employs language pre-training \citep{dai} which has shown significant advantages in many applications e.g. paraphrasing, language level inference etc. These tasks aim to highlight the relationships between sentences through contextual understanding as well as by using tokenized outputs.
-            		\begin{figure}[h!]
-            			\centering
-            			\includegraphics[scale=0.35]{BERT.png}
-            			\label{fig3}
-            			\caption{Pre-training and Fine Tuning procedures for BERT \citep{bert}}
-            		\end{figure}
-            		
-            		BERT was tested on The General Language Understanding Evaluation (GLUE) benchmark \citep{wang} which has a large number of diverse NLU tasks.
-            		BERT performed extremely well on the 11 NLP tasks that the authors ran it against. it showed an average accuracy improvement of 4.5\% and 7\% when compared to the previous state of the art models. Results of BERT and its significant gains make it one of the best candidate models for NLU tasks.
-            		
-
-            	
-                \item \cite{atayl}
-                \item \cite{bert}
-                \item \cite{albert}
-                \item \cite{roberta}
-                \item \cite{distil}
-                \item \cite{squad}
-                
-                Several advancements have been made to the BERT model to make it fast, better at understanding and even performing application-specific tasks such as Q\&A.
-                
-                The SQuAD 2.0 dataset has inspired an LSTM based FastQA \citep{fastQA} model architecture. This architecture takes cues from the work done by Hochreiter and Schmidhuber in their work on Long Short-Term Memory Architecture \citep{lstm}, to create a model specifically for end-to-end question answering systems.
-                
-                A common theme with BERT is that it takes a long time to train. Especially in the BERT based RoBERTa architecture \cite{roberta}. RoBERTa takes on average 4-5 times more time to train than BERT, however, it also shows a maximum of 20\% improvement over BERT, depending on the application. ALBERT, which is A Liter BERT, \cite{albert} was developed specifically to deal with memory limitations and reduce training times. ALBERT's XXL implementation has been documented to perform better in models trained on the BOOKCORPUS and Wikipedia ones by at least 2\% across multiple applications. In a smaller amount of time.
-                
-                However, none of these model architectures has been able to address all the problems and serve as more generic solutions to multiple end-to-end sequence encoding problems across various applications.
-                
-                Our work is primarily focused on building a fast model that allows for higher accuracy in responses specifically with Q\&A systems.
-            \end{enumerate}
+	        To be able to accurately assess the aims of this thesis that have been highlighted in \ref{12}, we must take a deeper look at the work done in the field of Long Short-Term Memory Architecture based models and their importance in NLP.
+	
+	        In this part of the literature review, our purpose is to highlight how LSTMs came to be \& their particular usage in the field of Question Answering.
+	        \begin{enumerate}
+	            \item   In 1997 \cite{lstmoriginal} introduced to the world a gradient descent based model in the form of Long Short-Term Memory. They set out to solve the problem of the vanishing gradient which was often seen in "Back-Propagation Through Time"(BPPTs) based neural networks. Extensive studies done on this, some by Hochreiter himself, showed that the problem of vanishing gradients is a real one. It was also seen that in case of BPTTs, the error back-flow mechanisms would either blow up or also suffer from vanishing gradients leading to either oscillating weights or learning to bridge long time gaps would not work. To remediate this, the authors introduced the concept of a \textit{constant} error flow through the internal states of special units.
+	            \item \cite{lstm}
+	            \item   \cite{schmid}
+	            \item  \cite{lstmhaighextractive}
+	            \item \cite{lstmhu2016question}
+	            \item   \cite{lstmintent}
+	            \item \cite{fastQA}
+	        \end{enumerate}
+	
+	    \section{Question Answering Using Transformers}\label{23}
+	        
+	        Transformer based models have been become a very reliable way to implement various NLP based tasks since their introduction in the late 2017 \cite{atayl}. In this section we will critically evaluate a few key transformer based architectures \& assess their application particularly on the SQuAD 2.0 dataset. 
+	            
+	        Work done in the field of Long short-term and gated recurrent \citep{lstm} and \citep{recurrent} neural networks, in particular, has been established as a state of the art approach in sequence modelling, transduction problems such as language modelling and machine translation.  Efforts have been made to push the boundaries of encoder-decoder based \& recurrent language models.
+	        
+	        Recurrent models usually adopt a combination approach where they take symbol position of the input and output positions along with the computation. This helps them align positions to steps in computation time and generate a sequence of hidden states $ h_{t} $, which is a function of the previous hidden state $ h_{t-1}$ and the input function $ t $.  This inherently sequential nature of RNNs causes memory issues, leading to reduced batch sizes. \\
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[scale=0.4]{transformer.png}
+				\caption{Transformer Architecture built by \citep{atayl}}\label{transformerArchitecture}
+			\end{figure}
+			The architecture for a \textit{Transformer} in this paper is outlined as having an encoder that maps input sequences to a continuous representation. The architecture can be seen in Fig. \ref{transformerArchitecture}. This is then decoded into an output sequence of symbols one at a time. Each step is auto-regressive, i.e. it consumes the previously generated symbols as additional input when creating the next. This is similar to an ensemble model. Stacks of 6 encoder and 6 decoder layers is used.\\
+			Each encoder layer has 2 sub-layers of a multi-head self-attention and the other a simple, position-wise fully connected feed-forward network layer. The output from each encoder layer can be represented as $  LayerNorm(x + Sublayer(x)) $, where $ Sublayer(x) $ is the function implemented by the sub-layers in the model. Additionally, supporting residual connections is handled by producing outputs of dimension $ d_{model}=512 $.
+			
+			The decoder layer is similar to the encoder layer and has an additional 3rd sub-layer that performs multi-head attention over the output of the encoders. To ensure that the output layer isn't affected by the output of residual connections from the sub-layers, a normalization layer is implemented at the end. Masking the subsequent positions and offsetting the output by 1 position ensures that the predictions for position $ i $ can only depend on outputs from previous positions.
+			
+			One of the key features in the Transformer architectures is \textit{self-attention}. Let us look at this in detail below.
+			\subsection{Self Attention}\label{231}
+			The attention mechanism can be described as mapping a query to a set of key-value pairs. This can be seen from Fig. \ref{multiHeadAttention}. \\The evaluations performed on the Wall Street Journal dataset\citep{wsj}, using 40k sentences, showed that even without task-specific tuning the model had better results with a fraction of the training cost.
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[scale=0.4]{multihead.png}
+				\caption{Scale Dot and Multihead Attention Models \cite{atayl}}\label{multiHeadAttention}
+			\end{figure}
+		
+		\subsection{Improvements of Transformer Architectures}\label{232}
+		
+		\subsubsection{BERT}\label{2321}
+			
+			The paper on BERT, which is \textit{Bidirectional Encoder Representations from Transformers} \citep{bert}, introduces a new language model. This model is truly fascinating in many ways. First and foremost it is designed to pre-train deep bidirectional representations using unlabelled data. This is done by jointly conditioning context in all layers to the right and left. This pre-training allows the model to be fine-tuned simply using one additional output layer. These features make this model conceptually simple and very powerful empirically.
+			
+			BERT employs language pre-training \citep{dai} which has shown significant advantages in many applications e.g. paraphrasing, language level inference etc. These tasks aim to highlight the relationships between sentences through contextual understanding as well as by using tokenized outputs.
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[scale=0.35]{BERT.png}
+				\label{bertPretraining}
+				\caption{Pre-training and Fine Tuning procedures for BERT \citep{bert}}
+			\end{figure}
+			
+			BERT was tested on The General Language Understanding Evaluation (GLUE) benchmark \citep{wang} which has a large number of diverse NLU tasks.
+			BERT performed extremely well on the 11 NLP tasks that the authors ran it against. it showed an average accuracy improvement of 4.5\% and 7\% when compared to the previous state of the art models. Results of BERT and its significant gains make it one of the best candidate models for NLU tasks.
+	       
+	       \subsubsection{ALBERT}\label{2322}
+	       \cite{albert}
+	       
+	       \subsubsection{ROBERTA}\label{2323}
+	       \cite{roberta}
+	       
+	       \subsubsection{DISTILBERT}\label{2324}
+	       \cite{distil}
         \section{Comparison Of Techniques}\label{24}
         \section{Summary}\label{25}
         \citep{RAM}
@@ -212,6 +207,11 @@
     	\item Generating indexes for when an answer begins and ends in the dataset
     	\item Adding answer tokens based on their encoded positions
     \end{enumerate}
+
+The SQuAD 2.0 Dataset \citep{dataset}, was developed with funding from Facebook to help address some major issues with existing datasets. Most datasets focus on questions that can be easily answered or use of automatically generated, unanswerable questions which are easily identifiable.\\
+The SQuAD 2.0 dataset resolves this by combining the SQuAD dataset along with 50,000 crowd worker generated unanswerable questions. The key feature of these being that the unanswerable questions must look similar to answerable ones. For a model to be successful on this new dataset, it must be able to answer all possibly answerable questions as well as determine when no answers are provided for a question in the given paragraph and abstain from answering. A comparative study was done for a Natural Language Understanding(NLU) task that obtained an 86\% score on SQuAD 1.1, only got 66\% on the new 2.0 dataset.
+The dataset helps bridge the gap between true NLU and machine understanding by using the concept of Relevance. Through comparisons with various datasets such as RACE, MCTest, QASENT etc. they have identified the missing links like negative examples, antonyms and helped fill the gap. This dataset forces the models to understand whether a paragraph span has the answer to the question posed.
+
     \section{Data Pre-processing And Transformation}\label{c32}
     \section{Existing Models And Benchmarks}\label{c33}
     \chapter{\centering Architecture Creation}\label{c4}

@@ -13,15 +13,21 @@
 \contentsline {section}{\numberline {2.1}Question Answering Using Neural Nets}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Question Answering Using LSTMs}{4}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Question Answering Using Transformers}{5}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Self Attention}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Improvements of Transformer Architectures}{7}{subsection.2.3.2}%
+\contentsline {subsubsection}{BERT}{7}{subsection.2.3.2}%
+\contentsline {subsubsection}{ALBERT}{8}{figure.caption.7}%
+\contentsline {subsubsection}{ROBERTA}{8}{figure.caption.7}%
+\contentsline {subsubsection}{DISTILBERT}{8}{figure.caption.7}%
 \contentsline {section}{\numberline {2.4}Comparison Of Techniques}{9}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Summary}{9}{section.2.5}%
 \contentsline {chapter}{\numberline {3}\centering Research Methodology}{10}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Data Selection}{10}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{11}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Existing Models And Benchmarks}{11}{section.3.3}%
-\contentsline {chapter}{\numberline {4}\centering Architecture Creation}{12}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{12}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{12}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Architecture Refinement}{12}{section.4.3}%
-\contentsline {chapter}{Appendices}{13}{section*.8}%
-\contentsline {chapter}{Bibliography}{14}{appendix*.9}%
+\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Existing Models And Benchmarks}{12}{section.3.3}%
+\contentsline {chapter}{\numberline {4}\centering Architecture Creation}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Architecture Refinement}{13}{section.4.3}%
+\contentsline {chapter}{Appendices}{14}{section*.8}%
+\contentsline {chapter}{Bibliography}{15}{appendix*.9}%
