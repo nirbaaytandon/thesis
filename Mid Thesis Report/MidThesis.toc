@@ -31,4 +31,4 @@
 \contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{16}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Architecture Refinement}{16}{section.4.3}%
 \contentsline {chapter}{Appendices}{17}{section*.10}%
-\contentsline {chapter}{References}{18}{appendix*.11}%
+\contentsline {chapter}{References}{19}{appendix*.12}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  11 JUN 2021 16:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  11 JUN 2021 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -612,7 +612,7 @@ l.114
        [4
 
 ]
-<../images/lstm-memorycell.png, id=246, 1169.36874pt x 492.84125pt>
+<../images/lstm-memorycell.png, id=248, 1169.36874pt x 492.84125pt>
 File: ../images/lstm-memorycell.png Graphic file (type png)
 <use ../images/lstm-memorycell.png>
 Package pdftex.def Info: ../images/lstm-memorycell.png  used on input line 117.
@@ -630,7 +630,7 @@ been already used, duplicate ignored
 l.123             \begin{equation}
                                   \label{eq1} [5 <../images/lstm-memorycell.png
 >]
-<../images/lstm-network.png, id=264, 1276.77pt x 736.7525pt>
+<../images/lstm-network.png, id=266, 1276.77pt x 736.7525pt>
 File: ../images/lstm-network.png Graphic file (type png)
 <use ../images/lstm-network.png>
 Package pdftex.def Info: ../images/lstm-network.png  used on input line 151.
@@ -650,19 +650,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package natbib Warning: Citation `lstm' on page 8 undefined on input line 189.
 
 [8]
-<../images/transformer.png, id=315, 508.90125pt x 599.99156pt>
+<../images/transformer.png, id=317, 508.90125pt x 599.99156pt>
 File: ../images/transformer.png Graphic file (type png)
 <use ../images/transformer.png>
 Package pdftex.def Info: ../images/transformer.png  used on input line 194.
 (pdftex.def)             Requested size: 203.55688pt x 239.99237pt.
  [9 <../images/transformer.PNG>]
-<../images/multihead.png, id=329, 746.03719pt x 436.63126pt>
+<../images/multihead.png, id=331, 746.03719pt x 436.63126pt>
 File: ../images/multihead.png Graphic file (type png)
 <use ../images/multihead.png>
 Package pdftex.def Info: ../images/multihead.png  used on input line 207.
 (pdftex.def)             Requested size: 298.40958pt x 174.6494pt.
  [10 <../images/multihead.PNG>]
-<../images/BERT.png, id=342, 1086.0575pt x 479.7925pt>
+<../images/BERT.png, id=344, 1086.0575pt x 479.7925pt>
 File: ../images/BERT.png Graphic file (type png)
 <use ../images/BERT.png>
 Package pdftex.def Info: ../images/BERT.png  used on input line 220.
@@ -786,7 +786,24 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ] [17
 
 
-] (./MidThesis.bbl [18
+]
+<../images/GanttChart-mid.png, id=404, 1059.96pt x 819.06pt>
+File: ../images/GanttChart-mid.png Graphic file (type png)
+<use ../images/GanttChart-mid.png>
+Package pdftex.def Info: ../images/GanttChart-mid.png  used on input line 282.
+(pdftex.def)             Requested size: 582.9798pt x 450.48439pt.
+
+Overfull \hbox (60.48439pt too wide) in paragraph at lines 282--283
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 58.07979pt on input line 284.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./MidThesis.bbl [18 <../images/GanttChart-mid.png>] [19
 
 ]
 Underfull \hbox (badness 2903) in paragraph at lines 118--124
@@ -800,32 +817,32 @@ Underfull \hbox (badness 5832) in paragraph at lines 126--129
  rajpurkar . github . io /
  []
 
-[19])
+[20])
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
-[20]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
+[21]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
  (./MidThesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
 Package rerunfilecheck Info: File `MidThesis.out' has not changed.
-(rerunfilecheck)             Checksum: D3336A4EAC94F32F8D3481C0E981B809;1843.
+(rerunfilecheck)             Checksum: 54DEA992D101B6DDC2092BB27C20F258;1843.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 288.
  ) 
 Here is how much of TeX's memory you used:
- 9440 strings out of 483183
- 147261 string characters out of 5966291
- 463350 words of memory out of 5000000
- 24178 multiletter control sequences out of 15000+600000
+ 9449 strings out of 483183
+ 147477 string characters out of 5966291
+ 463412 words of memory out of 5000000
+ 24184 multiletter control sequences out of 15000+600000
  540931 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,7n,63p,1054b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,8n,63p,1054b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/nirbhay/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.6
 00pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/s
@@ -841,10 +858,10 @@ m/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on MidThesis.pdf (27 pages, 637518 bytes).
+Output written on MidThesis.pdf (28 pages, 681813 bytes).
 PDF statistics:
- 507 PDF objects out of 1000 (max. 8388607)
- 446 compressed objects within 5 object streams
- 91 named destinations out of 1000 (max. 500000)
- 250 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 515 PDF objects out of 1000 (max. 8388607)
+ 451 compressed objects within 5 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 255 words of extra memory for PDF output out of 10000 (max. 10000000)
 
