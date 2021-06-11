@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -9,6 +9,12 @@
 J{\"u}rgen Schmidhuber and Sepp Hochreiter.
 \newblock Long short-term memory.
 \newblock \emph{Neural Comput}, 9\penalty0 (8):\penalty0 1735--1780, 1997.
+
+\bibitem[Graves and Schmidhuber(2005)]{lstmBiLSTM}
+A.~Graves and J.~Schmidhuber.
+\newblock Framewise phoneme classification with bidirectional lstm networks.
+\newblock 4:\penalty0 2047--2052 vol. 4, 2005.
+\newblock \doi{10.1109/IJCNN.2005.1556215}.
 
 \bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
   Kaiser, and Polosukhin]{atayl}
@@ -22,6 +28,19 @@ Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
 \newblock Bert: Pre-training of deep bidirectional transformers for language
   understanding.
 \newblock \emph{arXiv preprint arXiv:1810.04805}, 2018.
+
+\bibitem[Green~Jr et~al.(1961)Green~Jr, Wolf, Chomsky, and
+  Laughery]{green1961baseball}
+Bert~F Green~Jr, Alice~K Wolf, Carol Chomsky, and Kenneth Laughery.
+\newblock Baseball: an automatic question-answerer.
+\newblock In \emph{Papers presented at the May 9-11, 1961, western joint
+  IRE-AIEE-ACM computer conference}, pages 219--224, 1961.
+
+\bibitem[Woods and WA(1977)]{lunar}
+William~A Woods and WOODS WA.
+\newblock Lunar rocks in natural english: Explorations in natural language
+  question answering.
+\newblock 1977.
 
 \bibitem[Rajpurkar et~al.(2018)Rajpurkar, Jia, and Liang]{dataset}
 Pranav Rajpurkar, Robin Jia, and Percy Liang.

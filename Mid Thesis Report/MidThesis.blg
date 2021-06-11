@@ -5,48 +5,50 @@ The style file: unsrtnat.bst
 Database file #1: MidThesis.bib
 Warning--I didn't find a database entry for "originallstm"
 Warning--I didn't find a database entry for "lstm"
+Warning--empty journal in lstmBiLSTM
+Warning--empty journal in lunar
 Warning--empty year in hfTransformers
 Warning--empty journal in wsj
 Warning--empty year in squad
-You've used 19 entries,
+You've used 22 entries,
             2481 wiz_defined-function locations,
-            657 strings with 7809 characters,
-and the built_in function-call counts, 6840 in all, are:
-= -- 526
-> -- 451
-< -- 8
-+ -- 172
-- -- 134
-* -- 513
-:= -- 1167
-add.period$ -- 65
-call.type$ -- 19
-change.case$ -- 38
-chr.to.int$ -- 19
-cite$ -- 22
-duplicate$ -- 342
-empty$ -- 575
-format.name$ -- 159
-if$ -- 1412
+            675 strings with 8402 characters,
+and the built_in function-call counts, 8163 in all, are:
+= -- 643
+> -- 508
+< -- 11
++ -- 194
+- -- 150
+* -- 607
+:= -- 1361
+add.period$ -- 75
+call.type$ -- 22
+change.case$ -- 44
+chr.to.int$ -- 22
+cite$ -- 27
+duplicate$ -- 410
+empty$ -- 700
+format.name$ -- 182
+if$ -- 1705
 int.to.chr$ -- 1
-int.to.str$ -- 20
-missing$ -- 16
-newline$ -- 111
-num.names$ -- 57
-pop$ -- 163
+int.to.str$ -- 23
+missing$ -- 19
+newline$ -- 127
+num.names$ -- 66
+pop$ -- 194
 preamble$ -- 1
-purify$ -- 19
+purify$ -- 22
 quote$ -- 0
-skip$ -- 219
+skip$ -- 266
 stack$ -- 0
-substring$ -- 126
-swap$ -- 46
-text.length$ -- 1
+substring$ -- 212
+swap$ -- 60
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 133
-warning$ -- 3
-while$ -- 45
+type$ -- 154
+warning$ -- 5
+while$ -- 55
 width$ -- 0
-write$ -- 257
-(There were 5 warnings)
+write$ -- 295
+(There were 7 warnings)

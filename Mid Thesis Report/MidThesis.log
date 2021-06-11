@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  11 JUN 2021 17:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  11 JUN 2021 22:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -435,7 +435,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 ...ring Architecture Creation}{16}{chapter.4}
+l.28 ...ne {chapter}{References}{20}{appendix*.13}
                                                   % [1
 
 ])
@@ -508,341 +508,291 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\z@skip' on input line 66.
 
-
-LaTeX Warning: Reference `introduction' on page 1 undefined on input line 72.
-
-
-LaTeX Warning: Reference `backRR' on page 1 undefined on input line 72.
-
-
-LaTeX Warning: Reference `aims' on page 1 undefined on input line 72.
-
-
-LaTeX Warning: Reference `researchMeth' on page 1 undefined on input line 72.
-
-
-LaTeX Warning: Reference `expectedoutcomes' on page 1 undefined on input line 7
-2.
-
-
-LaTeX Warning: Reference `resources' on page 1 undefined on input line 73.
-
-
-LaTeX Warning: Reference `plan' on page 1 undefined on input line 73.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.74 
+l.73 
       [1
 
 ]
 
+LaTeX Warning: Reference `c2' on page 2 undefined on input line 77.
+
+
+LaTeX Warning: Reference `back' on page 2 undefined on input line 84.
+
+
+LaTeX Warning: Reference `rr' on page 2 undefined on input line 84.
+
+
 Package natbib Warning: Citation `originallstm' on page 2 undefined on input li
-ne 80.
+ne 86.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 
+l.87 
       [2]pdfTeX warning (ext4): destination with the same identifier (name{page
 .3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.104     \chapter
-                  {\centering Literature Review}\label{c2} [3]
+l.108         \section{Significance Of The Study}
+                                                 \label{14} [3]pdfTeX warning (
+ext4): destination with the same identifier (name{page.4}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.114     \chapter
+                  {\centering Literature Review}\label{c2litrev} [4]
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 104.
+(hyperref)                removing `\<let>-command' on input line 114.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 104.
+(hyperref)                removing `\\' on input line 114.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@centercr' on input line 104.
+(hyperref)                removing `\@centercr' on input line 114.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightskip' on input line 104.
+(hyperref)                removing `\rightskip' on input line 114.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@flushglue' on input line 104.
+(hyperref)                removing `\@flushglue' on input line 114.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\leftskip' on input line 104.
+(hyperref)                removing `\leftskip' on input line 114.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@flushglue' on input line 104.
+(hyperref)                removing `\@flushglue' on input line 114.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\parindent' on input line 104.
+(hyperref)                removing `\parindent' on input line 114.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 104.
+(hyperref)                removing `\z@' on input line 114.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\parfillskip' on input line 104.
+(hyperref)                removing `\parfillskip' on input line 114.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@skip' on input line 104.
+(hyperref)                removing `\z@skip' on input line 114.
 
 
-Overfull \hbox (0.94455pt too wide) in paragraph at lines 113--114
+Overfull \hbox (0.94455pt too wide) in paragraph at lines 123--124
 []\OT1/cmr/m/n/12 1997[]), high-lights that the work pre-vi-ously done us-ing v
 ar-i-ous gradient-descent
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.114 
-       [4
-
-]
-<../images/lstm-memorycell.png, id=248, 1169.36874pt x 492.84125pt>
-File: ../images/lstm-memorycell.png Graphic file (type png)
-<use ../images/lstm-memorycell.png>
-Package pdftex.def Info: ../images/lstm-memorycell.png  used on input line 117.
-
-(pdftex.def)             Requested size: 409.28519pt x 172.49701pt.
-
-Overfull \hbox (19.28519pt too wide) in paragraph at lines 117--118
-[][] 
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123             \begin{equation}
-                                  \label{eq1} [5 <../images/lstm-memorycell.png
->]
-<../images/lstm-network.png, id=266, 1276.77pt x 736.7525pt>
+l.124 
+       [5
+
+]
+<../images/lstm-memorycell.png, id=244, 1169.36874pt x 492.84125pt>
+File: ../images/lstm-memorycell.png Graphic file (type png)
+<use ../images/lstm-memorycell.png>
+Package pdftex.def Info: ../images/lstm-memorycell.png  used on input line 127.
+
+(pdftex.def)             Requested size: 409.28519pt x 172.49701pt.
+
+Overfull \hbox (19.28519pt too wide) in paragraph at lines 127--128
+[][] 
+ []
+
+[6 <../images/lstm-memorycell.png>]
+<../images/lstm-network.png, id=264, 1276.77pt x 736.7525pt>
 File: ../images/lstm-network.png Graphic file (type png)
 <use ../images/lstm-network.png>
-Package pdftex.def Info: ../images/lstm-network.png  used on input line 151.
+Package pdftex.def Info: ../images/lstm-network.png  used on input line 161.
 (pdftex.def)             Requested size: 446.87619pt x 257.86723pt.
 
-Overfull \hbox (56.87619pt too wide) in paragraph at lines 151--152
+Overfull \hbox (56.87619pt too wide) in paragraph at lines 161--162
  [][] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 152.
+(Font)              <10.95> on input line 162.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6] [7 <../images/lstm-network.png>]
+[7] [8 <../images/lstm-network.png>]
+<../images/lstm-biLstm.png, id=295, 537.00626pt x 558.085pt>
+File: ../images/lstm-biLstm.png Graphic file (type png)
+<use ../images/lstm-biLstm.png>
+Package pdftex.def Info: ../images/lstm-biLstm.png  used on input line 189.
+(pdftex.def)             Requested size: 187.955pt x 195.33267pt.
 
-Package natbib Warning: Citation `lstm' on page 8 undefined on input line 189.
 
-[8]
-<../images/transformer.png, id=317, 508.90125pt x 599.99156pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9]
+
+Package natbib Warning: Citation `lstm' on page 10 undefined on input line 207.
+
+
+[10 <../images/lstm-biLstm.png>]
+<../images/transformer.png, id=329, 508.90125pt x 599.99156pt>
 File: ../images/transformer.png Graphic file (type png)
 <use ../images/transformer.png>
-Package pdftex.def Info: ../images/transformer.png  used on input line 194.
+Package pdftex.def Info: ../images/transformer.png  used on input line 212.
 (pdftex.def)             Requested size: 203.55688pt x 239.99237pt.
- [9 <../images/transformer.PNG>]
-<../images/multihead.png, id=331, 746.03719pt x 436.63126pt>
+ [11 <../images/transformer.PNG>]
+<../images/multihead.png, id=343, 746.03719pt x 436.63126pt>
 File: ../images/multihead.png Graphic file (type png)
 <use ../images/multihead.png>
-Package pdftex.def Info: ../images/multihead.png  used on input line 207.
+Package pdftex.def Info: ../images/multihead.png  used on input line 225.
 (pdftex.def)             Requested size: 298.40958pt x 174.6494pt.
- [10 <../images/multihead.PNG>]
-<../images/BERT.png, id=344, 1086.0575pt x 479.7925pt>
+ [12 <../images/multihead.PNG>]
+<../images/BERT.png, id=357, 1086.0575pt x 479.7925pt>
 File: ../images/BERT.png Graphic file (type png)
 <use ../images/BERT.png>
-Package pdftex.def Info: ../images/BERT.png  used on input line 220.
+Package pdftex.def Info: ../images/BERT.png  used on input line 238.
 (pdftex.def)             Requested size: 380.12581pt x 167.92987pt.
- [11 <../images/BERT.png>] [12]
+ [13 <../images/BERT.png>] [14]
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 239.
+(hyperref)                removing `\<let>-command' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 239.
+(hyperref)                removing `\\' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@centercr' on input line 239.
+(hyperref)                removing `\@centercr' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightskip' on input line 239.
+(hyperref)                removing `\rightskip' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@flushglue' on input line 239.
+(hyperref)                removing `\@flushglue' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\leftskip' on input line 239.
+(hyperref)                removing `\leftskip' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@flushglue' on input line 239.
+(hyperref)                removing `\@flushglue' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\parindent' on input line 239.
+(hyperref)                removing `\parindent' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 239.
+(hyperref)                removing `\z@' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\parfillskip' on input line 239.
+(hyperref)                removing `\parfillskip' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@skip' on input line 239.
+(hyperref)                removing `\z@skip' on input line 257.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--254
+Underfull \hbox (badness 10000) in paragraph at lines 265--272
 
  []
 
 
-Overfull \hbox (14.63324pt too wide) in paragraph at lines 247--254
+Overfull \hbox (14.63324pt too wide) in paragraph at lines 265--272
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--254
+Underfull \hbox (badness 10000) in paragraph at lines 265--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--254
+Underfull \hbox (badness 10000) in paragraph at lines 265--272
 
  []
 
-[13
+[15
 
-] [14] [15]
-Chapter 4.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 275.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 275.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@centercr' on input line 275.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightskip' on input line 275.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@flushglue' on input line 275.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\leftskip' on input line 275.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@flushglue' on input line 275.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\parindent' on input line 275.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 275.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\parfillskip' on input line 275.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@skip' on input line 275.
-
-[16
-
-] [17
+] [16] [17] [18
 
 
 ]
-<../images/GanttChart-mid.png, id=404, 1059.96pt x 819.06pt>
+<../images/GanttChart-mid.png, id=413, 1059.96pt x 819.06pt>
 File: ../images/GanttChart-mid.png Graphic file (type png)
 <use ../images/GanttChart-mid.png>
-Package pdftex.def Info: ../images/GanttChart-mid.png  used on input line 282.
+Package pdftex.def Info: ../images/GanttChart-mid.png  used on input line 300.
 (pdftex.def)             Requested size: 582.9798pt x 450.48439pt.
 
-Overfull \hbox (60.48439pt too wide) in paragraph at lines 282--283
+Overfull \hbox (60.48439pt too wide) in paragraph at lines 300--301
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 58.07979pt on input line 284.
+LaTeX Warning: Float too large for page by 58.07979pt on input line 302.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./MidThesis.bbl [18 <../images/GanttChart-mid.png>] [19
+(./MidThesis.bbl [19 <../images/GanttChart-mid.png>] [20
 
-]
-Underfull \hbox (badness 2903) in paragraph at lines 118--124
+] [21]
+Underfull \hbox (badness 2903) in paragraph at lines 137--143
 \OT1/cmtt/m/n/12 Products / Memory / VENGEANCE-[]LPX / p / CMK8GX4M1A2400C14$[]
 \OT1/cmr/m/n/12 .  Ac-cessed:
  []
 
 
-Underfull \hbox (badness 5832) in paragraph at lines 126--129
+Underfull \hbox (badness 5832) in paragraph at lines 145--148
 []\OT1/cmr/m/n/12 P Ra-jpurkar.  Squad2.0.  URL []$\OT1/cmtt/m/n/12 https : / /
  rajpurkar . github . io /
  []
 
-[20])
+)
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
-[21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
+[22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 306.
  (./MidThesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 306.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 306.
 Package rerunfilecheck Info: File `MidThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 54DEA992D101B6DDC2092BB27C20F258;1843.
+(rerunfilecheck)             Checksum: BA82ACE25056683916C1FC708ED9969E;1412.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 288.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
  ) 
 Here is how much of TeX's memory you used:
- 9449 strings out of 483183
- 147477 string characters out of 5966291
- 463412 words of memory out of 5000000
+ 9450 strings out of 483183
+ 147699 string characters out of 5966291
+ 463566 words of memory out of 5000000
  24184 multiletter control sequences out of 15000+600000
- 540931 words of font info for 57 fonts, out of 8000000 for 9000
+ 541277 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,8n,63p,1054b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,8n,63p,1069b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/nirbhay/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.6
 00pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/s
@@ -856,12 +806,13 @@ lic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on MidThesis.pdf (28 pages, 681813 bytes).
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on MidThesis.pdf (29 pages, 817532 bytes).
 PDF statistics:
- 515 PDF objects out of 1000 (max. 8388607)
- 451 compressed objects within 5 object streams
- 93 named destinations out of 1000 (max. 500000)
- 255 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 525 PDF objects out of 1000 (max. 8388607)
+ 457 compressed objects within 5 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 212 words of extra memory for PDF output out of 10000 (max. 10000000)
 

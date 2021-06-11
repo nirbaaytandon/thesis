@@ -13,3 +13,6 @@
 \nomenclatureentry{aALBERT@[{ALBERT}]\begingroup A LITE BERT\nomeqref {0}|nompageref}{4}
 \nomenclatureentry{aDistilBERT@[{DistilBERT}]\begingroup Distilled Version of BERT\nomeqref {0}|nompageref}{4}
 \nomenclatureentry{aQnA@[{QnA}]\begingroup Question and Answering\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aBiLSTM@[{BiLSTM}]\begingroup Bidirectional LSTM\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aCNNs@[{CNNs}]\begingroup Convolutional Neural Networks\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aEM@[{EM}]\begingroup Exact Match\nomeqref {0}|nompageref}{4}
