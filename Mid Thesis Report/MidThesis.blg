@@ -1,17 +1,15 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: MidThesis -Template.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
+The top-level auxiliary file: MidThesis.aux
 The style file: abbrvnat.bst
-Reallocating 'name_of_file' (item size: 1) to 18 items.
-Database file #1: MidThesisTemplate.bib
+Database file #1: MidThesis.bib
 Warning--I didn't find a database entry for "originallstm"
 Warning--empty journal in wsj
 Warning--empty year in squad
 Warning--empty year in hfTransformers
 You've used 20 entries,
             2773 wiz_defined-function locations,
-            703 strings with 8146 characters,
+            702 strings with 8109 characters,
 and the built_in function-call counts, 9206 in all, are:
 = -- 769
 > -- 699
