@@ -1,7 +1,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Transformer Architecture built by \citep {atayl}\relax }}{6}{figure.caption.4}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Scale Dot and Multi-Head Attention Models \cite {atayl}\relax }}{7}{figure.caption.5}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Pre-training and Fine Tuning procedures for BERT \citep {bert}\relax }}{8}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces LSTM Memory cell with a Constant Error Carousel having fixed weight 1.0, \citep {lstmoriginal}\relax }}{5}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces LSTM network with 8 input cells, 4 output cells and 2 memory cells of block size 2. Here $ in1 $ marks the input gate, $ out1 $ marks the output gate and $ cell/block1 $ marks the first memory cell block 1. The internal architecture of $ cell/block1 $ is similar to fig. \ref {lstmCEC}. \citep {lstmoriginal}\relax }}{7}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Transformer Architecture built by \citep {atayl}\relax }}{9}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Scale Dot and Multi-Head Attention Models \cite {atayl}\relax }}{10}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Pre-training and Fine Tuning procedures for BERT \citep {bert}\relax }}{11}{figure.caption.9}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

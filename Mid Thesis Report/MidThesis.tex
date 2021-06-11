@@ -8,15 +8,19 @@
 % arara: pdflatex: { synctex: true }
 % add makeIndex:makeIndex  makeindex %.nlo -s nomencl.ist -o %.nls to commands when running in
 \usepackage[square,sort,comma,numbers]{natbib}
+\renewcommand{\bibname}{References}
 
-\bibliographystyle{abbrvnat}
+\bibliographystyle{unsrtnat}
 \setcitestyle{authoryear,open={(},close={)}}
 \usepackage[utf8]{inputenc}
 \usepackage{epsfig}
 \usepackage{latexsym}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
-\usepackage[center]{caption}
+\usepackage[font=small,labelfont=bf,
+   format=plain]{caption}
+\captionsetup[figure]{justification=raggedright, singlelinecheck=false}
+
 \usepackage{titlesec}
 \titleformat{\chapter}[display]{\bfseries\centering}{\huge Chapter \thechapter}{1em}{\Huge}
 %Load nomenclature and glossary files
@@ -37,20 +41,9 @@
 
 
 \begin{document}
-%Nomenclature
 
-\nomenclature{RNNs}{Recurrent Neural Networks}
-\nomenclature{LSTMs}{Long Short-Term Memory Architectures}
-\nomenclature{NLP}{Natural Language Processing}
-\nomenclature{NLU}{Natural Language Understanding}
-\nomenclature{RACE}{ReAding Comprehension Dataset From Examinations}
-\nomenclature{MCTest}{Machine Comprehension of Text}
-\nomenclature{QASENT}{A challenge dataset for open-domain question answering}
-\nomenclature{BPPTs}{Back-Propagation Through Time}
-\nomenclature{SQuAD}{Stanford Question Answering Dataset}
-%
 
-    \title{Develop New Transformer Architecture For \\ Question and Answering(QandA)}
+    \title{Develop New Transformer Architecture For \\ Question and Answering}
 
     \author{Nirbhay P. Tandon}
 
@@ -64,7 +57,8 @@
     \newpage
     \listoffigures
     \listoftables
-    \printnomenclature
+    \input{nomenclature.tex}
+    \printnomenclature[1in]
 	\begin{abstract}
 		Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of our work will be to create a new kind of Transformer architecture. Compare and contrast its performance against other architectures such as BERT, DistilBERT, ALBERT etc. using the SQuAD 2.0 Dataset. Through our research, we aim to produce a new architecture that has a better performance than existing models specifically for Question Answering based applications.
 	\end{abstract}
@@ -108,20 +102,85 @@
         \section{Significance Of The Study}\label{14}
         \section{Structure Of The Study}\label{15}
     \chapter{\centering Literature Review}\label{c2}
-        \section{Question Answering Using Neural Nets}\label{21}
-        \section{Question Answering Using LSTMs}\label{22}
-	        To be able to accurately assess the aims of this thesis that have been highlighted in \ref{12}, we must take a deeper look at the work done in the field of Long Short-Term Memory Architecture based models and their importance in NLP.
 
-	        In this part of the literature review, our purpose is to highlight how LSTMs came to be \& their particular usage in the field of Question Answering.
-	        \begin{enumerate}
-	            \item   In 1997 \cite{lstmoriginal} introduced to the world a gradient descent based model in the form of Long Short-Term Memory. They set out to solve the problem of the vanishing gradient which was often seen in "Back-Propagation Through Time"(BPPTs) based neural networks. Extensive studies done on this, some by Hochreiter himself, showed that the problem of vanishing gradients is a real one. It was also seen that in case of BPTTs, the error back-flow mechanisms would either blow up or also suffer from vanishing gradients leading to either oscillating weights or learning to bridge long time gaps would not work. To remediate this, the authors introduced the concept of a \textit{constant} error flow through the internal states of special units.
-	            \item \cite{lstm}
-	            \item   \cite{schmid}
-	            \item  \cite{lstmhaighextractive}
-	            \item \cite{lstmhu2016question}
-	            \item   \cite{lstmintent}
-	            \item \cite{fastQA}
-	        \end{enumerate}
+    To be able to effectively deliver on the aims and objectives we have defined in Section \ref{12}, we must first critically analyse the work that has been done in the field of NLP and, in particular, the field of Question-Answering based networks. In this section, we will critically analyse a few key model architectures and how we reached Transformers, which form the base of our proposed architecture.
+
+
+        \section{Question Answering Using LSTMs}\label{22}
+
+            In 1997 \cite{lstmoriginal} introduced to the world a gradient descent based model in the form of Long Short-Term Memory. They set out to solve the problem of the vanishing gradient which was often seen in "Back-Propagation Through Time"(BPPTs) based neural networks. Extensive studies done on this, some by Hochreiter himself, showed that the problem of vanishing gradients is a real one. It was also seen that in case of BPTTs, the error back-flow mechanisms would either blow up or also suffer from vanishing gradients leading to either oscillating weights or learning to bridge long time gaps would not work. To remediate this, the authors introduced the concept of a \textit{constant} error flow through the internal states of special units.
+
+            Their paper, Long Short-Term Memory, \citep{lstmoriginal}, highlights that the work previously done using various gradient-descent variants, time-delays, time constants, use of higher order units to influence connections when the network receives conflicting error signals, Kalman filters, Second order nets etc. still suffer from some of the same problems that we have earlier. In the case of Ring's approach \citep{lstmRing}, the network can be really fast but also suffers from memory constraints and lack of generalization. This happens because to bridge $ n $ time lags, the model adds $ n $ additional units.
+
+            It is essential for us to understand how LSTMs function as it forms the basis of Transformers to exist. Hochreiter and Scmidhuber designed a \textit{memory cell} that  allows for a constant error flow. This is achieved by introducing \textit{constant error carousel}(CEC), a multiplicative input gate unit and a multiplicative output gate unit. These \textit{multiplicative} units help shield the contents of the memory cell from irrelevant inputs. The CEC, input and output gates together form the \textit{memory cell}, as seen in Fig. \ref{lstmCEC}.
+           	\begin{figure}[h!]
+      				\includegraphics[scale=0.35]{../images/lstm-memorycell.png}
+      				\caption{LSTM Memory cell with a Constant Error Carousel having fixed weight 1.0, \citep{lstmoriginal}}\label{lstmCEC}
+             \end{figure}
+            The central feature for LSTM's memory cell is the CEC. The self-recurrent connection, where weight is 1.0, is what helps create a time-delayed feedback loop by 1.
+
+            The CEC uses gate units to circumvent the issue with conflicting weights in the input and output layers. The input layer has control over when to use and when to override the information in the CEC but has no control over the error signals that are in the memory cell. The output gate, however, uses a feedback mechanism to assess when to superimpose different error signals. It also falls on the output gate to \textit{learn} which errors to trap in the CEC by appropriately scaling them. The gates have to learn when to release and trap errors therefore controlling the access to the CEC, helping maintain constant error flow. To mathematically understand the memory cell from fig. \ref{lstmCEC}, Schmidhuber and Hochreiter proposed the following set of equations \ref{eq1} - \ref{eq3}. More details on this can be found by referring to the appendix section A.1 in \citep{lstmoriginal}.
+            \begin{equation}\label{eq1}
+                y^{{out }_{j}}(t)=f_{ {out }_{j}}\left( { net }_{ {out }_{j}}(t)\right) ; y^{i n_{j}}(t)=f_{i n_{j}}\left( { net }_{i n_{j}}(t)\right)
+            \end{equation}
+	        where
+            \begin{equation}\label{eq2}
+                net_{out_{j}}(t)=\sum_{u} w_{out_{j} u} y^{u}(t-1)
+            \end{equation}
+            and
+            \begin{equation}\label{eq3}
+                            net_{in_{j}}(t)=\sum_{u} w_{in_{j} u} y^{u}(t-1)
+            \end{equation}
+            A generalised form of this equation can be represented as:
+            \begin{equation}\label{eq4}
+                            net_{c_{j}}(t)=\sum_{u} w_{c_{j} u} y^{u}(t-1)
+            \end{equation}
+            At time $ t $, $ c_{j} $'s output $ y^{c_{j}}(t) $ is computed as:
+            \begin{equation}\label{eq5}
+                y^{c_{j}}(t) = y^{out_{j}}(t)h(s_{c_{j}}(t)),
+            \end{equation}
+            where the ``internal state'' $ s_{c_j}(t) $ is:
+            \begin{equation}\label{eq6}
+                s_{c_{j}}(0)=0, s_{c_{j}}(t)=s_{c_{j}}(t-1)+y^{i n_{j}}(t) g\left( { net }_{c_{j}}(t)\right) \textrm{for } t>0
+            \end{equation}
+            Where $ u $ may stand for input, output or gate units, memory cells or even conventional hidden units, if they are being used.
+
+            In fig. \ref{lstmNetwork}, we see the internal workings of how an LSTM network could look like.
+            \begin{figure}[!h]
+	           \centering
+               \includegraphics[scale=0.35]{../images/lstm-network.png}
+      		   \caption{LSTM network with 8 input cells, 4 output cells and 2 memory cells of block size 2. Here $ in1 $ marks the input gate, $ out1 $ marks the output gate and $ cell/block1 $ marks the first memory cell block 1. The internal architecture of $ cell/block1 $ is similar to fig. \ref{lstmCEC}. \citep{lstmoriginal}}\label{lstmNetwork}
+            \end{figure}
+
+            A series of experiments were performed to prove that LSTMs are indeed ``state-of-the-art" and provide an improvement over then existing RNN based architectures.
+            Experiments around temporal order, which is defined as a series of events that happen in a particular order, that were previously unsolved by RNNs, were successfully solved by LSTMs. This was possible because of how LSTMs address time lags vs. how RNNs suffer from vanishing gradients. Details of the analysis and experiments conducted are available in section 5 of the paper ``Long Short-Term Memory" by \cite{lstmoriginal}, with experimental summaries in tables 10 and 11 of the same. Being able to solve for temporal order based problems allowed LSTMs to be capable of solving various real world problems that we will discuss subsequently.
+            Temporal orders are key in contextual understanding for NLP based tasks and especially in the case of QnA based networks. Let us now look at some advantages and limitations of LSTMs, before moving on to understand how they have been applied in the field of QnA.
+
+
+            \subsubsection{Advantages of LSTMs}
+                \begin{itemize}
+                    \item LSTMs deal with long time lags by bridging the gaps using constant error flow in the memory cells.
+                    \item LSTMs respond well to generalization problems, even if the input sequences are widely separated.
+                    \item They work well with a variety of braod range hyper-parameters and don't usually require tuning.
+                    \item Their time and weight update complexity is the same as BPTT, i.e. $ O(1) $. The advantage for LSTMs however, is that it is local in both space and time.
+                \end{itemize}
+
+            \subsubsection{Limitations of LSTMs}
+                \begin{itemize}
+                    \item LSTMs use memory cells which require an additional input and output unit. This \textit{hidden unit} is replaced by 3 units in an LSTM architecture, compared to 9 in an RNN. A fully connected LSTM will have $ 3^{2} $ connections however.
+                    \item LSTMs dont work well when they get the entire input in one go. The architecture is unable to generalize well by random weight guessing in this case.
+                    \item They do not have the ability to ``natively" count discrete time steps which might be useful in some applications. This isn't a big issue for the case of QnA based problems.
+                \end{itemize}
+
+
+
+            \cite{lstmhaighextractive}
+
+            \cite{lstmhu2016question}
+
+            \cite{lstmintent}
+
+            \cite{fastQA}
 
 	    \section{Question Answering Using Transformers}\label{23}
 
@@ -132,7 +191,7 @@
 	        Recurrent models usually adopt a combination approach where they take symbol position of the input and output positions along with the computation. This helps them align positions to steps in computation time and generate a sequence of hidden states $ h_{t} $, which is a function of the previous hidden state $ h_{t-1}$ and the input function $ t $.  This inherently sequential nature of RNNs causes memory issues, leading to reduced batch sizes. \\
 			\begin{figure}[h!]
 				\centering
-				\includegraphics[scale=0.4]{transformer.png}
+				\includegraphics[scale=0.4]{../images/transformer.png}
 				\caption{Transformer Architecture built by \citep{atayl}}\label{transformerArchitecture}
 			\end{figure}
 			The architecture for a \textit{Transformer} in this paper is outlined as having an encoder that maps input sequences to a continuous representation. The architecture can be seen in Fig. \ref{transformerArchitecture}. This is then decoded into an output sequence of symbols one at a time. Each step is auto-regressive, i.e. it consumes the previously generated symbols as additional input when creating the next. This is similar to an ensemble model. Stacks of 6 encoder and 6 decoder layers is used.\\
@@ -145,7 +204,7 @@
 			The attention mechanism can be described as mapping a query to a set of key-value pairs. This can be seen from Fig. \ref{multiHeadAttention}. \\The evaluations performed on the Wall Street Journal dataset\citep{wsj}, using 40k sentences, showed that even without task-specific tuning the model had better results with a fraction of the training cost.
 			\begin{figure}[h!]
 				\centering
-				\includegraphics[scale=0.4]{multihead.png}
+				\includegraphics[scale=0.4]{../images/multihead.png}
 				\caption{Scale Dot and Multi-Head Attention Models \cite{atayl}}\label{multiHeadAttention}
 			\end{figure}
 
@@ -158,9 +217,8 @@
 			BERT employs language pre-training \citep{dai} which has shown significant advantages in many applications e.g. paraphrasing, language level inference etc. These tasks aim to highlight the relationships between sentences through contextual understanding as well as by using tokenized outputs.
 			\begin{figure}[h!]
 				\centering
-				\includegraphics[scale=0.35]{BERT.png}
-				\label{bertPretraining}
-				\caption{Pre-training and Fine Tuning procedures for BERT \citep{bert}}
+				\includegraphics[scale=0.35]{../images/BERT.png}
+				\caption{Pre-training and Fine Tuning procedures for BERT \citep{bert}}\label{bertPretraining}
 			\end{figure}
 
 			BERT was tested on The General Language Understanding Evaluation (GLUE) benchmark \citep{wang} which has a large number of diverse NLU tasks.

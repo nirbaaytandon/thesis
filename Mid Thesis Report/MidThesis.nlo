@@ -1,9 +1,15 @@
-\nomenclatureentry{aRNNs@[{RNNs}]\begingroup Recurrent Neural Networks\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aLSTMs@[{LSTMs}]\begingroup Long Short-Term Memory Architectures\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aNLP@[{NLP}]\begingroup Natural Language Processing\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aNLU@[{NLU}]\begingroup Natural Language Understanding\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aRACE@[{RACE}]\begingroup ReAding Comprehension Dataset From Examinations\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aMCTest@[{MCTest}]\begingroup Machine Comprehension of Text\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aQASENT@[{QASENT}]\begingroup A challenge dataset for open-domain question answering\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aBPPTs@[{BPPTs}]\begingroup Back-Propagation Through Time\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aSQuAD@[{SQuAD}]\begingroup Stanford Question Answering Dataset\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aRNNs@[{RNNs}]\begingroup Recurrent Neural Networks\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aLSTMs@[{LSTMs}]\begingroup Long Short-Term Memory Architectures\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aNLP@[{NLP}]\begingroup Natural Language Processing\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aNLU@[{NLU}]\begingroup Natural Language Understanding\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aRACE@[{RACE}]\begingroup ReAding Comprehension Dataset From Examinations\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aMCTest@[{MCTest}]\begingroup Machine Comprehension of Text\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aQASENT@[{QASENT}]\begingroup A challenge dataset for open-domain question answering\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aBPPTs@[{BPPTs}]\begingroup Back-Propagation Through Time\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aSQuAD@[{SQuAD}]\begingroup Stanford Question Answering Dataset\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aCEC@[{CEC}]\begingroup Constant Error Carousel\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aBERT@[{BERT}]\begingroup Bidirectional Encoder Representations from Transformers\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aRoBERTa@[{RoBERTa}]\begingroup Robustly Optimized BERT\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aALBERT@[{ALBERT}]\begingroup A LITE BERT\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aDistilBERT@[{DistilBERT}]\begingroup Distilled Version of BERT\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aQnA@[{QnA}]\begingroup Question and Answering\nomeqref {0}|nompageref}{4}

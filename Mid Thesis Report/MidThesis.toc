@@ -1,5 +1,6 @@
 \contentsline {chapter}{List of Figures}{3}{chapter*.2}%
 \contentsline {chapter}{List of Tables}{4}{chapter*.3}%
+\contentsline {chapter}{\nonumberline List of Abbreviations}{5}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}\centering Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background Of The Study}{2}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Background}{2}{subsection.1.1.1}%
@@ -9,24 +10,25 @@
 \contentsline {section}{\numberline {1.4}Significance Of The Study}{3}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Structure Of The Study}{3}{section.1.5}%
 \contentsline {chapter}{\numberline {2}\centering Literature Review}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Question Answering Using Neural Nets}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Question Answering Using LSTMs}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Question Answering Using Transformers}{5}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Self Attention}{7}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Improvements of Transformer Architectures}{7}{subsection.2.3.2}%
-\contentsline {subsubsection}{BERT}{7}{subsection.2.3.2}%
-\contentsline {subsubsection}{ALBERT}{8}{figure.caption.6}%
-\contentsline {subsubsection}{ROBERTA}{8}{figure.caption.6}%
-\contentsline {subsubsection}{DISTILBERT}{8}{figure.caption.6}%
-\contentsline {section}{\numberline {2.4}Comparison Of Techniques}{9}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Summary}{9}{section.2.5}%
-\contentsline {chapter}{\numberline {3}\centering Research Methodology}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data Selection}{10}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{12}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Existing Models And Benchmarks}{12}{section.3.3}%
-\contentsline {chapter}{\numberline {4}\centering Architecture Creation}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{13}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Architecture Refinement}{13}{section.4.3}%
-\contentsline {chapter}{Appendices}{14}{section*.7}%
-\contentsline {chapter}{Bibliography}{15}{appendix*.8}%
+\contentsline {section}{\numberline {2.1}Question Answering Using LSTMs}{4}{section.2.1}%
+\contentsline {subsubsection}{Advantages of LSTMs}{7}{figure.caption.6}%
+\contentsline {subsubsection}{Limitations of LSTMs}{8}{figure.caption.6}%
+\contentsline {section}{\numberline {2.2}Question Answering Using Transformers}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Self Attention}{10}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Improvements of Transformer Architectures}{11}{subsection.2.2.2}%
+\contentsline {subsubsection}{BERT}{11}{subsection.2.2.2}%
+\contentsline {subsubsection}{ALBERT}{12}{figure.caption.9}%
+\contentsline {subsubsection}{ROBERTA}{12}{figure.caption.9}%
+\contentsline {subsubsection}{DISTILBERT}{12}{figure.caption.9}%
+\contentsline {section}{\numberline {2.3}Comparison Of Techniques}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Summary}{12}{section.2.4}%
+\contentsline {chapter}{\numberline {3}\centering Research Methodology}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data Selection}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Existing Models And Benchmarks}{15}{section.3.3}%
+\contentsline {chapter}{\numberline {4}\centering Architecture Creation}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Architecture Refinement}{16}{section.4.3}%
+\contentsline {chapter}{Appendices}{17}{section*.10}%
+\contentsline {chapter}{References}{18}{appendix*.11}%
