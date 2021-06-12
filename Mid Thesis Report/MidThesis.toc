@@ -11,18 +11,18 @@
 \contentsline {section}{\numberline {2.1}Long Short-Term Memory}{5}{section.2.1}%
 \contentsline {subsubsection}{Advantages of LSTMs}{8}{figure.caption.6}%
 \contentsline {subsubsection}{Limitations of LSTMs}{9}{figure.caption.6}%
-\contentsline {section}{\numberline {2.2}Question Answering Using Transformers}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Self Attention}{13}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Improvements of Transformer Architectures}{13}{subsection.2.2.2}%
-\contentsline {subsubsection}{BERT}{13}{subsection.2.2.2}%
-\contentsline {subsubsection}{ALBERT}{14}{figure.caption.10}%
-\contentsline {subsubsection}{ROBERTA}{15}{figure.caption.10}%
-\contentsline {subsubsection}{DISTILBERT}{15}{figure.caption.10}%
-\contentsline {section}{\numberline {2.3}Comparison Of Techniques}{15}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Summary}{15}{section.2.4}%
-\contentsline {chapter}{\numberline {3}\centering Research Methodology}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data Selection}{16}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{18}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Existing Models And Benchmarks}{18}{section.3.3}%
-\contentsline {chapter}{Appendices}{19}{section*.11}%
-\contentsline {chapter}{References}{21}{appendix*.13}%
+\contentsline {section}{\numberline {2.2}Question Answering Using Transformers}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Self Attention}{15}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Improvements of Transformer Architectures}{16}{subsection.2.2.2}%
+\contentsline {subsubsection}{BERT}{16}{subsection.2.2.2}%
+\contentsline {subsubsection}{ALBERT}{17}{figure.caption.13}%
+\contentsline {subsubsection}{ROBERTA}{17}{figure.caption.13}%
+\contentsline {subsubsection}{DISTILBERT}{17}{figure.caption.13}%
+\contentsline {section}{\numberline {2.3}Comparison Of Techniques}{17}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Summary}{17}{section.2.4}%
+\contentsline {chapter}{\numberline {3}\centering Research Methodology}{18}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data Selection}{18}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Existing Models And Benchmarks}{21}{section.3.3}%
+\contentsline {chapter}{Appendices}{22}{section*.15}%
+\contentsline {chapter}{References}{24}{appendix*.17}%

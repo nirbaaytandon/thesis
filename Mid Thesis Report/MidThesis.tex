@@ -68,7 +68,7 @@
 
     One of the most philosophical questions that anyone can encounter is \textit{``Can an answer exist without a question?"}. While that question exists to be solved by philosophers and thinkers, we shall aim to address the \textit{answer} that can be provided to a question in terms of the context that has been posed. While the field of Natural Language Processing(NLP) is vast and many unexplored areas exist, in this thesis the focus is entirely on developing a novel architecture that provides \textit{highly contextual and relevant answers} to the questions asked of it.
 
-    The earliest examples of Question-Answering(QnA) systems can be traced back to 1961, in the form of BASEBALL,\citep{green1961baseball}, a system developed by Bert F. Green and team to answer basic questions posed using punch cards in ordinary English language about stored data on baseball games. The team implemented a dictionary structure to allow for answers to be looked up and printed. For example, the system could answer very direct questions such as: ``Where did each team play on July 7?".
+    The earliest examples of Question-Answering(QA) systems can be traced back to 1961, in the form of BASEBALL,\citep{green1961baseball}, a system developed by Bert F. Green and team to answer basic questions posed using punch cards in ordinary English language about stored data on baseball games. The team implemented a dictionary structure to allow for answers to be looked up and printed. For example, the system could answer very direct questions such as: ``Where did each team play on July 7?".
     A highly impressive feat for the early days of neural networks in 1960's, the work done by Green paved the way for systems like LUNAR,\citep{lunar}, answered geological questions for the rocks brought back from the Apollo moon missions. LUNAR, which was first presented in 1971, had an astounding 90\% accuracy rate for questions that were asked by people who didn't know how the system worked!
     Question-Answering based systems have gained a lot of popularity, especially in the form of ``chatbots''. These systems depend highly on contextual understanding of the input, the training corpus and the question asked. They use this knowledge to output an answer that can help the user with whatever their query is. Recurrent neural networks and architectures based on them, have been able to provide great advancements in the field of Question-answering and chatbots in general. However, there is a behaviour of over-fitting and lack of contextual understanding of the question. This, coupled with long training times and extremely complex mathematical model designs, have often kept the field of Natural Language Processing slightly obscured from the masses.
 
@@ -105,7 +105,7 @@
 
         \section{Scope Of The Study}\label{13}
 
-        This research work is entirely focused in the area of Question-Answering based networks. This focus helps in significantly narrowing down the scope and critically assessing the problem that needs to be solved. The practical applications of the field of QnA are endless. From chatbots to QnA systems on domain specific knowledge or conversational applications for voice assistants, a light, robust, highly accurate Transformer based architecture can help ease the daily lives of millions of users.
+        This research work is entirely focused in the area of Question-Answering based networks. This focus helps in significantly narrowing down the scope and critically assessing the problem that needs to be solved. The practical applications of the field of QA are endless. From chatbots to QA systems on domain specific knowledge or conversational applications for voice assistants, a light, robust, highly accurate Transformer based architecture can help ease the daily lives of millions of users.
         \section{Significance Of The Study}\label{14}
 
         The current state of the art systems, some of which have been highlighted in section \ref{c1background}, suffer from various drawbacks and even the best models have only been able to achieve an EM score of 90.871 with an F1 score of 93.183 on the SQuAD 2.0 leaderboard \cite{squad}.
@@ -165,7 +165,7 @@
 
             A series of experiments were performed to prove that LSTMs are indeed ``state-of-the-art" and provide an improvement over then existing RNN based architectures.
             Experiments around temporal order, which is defined as a series of events that happen in a particular order, that were previously unsolved by RNNs, were successfully solved by LSTMs. This was possible because of how LSTMs address time lags vs. how RNNs suffer from vanishing gradients. Details of the analysis and experiments conducted are available in section 5 of the paper ``Long Short-Term Memory" by \cite{lstmoriginal}, with experimental summaries in tables 10 and 11 of the same. Being able to solve for temporal order based problems allowed LSTMs to be capable of solving various real world problems that we will discuss subsequently.
-            Temporal orders are key in contextual understanding for NLP based tasks and especially in the case of QnA based networks. Let us now look at some advantages and limitations of LSTMs, before moving on to understand how they have been applied in the field of QnA.
+            Temporal orders are key in contextual understanding for NLP based tasks and especially in the case of QA based networks. Let us now look at some advantages and limitations of LSTMs, before moving on to understand how they have been applied in the field of QA.
 
 
             \subsubsection{Advantages of LSTMs}
@@ -173,17 +173,17 @@
                     \item LSTMs deal with long time lags by bridging the gaps using constant error flow in the memory cells.
                     \item LSTMs respond well to generalization problems, even if the input sequences are widely separated.
                     \item They work well with a variety of braod range hyper-parameters and don't usually require tuning.
-                    \item Their time and weight update complexity is the same as BPTT, i.e. $ O(1) $. The advantage for LSTMs however, is that it is local in both space and time.
+                    \item Their time and weight update complexity is the same as BPTT, ie. $ O(1) $. The advantage for LSTMs however, is that it is local in both space and time.
                 \end{itemize}
 
             \subsubsection{Limitations of LSTMs}
                 \begin{itemize}
                     \item LSTMs use memory cells which require an additional input and output unit. This \textit{hidden unit} is replaced by 3 units in an LSTM architecture, compared to 9 in an RNN. A fully connected LSTM will have $ 3^{2} $ connections however.
                     \item LSTMs dont work well when they get the entire input in one go. The architecture is unable to generalize well by random weight guessing in this case.
-                    \item They do not have the ability to ``natively" count discrete time steps which might be useful in some applications. This isn't a big issue for the case of QnA based problems.
+                    \item They do not have the ability to ``natively" count discrete time steps which might be useful in some applications. This isn't a big issue for the case of QA based problems.
                 \end{itemize}
 
-            While LSTMs have found various applications across the field of machine and deep learning, QnA seems to be one where being able to achieve consistent results of accuracy as well as having an exact match seems to elusive.
+            While LSTMs have found various applications across the field of machine and deep learning, QA seems to be one where being able to achieve consistent results of accuracy as well as having an exact match seems to elusive.
             Research carried out at IBM by Tan, Santos and co. looked at approaching this problem by using something called Bidirectional LSTMs or BiLSTM, \citep{lstmBiLSTM}. Introduced by Graves and Schmidhuber in their paper \textit{Framewise Phoneme Classification with Bidirectional LSTM Networks}, the biLSTM implements a \textit{forget gate} as seen in fig. \ref{lstmBilstm}. An advantage of biLSTMs over traditional LSTMs is that you feed the data twice, once from the beginning to the end and then from the end to the beginning. This helps the model contextualize and adjust weights better, therefore creating a more robust model that learns and performs better overall when compared to traditional LSTMs and RNNs.
              \begin{figure}[!h]
 	           \centering
@@ -191,14 +191,55 @@
       		   \caption{A memory cell for a biLSTM highlighting a \textit{forget gate}. This forget gate helps in scaling the internal state of a memory cell, for example by resetting the state to 0. We can see that it is different to fig. \ref{lstmCEC}, with the implementation of a connection to the forget gate, while still having an internal weight of 1. \citep{lstmBiLSTM}}\label{lstmBilstm}
             \end{figure}
 
-            BiLSTMs were introduced as an approach towards phoneme classification for speech recognition applications, however, in their paper ``LSTM-BASED DEEP LEARNING MODELS FOR NON -FACTOID ANSWER SELECTION", \cite{lstmhaighextractive} have shown that extending the biLSTM model 2 different approaches for QnA has its advantages. One approach, using a more composite method of using CNNs for representing questions as well as answers. The other, by implementing an \textit{attention mechanism} that helps in generating an answer representation according to the question context.
-            Their framework is based on developing a biLSTM model for both questions and answers, applying a connective pooling layer and using a similarity metric to measure the degree of matching answers.
+            BiLSTMs were introduced as an approach towards phoneme classification for speech recognition applications, however, in their paper ``LSTM-BASED DEEP LEARNING MODELS FOR NON -FACTOID ANSWER SELECTION", \citep{lstmhaighextractive} have shown that extending the biLSTM model 2 different approaches for QA has its advantages. One approach, using a more composite method of using CNNs for representing questions as well as answers. The other, by implementing an \textit{attention mechanism} that helps in generating an answer representation according to the question context.
+            Their framework is based on developing a biLSTM model for both questions and answers, applying a connective pooling layer and using a similarity metric to measure the degree of matching answers. They utilized the InsuranceQA\citep{lstmInsuranceQA} dataset that was created in 2015 and tested primarily on CNN based networks, details of the dataset can be found in table \ref{lstmInsuranceQATable}.
+          \begin{table}[h!]
+              \centering
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                     & Questions & Answers & Question Word Count \\
+                    \hline
+                    Train & 12887 & 18540 & 92095 \\
+                    \hline
+                    Dev & 1000 & 1454& 7158 \\
+                    \hline
+                    Test1 & 1800 & 2616 & 12893 \\
+                    \hline
+                    Test2 & 1800 & 2593 & 12905 \\
+                    \hline
+                \end{tabular}
+                \caption{InsuranceQA Corpus statistics: first two columns are the question and answer quantity; notice there could be multiple answers for some questions so that the answer quantity is larger than the question quantity; third column is the question total word count. The total number of answers is 24 981 and the whole answer text contains 2 386 749 words\citep{lstmInsuranceQA}.}\label{lstmInsuranceQATable}
+            \end{table}
 
             Pooling layers are known to suffer from an incapability to retain local linguistic information. To combat this the team proposed an additional CNN layer on top of the biLSTM layer. Additionally, they added a simple and efficient attention model to help their biLSTM model better distinguish between candidate answers according to the question context. This study is significant in the field of both deep learning based models and for the field of Question-Answering because it requires little or no feature engineering to achieve significant results. We will also see later in section \ref{23}, how biLSTMs are implemented with Transformers to produce an even better model.
             In their work \citep{lstmhaighextractive} have shown that biLSTMs are capable of exploiting long-range sequential context information. This is important as it is often seen that the answer is not directly semantically related to the question but more contextually related. Long-range exploitations help the model understand the question more holistically, therefore helping produce a more relevant answer.
 
-            BiLSTMs have an advantage over traditional LSTMs in that they utilize both previous and future contextual information by processing the input in both directions, forward and backward. This leads to the generation of two independent sequences of output vectors form LSTMs. The final output is a concatenation  of the outputs from both directions i.e. : $ h_t= \overrightarrow{h_t} || \overleftarrow{h_t} $
+            BiLSTMs have an advantage over traditional LSTMs in that they utilize both previous and future contextual information by processing the input in both directions, forward and backward. This leads to the generation of two independent sequences of output vectors form LSTMs. The final output is a concatenation  of the outputs from both directions ie. $h_t= \overrightarrow{h_t} || \overleftarrow{h_t} $.
+            The \textbf{QA-LSTM} model  proposed by \citep{lstmhaighextractive} can be seen in fig. \ref{lstmhaig}. We can see that it generates a distributed representation for both questions(blue) and answers(red) before moving on to perform pooling and cosine similarity operations.
+	        \begin{figure}
+                \centering
+                \includegraphics[scale=0.4]{../images/lstm-bilstmhaig.png}
+                \caption{Basic QA-LSTM model depicting biLSTM implementation \cite{lstmhaighextractive}}\label{lstmhaig}
+            \end{figure}
 
+            In fig. \ref{lstmhaigcnn}, it can be seen that the CNN layer has been implemented after the biLSTM layers and before the pooling layers. The pooling layers have been modified to be max-$ k $ pooling layers, similar to standard CNNs.
+            \begin{figure}
+                \centering
+                \includegraphics[scale=0.35]{../images/lstm-bilstmhaigcnn.png}
+                \caption{QA-LSTM with CNN layer \citep{lstmhaighextractive}}\label{lstmhaigcnn}
+            \end{figure}
+
+            The implementation of this convolution layer forces localized interactions between the inputs within a filter size of $ m $. For each window of size $ m $ in biLSTM output vectors ie.
+            \begin{equation}
+            \textbf{H}_{m}(t)=[\textbf{h}(t), \textbf{h(t+1)},...,\textbf{h}(t+m-1)]
+            \end{equation}
+            where $ t $ is a time step and the convolution filter will generate one value as follows
+            \begin{equation}
+                o_{F}(t) = tanh \bigg[\bigg(\sum_{i=0}^{m-1}\textbf{h}(t+i)^{T}\textbf{F}(i)\bigg)+b\bigg]
+            \end{equation}
+
+            Using $ k $-MaxPooling, the authors emphasized that a maximum of $ k $ values will be kept  for one filter, thereby indicating the highest degree that a filter matches the input sequence. To end this approach, there are $ N $ parallel filters, with different parameter initialization which provide the CNN layer with $ N $-dimension output vectors. This produces two output vectors of dimension $ kN $ for each question and answer.  Their experiments intuitively took $k=1$ as anything greater showed no improvements and it helped emphasize aspects of the answer such that this CNN based hybridbiLSTM could differentiate ground truths and incorrect answers efficiently.
+            This
             \cite{lstmhu2016question}
 
             \cite{lstmintent}
@@ -217,7 +258,7 @@
 				\includegraphics[scale=0.4]{../images/transformer.png}
 				\caption{Transformer Architecture built by \citep{atayl}}\label{transformerArchitecture}
 			\end{figure}
-			The architecture for a \textit{Transformer} in this paper is outlined as having an encoder that maps input sequences to a continuous representation. The architecture can be seen in Fig. \ref{transformerArchitecture}. This is then decoded into an output sequence of symbols one at a time. Each step is auto-regressive, i.e. it consumes the previously generated symbols as additional input when creating the next. This is similar to an ensemble model. Stacks of 6 encoder and 6 decoder layers is used.\\
+			The architecture for a \textit{Transformer} in this paper is outlined as having an encoder that maps input sequences to a continuous representation. The architecture can be seen in Fig. \ref{transformerArchitecture}. This is then decoded into an output sequence of symbols one at a time. Each step is auto-regressive, ie. it consumes the previously generated symbols as additional input when creating the next. This is similar to an ensemble model. Stacks of 6 encoder and 6 decoder layers is used.\\
 			Each encoder layer has 2 sub-layers of a multi-head self-attention and the other a simple, position-wise fully connected feed-forward network layer. The output from each encoder layer can be represented as $  LayerNorm(x + Sublayer(x)) $, where $ Sublayer(x) $ is the function implemented by the sub-layers in the model. Additionally, supporting residual connections is handled by producing outputs of dimension $ d_{model}=512 $.
 
 			The decoder layer is similar to the encoder layer and has an additional 3rd sub-layer that performs multi-head attention over the output of the encoders. To ensure that the output layer isn't affected by the output of residual connections from the sub-layers, a normalization layer is implemented at the end. Masking the subsequent positions and offsetting the output by 1 position ensures that the predictions for position $ i $ can only depend on outputs from previous positions.
@@ -289,11 +330,44 @@
     	\item Adding answer tokens based on their encoded positions
     \end{enumerate}
 
-The SQuAD 2.0 Dataset \citep{dataset}, was developed with funding from Facebook to help address some major issues with existing datasets. Most datasets focus on questions that can be easily answered or use of automatically generated, unanswerable questions which are easily identifiable.\\
-The SQuAD 2.0 dataset resolves this by combining the SQuAD dataset along with 50,000 crowd worker generated unanswerable questions. The key feature of these being that the unanswerable questions must look similar to answerable ones. For a model to be successful on this new dataset, it must be able to answer all possibly answerable questions as well as determine when no answers are provided for a question in the given paragraph and abstain from answering. A comparative study was done for a Natural Language Understanding(NLU) task that obtained an 86\% score on SQuAD 1.1, only got 66\% on the new 2.0 dataset.
-The dataset helps bridge the gap between true NLU and machine understanding by using the concept of Relevance. Through comparisons with various datasets such as RACE, MCTest, QASENT etc. they have identified the missing links like negative examples, antonyms and helped fill the gap. This dataset forces the models to understand whether a paragraph span has the answer to the question posed.
+        The SQuAD 2.0 Dataset \citep{dataset}, was developed with funding from Facebook to help address some major issues with existing datasets. Most datasets focus on questions that can be easily answered or use of    automatically generated, unanswerable questions which are easily identifiable.\\
+        The SQuAD 2.0 dataset resolves this by combining the SQuAD dataset along with 50,000 crowd worker generated unanswerable questions. The key feature of these being that the unanswerable questions must look similar to answerable ones. For a model to be successful on this new dataset, it must be able to answer all possibly answerable questions as well as determine when no answers are provided for a question in the given paragraph and abstain from answering. A comparative study was done for a Natural Language Understanding(NLU) task that obtained an 86\% score on SQuAD 1.1, only got 66\% on the new 2.0 dataset.
+        The dataset helps bridge the gap between true NLU and machine understanding by using the concept of Relevance. Through comparisons with various datasets such as RACE, MCTest, QASENT etc. they have identified the missing links like negative examples, antonyms and helped fill the gap. This dataset forces the models to understand whether a paragraph span has the answer to the question posed.
+
+ \begin{table}[h!]
+              \centering
+                \begin{tabular}{|l|l|l|}
+                    \hline
+                     & SQuAD 1.1 &  SQuAD 2.0 \\
+                    \hline
+                    \textbf{Train} & & \\
+                        Total Examples & 87,599 &  130,319 \\
+                        Negative Examples & 0 & 43,498 \\
+                        Total articles & 442 & 442 \\
+                        Articles with negatives & 0 & 285 \\
+                    \hline
+                    \textbf{Development} & & \\
+                        Total Examples & 10,570 &  11,873 \\
+                        Negative Examples & 0 & 5,945 \\
+                        Total articles & 48 & 35 \\
+                        Articles with negatives & 0 & 35 \\
+                    \hline
+                    \textbf{Test} &  & \\
+                        Total Examples & 9,533 & 8,862 \\
+                        Negative Examples & 0 & 4,332 \\
+                        Total articles & 46 & 28 \\
+                        Articles with negatives & 0 & 28 \\
+                    \hline
+                \end{tabular}
+                \caption{Dataset statistics of SQuAD 2.0, compared to the previous SQuAD 1.1\citep{dataset}.}\label{datasetDescription}
+            \end{table}
 
     \section{Data Pre-processing And Transformation}\label{c32}
+    Techniques used.
+    (1) Average pooling; (2) max pooling; (3) the concatenation of the last
+    vectors on both directions. The three strategies are compared with the experimental performance
+    in Section 5. Dropout operation is performed on the QA representations before cosine similarity
+    matching
     \section{Existing Models And Benchmarks}\label{c33}
   %  \chapter{\centering Architecture Creation}\label{c4}
    % \section{Drawbacks Of Current Architectures}\label{c41}

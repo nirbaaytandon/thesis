@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,6 +15,12 @@ A.~Graves and J.~Schmidhuber.
 \newblock Framewise phoneme classification with bidirectional lstm networks.
 \newblock 4:\penalty0 2047--2052 vol. 4, 2005.
 \newblock \doi{10.1109/IJCNN.2005.1556215}.
+
+\bibitem[Tan et~al.(2015)Tan, Xiang, and Zhou]{lstmhaighextractive}
+Ming Tan, Bing Xiang, and Bowen Zhou.
+\newblock Lstm-based deep learning models for non-factoid answer selection.
+\newblock \emph{CoRR}, abs/1511.04108, 2015.
+\newblock URL \url{http://arxiv.org/abs/1511.04108}.
 
 \bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
   Kaiser, and Polosukhin]{atayl}
@@ -65,11 +71,12 @@ Mark~B Ring.
 \newblock \emph{Advances in neural information processing systems}, pages
   115--115, 1993.
 
-\bibitem[Tan et~al.(2015)Tan, Xiang, and Zhou]{lstmhaighextractive}
-Ming Tan, Bing Xiang, and Bowen Zhou.
-\newblock Lstm-based deep learning models for non-factoid answer selection.
-\newblock \emph{CoRR}, abs/1511.04108, 2015.
-\newblock URL \url{http://arxiv.org/abs/1511.04108}.
+\bibitem[Feng et~al.(2015)Feng, Xiang, Glass, Wang, and Zhou]{lstmInsuranceQA}
+Minwei Feng, Bing Xiang, Michael~R. Glass, Lidan Wang, and Bowen Zhou.
+\newblock Applying deep learning to answer selection: {A} study and an open
+  task.
+\newblock \emph{CoRR}, abs/1508.01585, 2015.
+\newblock URL \url{http://arxiv.org/abs/1508.01585}.
 
 \bibitem[Wang and Jiang(2016)]{lstmhu2016question}
 Shuohang Wang and Jing Jiang.
