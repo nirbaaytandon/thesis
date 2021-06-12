@@ -28,6 +28,7 @@
 \usepackage[intoc]{nomencl}
 \makenomenclature
 \renewcommand{\nomname}{List of Abbreviations}
+\usepackage{mathtools}
 
 \usepackage[page,toc,titletoc,title]{appendix}
 %\usepackage{refcheck}
@@ -183,16 +184,20 @@
                 \end{itemize}
 
             While LSTMs have found various applications across the field of machine and deep learning, QnA seems to be one where being able to achieve consistent results of accuracy as well as having an exact match seems to elusive.
-            Research carried out at IBM by Tan, Santos and co. looks to approach this problem by using something called Bidirectional LSTMs or BiLSTM, \citep{lstmBiLSTM}. Introduced by Graves and Schmidhuber in their paper \textit{Framewise Phoneme Classification with Bidirectional LSTM Networks}, the BiLSTM implements a \textit{forget gate} as seen in fig. \ref{lstmBilstm}.
+            Research carried out at IBM by Tan, Santos and co. looked at approaching this problem by using something called Bidirectional LSTMs or BiLSTM, \citep{lstmBiLSTM}. Introduced by Graves and Schmidhuber in their paper \textit{Framewise Phoneme Classification with Bidirectional LSTM Networks}, the biLSTM implements a \textit{forget gate} as seen in fig. \ref{lstmBilstm}. An advantage of biLSTMs over traditional LSTMs is that you feed the data twice, once from the beginning to the end and then from the end to the beginning. This helps the model contextualize and adjust weights better, therefore creating a more robust model that learns and performs better overall when compared to traditional LSTMs and RNNs.
              \begin{figure}[!h]
 	           \centering
                \includegraphics[scale=0.35]{../images/lstm-biLstm.png}
-      		   \caption{A memory cell for a BiLSTM highlighting a \textit{forget gate}. This forget gate helps in scaling the internal state of a memory cell, for example by resetting the state to 0. We can see that it is different to fig. \ref{lstmCEC}, with the implementation of a connection to the forget gate, while still having an internal weight of 1. \citep{lstmBiLSTM}}\label{lstmBilstm}
+      		   \caption{A memory cell for a biLSTM highlighting a \textit{forget gate}. This forget gate helps in scaling the internal state of a memory cell, for example by resetting the state to 0. We can see that it is different to fig. \ref{lstmCEC}, with the implementation of a connection to the forget gate, while still having an internal weight of 1. \citep{lstmBiLSTM}}\label{lstmBilstm}
             \end{figure}
 
-            BiLSTMs were introduced as an approach towards phoneme classification for speech recognition applications, however, in their paper ``LSTM- BASED D EEP L EARNING M ODELS
-            FOR NON -FACTOID ANSWER SELECTION", \cite{lstmhaighextractive} have shown that extending the BiLSTM model 2 different approaches. One, using a more composite approach of using CNNs for representing questions as well as answers. The other, by implementing an \textit{attention mechanism} that helps in generating an answer representation according to the question context.
+            BiLSTMs were introduced as an approach towards phoneme classification for speech recognition applications, however, in their paper ``LSTM-BASED DEEP LEARNING MODELS FOR NON -FACTOID ANSWER SELECTION", \cite{lstmhaighextractive} have shown that extending the biLSTM model 2 different approaches for QnA has its advantages. One approach, using a more composite method of using CNNs for representing questions as well as answers. The other, by implementing an \textit{attention mechanism} that helps in generating an answer representation according to the question context.
+            Their framework is based on developing a biLSTM model for both questions and answers, applying a connective pooling layer and using a similarity metric to measure the degree of matching answers.
 
+            Pooling layers are known to suffer from an incapability to retain local linguistic information. To combat this the team proposed an additional CNN layer on top of the biLSTM layer. Additionally, they added a simple and efficient attention model to help their biLSTM model better distinguish between candidate answers according to the question context. This study is significant in the field of both deep learning based models and for the field of Question-Answering because it requires little or no feature engineering to achieve significant results. We will also see later in section \ref{23}, how biLSTMs are implemented with Transformers to produce an even better model.
+            In their work \citep{lstmhaighextractive} have shown that biLSTMs are capable of exploiting long-range sequential context information. This is important as it is often seen that the answer is not directly semantically related to the question but more contextually related. Long-range exploitations help the model understand the question more holistically, therefore helping produce a more relevant answer.
+
+            BiLSTMs have an advantage over traditional LSTMs in that they utilize both previous and future contextual information by processing the input in both directions, forward and backward. This leads to the generation of two independent sequences of output vectors form LSTMs. The final output is a concatenation  of the outputs from both directions i.e. : $ h_t= \overrightarrow{h_t} || \overleftarrow{h_t} $
 
             \cite{lstmhu2016question}
 
@@ -204,7 +209,7 @@
 
 	        Transformer based models have been become a very reliable way to implement various NLP based tasks since their introduction in the late 2017, \citep{atayl}. In this section we will critically evaluate a few key transformer based architectures \& assess their application particularly on the SQuAD 2.0 dataset.
 
-	        Work done in the field of Long short-term and gated recurrent \citep{lstm} and \citep{recurrent} neural networks, in particular, has been established as a state of the art approach in sequence modelling, transduction problems such as language modelling and machine translation.  Efforts have been made to push the boundaries of encoder-decoder based \& recurrent language models.
+	        Work done in the field of Long short-term and gated recurrent \citep{lstmoriginal} and \citep{recurrent} neural networks, in particular, has been established as a state of the art approach in sequence modelling, transduction problems such as language modelling and machine translation.  Efforts have been made to push the boundaries of encoder-decoder based \& recurrent language models.
 
 	        Recurrent models usually adopt a combination approach where they take symbol position of the input and output positions along with the computation. This helps them align positions to steps in computation time and generate a sequence of hidden states $ h_{t} $, which is a function of the previous hidden state $ h_{t-1}$ and the input function $ t $.  This inherently sequential nature of RNNs causes memory issues, leading to reduced batch sizes. \\
 			\begin{figure}[h!]

@@ -2,9 +2,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces LSTM Memory cell with a Constant Error Carousel having fixed weight 1.0, \citep {lstmoriginal}\relax }}{6}{figure.caption.5}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces LSTM network with 8 input cells, 4 output cells and 2 memory cells of block size 2. Here $ in1 $ marks the input gate, $ out1 $ marks the output gate and $ cell/block1 $ marks the first memory cell block 1. The internal architecture of $ cell/block1 $ is similar to fig. \ref {lstmCEC}. \citep {lstmoriginal}\relax }}{8}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces A memory cell for a BiLSTM highlighting a \textit {forget gate}. This forget gate helps in scaling the internal state of a memory cell, for example by resetting the state to 0. We can see that it is different to fig. \ref {lstmCEC}, with the implementation of a connection to the forget gate, while still having an internal weight of 1. \citep {lstmBiLSTM}\relax }}{10}{figure.caption.7}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Transformer Architecture built by \citep {atayl}\relax }}{11}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Scale Dot and Multi-Head Attention Models \cite {atayl}\relax }}{12}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Pre-training and Fine Tuning procedures for BERT \citep {bert}\relax }}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces A memory cell for a biLSTM highlighting a \textit {forget gate}. This forget gate helps in scaling the internal state of a memory cell, for example by resetting the state to 0. We can see that it is different to fig. \ref {lstmCEC}, with the implementation of a connection to the forget gate, while still having an internal weight of 1. \citep {lstmBiLSTM}\relax }}{10}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Transformer Architecture built by \citep {atayl}\relax }}{12}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Scale Dot and Multi-Head Attention Models \cite {atayl}\relax }}{13}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Pre-training and Fine Tuning procedures for BERT \citep {bert}\relax }}{14}{figure.caption.10}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Mid-Thesis report Gantt Chart\relax }}{19}{figure.caption.12}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Mid-Thesis report Gantt Chart\relax }}{20}{figure.caption.12}%

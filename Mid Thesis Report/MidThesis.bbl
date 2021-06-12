@@ -54,6 +54,11 @@ The Hugging~Face Team.
 \newblock URL \url{https://huggingface.co/transformers/}.
 \newblock Accessed: 2021-04-16.
 
+\bibitem[Rajpurkar()]{squad}
+P~Rajpurkar.
+\newblock Squad2.0.
+\newblock URL \url{https://rajpurkar.github.io/SQuAD-explorer/}.
+
 \bibitem[Ring(1993)]{lstmRing}
 Mark~B Ring.
 \newblock Learning sequential tasks by incrementally adding higher orders.
@@ -140,10 +145,5 @@ Corsair.
 \newblock URL
   \url{https://www.corsair.com/uk/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK8GX4M1A2400C14}.
 \newblock Accessed: 2021-04-16.
-
-\bibitem[Rajpurkar()]{squad}
-P~Rajpurkar.
-\newblock Squad2.0.
-\newblock URL \url{https://rajpurkar.github.io/SQuAD-explorer/}.
 
 \end{thebibliography}

@@ -8,8 +8,8 @@ Warning--I didn't find a database entry for "lstm"
 Warning--empty journal in lstmBiLSTM
 Warning--empty journal in lunar
 Warning--empty year in hfTransformers
-Warning--empty journal in wsj
 Warning--empty year in squad
+Warning--empty journal in wsj
 You've used 22 entries,
             2481 wiz_defined-function locations,
             675 strings with 8402 characters,
