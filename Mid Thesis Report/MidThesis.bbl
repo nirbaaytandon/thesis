@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -35,6 +35,19 @@ Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
   understanding.
 \newblock \emph{arXiv preprint arXiv:1810.04805}, 2018.
 
+\bibitem[Feng et~al.(2015)Feng, Xiang, Glass, Wang, and Zhou]{lstmInsuranceQA}
+Minwei Feng, Bing Xiang, Michael~R. Glass, Lidan Wang, and Bowen Zhou.
+\newblock Applying deep learning to answer selection: {A} study and an open
+  task.
+\newblock \emph{CoRR}, abs/1508.01585, 2015.
+\newblock URL \url{http://arxiv.org/abs/1508.01585}.
+
+\bibitem[Rajpurkar et~al.(2018)Rajpurkar, Jia, and Liang]{dataset}
+Pranav Rajpurkar, Robin Jia, and Percy Liang.
+\newblock Know what you don't know: Unanswerable questions for squad.
+\newblock \emph{CoRR}, abs/1806.03822, 2018.
+\newblock URL \url{http://arxiv.org/abs/1806.03822}.
+
 \bibitem[Green~Jr et~al.(1961)Green~Jr, Wolf, Chomsky, and
   Laughery]{green1961baseball}
 Bert~F Green~Jr, Alice~K Wolf, Carol Chomsky, and Kenneth Laughery.
@@ -47,12 +60,6 @@ William~A Woods and WOODS WA.
 \newblock Lunar rocks in natural english: Explorations in natural language
   question answering.
 \newblock 1977.
-
-\bibitem[Rajpurkar et~al.(2018)Rajpurkar, Jia, and Liang]{dataset}
-Pranav Rajpurkar, Robin Jia, and Percy Liang.
-\newblock Know what you don't know: Unanswerable questions for squad.
-\newblock \emph{CoRR}, abs/1806.03822, 2018.
-\newblock URL \url{http://arxiv.org/abs/1806.03822}.
 
 \bibitem[Team()]{hfTransformers}
 The Hugging~Face Team.
@@ -71,12 +78,13 @@ Mark~B Ring.
 \newblock \emph{Advances in neural information processing systems}, pages
   115--115, 1993.
 
-\bibitem[Feng et~al.(2015)Feng, Xiang, Glass, Wang, and Zhou]{lstmInsuranceQA}
-Minwei Feng, Bing Xiang, Michael~R. Glass, Lidan Wang, and Bowen Zhou.
-\newblock Applying deep learning to answer selection: {A} study and an open
-  task.
-\newblock \emph{CoRR}, abs/1508.01585, 2015.
-\newblock URL \url{http://arxiv.org/abs/1508.01585}.
+\bibitem[Hermann et~al.(2015)Hermann, Kocisk{\'{y}}, Grefenstette, Espeholt,
+  Kay, Suleyman, and Blunsom]{bilstmherman}
+Karl~Moritz Hermann, Tom{\'{a}}s Kocisk{\'{y}}, Edward Grefenstette, Lasse
+  Espeholt, Will Kay, Mustafa Suleyman, and Phil Blunsom.
+\newblock Teaching machines to read and comprehend.
+\newblock \emph{CoRR}, abs/1506.03340, 2015.
+\newblock URL \url{http://arxiv.org/abs/1506.03340}.
 
 \bibitem[Wang and Jiang(2016)]{lstmhu2016question}
 Shuohang Wang and Jing Jiang.

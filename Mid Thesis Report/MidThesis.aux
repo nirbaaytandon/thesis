@@ -22,14 +22,16 @@
 \citation{lstmBiLSTM}
 \citation{lstmhaighextractive}
 \citation{lstmhaighextractive}
+\citation{lstmhaighextractive}
 \citation{atayl}
 \citation{atayl}
 \citation{bert}
-\@writefile{toc}{\contentsline {chapter}{List of Figures}{3}{chapter*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{List of Figures}{2}{chapter*.2}\protected@file@percent }
 \citation{lstmInsuranceQA}
+\citation{lstmhaighextractive}
 \citation{dataset}
-\@writefile{toc}{\contentsline {chapter}{List of Tables}{4}{chapter*.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\nonumberline List of Abbreviations}{5}{chapter*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{List of Tables}{3}{chapter*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\nonumberline List of Abbreviations}{4}{chapter*.4}\protected@file@percent }
 \citation{green1961baseball}
 \citation{lunar}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}\centering  Introduction}{1}{chapter.1}\protected@file@percent }
@@ -38,17 +40,17 @@
 \newlabel{c1introduction}{{1}{1}{\centering Introduction}{chapter.1}{}}
 \citation{atayl}
 \citation{originallstm}
+\citation{dataset}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Background Of The Study}{2}{section.1.1}\protected@file@percent }
 \newlabel{c1background}{{1.1}{2}{Background Of The Study}{section.1.1}{}}
-\citation{dataset}
 \citation{hfTransformers}
+\citation{squad}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Aims And Objectives}{3}{section.1.2}\protected@file@percent }
 \newlabel{12}{{1.2}{3}{Aims And Objectives}{section.1.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.3}Scope Of The Study}{3}{section.1.3}\protected@file@percent }
 \newlabel{13}{{1.3}{3}{Scope Of The Study}{section.1.3}{}}
-\citation{squad}
-\@writefile{toc}{\contentsline {section}{\numberline {1.4}Significance Of The Study}{4}{section.1.4}\protected@file@percent }
-\newlabel{14}{{1.4}{4}{Significance Of The Study}{section.1.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Significance Of The Study}{3}{section.1.4}\protected@file@percent }
+\newlabel{14}{{1.4}{3}{Significance Of The Study}{section.1.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.5}Structure Of The Study}{4}{section.1.5}\protected@file@percent }
 \newlabel{15}{{1.5}{4}{Structure Of The Study}{section.1.5}{}}
 \citation{lstmoriginal}
@@ -65,73 +67,84 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces LSTM Memory cell with a Constant Error Carousel having fixed weight 1.0, \citep  {lstmoriginal}\relax }}{6}{figure.caption.5}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{lstmCEC}{{2.1}{6}{LSTM Memory cell with a Constant Error Carousel having fixed weight 1.0, \citep {lstmoriginal}\relax }{figure.caption.5}{}}
+\newlabel{eq1}{{2.1}{6}{Long Short-Term Memory}{equation.2.1.1}{}}
 \citation{lstmoriginal}
 \citation{lstmoriginal}
-\newlabel{eq1}{{2.1}{7}{Long Short-Term Memory}{equation.2.1.1}{}}
 \newlabel{eq2}{{2.2}{7}{Long Short-Term Memory}{equation.2.1.2}{}}
 \newlabel{eq3}{{2.3}{7}{Long Short-Term Memory}{equation.2.1.3}{}}
 \newlabel{eq4}{{2.4}{7}{Long Short-Term Memory}{equation.2.1.4}{}}
 \newlabel{eq5}{{2.5}{7}{Long Short-Term Memory}{equation.2.1.5}{}}
 \newlabel{eq6}{{2.6}{7}{Long Short-Term Memory}{equation.2.1.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Advantages of LSTMs}{7}{figure.caption.6}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces LSTM network with 8 input cells, 4 output cells and 2 memory cells of block size 2. Here $ in1 $ marks the input gate, $ out1 $ marks the output gate and $ cell/block1 $ marks the first memory cell block 1. The internal architecture of $ cell/block1 $ is similar to fig. \ref  {lstmCEC}. \citep  {lstmoriginal}\relax }}{8}{figure.caption.6}\protected@file@percent }
 \newlabel{lstmNetwork}{{2.2}{8}{LSTM network with 8 input cells, 4 output cells and 2 memory cells of block size 2. Here $ in1 $ marks the input gate, $ out1 $ marks the output gate and $ cell/block1 $ marks the first memory cell block 1. The internal architecture of $ cell/block1 $ is similar to fig. \ref {lstmCEC}. \citep {lstmoriginal}\relax }{figure.caption.6}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Advantages of LSTMs}{8}{figure.caption.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Limitations of LSTMs}{8}{figure.caption.6}\protected@file@percent }
 \citation{lstmBiLSTM}
 \citation{lstmBiLSTM}
+\citation{lstmInsuranceQA}
 \citation{lstmhaighextractive}
 \citation{lstmInsuranceQA}
-\citation{lstmInsuranceQA}
-\citation{lstmInsuranceQA}
-\@writefile{toc}{\contentsline {subsubsection}{Limitations of LSTMs}{9}{figure.caption.6}\protected@file@percent }
-\citation{lstmhaighextractive}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces A memory cell for a biLSTM highlighting a \textit  {forget gate}. This forget gate helps in scaling the internal state of a memory cell, for example by resetting the state to 0. We can see that it is different to fig. \ref  {lstmCEC}, with the implementation of a connection to the forget gate, while still having an internal weight of 1. \citep  {lstmBiLSTM}\relax }}{10}{figure.caption.7}\protected@file@percent }
-\newlabel{lstmBilstm}{{2.3}{10}{A memory cell for a biLSTM highlighting a \textit {forget gate}. This forget gate helps in scaling the internal state of a memory cell, for example by resetting the state to 0. We can see that it is different to fig. \ref {lstmCEC}, with the implementation of a connection to the forget gate, while still having an internal weight of 1. \citep {lstmBiLSTM}\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}BiLSTMs}{9}{subsection.2.1.1}\protected@file@percent }
+\newlabel{c2bilstm}{{2.1.1}{9}{BiLSTMs}{subsection.2.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces A memory cell for a biLSTM highlighting a \textit  {forget gate}. This forget gate helps in scaling the internal state of a memory cell, for example by resetting the state to 0. We can see that it is different to fig. \ref  {lstmCEC}, with the implementation of a connection to the forget gate, while still having an internal weight of 1. \citep  {lstmBiLSTM}\relax }}{9}{figure.caption.7}\protected@file@percent }
+\newlabel{lstmBilstm}{{2.3}{9}{A memory cell for a biLSTM highlighting a \textit {forget gate}. This forget gate helps in scaling the internal state of a memory cell, for example by resetting the state to 0. We can see that it is different to fig. \ref {lstmCEC}, with the implementation of a connection to the forget gate, while still having an internal weight of 1. \citep {lstmBiLSTM}\relax }{figure.caption.7}{}}
 \citation{lstmhaighextractive}
 \citation{lstmhaighextractive}
 \citation{lstmhaighextractive}
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces InsuranceQA Corpus statistics: first two columns are the question and answer quantity; notice there could be multiple answers for some questions so that the answer quantity is larger than the question quantity; third column is the question total word count. The total number of answers is 24 981 and the whole answer text contains 2 386 749 words\citep  {lstmInsuranceQA}.\relax }}{11}{table.caption.8}\protected@file@percent }
-\newlabel{lstmInsuranceQATable}{{2.1}{11}{InsuranceQA Corpus statistics: first two columns are the question and answer quantity; notice there could be multiple answers for some questions so that the answer quantity is larger than the question quantity; third column is the question total word count. The total number of answers is 24 981 and the whole answer text contains 2 386 749 words\citep {lstmInsuranceQA}.\relax }{table.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Basic QA-LSTM model depicting biLSTM implementation \cite  {lstmhaighextractive}\relax }}{12}{figure.caption.9}\protected@file@percent }
-\newlabel{lstmhaig}{{2.4}{12}{Basic QA-LSTM model depicting biLSTM implementation \cite {lstmhaighextractive}\relax }{figure.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces QA-LSTM with CNN layer \citep  {lstmhaighextractive}\relax }}{12}{figure.caption.10}\protected@file@percent }
-\newlabel{lstmhaigcnn}{{2.5}{12}{QA-LSTM with CNN layer \citep {lstmhaighextractive}\relax }{figure.caption.10}{}}
-\citation{lstmhu2016question}
-\citation{lstmintent}
-\citation{fastQA}
+\citation{lstmhaighextractive}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces InsuranceQA Corpus statistics: first two columns are the question and answer quantity; notice there could be multiple answers for some questions so that the answer quantity is larger than the question quantity; third column is the question total word count. The total number of answers is 24 981 and the whole answer text contains 2 386 749 words\citep  {lstmInsuranceQA}.\relax }}{10}{table.caption.8}\protected@file@percent }
+\newlabel{lstmInsuranceQATable}{{2.1}{10}{InsuranceQA Corpus statistics: first two columns are the question and answer quantity; notice there could be multiple answers for some questions so that the answer quantity is larger than the question quantity; third column is the question total word count. The total number of answers is 24 981 and the whole answer text contains 2 386 749 words\citep {lstmInsuranceQA}.\relax }{table.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Basic QA-LSTM model depicting biLSTM implementation \cite  {lstmhaighextractive}\relax }}{11}{figure.caption.9}\protected@file@percent }
+\newlabel{lstmhaig}{{2.4}{11}{Basic QA-LSTM model depicting biLSTM implementation \cite {lstmhaighextractive}\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces QA-LSTM with CNN layer \citep  {lstmhaighextractive}\relax }}{11}{figure.caption.10}\protected@file@percent }
+\newlabel{lstmhaigcnn}{{2.5}{11}{QA-LSTM with CNN layer \citep {lstmhaighextractive}\relax }{figure.caption.10}{}}
+\citation{bilstmherman}
+\citation{lstmhaighextractive}
+\citation{lstmhaighextractive}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces QA-LSTM with Attention layer \citep  {lstmhaighextractive}\relax }}{12}{figure.caption.11}\protected@file@percent }
+\newlabel{lstmhaigattention}{{2.6}{12}{QA-LSTM with Attention layer \citep {lstmhaighextractive}\relax }{figure.caption.11}{}}
+\newlabel{bilstmAttentioneq}{{2.9}{12}{BiLSTMs}{equation.2.1.9}{}}
+\newlabel{bilstmattentioneq2}{{2.10}{12}{BiLSTMs}{equation.2.1.10}{}}
+\citation{lstmhaighextractive}
+\citation{lstmhaighextractive}
+\citation{lstmhaighextractive}
 \citation{atayl}
 \citation{lstmoriginal}
 \citation{recurrent}
-\citation{atayl}
+\@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Experimental results from \citep  {lstmhaighextractive}, highlighting how QA-LSTM with attention outperforms its various modifications.\relax }}{13}{table.caption.12}\protected@file@percent }
+\newlabel{lstmhaigexperiementresults}{{2.2}{13}{Experimental results from \citep {lstmhaighextractive}, highlighting how QA-LSTM with attention outperforms its various modifications.\relax }{table.caption.12}{}}
+\newlabel{bilstmattentioneq3}{{2.11}{13}{BiLSTMs}{equation.2.1.11}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}Question Answering Using Transformers}{13}{section.2.2}\protected@file@percent }
 \newlabel{23}{{2.2}{13}{Question Answering Using Transformers}{section.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Transformer Architecture built by \citep  {atayl}\relax }}{14}{figure.caption.11}\protected@file@percent }
-\newlabel{transformerArchitecture}{{2.6}{14}{Transformer Architecture built by \citep {atayl}\relax }{figure.caption.11}{}}
+\citation{atayl}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Transformer Architecture built by \citep  {atayl}\relax }}{14}{figure.caption.13}\protected@file@percent }
+\newlabel{transformerArchitecture}{{2.7}{14}{Transformer Architecture built by \citep {atayl}\relax }{figure.caption.13}{}}
 \citation{wsj}
 \citation{atayl}
 \citation{bert}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Self Attention}{15}{subsection.2.2.1}\protected@file@percent }
 \newlabel{231}{{2.2.1}{15}{Self Attention}{subsection.2.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Scale Dot and Multi-Head Attention Models \cite  {atayl}\relax }}{15}{figure.caption.12}\protected@file@percent }
-\newlabel{multiHeadAttention}{{2.7}{15}{Scale Dot and Multi-Head Attention Models \cite {atayl}\relax }{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Scale Dot and Multi-Head Attention Models \cite  {atayl}\relax }}{15}{figure.caption.14}\protected@file@percent }
+\newlabel{multiHeadAttention}{{2.8}{15}{Scale Dot and Multi-Head Attention Models \cite {atayl}\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Improvements of Transformer Architectures}{15}{subsection.2.2.2}\protected@file@percent }
+\newlabel{232}{{2.2.2}{15}{Improvements of Transformer Architectures}{subsection.2.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{BERT}{15}{subsection.2.2.2}\protected@file@percent }
+\newlabel{2321}{{2.2.2}{15}{BERT}{subsection.2.2.2}{}}
 \citation{dai}
 \citation{bert}
 \citation{wang}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Improvements of Transformer Architectures}{16}{subsection.2.2.2}\protected@file@percent }
-\newlabel{232}{{2.2.2}{16}{Improvements of Transformer Architectures}{subsection.2.2.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{BERT}{16}{subsection.2.2.2}\protected@file@percent }
-\newlabel{2321}{{2.2.2}{16}{BERT}{subsection.2.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Pre-training and Fine Tuning procedures for BERT \citep  {bert}\relax }}{16}{figure.caption.13}\protected@file@percent }
-\newlabel{bertPretraining}{{2.8}{16}{Pre-training and Fine Tuning procedures for BERT \citep {bert}\relax }{figure.caption.13}{}}
 \citation{albert}
 \citation{roberta}
 \citation{distil}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Pre-training and Fine Tuning procedures for BERT \citep  {bert}\relax }}{16}{figure.caption.15}\protected@file@percent }
+\newlabel{bertPretraining}{{2.9}{16}{Pre-training and Fine Tuning procedures for BERT \citep {bert}\relax }{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{ALBERT}{16}{figure.caption.15}\protected@file@percent }
+\newlabel{2322}{{2.2.2}{16}{ALBERT}{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{ROBERTA}{16}{figure.caption.15}\protected@file@percent }
+\newlabel{2323}{{2.2.2}{16}{ROBERTA}{figure.caption.15}{}}
 \citation{RAM}
-\@writefile{toc}{\contentsline {subsubsection}{ALBERT}{17}{figure.caption.13}\protected@file@percent }
-\newlabel{2322}{{2.2.2}{17}{ALBERT}{figure.caption.13}{}}
-\@writefile{toc}{\contentsline {subsubsection}{ROBERTA}{17}{figure.caption.13}\protected@file@percent }
-\newlabel{2323}{{2.2.2}{17}{ROBERTA}{figure.caption.13}{}}
-\@writefile{toc}{\contentsline {subsubsection}{DISTILBERT}{17}{figure.caption.13}\protected@file@percent }
-\newlabel{2324}{{2.2.2}{17}{DISTILBERT}{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{DISTILBERT}{17}{figure.caption.15}\protected@file@percent }
+\newlabel{2324}{{2.2.2}{17}{DISTILBERT}{figure.caption.15}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}Comparison Of Techniques}{17}{section.2.3}\protected@file@percent }
 \newlabel{24}{{2.3}{17}{Comparison Of Techniques}{section.2.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.4}Summary}{17}{section.2.4}\protected@file@percent }
@@ -146,38 +159,38 @@
 \newlabel{c31}{{3.1}{18}{Data Selection}{section.3.1}{}}
 \citation{dataset}
 \citation{dataset}
-\citation{dataset}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Dataset statistics of SQuAD 2.0, compared to the previous SQuAD 1.1\citep  {dataset}.\relax }}{20}{table.caption.14}\protected@file@percent }
-\newlabel{datasetDescription}{{3.1}{20}{Dataset statistics of SQuAD 2.0, compared to the previous SQuAD 1.1\citep {dataset}.\relax }{table.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Dataset statistics of SQuAD 2.0, compared to the previous SQuAD 1.1\citep  {dataset}.\relax }}{20}{table.caption.16}\protected@file@percent }
+\newlabel{datasetDescription}{{3.1}{20}{Dataset statistics of SQuAD 2.0, compared to the previous SQuAD 1.1\citep {dataset}.\relax }{table.caption.16}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{20}{section.3.2}\protected@file@percent }
 \newlabel{c32}{{3.2}{20}{Data Pre-processing And Transformation}{section.3.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Existing Models And Benchmarks}{21}{section.3.3}\protected@file@percent }
-\newlabel{c33}{{3.3}{21}{Existing Models And Benchmarks}{section.3.3}{}}
-\@writefile{toc}{\contentsline {chapter}{Appendices}{22}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Existing Models And Benchmarks}{20}{section.3.3}\protected@file@percent }
+\newlabel{c33}{{3.3}{20}{Existing Models And Benchmarks}{section.3.3}{}}
+\@writefile{toc}{\contentsline {chapter}{Appendices}{21}{section*.17}\protected@file@percent }
 \bibdata{MidThesis}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Mid-Thesis report Gantt Chart\relax }}{23}{figure.caption.16}\protected@file@percent }
-\newlabel{ganttChartMid}{{1}{23}{Mid-Thesis report Gantt Chart\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Mid-Thesis report Gantt Chart\relax }}{22}{figure.caption.18}\protected@file@percent }
+\newlabel{ganttChartMid}{{1}{22}{Mid-Thesis report Gantt Chart\relax }{figure.caption.18}{}}
 \bibcite{lstmoriginal}{{1}{1997}{{Schmidhuber and Hochreiter}}{{}}}
 \bibcite{lstmBiLSTM}{{2}{2005}{{Graves and Schmidhuber}}{{}}}
 \bibcite{lstmhaighextractive}{{3}{2015}{{Tan et~al.}}{{Tan, Xiang, and Zhou}}}
 \bibcite{atayl}{{4}{2017}{{Vaswani et~al.}}{{Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin}}}
 \bibcite{bert}{{5}{2018}{{Devlin et~al.}}{{Devlin, Chang, Lee, and Toutanova}}}
-\bibcite{green1961baseball}{{6}{1961}{{Green~Jr et~al.}}{{Green~Jr, Wolf, Chomsky, and Laughery}}}
-\bibcite{lunar}{{7}{1977}{{Woods and WA}}{{}}}
-\bibcite{dataset}{{8}{2018}{{Rajpurkar et~al.}}{{Rajpurkar, Jia, and Liang}}}
-\bibcite{hfTransformers}{{9}{}{{Team}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{References}{24}{appendix*.17}\protected@file@percent }
-\bibcite{squad}{{10}{}{{Rajpurkar}}{{}}}
-\bibcite{lstmRing}{{11}{1993}{{Ring}}{{}}}
-\bibcite{lstmInsuranceQA}{{12}{2015}{{Feng et~al.}}{{Feng, Xiang, Glass, Wang, and Zhou}}}
-\bibcite{lstmhu2016question}{{13}{2016}{{Wang and Jiang}}{{}}}
-\bibcite{lstmintent}{{14}{2020}{{Gennaro et~al.}}{{Gennaro, Buonanno, Girolamo, Ospedale, and Palmieri}}}
-\bibcite{fastQA}{{15}{2017}{{Weissenborn et~al.}}{{Weissenborn, Wiese, and Seiffe}}}
-\bibcite{recurrent}{{16}{2016}{{Zhou et~al.}}{{Zhou, Cao, Wang, Li, and Xu}}}
-\bibcite{wsj}{{17}{1993}{{Marcus et~al.}}{{Marcus, Santorini, and Marcinkiewicz}}}
-\bibcite{dai}{{18}{2015}{{Dai and Le}}{{}}}
-\bibcite{wang}{{19}{2018}{{Wang et~al.}}{{Wang, Yan, and Wu}}}
-\bibcite{albert}{{20}{2019}{{Lan et~al.}}{{Lan, Chen, Goodman, Gimpel, Sharma, and Soricut}}}
-\bibcite{roberta}{{21}{2019}{{Liu et~al.}}{{Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis, Zettlemoyer, and Stoyanov}}}
-\bibcite{distil}{{22}{2019}{{Sanh et~al.}}{{Sanh, Debut, Chaumond, and Wolf}}}
-\bibcite{RAM}{{23}{2021}{{Corsair}}{{}}}
+\bibcite{lstmInsuranceQA}{{6}{2015}{{Feng et~al.}}{{Feng, Xiang, Glass, Wang, and Zhou}}}
+\bibcite{dataset}{{7}{2018}{{Rajpurkar et~al.}}{{Rajpurkar, Jia, and Liang}}}
+\bibcite{green1961baseball}{{8}{1961}{{Green~Jr et~al.}}{{Green~Jr, Wolf, Chomsky, and Laughery}}}
+\bibcite{lunar}{{9}{1977}{{Woods and WA}}{{}}}
+\bibcite{hfTransformers}{{10}{}{{Team}}{{}}}
+\@writefile{toc}{\contentsline {chapter}{References}{23}{appendix*.19}\protected@file@percent }
+\bibcite{squad}{{11}{}{{Rajpurkar}}{{}}}
+\bibcite{lstmRing}{{12}{1993}{{Ring}}{{}}}
+\bibcite{bilstmherman}{{13}{2015}{{Hermann et~al.}}{{Hermann, Kocisk{\'{y}}, Grefenstette, Espeholt, Kay, Suleyman, and Blunsom}}}
+\bibcite{lstmhu2016question}{{14}{2016}{{Wang and Jiang}}{{}}}
+\bibcite{lstmintent}{{15}{2020}{{Gennaro et~al.}}{{Gennaro, Buonanno, Girolamo, Ospedale, and Palmieri}}}
+\bibcite{fastQA}{{16}{2017}{{Weissenborn et~al.}}{{Weissenborn, Wiese, and Seiffe}}}
+\bibcite{recurrent}{{17}{2016}{{Zhou et~al.}}{{Zhou, Cao, Wang, Li, and Xu}}}
+\bibcite{wsj}{{18}{1993}{{Marcus et~al.}}{{Marcus, Santorini, and Marcinkiewicz}}}
+\bibcite{dai}{{19}{2015}{{Dai and Le}}{{}}}
+\bibcite{wang}{{20}{2018}{{Wang et~al.}}{{Wang, Yan, and Wu}}}
+\bibcite{albert}{{21}{2019}{{Lan et~al.}}{{Lan, Chen, Goodman, Gimpel, Sharma, and Soricut}}}
+\bibcite{roberta}{{22}{2019}{{Liu et~al.}}{{Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis, Zettlemoyer, and Stoyanov}}}
+\bibcite{distil}{{23}{2019}{{Sanh et~al.}}{{Sanh, Debut, Chaumond, and Wolf}}}
+\bibcite{RAM}{{24}{2021}{{Corsair}}{{}}}

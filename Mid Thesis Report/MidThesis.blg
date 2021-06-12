@@ -9,45 +9,45 @@ Warning--empty journal in lunar
 Warning--empty year in hfTransformers
 Warning--empty year in squad
 Warning--empty journal in wsj
-You've used 23 entries,
+You've used 24 entries,
             2481 wiz_defined-function locations,
-            680 strings with 8620 characters,
-and the built_in function-call counts, 8552 in all, are:
-= -- 671
-> -- 541
+            685 strings with 8860 characters,
+and the built_in function-call counts, 8993 in all, are:
+= -- 699
+> -- 586
 < -- 11
-+ -- 206
-- -- 160
-* -- 641
-:= -- 1432
-add.period$ -- 79
-call.type$ -- 23
-change.case$ -- 46
-chr.to.int$ -- 23
-cite$ -- 28
-duplicate$ -- 428
-empty$ -- 728
-format.name$ -- 193
-if$ -- 1783
++ -- 222
+- -- 174
+* -- 683
+:= -- 1515
+add.period$ -- 83
+call.type$ -- 24
+change.case$ -- 48
+chr.to.int$ -- 24
+cite$ -- 29
+duplicate$ -- 446
+empty$ -- 756
+format.name$ -- 208
+if$ -- 1869
 int.to.chr$ -- 1
-int.to.str$ -- 24
-missing$ -- 20
-newline$ -- 133
-num.names$ -- 69
-pop$ -- 200
+int.to.str$ -- 25
+missing$ -- 21
+newline$ -- 139
+num.names$ -- 72
+pop$ -- 206
 preamble$ -- 1
-purify$ -- 23
+purify$ -- 24
 quote$ -- 0
-skip$ -- 277
+skip$ -- 288
 stack$ -- 0
-substring$ -- 214
-swap$ -- 62
+substring$ -- 216
+swap$ -- 64
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 161
+type$ -- 168
 warning$ -- 5
-while$ -- 57
+while$ -- 59
 width$ -- 0
-write$ -- 310
+write$ -- 325
 (There were 6 warnings)

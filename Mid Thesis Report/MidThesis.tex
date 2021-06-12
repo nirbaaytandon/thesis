@@ -1,7 +1,7 @@
 %% VLTT = Very Light Transformer Traversal
 % VAULT = Very Albert-like Uniform Lite Transformer
 
-\documentclass[12pt]{report}
+\documentclass[a4paper,12pt]{report}
 % arara: pdflatex: { draft: true }
 % arara: makeglossaries
 % arara: pdflatex: { synctex: true }
@@ -17,9 +17,8 @@
 \usepackage{latexsym}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
-\usepackage[font=small,labelfont=bf,
-   format=plain]{caption}
-\captionsetup[figure]{justification=raggedright, singlelinecheck=false}
+\usepackage[font=scriptsize,labelfont=bf,format=plain,justification=raggedright, singlelinecheck=false]{caption}
+\captionsetup[figure, table]{font=scriptsize,labelfont=bf,format=plain,justification=raggedright, singlelinecheck=false}
 
 \usepackage{titlesec}
 \titleformat{\chapter}[display]{\bfseries\centering}{\huge Chapter \thechapter}{1em}{\Huge}
@@ -66,14 +65,14 @@
 
     \chapter{\centering Introduction}\label{c1introduction}
 
-    One of the most philosophical questions that anyone can encounter is \textit{``Can an answer exist without a question?"}. While that question exists to be solved by philosophers and thinkers, we shall aim to address the \textit{answer} that can be provided to a question in terms of the context that has been posed. While the field of Natural Language Processing(NLP) is vast and many unexplored areas exist, in this thesis the focus is entirely on developing a novel architecture that provides \textit{highly contextual and relevant answers} to the questions asked of it.
+    One of the most philosophical questions that anyone can encounter is \textit{``Can an answer exist without a question?"}. While that question exists to be solved by philosophers and thinkers, we shall aim to address the \textit{answer} that can be provided to a question in terms of the context that has been asked. While the field of Natural Language Processing(NLP) is vast and many unexplored areas exist, in this thesis the focus is entirely on developing a novel architecture that provides \textit{highly contextual and relevant answers} to the questions asked of it.
 
     The earliest examples of Question-Answering(QA) systems can be traced back to 1961, in the form of BASEBALL,\citep{green1961baseball}, a system developed by Bert F. Green and team to answer basic questions posed using punch cards in ordinary English language about stored data on baseball games. The team implemented a dictionary structure to allow for answers to be looked up and printed. For example, the system could answer very direct questions such as: ``Where did each team play on July 7?".
-    A highly impressive feat for the early days of neural networks in 1960's, the work done by Green paved the way for systems like LUNAR,\citep{lunar}, answered geological questions for the rocks brought back from the Apollo moon missions. LUNAR, which was first presented in 1971, had an astounding 90\% accuracy rate for questions that were asked by people who didn't know how the system worked!
-    Question-Answering based systems have gained a lot of popularity, especially in the form of ``chatbots''. These systems depend highly on contextual understanding of the input, the training corpus and the question asked. They use this knowledge to output an answer that can help the user with whatever their query is. Recurrent neural networks and architectures based on them, have been able to provide great advancements in the field of Question-answering and chatbots in general. However, there is a behaviour of over-fitting and lack of contextual understanding of the question. This, coupled with long training times and extremely complex mathematical model designs, have often kept the field of Natural Language Processing slightly obscured from the masses.
+    A highly impressive feat for the early days of neural networks in the 1960s, the work done by Green paved the way for systems like LUNAR,\citep{lunar}, answered geological questions for the rocks brought back from the Apollo moon missions. LUNAR, which was first presented in 1971, had an astounding 90\% accuracy rate for questions that were asked by people who didn't know how the system worked!
+    Question-Answering based systems have gained a lot of popularity, especially in the form of ``chatbots''. These systems depend highly on contextual understanding of the input, the training corpus and the question asked. They use this knowledge to output an answer that can help the user with whatever their query is. Recurrent neural networks and architectures based on them, have been able to provide great advancements in the field of Question-answering and chatbots in general. However, there is a behaviour of over-fitting and a lack of contextual understanding of the question. This, coupled with long training times and extremely complex mathematical model designs, have often kept the field of Natural Language Processing slightly obscured from the masses.
 
 
-    The problem of Question-Answering is of a sequential nature. A sequential problem is one which
+    The problem of Question-Answering is a sequential one. A sequential problem is one which
 
     In a more mathematical context, we can say that the problem we face is of \textit{answer selection} and not \textit{answer provision}. Through numerous studies that have been done, some of which we shall look into detail in chapter \ref{c2}, we see that the problem is not how to provide an answer to a question, it is if the answer provided is the correct one or not in the \textit{context} in which the question has been posed.
 
@@ -105,7 +104,7 @@
 
         \section{Scope Of The Study}\label{13}
 
-        This research work is entirely focused in the area of Question-Answering based networks. This focus helps in significantly narrowing down the scope and critically assessing the problem that needs to be solved. The practical applications of the field of QA are endless. From chatbots to QA systems on domain specific knowledge or conversational applications for voice assistants, a light, robust, highly accurate Transformer based architecture can help ease the daily lives of millions of users.
+        This research work is entirely focused on the area of Question-Answering based networks. This focus helps in significantly narrowing down the scope and critically assessing the problem that needs to be solved. The practical applications of the field of QA are endless. From chatbots to QA systems on domain-specific knowledge or conversational applications for voice assistants, a light, robust, highly accurate Transformer based architecture can help ease the daily lives of millions of users.
         \section{Significance Of The Study}\label{14}
 
         The current state of the art systems, some of which have been highlighted in section \ref{c1background}, suffer from various drawbacks and even the best models have only been able to achieve an EM score of 90.871 with an F1 score of 93.183 on the SQuAD 2.0 leaderboard \cite{squad}.
@@ -183,17 +182,15 @@
                     \item They do not have the ability to ``natively" count discrete time steps which might be useful in some applications. This isn't a big issue for the case of QA based problems.
                 \end{itemize}
 
+             \subsection{BiLSTMs}\label{c2bilstm}
+                  \begin{figure}[!h]
+     	           \centering
+                    \includegraphics[scale=0.35]{../images/lstm-biLstm.png}
+           		   \caption{A memory cell for a biLSTM highlighting a \textit{forget gate}. This forget gate helps in scaling the internal state of a memory cell, for example by resetting the state to 0. We can see that it is different to fig. \ref{lstmCEC}, with the implementation of a connection to the forget gate, while still having an internal weight of 1. \citep{lstmBiLSTM}}\label{lstmBilstm}
+                 \end{figure}
             While LSTMs have found various applications across the field of machine and deep learning, QA seems to be one where being able to achieve consistent results of accuracy as well as having an exact match seems to elusive.
             Research carried out at IBM by Tan, Santos and co. looked at approaching this problem by using something called Bidirectional LSTMs or BiLSTM, \citep{lstmBiLSTM}. Introduced by Graves and Schmidhuber in their paper \textit{Framewise Phoneme Classification with Bidirectional LSTM Networks}, the biLSTM implements a \textit{forget gate} as seen in fig. \ref{lstmBilstm}. An advantage of biLSTMs over traditional LSTMs is that you feed the data twice, once from the beginning to the end and then from the end to the beginning. This helps the model contextualize and adjust weights better, therefore creating a more robust model that learns and performs better overall when compared to traditional LSTMs and RNNs.
-             \begin{figure}[!h]
-	           \centering
-               \includegraphics[scale=0.35]{../images/lstm-biLstm.png}
-      		   \caption{A memory cell for a biLSTM highlighting a \textit{forget gate}. This forget gate helps in scaling the internal state of a memory cell, for example by resetting the state to 0. We can see that it is different to fig. \ref{lstmCEC}, with the implementation of a connection to the forget gate, while still having an internal weight of 1. \citep{lstmBiLSTM}}\label{lstmBilstm}
-            \end{figure}
-
-            BiLSTMs were introduced as an approach towards phoneme classification for speech recognition applications, however, in their paper ``LSTM-BASED DEEP LEARNING MODELS FOR NON -FACTOID ANSWER SELECTION", \citep{lstmhaighextractive} have shown that extending the biLSTM model 2 different approaches for QA has its advantages. One approach, using a more composite method of using CNNs for representing questions as well as answers. The other, by implementing an \textit{attention mechanism} that helps in generating an answer representation according to the question context.
-            Their framework is based on developing a biLSTM model for both questions and answers, applying a connective pooling layer and using a similarity metric to measure the degree of matching answers. They utilized the InsuranceQA\citep{lstmInsuranceQA} dataset that was created in 2015 and tested primarily on CNN based networks, details of the dataset can be found in table \ref{lstmInsuranceQATable}.
-          \begin{table}[h!]
+             \begin{table}[h!]
               \centering
                 \begin{tabular}{|c|c|c|c|}
                     \hline
@@ -211,17 +208,18 @@
                 \caption{InsuranceQA Corpus statistics: first two columns are the question and answer quantity; notice there could be multiple answers for some questions so that the answer quantity is larger than the question quantity; third column is the question total word count. The total number of answers is 24 981 and the whole answer text contains 2 386 749 words\citep{lstmInsuranceQA}.}\label{lstmInsuranceQATable}
             \end{table}
 
+            BiLSTMs were introduced as an approach towards phoneme classification for speech recognition applications, however, in their paper ``LSTM-BASED DEEP LEARNING MODELS FOR NON -FACTOID ANSWER SELECTION", \citep{lstmhaighextractive} have shown that extending the biLSTM model 2 different approaches for QA has its advantages. One approach, using a more composite method of using CNNs for representing questions as well as answers. The other, by implementing an \textit{attention mechanism} that helps in generating an answer representation according to the question context.
+            Their framework is based on developing a biLSTM model for both questions and answers, applying a connective pooling layer and using a similarity metric to measure the degree of matching answers. They utilized the InsuranceQA\citep{lstmInsuranceQA} dataset that was created in 2015 and tested primarily on CNN based networks, details of the dataset can be found in table \ref{lstmInsuranceQATable}.
+
             Pooling layers are known to suffer from an incapability to retain local linguistic information. To combat this the team proposed an additional CNN layer on top of the biLSTM layer. Additionally, they added a simple and efficient attention model to help their biLSTM model better distinguish between candidate answers according to the question context. This study is significant in the field of both deep learning based models and for the field of Question-Answering because it requires little or no feature engineering to achieve significant results. We will also see later in section \ref{23}, how biLSTMs are implemented with Transformers to produce an even better model.
             In their work \citep{lstmhaighextractive} have shown that biLSTMs are capable of exploiting long-range sequential context information. This is important as it is often seen that the answer is not directly semantically related to the question but more contextually related. Long-range exploitations help the model understand the question more holistically, therefore helping produce a more relevant answer.
-
-            BiLSTMs have an advantage over traditional LSTMs in that they utilize both previous and future contextual information by processing the input in both directions, forward and backward. This leads to the generation of two independent sequences of output vectors form LSTMs. The final output is a concatenation  of the outputs from both directions ie. $h_t= \overrightarrow{h_t} || \overleftarrow{h_t} $.
-            The \textbf{QA-LSTM} model  proposed by \citep{lstmhaighextractive} can be seen in fig. \ref{lstmhaig}. We can see that it generates a distributed representation for both questions(blue) and answers(red) before moving on to perform pooling and cosine similarity operations.
 	        \begin{figure}
                 \centering
                 \includegraphics[scale=0.4]{../images/lstm-bilstmhaig.png}
                 \caption{Basic QA-LSTM model depicting biLSTM implementation \cite{lstmhaighextractive}}\label{lstmhaig}
             \end{figure}
-
+             BiLSTMs have an advantage over traditional LSTMs in that they utilize both previous and future contextual information by processing the input in both directions, forward and backward. This leads to the generation of two independent sequences of output vectors form LSTMs. The final output is a concatenation  of the outputs from both directions ie. $h_t= \overrightarrow{h_t} || \overleftarrow{h_t} $.
+             The \textbf{QA-LSTM} model  proposed by \citep{lstmhaighextractive} can be seen in fig. \ref{lstmhaig}. We can see that it generates a distributed representation for both questions(blue) and answers(red) before moving on to perform pooling and cosine similarity operations.
             In fig. \ref{lstmhaigcnn}, it can be seen that the CNN layer has been implemented after the biLSTM layers and before the pooling layers. The pooling layers have been modified to be max-$ k $ pooling layers, similar to standard CNNs.
             \begin{figure}
                 \centering
@@ -238,13 +236,53 @@
                 o_{F}(t) = tanh \bigg[\bigg(\sum_{i=0}^{m-1}\textbf{h}(t+i)^{T}\textbf{F}(i)\bigg)+b\bigg]
             \end{equation}
 
-            Using $ k $-MaxPooling, the authors emphasized that a maximum of $ k $ values will be kept  for one filter, thereby indicating the highest degree that a filter matches the input sequence. To end this approach, there are $ N $ parallel filters, with different parameter initialization which provide the CNN layer with $ N $-dimension output vectors. This produces two output vectors of dimension $ kN $ for each question and answer.  Their experiments intuitively took $k=1$ as anything greater showed no improvements and it helped emphasize aspects of the answer such that this CNN based hybridbiLSTM could differentiate ground truths and incorrect answers efficiently.
-            This
-            \cite{lstmhu2016question}
+            Using $ k $-MaxPooling, the authors emphasized that a maximum of $ k $ values will be kept  for one filter, thereby indicating the highest degree that a filter matches the input sequence. To end this approach, there are $ N $ parallel filters, with different parameter initialization which provide the CNN layer with $ N $-dimension output vectors. This produces two output vectors of dimension $ kN $ for each question and answer.  Their experiments intuitively took $k=1$ as anything greater showed no improvements and it helped emphasize aspects of the answer such that this CNN based hybrid biLSTM could differentiate ground truths and incorrect answers efficiently.
 
-            \cite{lstmintent}
+            The second approach adopted in this paper is actually inspired by another paper \citep{bilstmherman} where attention based deep LSTM networks were used to enhance the capabilities of reading comprehension in LSTM based models. Here, in \citep{lstmhaighextractive}, a modification has been introduced in the form of attention-based connections along with biLSTM layers as depicted in fig. \ref{lstmhaigattention}.
+            \begin{figure}
+                \centering
+                \includegraphics[scale=0.35]{../images/lstm-bilstmhaighattention.png}
+                \caption{QA-LSTM with Attention layer \citep{lstmhaighextractive}}\label{lstmhaigattention}
+            \end{figure}
 
-            \cite{fastQA}
+            Before conducting a mean/average pooling operation on the output from every biLSTM, the output vectors are multiplied by a softmax weight that is determined by the question embeddings from the biLSTM.
+            It was shown that given an output vector from a biLSTM for an answer at time $ t, \textbf{h}_{a}(t)$ and the question embedding, $ o_q $, the updated vector $  \tilde{\textbf{h}_{a}}(t)$ for each answer token
+            can be given as:
+            \begin{equation}\label{bilstmAttentioneq}
+                \textbf{m}_{a,q}(t) = tanh(\textbf{W}_{am}\textbf{h}_{a}(t) + \textbf{W}_{qm}o_{q})
+            \end{equation}
+            \begin{equation}\label{bilstmattentioneq2}
+                s_{a,q}(t) \propto exp(\textbf{w}^{T}_{ms}\textbf{m}_{a,q}(t))
+            \end{equation}
+            \begin{equation}\label{bilstmattentioneq3}
+               \tilde{\textbf{h}_{a}} = \textbf{h}_{a}(t)s_{a,q}(t)
+            \end{equation}
+            where  $ \textbf{W}_{am}, \textbf{W}_{qm} $ and $ \textbf{w}_ms $ are attention parameters. Attention parameters show somewhat similar behaviour to tf-idf  where some words get more attention or weights associated to them. The main difference being that the attention mechanism adjusts its weights according to question information.
+
+            Critically, this attention based approach from \citep{lstmhaighextractive} emphasizes on attention-driven representations and uses that to calculate the distances between questions and their respective answers. A combination approach with CNNs and attention based connections helps in localizing various internal connections, correctly scaling the errors and reducing unnecessary noise. From eq. \ref{bilstmAttentioneq}-\ref{bilstmattentioneq3}, \citep{lstmhaighextractive} we can mathematically prove how the average distances are computed.
+            Experiments conducted on the InsuranceQA dataset showed that the \textit{QA-LSTM/CNN with Attention} model can outperform the taken baseline models, which were based purely on QAs using CNNs.
+            \begin{table}
+                \begin{tabular}{|l|llll|}
+                    \hline & Model & Validation & Test1 & Test2 \\
+                    \hline A & QA-LSTM basic-model(head/tail) & $54.0$ & $53.1$ & $51.2$ \\
+                    B & QA-LSTM basic-model(avg pooling) & $58.5$ & $58.2$ & $54.0$ \\
+                    C & QA-LSTM basic-model(max pooling) & $64.3$ & $63.1$ & $58.0$ \\
+                    \hline D & QA-LSTM/CNN(fcount=1000) & $65.5$ & $65.9$ & $62.3$ \\
+                    E & QA-LSTM/CNN(fcount=2000) & $64.8$ & $66.8$ & $62.6$ \\
+                    F & QA-LSTM/CNN(fcount=4000) & $66.2$ & $64.6$ & $62.2$ \\
+                    \hline G & QA-LSTM with attention (max pooling) & $66.5$ & $63.7$ & $60.3$ \\
+                    H & QA-LSTM with attention (avg pooling) & $\mathbf{6 8 . 4}$ & $\mathbf{6 8 . 1}$ & $62.2$ \\
+                    I & QA-LSTM/CNN (fcount=4000) with attention & $67.2$ & $65.7$ & $\mathbf{6 3 . 3}$ \\
+                    \hline
+                \end{tabular}
+                \caption{Experimental results from \citep{lstmhaighextractive}, highlighting how QA-LSTM with attention outperforms its various modifications.}\label{lstmhaigexperiementresults}
+            \end{table}
+
+            %\cite{lstmhu2016question}
+
+            %\cite{lstmintent}
+
+           % \cite{fastQA}
 
 	    \section{Question Answering Using Transformers}\label{23}
 
