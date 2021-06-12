@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  12 JUN 2021 18:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.10)  12 JUN 2021 21:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -605,10 +605,6 @@ LaTeX Warning: Reference `back' on page 2 undefined on input line 84.
 
 LaTeX Warning: Reference `rr' on page 2 undefined on input line 84.
 
-
-Package natbib Warning: Citation `originallstm' on page 2 undefined on input li
-ne 86.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -679,7 +675,7 @@ ar-i-ous gradient-descent
 [5
 
 ]
-<../images/lstm-memorycell.png, id=282, 1169.36874pt x 492.84125pt>
+<../images/lstm-memorycell.png, id=285, 1169.36874pt x 492.84125pt>
 File: ../images/lstm-memorycell.png Graphic file (type png)
 <use ../images/lstm-memorycell.png>
 Package pdftex.def Info: ../images/lstm-memorycell.png  used on input line 127.
@@ -691,7 +687,7 @@ Overfull \hbox (19.28519pt too wide) in paragraph at lines 127--128
  []
 
 [6 <../images/lstm-memorycell.png>]
-<../images/lstm-network.png, id=305, 1276.77pt x 736.7525pt>
+<../images/lstm-network.png, id=307, 1276.77pt x 736.7525pt>
 File: ../images/lstm-network.png Graphic file (type png)
 <use ../images/lstm-network.png>
 Package pdftex.def Info: ../images/lstm-network.png  used on input line 161.
@@ -705,7 +701,7 @@ Overfull \hbox (56.87619pt too wide) in paragraph at lines 161--162
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7] [8 <../images/lstm-network.png>]
-<../images/lstm-biLstm.png, id=328, 537.00626pt x 558.085pt>
+<../images/lstm-biLstm.png, id=330, 537.00626pt x 558.085pt>
 File: ../images/lstm-biLstm.png Graphic file (type png)
 <use ../images/lstm-biLstm.png>
 Package pdftex.def Info: ../images/lstm-biLstm.png  used on input line 188.
@@ -715,20 +711,20 @@ Package pdftex.def Info: ../images/lstm-biLstm.png  used on input line 188.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [9 <../images/lstm-biLstm.png>]
-<../images/lstm-bilstmhaig.png, id=351, 732.7375pt x 297.11pt>
+<../images/lstm-bilstmhaig.png, id=353, 732.7375pt x 297.11pt>
 File: ../images/lstm-bilstmhaig.png Graphic file (type png)
 <use ../images/lstm-bilstmhaig.png>
 Package pdftex.def Info: ../images/lstm-bilstmhaig.png  used on input line 218.
 
 (pdftex.def)             Requested size: 293.08981pt x 118.84189pt.
-<../images/lstm-bilstmhaigcnn.png, id=358, 783.92876pt x 482.80376pt>
+<../images/lstm-bilstmhaigcnn.png, id=360, 783.92876pt x 482.80376pt>
 File: ../images/lstm-bilstmhaigcnn.png Graphic file (type png)
 <use ../images/lstm-bilstmhaigcnn.png>
 Package pdftex.def Info: ../images/lstm-bilstmhaigcnn.png  used on input line 2
 26.
 (pdftex.def)             Requested size: 274.37918pt x 168.98384pt.
  [10] [11 <../images/lstm-bilstmhaig.png> <../images/lstm-bilstmhaigcnn.png>]
-<../images/lstm-bilstmhaighattention.png, id=377, 922.44624pt x 352.31625pt>
+<../images/lstm-bilstmhaighattention.png, id=379, 922.44624pt x 352.31625pt>
 File: ../images/lstm-bilstmhaighattention.png Graphic file (type png)
 <use ../images/lstm-bilstmhaighattention.png>
 Package pdftex.def Info: ../images/lstm-bilstmhaighattention.png  used on input
@@ -740,86 +736,86 @@ Overfull \hbox (29.70192pt too wide) in paragraph at lines 265--278
  []
 
 [13]
-<../images/transformer.png, id=413, 508.90125pt x 599.99156pt>
+<../images/transformer.png, id=415, 508.90125pt x 599.99156pt>
 File: ../images/transformer.png Graphic file (type png)
 <use ../images/transformer.png>
-Package pdftex.def Info: ../images/transformer.png  used on input line 296.
+Package pdftex.def Info: ../images/transformer.png  used on input line 298.
 (pdftex.def)             Requested size: 203.55688pt x 239.99237pt.
  [14 <../images/transformer.PNG>]
-<../images/multihead.png, id=425, 746.03719pt x 436.63126pt>
+<../images/multihead.png, id=427, 746.03719pt x 436.63126pt>
 File: ../images/multihead.png Graphic file (type png)
 <use ../images/multihead.png>
-Package pdftex.def Info: ../images/multihead.png  used on input line 309.
+Package pdftex.def Info: ../images/multihead.png  used on input line 311.
 (pdftex.def)             Requested size: 298.40958pt x 174.6494pt.
  [15 <../images/multihead.PNG>]
-<../images/BERT.png, id=438, 1086.0575pt x 479.7925pt>
+<../images/BERT.png, id=440, 1086.0575pt x 479.7925pt>
 File: ../images/BERT.png Graphic file (type png)
 <use ../images/BERT.png>
-Package pdftex.def Info: ../images/BERT.png  used on input line 322.
+Package pdftex.def Info: ../images/BERT.png  used on input line 324.
 (pdftex.def)             Requested size: 380.12581pt x 167.92987pt.
  [16 <../images/BERT.png>] [17]
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 341.
+(hyperref)                removing `\<let>-command' on input line 343.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 341.
+(hyperref)                removing `\\' on input line 343.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@centercr' on input line 341.
+(hyperref)                removing `\@centercr' on input line 343.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightskip' on input line 341.
+(hyperref)                removing `\rightskip' on input line 343.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@flushglue' on input line 341.
+(hyperref)                removing `\@flushglue' on input line 343.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\leftskip' on input line 341.
+(hyperref)                removing `\leftskip' on input line 343.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@flushglue' on input line 341.
+(hyperref)                removing `\@flushglue' on input line 343.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\parindent' on input line 341.
+(hyperref)                removing `\parindent' on input line 343.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 341.
+(hyperref)                removing `\z@' on input line 343.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\parfillskip' on input line 341.
+(hyperref)                removing `\parfillskip' on input line 343.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@skip' on input line 341.
+(hyperref)                removing `\z@skip' on input line 343.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--356
+Underfull \hbox (badness 10000) in paragraph at lines 351--358
 
  []
 
 
-Overfull \hbox (14.63324pt too wide) in paragraph at lines 349--356
+Overfull \hbox (14.63324pt too wide) in paragraph at lines 351--358
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--356
+Underfull \hbox (badness 10000) in paragraph at lines 351--358
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--356
+Underfull \hbox (badness 10000) in paragraph at lines 351--358
 
  []
 
@@ -833,18 +829,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ]
-<../images/GanttChart-mid.png, id=496, 1059.96pt x 819.06pt>
+<../images/GanttChart-mid.png, id=498, 1059.96pt x 819.06pt>
 File: ../images/GanttChart-mid.png Graphic file (type png)
 <use ../images/GanttChart-mid.png>
-Package pdftex.def Info: ../images/GanttChart-mid.png  used on input line 417.
+Package pdftex.def Info: ../images/GanttChart-mid.png  used on input line 419.
 (pdftex.def)             Requested size: 582.9798pt x 450.48439pt.
 
-Overfull \hbox (60.48439pt too wide) in paragraph at lines 417--418
+Overfull \hbox (60.48439pt too wide) in paragraph at lines 419--420
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 10.47978pt on input line 419.
+LaTeX Warning: Float too large for page by 10.47978pt on input line 421.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -857,16 +853,13 @@ Underfull \hbox (badness 5832) in paragraph at lines 71--74
  rajpurkar . github . io /
  []
 
-[24]
-Underfull \hbox (badness 2903) in paragraph at lines 157--163
+
+Underfull \hbox (badness 2903) in paragraph at lines 135--141
 \OT1/cmtt/m/n/12 Products / Memory / VENGEANCE-[]LPX / p / CMK8GX4M1A2400C14$[]
 \OT1/cmr/m/n/12 .  Ac-cessed:
  []
 
-)
-
-Package natbib Warning: There were undefined citations.
-
+[24])
 
 Package caption Warning: Unused \captionsetup[figure] on input line \caption@op
 t@figure@lineno .
@@ -877,28 +870,28 @@ Package caption Warning: Unused \captionsetup[ table] on input line \caption@op
 t@ table@lineno .
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 423.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
 [25]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 423.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
  (./MidThesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 423.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 423.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
 Package rerunfilecheck Info: File `MidThesis.out' has not changed.
 (rerunfilecheck)             Checksum: BA35423CF2F8CB011BFA0057432EF5A3;1473.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 423.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 425.
  ) 
 Here is how much of TeX's memory you used:
- 10658 strings out of 483183
- 165639 string characters out of 5966291
- 493095 words of memory out of 5000000
- 25345 multiletter control sequences out of 15000+600000
+ 10646 strings out of 483183
+ 165416 string characters out of 5966291
+ 492908 words of memory out of 5000000
+ 25336 multiletter control sequences out of 15000+600000
  542032 words of font info for 62 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,14n,61p,1069b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,14n,61p,1069b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/nirbhay/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.6
 00pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/sh
@@ -913,10 +906,10 @@ ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on MidThesis.pdf (31 pages, 898670 bytes).
+Output written on MidThesis.pdf (31 pages, 897766 bytes).
 PDF statistics:
- 614 PDF objects out of 1000 (max. 8388607)
- 539 compressed objects within 6 object streams
- 109 named destinations out of 1000 (max. 500000)
+ 607 PDF objects out of 1000 (max. 8388607)
+ 532 compressed objects within 6 object streams
+ 106 named destinations out of 1000 (max. 500000)
  235 words of extra memory for PDF output out of 10000 (max. 10000000)
 

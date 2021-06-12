@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -85,28 +85,6 @@ Karl~Moritz Hermann, Tom{\'{a}}s Kocisk{\'{y}}, Edward Grefenstette, Lasse
 \newblock Teaching machines to read and comprehend.
 \newblock \emph{CoRR}, abs/1506.03340, 2015.
 \newblock URL \url{http://arxiv.org/abs/1506.03340}.
-
-\bibitem[Wang and Jiang(2016)]{lstmhu2016question}
-Shuohang Wang and Jing Jiang.
-\newblock Machine comprehension using match-lstm and answer pointer.
-\newblock \emph{CoRR}, abs/1608.07905, 2016.
-\newblock URL \url{http://arxiv.org/abs/1608.07905}.
-
-\bibitem[Gennaro et~al.(2020)Gennaro, Buonanno, Girolamo, Ospedale, and
-  Palmieri]{lstmintent}
-Giovanni~Di Gennaro, Amedeo Buonanno, Antonio~Di Girolamo, Armando Ospedale,
-  and Francesco A.~N. Palmieri.
-\newblock Intent classification in question-answering using {LSTM}
-  architectures.
-\newblock \emph{CoRR}, abs/2001.09330, 2020.
-\newblock URL \url{https://arxiv.org/abs/2001.09330}.
-
-\bibitem[Weissenborn et~al.(2017)Weissenborn, Wiese, and Seiffe]{fastQA}
-Dirk Weissenborn, Georg Wiese, and Laura Seiffe.
-\newblock Fastqa: {A} simple and efficient neural architecture for question
-  answering.
-\newblock \emph{CoRR}, abs/1703.04816, 2017.
-\newblock URL \url{http://arxiv.org/abs/1703.04816}.
 
 \bibitem[Zhou et~al.(2016)Zhou, Cao, Wang, Li, and Xu]{recurrent}
 Jie Zhou, Ying Cao, Xuguang Wang, Peng Li, and Wei Xu.
