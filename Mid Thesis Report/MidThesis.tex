@@ -17,6 +17,8 @@
 \usepackage{latexsym}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
+\usepackage{amssymb}
+
 \usepackage[font=scriptsize,labelfont=bf,format=plain,justification=raggedright, singlelinecheck=false]{caption}
 \captionsetup[figure, table]{font=scriptsize,labelfont=bf,format=plain,justification=raggedright, singlelinecheck=false}
 
@@ -30,7 +32,7 @@
 \usepackage{mathtools}
 
 \usepackage[page,toc,titletoc,title]{appendix}
-%\usepackage{refcheck}
+\usepackage{refcheck}
 \usepackage{datetime}
 
 \newdateformat{monthyeardate}{%
@@ -72,8 +74,7 @@
     Question-Answering based systems have gained a lot of popularity, especially in the form of ``chatbots''. These systems depend highly on contextual understanding of the input, the training corpus and the question asked. They use this knowledge to output an answer that can help the user with whatever their query is. Recurrent neural networks and architectures based on them, have been able to provide great advancements in the field of Question-answering and chatbots in general. However, there is a behaviour of over-fitting and a lack of contextual understanding of the question. This, coupled with long training times and extremely complex mathematical model designs, have often kept the field of Natural Language Processing slightly obscured from the masses.
 
 
-    The problem of Question-Answering is a sequential one. A sequential problem is one which
-
+    The task of Question-Answering is a machine comprehension problem. If we dig deeper, we can classify it even as a sequential problem. One might wonder how it is a sequential problem? The answer to that is simple, traditionally QA systems work by ``sequentially reading" the input and 
     In a more mathematical context, we can say that the problem we face is of \textit{answer selection} and not \textit{answer provision}. Through numerous studies that have been done, some of which we shall look into detail in chapter \ref{c2}, we see that the problem is not how to provide an answer to a question, it is if the answer provided is the correct one or not in the \textit{context} in which the question has been posed.
 
     Through the work done in this research, the author aims at creating a sustainable, fast, easy to understand Transformer architecture for Question Answering. An advancement on the work done by the team at Google \citep{atayl}. To be able to do so, let us first understand what a \textit{Transformer} is.
@@ -107,9 +108,10 @@
         This research work is entirely focused on the area of Question-Answering based networks. This focus helps in significantly narrowing down the scope and critically assessing the problem that needs to be solved. The practical applications of the field of QA are endless. From chatbots to QA systems on domain-specific knowledge or conversational applications for voice assistants, a light, robust, highly accurate Transformer based architecture can help ease the daily lives of millions of users.
         \section{Significance Of The Study}\label{14}
 
-        The current state of the art systems, some of which have been highlighted in section \ref{c1background}, suffer from various drawbacks and even the best models have only been able to achieve an EM score of 90.871 with an F1 score of 93.183 on the SQuAD 2.0 leaderboard \cite{squad}.
+        The current state of the art systems, some of which have been highlighted in section \ref{c1background}, suffer from various drawbacks and even the best models have only been able to achieve an EM score of 90.871 with an F1 score of 93.183 on the SQuAD 2.0 leaderboard \citep{squad}.
         \section{Structure Of The Study}\label{15}
            We have divided this report into 3 main chapters. Each chapter is broken down into sections and subsections to localize the reference and use it further in the global context of this research. In chapter \ref{c1introduction}, an introduction to the concept of Question-Answering, a brief look at the problem, the motivation, the scope of this research and its significance have been provided. Chapter \ref{c2litrev}, looks in detail at the background studies that have been briefly mentioned in section \ref{c1background}. In this chapter critical analysis is conducted how some of the work that has been selected is relevant to what this research aims to highlight, it helps us understand the merits and shortcomings of current state of the art approaches. Finally, Chapter \ref{c3researchmeth}, details the research methodology used by the author. Chapter \ref{c3researchmeth} helps the reader understand various nuances of the dataset, evaluation metrics, pre-processing techniques, benchmarks from existing systems etc.
+           Appendix \ref{cgc} is where the reader can refer to the Gantt chart for the thesis work done and the updates to various stages.
 
     \chapter{\centering Literature Review}\label{c2litrev}
 
@@ -275,18 +277,56 @@
                     I & QA-LSTM/CNN (fcount=4000) with attention & $67.2$ & $65.7$ & $\mathbf{6 3 . 3}$ \\
                     \hline
                 \end{tabular}
-                \caption{Experimental results from \citep{lstmhaighextractive}, highlighting how QA-LSTM with attention outperforms its various modifications.}\label{lstmhaigexperiementresults}
+                \caption{Experimental results from \citep{lstmhaighextractive}, highlighting how QA-LSTM with attention outperforms its various modifications}\label{lstmhaigexperiementresults}
             \end{table}
 
-%          \cite{lstmSubilstm}
-            %\cite{lstmhu2016question}
+			  An improvement to this approach was done in 2018 by \citep{lstmSubilstm} who proposed \textit{Suffix Bidirectional LSTM} or \textit{SuBiLSTM} adding prefixes and suffixes to the inputs over both directions.  There are a few obvious differences between the biLSTM and SuBiLSTM like the doubling of parameters, increased time complexity which happens over quadratic time for worst case scenarios compared to linear in biLSTMs. 
+			  The author of this paper has shown that despite higher time complexity, there are significant gains in accuracy in text encoding and classification in their experiments, of particular note is the Paraphrase Detection experiment which uses GloVe embeddings and shows an 88.2\% score in the test set, which is marginally higher than other models implemented. 
+			  The work presented in this thesis will also implement paraphrase detection and GloVe embeddings to potentially improve model performance and answer detection. 
+			  
+			  \subsection{LSTM And Question Answering}\label{c2lstmqa}
+             In 2016, The SQuAD dataset \citep{dataset1} was released, that generated quite a buzz in the field of QA based NLP tasks due to its nature of being extremely versatile and crowdsourced. We will take  a deeper look at it in section \ref{24}, where we discuss the various datasets in detail. 
+             
+             Using the SQuAD dataset \citep{lstmhu2016question} developed a match-LSTM \citep{lstmMatch} based model that they showed performed significantly better on the dataset than the work done by \citep{dataset1}. Their work shows that using a match-LSTM approach combined with a Pointer Net model \citep{lstmPointer}, that aids token predictions using only input sequences rather than using any form of large fixed vocabulary, therefore allowing for generation of answers with multiple tokens. 
+             
+             The approach by \citep{lstmhu2016question} was tw-fold. The first approach implemented as a sequence model and the second as a boundary model, which was further extended with a search function.
+             
+             The match-LSTM model architecture consists of:
+             \begin{itemize}
+             	\item \textbf{LSTM Preprocessing Layer}: As we can see from \ref{lstmMatch}, there are 2 LSTM preporcessing layers. This layer is used to integrate contextual information directly into the representation of how each token in the passage and question is represented. This is based directly on the simple LSTM \citep{lstmoriginal} and not the BiLSTM.
+             	\item \textbf{Match-LSTM Layer}: Here, the model treats the question as a premise and the passage as hypothesis. The layer sequentially reads the passage and calculates an attention weight vector $ \vec{\alpha}_{i} \in \mathbb{R}^{Q}$ as:
+             	\begin{equation}\label{eqmatchlstm}
+             		\begin{aligned}
+             			&\overrightarrow{\mathbf{G}}_{i}=\tanh \left(\mathbf{W}^{\mathrm{q}} \mathbf{H}^{\mathrm{q}}+\left(\mathbf{W}^{\mathrm{p}} \mathbf{h}_{i}^{\mathrm{p}}+\mathbf{W}^{\mathrm{r}} \overrightarrow{\mathbf{h}}_{i-1}^{\mathrm{r}}+\mathbf{b}^{\mathrm{p}}\right) \otimes \mathbf{e}_{Q}\right) \\
+             			&\vec{\alpha}_{i}=\operatorname{softmax}\left(\mathbf{w}^{\top} \overrightarrow{\mathbf{G}}_{i}+b \otimes \mathbf{e}_{Q}\right)
+             		\end{aligned}
+             	\end{equation}
+             
+			where $\mathbf{W}^{\mathrm{q}}, \mathbf{W}^{\mathrm{p}}, \mathbf{W}^{\mathrm{r}} \in \mathbb{R}^{l \times l}, \mathbf{b}^{\mathrm{p}}, \mathbf{w} \in \mathbb{R}^{l}$ and $b \in \mathbb{R}$ are parameters to be learned, $\overrightarrow{\mathbf{h}}_{i-1}^{\mathrm{r}} \in \mathbb{R}^{l}$ is the hidden vector of the one-directional match-LSTM at position $i-1$, and the outer product $\left(\cdot \otimes \mathbf{e}_{Q}\right)$ produces a matrix or row vector by repeating the vector or scalar on the left for $Q$ times. 
+			To simply summarise, the above equation \ref{eqmatchlstm} produces  $ \vec{\alpha}_{i,j} $ that gives us the degree of matching between token $ i $ in the passage with token $ j $ in the question. This is the forward pass representation of the mathc-LSTM, the backward pass, which generates encodings for each token in the passage is given by: 
+			\begin{equation}\label{eqmatchlstmreverse}
+				\begin{aligned}
+					&\overleftarrow{\mathbf{G}}_{i}=\tanh \left(\mathbf{W}^{\mathrm{q}} \mathbf{H}^{\mathrm{q}}+\left(\mathbf{W}^{\mathrm{p}} \mathbf{h}_{i}^{\mathrm{p}}+\mathbf{W}^{\mathrm{r}} \overleftarrow{\mathbf{h}}_{i+1}^{\mathrm{r}}+\mathbf{b}^{\mathbf{p}}\right) \otimes \mathbf{e}_{Q}\right) \\
+					&\overleftarrow{\alpha}_{i}=\operatorname{softmax}\left(\mathbf{w}^{\top} \overleftarrow{\mathbf{G}}_{i}+b \otimes \mathbf{e}_{Q}\right)
+				\end{aligned}
+			\end{equation}
+		
+		The equations above, \ref{eqmatchlstm} and \ref{eqmatchlstmreverse} are presented in \citep{lstmhu2016question}. 
+             	\item \textbf{Answer Pointer Layer}: This layer, the Answer-Pointer layer(Ans-Ptr), introduced by \citep{lstmPointer}. It uses the sequence $ \textbf{H}^{r} $ as input. 
+             \end{itemize}
+         	  \begin{figure}
+	         	\centering
+	         	\includegraphics[scale=0.4]{../images/lstmMatch.png}
+	         	\caption{Overview of the 2 approaches by \citep{lstmhu2016question}, showing the Sequence Model on the left and the Boundary Model on the right.}\label{lstmMatch}
+	         \end{figure}
 
+		It is important to highlight that the sequence model represents the answers as integers in a sequence that refer to the position of the selected token in the original passage. The Ans-Ptr layer models these sequentially as well. For the purposes of this thesis we will focus on the boundary model from the paper by \citep{lstmhu2016question}.
             %\cite{lstmintent}
 
            % \cite{fastQA}
 
 
-	    \section{Question Answering Using Transformers}\label{23}
+	    \section{Transformers}\label{23}
 
 	        Transformer based models have been become a very reliable way to implement various NLP based tasks since their introduction in the late 2017, \citep{atayl}. In this section we will critically evaluate a few key transformer based architectures \& assess their application particularly on the SQuAD 2.0 dataset.
 
@@ -336,84 +376,85 @@
 
 	       \subsubsection{DISTILBERT}\label{2324}
 	       \cite{distil}
-        \section{Comparison Of Techniques}\label{24}
-        \section{Summary}\label{25}
+        \section{SQuAD Dataset}\label{24}
+        \section{Comparison of Techniques}\label{25}
+        \section{Summary}\label{26}
         \citep{RAM}
 
     \chapter{\centering Research Methodology}\label{c3researchmeth}
-    \textbf{DONT DO ANY ANALYSIS HERE}
+
     \section{Data Selection}\label{c31}
+    
+    mention datasets like \cite{lstmInsuranceQA}, 
     	We have selected the Stanford Question Answering Dataset (SQuAD). This is as a reading comprehension dataset based on Wikipedia articles. It is based on questions posed by crowd-workers on a set of articles. The answer to every question is a segment of text or span, from the corresponding reading passage, or the question might be unanswerable \citep{dataset}.
 
-    The dataset consists of over 150,000 questions. Split into 100,000 answerable and 50,000+ unanswerable question, which were written to look similar to unanswerable questions. The challenge being that a model should be able to correctly answer the answerable questions and abstain from answering the unanswerable ones.
-    The dataset is freely available as a part of the Transformers package in python or it can be downloaded from the SQuAD 2.0 website \citep{squad}.
+    	The dataset consists of over 150,000 questions. Split into 100,000 answerable and 50,000+ unanswerable question, which were written to look similar to unanswerable questions. The challenge being that a model should be able to correctly answer the answerable questions and abstain from answering the unanswerable ones.
+	    The dataset is freely available as a part of the Transformers package in python or it can be downloaded from the SQuAD 2.0 website \citep{squad}.
+	
+	    To effectively use this dataset for our purposes, let us first take a look at what its contents look like below.\\ \\
+	    \noindent\fbox{
+	    	\parbox{\textwidth}{\textbf{Context: } \textit{"The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia."}\\
+	    		\textbf{Question: } \textit{Who was the Norse leader?}\\
+	    		\textbf{Answer: } \textit{Rollo}}
+	    }
+	    \\ \\
 
-    To effectively use this dataset for our purposes, let us first take a look at what its contents look like below.\\ \\
-    \noindent\fbox{
-    	\parbox{\textwidth}{\textbf{Context: } \textit{"The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia."}\\
-    		\textbf{Question: } \textit{Who was the Norse leader?}\\
-    		\textbf{Answer: } \textit{Rollo}}
-    }
-    \\ \\
-
-    The answer to the aforementioned question is quite simple for humans to comprehend. The challenge is for us to contextualize this and make it machine-understandable so that our model can answer it correctly.
-
-    The dataset consists of various kinds of English language examples like negation, antonyms, entity swaps, impossible conditions to answer, answerable, etc. making the dataset a well-balanced one.
-
-    To use this dataset correctly we shall perform the following pre-processing steps on it:
-
-    \begin{enumerate}
-    	\item Data splitting into separate Question, Answer and Context lists.
-    	\item Splitting the data into separate training and validation sets of  question and answers using the 80/20 rule, also known as the Pareto principle. We will have 80\% training data and 20\% test data.
-    	\item Tokenization of the split data to generate "context-question" pairs
-    	\item Generating indexes for when an answer begins and ends in the dataset
-    	\item Adding answer tokens based on their encoded positions
-    \end{enumerate}
+	    The answer to the aforementioned question is quite simple for humans to comprehend. The challenge is for us to contextualize this and make it machine-understandable so that our model can answer it correctly.
+	
+	    The dataset consists of various kinds of English language examples like negation, antonyms, entity swaps, impossible conditions to answer, answerable, etc. making the dataset a well-balanced one.
+	
+	    To use this dataset correctly we shall perform the following pre-processing steps on it:
+	
+	    \begin{enumerate}
+	    	\item Data splitting into separate Question, Answer and Context lists.
+	    	\item Splitting the data into separate training and validation sets of  question and answers using the 80/20 rule, also known as the Pareto principle. We will have 80\% training data and 20\% test data.
+	    	\item Tokenization of the split data to generate "context-question" pairs
+	    	\item Generating indexes for when an answer begins and ends in the dataset
+	    	\item Adding answer tokens based on their encoded positions
+	    \end{enumerate}
 
         The SQuAD 2.0 Dataset \citep{dataset}, was developed with funding from Facebook to help address some major issues with existing datasets. Most datasets focus on questions that can be easily answered or use of    automatically generated, unanswerable questions which are easily identifiable.\\
         The SQuAD 2.0 dataset resolves this by combining the SQuAD dataset along with 50,000 crowd worker generated unanswerable questions. The key feature of these being that the unanswerable questions must look similar to answerable ones. For a model to be successful on this new dataset, it must be able to answer all possibly answerable questions as well as determine when no answers are provided for a question in the given paragraph and abstain from answering. A comparative study was done for a Natural Language Understanding(NLU) task that obtained an 86\% score on SQuAD 1.1, only got 66\% on the new 2.0 dataset.
         The dataset helps bridge the gap between true NLU and machine understanding by using the concept of Relevance. Through comparisons with various datasets such as RACE, MCTest, QASENT etc. they have identified the missing links like negative examples, antonyms and helped fill the gap. This dataset forces the models to understand whether a paragraph span has the answer to the question posed.
 
- \begin{table}[h!]
-              \centering
-                \begin{tabular}{|l|l|l|}
-                    \hline
-                     & SQuAD 1.1 &  SQuAD 2.0 \\
-                    \hline
-                    \textbf{Train} & & \\
-                        Total Examples & 87,599 &  130,319 \\
-                        Negative Examples & 0 & 43,498 \\
-                        Total articles & 442 & 442 \\
-                        Articles with negatives & 0 & 285 \\
-                    \hline
-                    \textbf{Development} & & \\
-                        Total Examples & 10,570 &  11,873 \\
-                        Negative Examples & 0 & 5,945 \\
-                        Total articles & 48 & 35 \\
-                        Articles with negatives & 0 & 35 \\
-                    \hline
-                    \textbf{Test} &  & \\
-                        Total Examples & 9,533 & 8,862 \\
-                        Negative Examples & 0 & 4,332 \\
-                        Total articles & 46 & 28 \\
-                        Articles with negatives & 0 & 28 \\
-                    \hline
-                \end{tabular}
-                \caption{Dataset statistics of SQuAD 2.0, compared to the previous SQuAD 1.1\citep{dataset}.}\label{datasetDescription}
-            \end{table}
+		\begin{table}[h!]
+		              \centering
+		                \begin{tabular}{|l|l|l|}
+		                    \hline
+		                     & SQuAD 1.1 &  SQuAD 2.0 \\
+		                    \hline
+		                    \textbf{Train} & & \\
+		                        Total Examples & 87,599 &  130,319 \\
+		                        Negative Examples & 0 & 43,498 \\
+		                        Total articles & 442 & 442 \\
+		                        Articles with negatives & 0 & 285 \\
+		                    \hline
+		                    \textbf{Development} & & \\
+		                        Total Examples & 10,570 &  11,873 \\
+		                        Negative Examples & 0 & 5,945 \\
+		                        Total articles & 48 & 35 \\
+		                        Articles with negatives & 0 & 35 \\
+		                    \hline
+		                    \textbf{Test} &  & \\
+		                        Total Examples & 9,533 & 8,862 \\
+		                        Negative Examples & 0 & 4,332 \\
+		                        Total articles & 46 & 28 \\
+		                        Articles with negatives & 0 & 28 \\
+		                    \hline
+		                \end{tabular}
+		                \caption{Dataset statistics of SQuAD 2.0, compared to the previous SQuAD 1.1\citep{dataset}.}\label{datasetDescription}
+		 \end{table}
 
     \section{Data Pre-processing And Transformation}\label{c32}
     Techniques used.
-    (1) Average pooling; (2) max pooling; (3) the concatenation of the last
-    vectors on both directions. The three strategies are compared with the experimental performance
-    in Section 5. Dropout operation is performed on the QA representations before cosine similarity
-    matching
+    (1) Average pooling; (2) max pooling; (3) the concatenation of the last vectors on both directions. . Dropout operation is performed on the QA representations before cosine similarity matching. Use GlOVe embeddings and suffix-prefix encoding in both directions of self attention pass to show improvements. 
     \section{Existing Models And Benchmarks}\label{c33}
   %  \chapter{\centering Architecture Creation}\label{c4}
    % \section{Drawbacks Of Current Architectures}\label{c41}
    % \section{Proposed Architecture Improvements}\label{c42}
    % \section{Architecture Refinement}\label{c43}
     \begin{appendices}
+    	\chapter{Gantt Chart}\label{cgc}
     \begin{figure}[!h]
        	\centering
         \includegraphics[scale=0.55,angle=90]{../images/GanttChart-mid.png}
