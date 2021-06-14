@@ -14,6 +14,3 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {A.1}{\ignorespaces Mid-Thesis report Gantt Chart\relax }}{27}{figure.caption.20}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Transformer Architecture built by \citep {atayl}\relax }}{5}{figure.caption.23}%
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Scale Dot and Multihead Attention Models \cite {atayl}\relax }}{6}{figure.caption.24}%
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Pre-training and Fine Tuning procedures for BERT \citep {bert}\relax }}{7}{figure.caption.25}%

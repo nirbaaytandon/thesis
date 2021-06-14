@@ -1,6 +1,6 @@
-\contentsline {chapter}{List of Figures}{3}{chapter*.2}%
-\contentsline {chapter}{List of Tables}{5}{chapter*.3}%
-\contentsline {chapter}{\nonumberline List of Abbreviations}{6}{chapter*.4}%
+\contentsline {chapter}{List of Figures}{iii}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{iv}{chapter*.3}%
+\contentsline {chapter}{\nonumberline List of Abbreviations}{v}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}\centering Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background Of The Study}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Aims And Objectives}{3}{section.1.2}%
@@ -31,19 +31,4 @@
 \contentsline {chapter}{Appendices}{25}{section*.19}%
 \contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{26}{appendix.1.A}%
 \contentsline {chapter}{Appendix \numberline {B}Research Proposal}{28}{appendix.1.B}%
-\contentsline {chapter}{Appendix List of Figures}{2}{appendix*.22}%
-\contentsline {section}{\numberline {B.1}Introduction}{3}{section.1.B.1}%
-\contentsline {section}{\numberline {B.2}Background and Related Research}{4}{section.1.B.2}%
-\contentsline {subsection}{\numberline {B.2.1}Background}{4}{subsection.1.B.2.1}%
-\contentsline {subsection}{\numberline {B.2.2}Related Research}{4}{subsection.1.B.2.2}%
-\contentsline {section}{\numberline {B.3}Aims and Objectives}{8}{section.1.B.3}%
-\contentsline {section}{\numberline {B.4}Research Methodology}{8}{section.1.B.4}%
-\contentsline {subsection}{\numberline {B.4.1}Research Dataset}{8}{subsection.1.B.4.1}%
-\contentsline {subsection}{\numberline {B.4.2}Research Benchmarks}{9}{subsection.1.B.4.2}%
-\contentsline {subsection}{\numberline {B.4.3}Architecture Creation}{10}{subsection.1.B.4.3}%
-\contentsline {subsection}{\numberline {B.4.4}Architecture Refinement}{10}{subsection.1.B.4.4}%
-\contentsline {subsection}{\numberline {B.4.5}Model Evaluation}{10}{subsection.1.B.4.5}%
-\contentsline {section}{\numberline {B.5}Expected Outcomes}{11}{section.1.B.5}%
-\contentsline {section}{\numberline {B.6}Requirements and Resources}{11}{section.1.B.6}%
-\contentsline {section}{\numberline {B.7}Research Plan}{11}{section.1.B.7}%
-\contentsline {chapter}{References}{13}{appendix*.26}%
+\contentsline {chapter}{References}{46}{appendix*.21}%

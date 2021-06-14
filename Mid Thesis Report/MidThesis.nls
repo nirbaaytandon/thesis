@@ -1,23 +1,25 @@
 
 \begin{thenomenclature} 
 \nomgroup{A}
-  \item [{ALBERT}]\begingroup A LITE BERT\nomeqref {0}\nompageref{3}
-  \item [{BERT}]\begingroup Bidirectional Encoder Representations from Transformers\nomeqref {0}\nompageref{3}
-  \item [{BiLSTM}]\begingroup Bidirectional LSTM\nomeqref {0}\nompageref{3}
-  \item [{BPPTs}]\begingroup Back-Propagation Through Time\nomeqref {0}\nompageref{3}
-  \item [{CEC}]\begingroup Constant Error Carousel\nomeqref {0}\nompageref{3}
-  \item [{CNNs}]\begingroup Convolutional Neural Networks\nomeqref {0}\nompageref{3}
-  \item [{DistilBERT}]\begingroup Distilled Version of BERT\nomeqref {0}\nompageref{3}
-  \item [{EM}]\begingroup Exact Match\nomeqref {0}\nompageref{3}
-  \item [{LSTMs}]\begingroup Long Short-Term Memory Architectures\nomeqref {0}\nompageref{3}
-  \item [{MCTest}]\begingroup Machine Comprehension of Text\nomeqref {0}\nompageref{3}
-  \item [{NLP}]\begingroup Natural Language Processing\nomeqref {0}\nompageref{3}
-  \item [{NLU}]\begingroup Natural Language Understanding\nomeqref {0}\nompageref{3}
-  \item [{QASENT}]\begingroup A challenge dataset for open-domain question answering\nomeqref {0}\nompageref{3}
-  \item [{QnA}]\begingroup Question and Answering\nomeqref {0}\nompageref{3}
-  \item [{RACE}]\begingroup ReAding Comprehension Dataset From Examinations\nomeqref {0}\nompageref{3}
-  \item [{RNNs}]\begingroup Recurrent Neural Networks\nomeqref {0}\nompageref{3}
-  \item [{RoBERTa}]\begingroup Robustly Optimized BERT\nomeqref {0}\nompageref{3}
-  \item [{SQuAD}]\begingroup Stanford Question Answering Dataset\nomeqref {0}\nompageref{3}
+  \item [{ALBERT}]\begingroup A LITE BERT\nomeqref {0}\nompageref{iv}
+  \item [{Ans-Ptr}]\begingroup Answer-Pointer layer\nomeqref {0}\nompageref{iv}
+  \item [{BERT}]\begingroup Bidirectional Encoder Representations from Transformers\nomeqref {0}\nompageref{iv}
+  \item [{BiLSTM}]\begingroup Bidirectional LSTM\nomeqref {0}\nompageref{iv}
+  \item [{BPPTs}]\begingroup Back-Propagation Through Time\nomeqref {0}\nompageref{iv}
+  \item [{CEC}]\begingroup Constant Error Carousel\nomeqref {0}\nompageref{iv}
+  \item [{CNNs}]\begingroup Convolutional Neural Networks\nomeqref {0}\nompageref{iv}
+  \item [{DistilBERT}]\begingroup Distilled Version of BERT\nomeqref {0}\nompageref{iv}
+  \item [{EM}]\begingroup Exact Match\nomeqref {0}\nompageref{iv}
+  \item [{LSTMs}]\begingroup Long Short-Term Memory Architectures\nomeqref {0}\nompageref{iv}
+  \item [{MCTest}]\begingroup Machine Comprehension of Text\nomeqref {0}\nompageref{iv}
+  \item [{NLP}]\begingroup Natural Language Processing\nomeqref {0}\nompageref{iv}
+  \item [{NLU}]\begingroup Natural Language Understanding\nomeqref {0}\nompageref{iv}
+  \item [{QASENT}]\begingroup A challenge dataset for open-domain question answering\nomeqref {0}\nompageref{iv}
+  \item [{QnA}]\begingroup Question and Answering\nomeqref {0}\nompageref{iv}
+  \item [{RACE}]\begingroup ReAding Comprehension Dataset From Examinations\nomeqref {0}\nompageref{iv}
+  \item [{RNNs}]\begingroup Recurrent Neural Networks\nomeqref {0}\nompageref{iv}
+  \item [{RoBERTa}]\begingroup Robustly Optimized BERT\nomeqref {0}\nompageref{iv}
+  \item [{SQuAD}]\begingroup Stanford Question Answering Dataset\nomeqref {0}\nompageref{iv}
+  \item [{SuBiLSTM}]\begingroup Suffix Bidirectional LSTM\nomeqref {0}\nompageref{iv}
 
 \end{thenomenclature}

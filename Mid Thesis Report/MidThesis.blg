@@ -1,61 +1,51 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: MidThesis.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: unsrtnat.bst
-Case mismatch error between cite keys Ram and RAM
----line 267 of file MidThesis.aux
- : \citation{Ram
- :              }
-I'm skipping whatever remains of this command
-Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: MidThesis.bib
-Warning--I didn't find a database entry for "originallstm"
-Warning--I didn't find a database entry for "lstm"
 Warning--empty journal in lstmBiLSTM
 Warning--empty journal in lunar
 Warning--empty year in hfTransformers
 Warning--empty journal in wsj
-Warning--empty year in intel
-You've used 29 entries,
+You've used 28 entries,
             2481 wiz_defined-function locations,
-            709 strings with 9541 characters,
-and the built_in function-call counts, 10411 in all, are:
-= -- 826
-> -- 637
-< -- 15
-+ -- 246
-- -- 188
-* -- 758
-:= -- 1746
-add.period$ -- 102
-call.type$ -- 29
-change.case$ -- 58
-chr.to.int$ -- 29
-cite$ -- 34
-duplicate$ -- 528
-empty$ -- 900
-format.name$ -- 229
-if$ -- 2176
+            705 strings with 9394 characters,
+and the built_in function-call counts, 10278 in all, are:
+= -- 809
+> -- 656
+< -- 13
++ -- 250
+- -- 194
+* -- 770
+:= -- 1738
+add.period$ -- 99
+call.type$ -- 28
+change.case$ -- 56
+chr.to.int$ -- 28
+cite$ -- 32
+duplicate$ -- 518
+empty$ -- 868
+format.name$ -- 234
+if$ -- 2139
 int.to.chr$ -- 1
-int.to.str$ -- 30
-missing$ -- 24
-newline$ -- 168
-num.names$ -- 87
-pop$ -- 251
+int.to.str$ -- 29
+missing$ -- 25
+newline$ -- 163
+num.names$ -- 84
+pop$ -- 233
 preamble$ -- 1
-purify$ -- 29
+purify$ -- 28
 quote$ -- 0
-skip$ -- 345
+skip$ -- 332
 stack$ -- 0
-substring$ -- 226
-swap$ -- 74
+substring$ -- 224
+swap$ -- 72
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 203
-warning$ -- 5
-while$ -- 69
+type$ -- 196
+warning$ -- 4
+while$ -- 67
 width$ -- 0
-write$ -- 395
-(There was 1 error message)
+write$ -- 385
+(There were 4 warnings)
