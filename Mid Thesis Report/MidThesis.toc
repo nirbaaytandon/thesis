@@ -1,6 +1,6 @@
 \contentsline {chapter}{List of Figures}{3}{chapter*.2}%
-\contentsline {chapter}{List of Tables}{4}{chapter*.3}%
-\contentsline {chapter}{\nonumberline List of Abbreviations}{5}{chapter*.4}%
+\contentsline {chapter}{List of Tables}{5}{chapter*.3}%
+\contentsline {chapter}{\nonumberline List of Abbreviations}{6}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}\centering Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background Of The Study}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Aims And Objectives}{3}{section.1.2}%
@@ -14,19 +14,36 @@
 \contentsline {subsection}{\numberline {2.1.1}BiLSTMs}{9}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}LSTM And Question Answering}{14}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}Transformers}{16}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Self Attention}{17}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Improvements of Transformer Architectures}{17}{subsection.2.2.2}%
-\contentsline {subsubsection}{BERT}{17}{subsection.2.2.2}%
-\contentsline {subsubsection}{ALBERT}{19}{figure.caption.16}%
-\contentsline {subsubsection}{ROBERTA}{19}{figure.caption.16}%
-\contentsline {subsubsection}{DISTILBERT}{19}{figure.caption.16}%
-\contentsline {section}{\numberline {2.3}SQuAD Dataset}{19}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Comparison of Techniques}{19}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Summary}{19}{section.2.5}%
-\contentsline {chapter}{\numberline {3}\centering Research Methodology}{20}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data Selection}{20}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{22}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Existing Models And Benchmarks}{22}{section.3.3}%
-\contentsline {chapter}{Appendices}{23}{section*.18}%
-\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{24}{appendix.1.A}%
-\contentsline {chapter}{References}{26}{appendix*.20}%
+\contentsline {subsection}{\numberline {2.2.1}Self Attention}{18}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Improvements of Transformer Architectures}{18}{subsection.2.2.2}%
+\contentsline {subsubsection}{BERT}{18}{subsection.2.2.2}%
+\contentsline {subsubsection}{ALBERT}{19}{figure.caption.17}%
+\contentsline {subsubsection}{ROBERTA}{19}{figure.caption.17}%
+\contentsline {subsubsection}{DISTILBERT}{19}{figure.caption.17}%
+\contentsline {section}{\numberline {2.3}SQuAD Dataset}{20}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Comparison of Techniques}{20}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Summary}{20}{section.2.5}%
+\contentsline {chapter}{\numberline {3}\centering Research Methodology}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data Selection}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{23}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Research Hypothesis}{23}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Existing Models And Benchmarks}{24}{section.3.4}%
+\contentsline {chapter}{Appendices}{25}{section*.19}%
+\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{26}{appendix.1.A}%
+\contentsline {chapter}{Appendix \numberline {B}Research Proposal}{28}{appendix.1.B}%
+\contentsline {chapter}{Appendix List of Figures}{2}{appendix*.22}%
+\contentsline {section}{\numberline {B.1}Introduction}{3}{section.1.B.1}%
+\contentsline {section}{\numberline {B.2}Background and Related Research}{4}{section.1.B.2}%
+\contentsline {subsection}{\numberline {B.2.1}Background}{4}{subsection.1.B.2.1}%
+\contentsline {subsection}{\numberline {B.2.2}Related Research}{4}{subsection.1.B.2.2}%
+\contentsline {section}{\numberline {B.3}Aims and Objectives}{8}{section.1.B.3}%
+\contentsline {section}{\numberline {B.4}Research Methodology}{8}{section.1.B.4}%
+\contentsline {subsection}{\numberline {B.4.1}Research Dataset}{8}{subsection.1.B.4.1}%
+\contentsline {subsection}{\numberline {B.4.2}Research Benchmarks}{9}{subsection.1.B.4.2}%
+\contentsline {subsection}{\numberline {B.4.3}Architecture Creation}{10}{subsection.1.B.4.3}%
+\contentsline {subsection}{\numberline {B.4.4}Architecture Refinement}{10}{subsection.1.B.4.4}%
+\contentsline {subsection}{\numberline {B.4.5}Model Evaluation}{10}{subsection.1.B.4.5}%
+\contentsline {section}{\numberline {B.5}Expected Outcomes}{11}{section.1.B.5}%
+\contentsline {section}{\numberline {B.6}Requirements and Resources}{11}{section.1.B.6}%
+\contentsline {section}{\numberline {B.7}Research Plan}{11}{section.1.B.7}%
+\contentsline {chapter}{References}{13}{appendix*.26}%

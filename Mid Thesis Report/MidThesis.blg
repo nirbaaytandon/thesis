@@ -3,51 +3,59 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: MidThesis.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: unsrtnat.bst
+Case mismatch error between cite keys Ram and RAM
+---line 267 of file MidThesis.aux
+ : \citation{Ram
+ :              }
+I'm skipping whatever remains of this command
 Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: MidThesis.bib
+Warning--I didn't find a database entry for "originallstm"
+Warning--I didn't find a database entry for "lstm"
 Warning--empty journal in lstmBiLSTM
 Warning--empty journal in lunar
 Warning--empty year in hfTransformers
 Warning--empty journal in wsj
-You've used 26 entries,
+Warning--empty year in intel
+You've used 29 entries,
             2481 wiz_defined-function locations,
-            693 strings with 8970 characters,
-and the built_in function-call counts, 9552 in all, are:
-= -- 753
-> -- 602
-< -- 13
-+ -- 230
-- -- 178
-* -- 710
-:= -- 1608
-add.period$ -- 91
-call.type$ -- 26
-change.case$ -- 52
-chr.to.int$ -- 26
-cite$ -- 30
-duplicate$ -- 482
-empty$ -- 812
-format.name$ -- 216
-if$ -- 1991
+            709 strings with 9541 characters,
+and the built_in function-call counts, 10411 in all, are:
+= -- 826
+> -- 637
+< -- 15
++ -- 246
+- -- 188
+* -- 758
+:= -- 1746
+add.period$ -- 102
+call.type$ -- 29
+change.case$ -- 58
+chr.to.int$ -- 29
+cite$ -- 34
+duplicate$ -- 528
+empty$ -- 900
+format.name$ -- 229
+if$ -- 2176
 int.to.chr$ -- 1
-int.to.str$ -- 27
-missing$ -- 23
-newline$ -- 151
-num.names$ -- 78
-pop$ -- 221
+int.to.str$ -- 30
+missing$ -- 24
+newline$ -- 168
+num.names$ -- 87
+pop$ -- 251
 preamble$ -- 1
-purify$ -- 26
+purify$ -- 29
 quote$ -- 0
-skip$ -- 310
+skip$ -- 345
 stack$ -- 0
-substring$ -- 220
-swap$ -- 68
+substring$ -- 226
+swap$ -- 74
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 182
-warning$ -- 4
-while$ -- 63
+type$ -- 203
+warning$ -- 5
+while$ -- 69
 width$ -- 0
-write$ -- 355
-(There were 4 warnings)
+write$ -- 395
+(There was 1 error message)
