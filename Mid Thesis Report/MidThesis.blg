@@ -9,45 +9,46 @@ Warning--empty journal in lstmBiLSTM
 Warning--empty journal in lunar
 Warning--empty year in hfTransformers
 Warning--empty journal in wsj
-You've used 29 entries,
+Warning--empty year in intel
+You've used 35 entries,
             2481 wiz_defined-function locations,
-            709 strings with 9512 characters,
-and the built_in function-call counts, 10653 in all, are:
-= -- 833
-> -- 683
-< -- 13
-+ -- 260
-- -- 202
-* -- 798
-:= -- 1799
-add.period$ -- 102
-call.type$ -- 29
-change.case$ -- 58
-chr.to.int$ -- 29
-cite$ -- 33
-duplicate$ -- 540
-empty$ -- 906
-format.name$ -- 243
-if$ -- 2219
+            742 strings with 10997 characters,
+and the built_in function-call counts, 13268 in all, are:
+= -- 1038
+> -- 859
+< -- 17
++ -- 326
+- -- 256
+* -- 999
+:= -- 2222
+add.period$ -- 125
+call.type$ -- 35
+change.case$ -- 70
+chr.to.int$ -- 35
+cite$ -- 40
+duplicate$ -- 666
+empty$ -- 1122
+format.name$ -- 303
+if$ -- 2778
 int.to.chr$ -- 1
-int.to.str$ -- 30
-missing$ -- 26
-newline$ -- 168
-num.names$ -- 87
-pop$ -- 246
+int.to.str$ -- 36
+missing$ -- 30
+newline$ -- 202
+num.names$ -- 105
+pop$ -- 306
 preamble$ -- 1
-purify$ -- 29
+purify$ -- 35
 quote$ -- 0
-skip$ -- 342
+skip$ -- 430
 stack$ -- 0
-substring$ -- 226
-swap$ -- 75
-text.length$ -- 2
+substring$ -- 302
+swap$ -- 107
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 203
-warning$ -- 4
-while$ -- 69
+type$ -- 245
+warning$ -- 5
+while$ -- 87
 width$ -- 0
-write$ -- 397
-(There were 4 warnings)
+write$ -- 481
+(There were 5 warnings)

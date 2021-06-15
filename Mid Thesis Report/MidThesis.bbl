@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -137,6 +137,18 @@ Laura Dietz, Manisha Verma, Filip Radlinski, and Nick Craswell.
 \newblock Trec complex answer retrieval overview.
 \newblock In \emph{TREC}, 2017.
 
+\bibitem[Bojar et~al.(2014)Bojar, Buck, Federmann, Haddow, Koehn, Leveling,
+  Monz, Pecina, Post, Saint-Amand, Soricut, Specia, and Tamchyna]{wmt}
+Ond{\v{r}}ej Bojar, Christian Buck, Christian Federmann, Barry Haddow, Philipp
+  Koehn, Johannes Leveling, Christof Monz, Pavel Pecina, Matt Post, Herve
+  Saint-Amand, Radu Soricut, Lucia Specia, and Ale{\v{s}} Tamchyna.
+\newblock Findings of the 2014 workshop on statistical machine translation.
+\newblock In \emph{Proceedings of the Ninth Workshop on Statistical Machine
+  Translation}, pages 12--58, Baltimore, Maryland, USA, June 2014. Association
+  for Computational Linguistics.
+\newblock \doi{10.3115/v1/W14-3302}.
+\newblock URL \url{https://www.aclweb.org/anthology/W14-3302}.
+
 \bibitem[Zhou et~al.(2016)Zhou, Cao, Wang, Li, and Xu]{recurrent}
 Jie Zhou, Ying Cao, Xuguang Wang, Peng Li, and Wei Xu.
 \newblock Deep recurrent models with fast-forward connections for neural
@@ -189,5 +201,39 @@ Corsair.
 \newblock URL
   \url{https://www.corsair.com/uk/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK8GX4M1A2400C14}.
 \newblock Accessed: 2021-04-16.
+
+\bibitem[Akbik et~al.(2018)Akbik, Blythe, and Vollgraf]{contextual}
+Alan Akbik, Duncan Blythe, and Roland Vollgraf.
+\newblock Contextual string embeddings for sequence labeling.
+\newblock In \emph{Proceedings of the 27th international conference on
+  computational linguistics}, pages 1638--1649, 2018.
+
+\bibitem[Evga(2021)]{evga}
+Evga.
+\newblock Evga geforce rtx 2070 super ko gaming, 08g-p4-2072-kr, 8gb gddr6,
+  dual fans, 2021.
+\newblock URL
+  \url{https://eu.evga.com/products/product.aspx?pn=08G-P4-2072-KR}.
+\newblock Accessed: 2021-04-16.
+
+\bibitem[Intel()]{intel}
+Intel.
+\newblock Intel® core™ i7-10700 processor (16m cache, up to 4.80 ghz) -
+  product specifications.
+\newblock URL
+  \url{https://www.intel.co.uk/content/www/uk/en/products/sku/199316/intel-core-i710700-processor-16m-cache-up-to-4-80-ghz/specifications.html}.
+
+\bibitem[Huang et~al.(2020)Huang, Xu, Liang, Mishra, and
+  Xiang]{transformerBilstm}
+Zhiheng Huang, Peng Xu, Davis Liang, Ajay Mishra, and Bing Xiang.
+\newblock {TRANS-BLSTM:} transformer with bidirectional {LSTM} for language
+  understanding.
+\newblock \emph{CoRR}, abs/2003.07000, 2020.
+\newblock URL \url{https://arxiv.org/abs/2003.07000}.
+
+\bibitem[Sun et~al.(2018)Sun, Li, Qiu, and Liu]{unet}
+Fu~Sun, Linyang Li, Xipeng Qiu, and Yang Liu.
+\newblock U-net: Machine reading comprehension with unanswerable questions.
+\newblock \emph{arXiv preprint arXiv:1810.06638}, 2018.
 
 \end{thebibliography}

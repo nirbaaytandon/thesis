@@ -18,3 +18,8 @@
 \nomenclatureentry{aCNNs@[{CNNs}]\begingroup Convolutional Neural Networks\nomeqref {0}|nompageref}{iv}
 \nomenclatureentry{aEM@[{EM}]\begingroup Exact Match\nomeqref {0}|nompageref}{iv}
 \nomenclatureentry{aAns-Ptr@[{Ans-Ptr}]\begingroup Answer-Pointer layer\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aGloVe@[{GloVe}]\begingroup Global Vectors for Word Representation\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aBLEU@[{BLEU}]\begingroup Bilingual Evaluation Understudy\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aWMT@[{WMT}]\begingroup Workshop on Statistical Machine Translation\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aGPUs@[{GPUs}]\begingroup Graphical Processing Units\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aFFN@[{FFN}]\begingroup Feed Forward Network(s)\nomeqref {0}|nompageref}{iv}

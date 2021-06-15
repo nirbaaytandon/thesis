@@ -36,6 +36,7 @@
 
 \usepackage[page,toc,titletoc,title]{appendix}
 %\usepackage{refcheck}
+
 \usepackage{datetime}
 
 \newdateformat{monthyeardate}{%
@@ -377,8 +378,10 @@
 	    
 	    	The previous section highlighted some key advancements in the field of machine comprehension and LSTMs, however, not a lot changed for almost two decades in the field of NLP based machine comprehension tasks architecturally. Since their introduction in 1997, LSTMs \cite{lstmoriginal} have been the base architecture for countless applications. However, as we noted in section \ref{c2criticalissues}, LSTMs aren't always the best way forward. 
 			
-			\textit{Transformers} were introduced in late 2017 by \ref{atayl} and have become a very reliable way to implement various NLP based tasks. In this section we will critically evaluate a few key transformer based architectures \& assess their application particularly on the SQuAD 2.0 dataset.
-
+			\textit{Transformers} were introduced in late 2017 by \citep{atayl} and have become a very reliable way to implement various NLP based tasks. 
+			While \citep{atayl} used the BLEU score and showed that their model works better than state of the art models on the WMT 2014 dataset \citep{wmt} In this section we will critically evaluate a few key transformer based architectures \& assess their application particularly on the SQuAD 2.0 dataset.
+			
+			
 	        Work done in the field of Long short-term and gated recurrent \citep{lstmoriginal} and \citep{recurrent} neural networks, in particular, has been established as a state of the art approach in sequence modelling, transduction problems such as language modelling and machine translation.  Efforts have been made to push the boundaries of encoder-decoder based \& recurrent language models.
 
 	        Recurrent models usually adopt a combination approach where they take symbol position of the input and output positions along with the computation. This helps them align positions to steps in computation time and generate a sequence of hidden states $ h_{t} $, which is a function of the previous hidden state $ h_{t-1}$ and the input function $ t $.  This inherently sequential nature of RNNs causes memory issues, leading to reduced batch sizes. \\
@@ -496,7 +499,7 @@
 
     \section{Data Pre-processing And Transformation}\label{c32}
     Techniques used.
-    (1) Average pooling; (2) max pooling; (3) the concatenation of the last vectors on both directions. . Dropout operation is performed on the QA representations before cosine similarity matching. Use GlOVe embeddings and suffix-prefix encoding in both directions of self attention pass to show improvements.
+    (1) Average pooling; (2) max pooling; (3) the concatenation of the last vectors on both directions. . Dropout operation is performed on the QA representations before cosine similarity matching. Use GloVe embeddings and suffix-prefix encoding in both directions of self attention pass to show improvements.
     \section{Research Hypothesis}\label{c33}
     The hypothesis of this research is that implementing a self attention based Transformer model with:
     \begin{itemize}
@@ -521,7 +524,8 @@
          \chapter{Research Proposal}\label{crp}
          \includepdf[pages=-]{../rp.pdf}
     \end{appendices}
-\setcitestyle{numbers}
+%\setcitestyle{numbers}
+\nocite{*}
 \bibliography{MidThesis}
 
 \end{document}
