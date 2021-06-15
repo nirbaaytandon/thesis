@@ -212,14 +212,14 @@
                     Test2 & 1800 & 2593 & 12905 \\
                     \hline
                 \end{tabular}
-                \caption{InsuranceQA Corpus Details: There could be multiple answers for some questions, hence, the number of answers is more than the number of questions \citep{lstmInsuranceQA}.}\label{lstmInsuranceQATable}
+                \caption{InsuranceQA Corpus Details: Some questions can have multiple answers, therefore the number of answers is greater than the number of questions \citep{lstmInsuranceQA}.}\label{lstmInsuranceQATable}
             \end{table}
 
             BiLSTMs were introduced as an approach towards phoneme classification for speech recognition applications, however, in their paper ``LSTM-BASED DEEP LEARNING MODELS FOR NON -FACTOID ANSWER SELECTION", \citep{lstmhaighextractive} have shown that extending the biLSTM model 2 different approaches for QA has its advantages. One approach, using a more composite method of using CNNs for representing questions as well as answers. The other, by implementing an \textit{attention mechanism} that helps in generating an answer representation according to the question context.
-            Their framework is based on developing a biLSTM model for both questions and answers, applying a connective pooling layer and using a similarity metric to measure the degree of matching answers. They utilized the InsuranceQA\citep{lstmInsuranceQA} dataset that was created in 2015 and tested primarily on CNN based networks, details of the dataset can be found in table \ref{lstmInsuranceQATable}.
+            Their framework is based on developing a biLSTM model for both questions and answers, applying a connective pooling layer and using a cosine similarity metric to calculate the degree of matching answers. They utilized the InsuranceQA\citep{lstmInsuranceQA} dataset that was created in 2015 and tested primarily on CNN based networks, details of the dataset can be found in table \ref{lstmInsuranceQATable}.
 
             Pooling layers are known to suffer from an incapability to retain local linguistic information. To combat this the team proposed an additional CNN layer on top of the biLSTM layer. Additionally, they added a simple and efficient attention model to help their biLSTM model better distinguish between candidate answers according to the question context. This study is significant in the field of both deep learning based models and for the field of Question-Answering because it requires little or no feature engineering to achieve significant results. We will also see later in section \ref{23}, how biLSTMs are implemented with Transformers to produce an even better model.
-            In their work \citep{lstmhaighextractive} have shown that biLSTMs are capable of exploiting long-range sequential context information. This is important as it is often seen that the answer is not directly semantically related to the question but more contextually related. Long-range exploitations help the model understand the question more holistically, therefore helping produce a more relevant answer.
+            In their work \citep{lstmhaighextractive} have shown that biLSTMs are capable of capitalizing long-range sequential context information. This is important as it is often seen that the answer is not directly semantically related to the question but more contextually related. Long-range exploitations help the model understand the question more holistically, therefore helping produce a more relevant answer.
 	        \begin{figure}
                 \centering
                 \includegraphics[scale=0.4]{../images/lstm-bilstmhaig.png}
@@ -350,7 +350,7 @@
 
 	     Our research has shown that this approach hasn't yet been applied to the SQuAD 2.0 dataset. In chapter \ref{c3researchmeth}, section \ref{c33} we will hypothesize the implementation of this approach along with the use of Transformers, which are covered in the next section.
 
-         The final piece of research that to look at in this section is by \cite{lstmintent} titled \textit{Intent Classification in Question-Answering Using LSTM Architectures}. The approach followed in
+         The final piece of research that to look at in this section is by \cite{lstmintent} titled \textit{Intent Classification in Question-Answering Using LSTM Architectures}. The approach followed is similar to \citep{lstmSubilstm}, using GloVe embeddings, allowing for prefixes to be added and generating word closeness. The
 
 
 	    \section{Transformers}\label{23}
