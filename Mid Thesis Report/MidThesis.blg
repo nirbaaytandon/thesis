@@ -1,51 +1,53 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: MidThesis.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: unsrtnat.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: MidThesis.bib
 Warning--empty journal in lstmBiLSTM
 Warning--empty journal in lunar
 Warning--empty year in hfTransformers
 Warning--empty journal in wsj
-You've used 28 entries,
+You've used 29 entries,
             2481 wiz_defined-function locations,
-            705 strings with 9394 characters,
-and the built_in function-call counts, 10278 in all, are:
-= -- 809
-> -- 656
+            709 strings with 9512 characters,
+and the built_in function-call counts, 10653 in all, are:
+= -- 833
+> -- 683
 < -- 13
-+ -- 250
-- -- 194
-* -- 770
-:= -- 1738
-add.period$ -- 99
-call.type$ -- 28
-change.case$ -- 56
-chr.to.int$ -- 28
-cite$ -- 32
-duplicate$ -- 518
-empty$ -- 868
-format.name$ -- 234
-if$ -- 2139
++ -- 260
+- -- 202
+* -- 798
+:= -- 1799
+add.period$ -- 102
+call.type$ -- 29
+change.case$ -- 58
+chr.to.int$ -- 29
+cite$ -- 33
+duplicate$ -- 540
+empty$ -- 906
+format.name$ -- 243
+if$ -- 2219
 int.to.chr$ -- 1
-int.to.str$ -- 29
-missing$ -- 25
-newline$ -- 163
-num.names$ -- 84
-pop$ -- 233
+int.to.str$ -- 30
+missing$ -- 26
+newline$ -- 168
+num.names$ -- 87
+pop$ -- 246
 preamble$ -- 1
-purify$ -- 28
+purify$ -- 29
 quote$ -- 0
-skip$ -- 332
+skip$ -- 342
 stack$ -- 0
-substring$ -- 224
-swap$ -- 72
+substring$ -- 226
+swap$ -- 75
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 196
+type$ -- 203
 warning$ -- 4
-while$ -- 67
+while$ -- 69
 width$ -- 0
-write$ -- 385
+write$ -- 397
 (There were 4 warnings)

@@ -13,22 +13,23 @@
 \contentsline {subsubsection}{Limitations of LSTMs}{8}{figure.caption.6}%
 \contentsline {subsection}{\numberline {2.1.1}BiLSTMs}{9}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}LSTM And Question Answering}{14}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Transformers}{16}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Self Attention}{18}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Improvements of Transformer Architectures}{18}{subsection.2.2.2}%
-\contentsline {subsubsection}{BERT}{18}{subsection.2.2.2}%
-\contentsline {subsubsection}{ALBERT}{19}{figure.caption.17}%
-\contentsline {subsubsection}{ROBERTA}{19}{figure.caption.17}%
-\contentsline {subsubsection}{DISTILBERT}{19}{figure.caption.17}%
-\contentsline {section}{\numberline {2.3}SQuAD Dataset}{20}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Comparison of Techniques}{20}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Summary}{20}{section.2.5}%
-\contentsline {chapter}{\numberline {3}\centering Research Methodology}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data Selection}{21}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{23}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Research Hypothesis}{23}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Existing Models And Benchmarks}{24}{section.3.4}%
-\contentsline {chapter}{Appendices}{25}{section*.19}%
-\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{26}{appendix.1.A}%
-\contentsline {chapter}{Appendix \numberline {B}Research Proposal}{28}{appendix.1.B}%
-\contentsline {chapter}{References}{46}{appendix*.21}%
+\contentsline {subsection}{\numberline {2.1.3}Critical Issues in LSTMs}{17}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Transformers}{18}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Self Attention}{19}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Improvements of Transformer Architectures}{20}{subsection.2.2.2}%
+\contentsline {subsubsection}{BERT}{20}{subsection.2.2.2}%
+\contentsline {subsubsection}{ALBERT}{21}{figure.caption.19}%
+\contentsline {subsubsection}{ROBERTA}{21}{figure.caption.19}%
+\contentsline {subsubsection}{DISTILBERT}{21}{figure.caption.19}%
+\contentsline {section}{\numberline {2.3}SQuAD Dataset}{21}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Comparison of Techniques}{21}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Summary}{21}{section.2.5}%
+\contentsline {chapter}{\numberline {3}\centering Research Methodology}{22}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data Selection}{22}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{24}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Research Hypothesis}{24}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Existing Models And Benchmarks}{25}{section.3.4}%
+\contentsline {chapter}{Appendices}{26}{section*.21}%
+\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{27}{appendix.1.A}%
+\contentsline {chapter}{Appendix \numberline {B}Research Proposal}{29}{appendix.1.B}%
+\contentsline {chapter}{References}{47}{appendix*.23}%

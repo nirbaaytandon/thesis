@@ -217,22 +217,27 @@
 
             BiLSTMs were introduced as an approach towards phoneme classification for speech recognition applications, however, in their paper ``LSTM-BASED DEEP LEARNING MODELS FOR NON -FACTOID ANSWER SELECTION", \citep{lstmhaighextractive} have shown that extending the biLSTM model 2 different approaches for QA has its advantages. One approach, using a more composite method of using CNNs for representing questions as well as answers. The other, by implementing an \textit{attention mechanism} that helps in generating an answer representation according to the question context.
             Their framework is based on developing a biLSTM model for both questions and answers, applying a connective pooling layer and using a cosine similarity metric to calculate the degree of matching answers. They utilized the InsuranceQA\citep{lstmInsuranceQA} dataset that was created in 2015 and tested primarily on CNN based networks, details of the dataset can be found in table \ref{lstmInsuranceQATable}.
+            
+            \begin{figure}
+            	\centering
+            	\includegraphics[scale=0.4]{../images/lstm-bilstmhaig.png}
+            	\caption{Basic QA-LSTM model depicting biLSTM implementation \cite{lstmhaighextractive}}\label{lstmhaig}
+            \end{figure}
 
             Pooling layers are known to suffer from an incapability to retain local linguistic information. To combat this the team proposed an additional CNN layer on top of the biLSTM layer. Additionally, they added a simple and efficient attention model to help their biLSTM model better distinguish between candidate answers according to the question context. This study is significant in the field of both deep learning based models and for the field of Question-Answering because it requires little or no feature engineering to achieve significant results. We will also see later in section \ref{23}, how biLSTMs are implemented with Transformers to produce an even better model.
             In their work \citep{lstmhaighextractive} have shown that biLSTMs are capable of capitalizing long-range sequential context information. This is important as it is often seen that the answer is not directly semantically related to the question but more contextually related. Long-range exploitations help the model understand the question more holistically, therefore helping produce a more relevant answer.
-	        \begin{figure}
-                \centering
-                \includegraphics[scale=0.4]{../images/lstm-bilstmhaig.png}
-                \caption{Basic QA-LSTM model depicting biLSTM implementation \cite{lstmhaighextractive}}\label{lstmhaig}
-            \end{figure}
+
+
+		   \begin{figure}
+				\centering
+				\includegraphics[scale=0.35]{../images/lstm-bilstmhaigcnn.png}
+				\caption{QA-LSTM with CNN layer \citep{lstmhaighextractive}}\label{lstmhaigcnn}
+			\end{figure}
+		
              BiLSTMs have an advantage over traditional LSTMs in that they utilize both previous and future contextual information by processing the input in both directions, forward and backward. This leads to the generation of two independent sequences of output vectors form LSTMs. The final output is a concatenation  of the outputs from both directions ie. $h_t= \overrightarrow{h_t} || \overleftarrow{h_t} $.
              The \textbf{QA-LSTM} model  proposed by \citep{lstmhaighextractive} can be seen in fig. \ref{lstmhaig}. We can see that it generates a distributed representation for both questions(blue) and answers(red) before moving on to perform pooling and cosine similarity operations.
             In fig. \ref{lstmhaigcnn}, it can be seen that the CNN layer has been implemented after the biLSTM layers and before the pooling layers. The pooling layers have been modified to be max-$ k $ pooling layers, similar to standard CNNs.
-            \begin{figure}
-                \centering
-                \includegraphics[scale=0.35]{../images/lstm-bilstmhaigcnn.png}
-                \caption{QA-LSTM with CNN layer \citep{lstmhaighextractive}}\label{lstmhaigcnn}
-            \end{figure}
+         
 
             The implementation of this convolution layer forces localized interactions between the inputs within a filter size of $ m $. For each window of size $ m $ in biLSTM output vectors ie.
             \begin{equation}
@@ -347,15 +352,32 @@
 	}
 		\caption{Experiment results from \citep{lstmhu2016question} that highlight various configurations implemented. The best being Match-LSTM with Ans-Ptr using a boundary, search and ensemble technique.}\label{tableMatchLSTM}
 		\end{table}
-
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.35]{../images/lstm-intent1.png}
+			\caption{Basic classification model using LSTM \citep{lstmintent}}\label{lstmIntent1}
+		\end{figure}
 	     Our research has shown that this approach hasn't yet been applied to the SQuAD 2.0 dataset. In chapter \ref{c3researchmeth}, section \ref{c33} we will hypothesize the implementation of this approach along with the use of Transformers, which are covered in the next section.
 
-         The final piece of research that to look at in this section is by \cite{lstmintent} titled \textit{Intent Classification in Question-Answering Using LSTM Architectures}. The approach followed is similar to \citep{lstmSubilstm}, using GloVe embeddings, allowing for prefixes to be added and generating word closeness. The
+         The final piece of research to look at in this section is by \cite{lstmintent} titled \textit{Intent Classification in Question-Answering Using LSTM Architectures}. The approach followed is similar to \citep{lstmSubilstm}, using GloVe embeddings, allowing for prefixes to be added and generating word closeness and using a supervised learning technique. In fig. \ref{lstmIntent1} it can be observed how applying one-hot encoding, followed by GloVe embedding before reaching the LSTM layer and using a Softmax activation layer at one prediction classes allows the model to generate better predictions on the TREC \citep{trec} dataset.
 
+		In fig. \ref{lstmIntent2} we see the implementation of a padding layer at the end of each question and adding a subclass prediction strategy at the end of each prediction. This is done to gain better contextual understanding of the question. The subclass acts as a specialization class while the main class acts as a generalization class, therefore narrowing the context while maintaining global outlook. 
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.35]{../images/lstm-intent2.png}
+			\caption{Basic classification model using RNNs \citep{lstmintent}}\label{lstmIntent2}
+		\end{figure}
+		To verify their results \citep{lstmintent} implemented a prototype responder by adding a biLSTM on top of the LSTM layer seen in figs. \ref{lstmIntent1} and \ref{lstmIntent2}.  The biLSTM model uses the predictions from the previous layer, both main and subclass predictions, and combines them to form the final output. 
 
+		\subsection{Critical Issues in LSTMs}\label{c2criticalissues}
+		
+		From the literature reviewed so far, it has become apparent that LSTMs generate a view of the world in a very sequential manner. While successful in managing banishing gradients and generating better, contextually relevant results, LSTMs or even biLSTMs aren't entirely correct, with none of the models achieving over 90\% accuracy across various datasets consistently. LSTMs suffer from another fatal flaw, their sequential nature makes it extremely difficult to parallelize the work and this leads to extended training times, out of memory errors etc. 
+		
 	    \section{Transformers}\label{23}
-
-	        Transformer based models have been become a very reliable way to implement various NLP based tasks since their introduction in the late 2017, \citep{atayl}. In this section we will critically evaluate a few key transformer based architectures \& assess their application particularly on the SQuAD 2.0 dataset.
+	    
+	    	The previous section highlighted some key advancements in the field of machine comprehension and LSTMs, however, not a lot changed for almost two decades in the field of NLP based machine comprehension tasks architecturally. Since their introduction in 1997, LSTMs \cite{lstmoriginal} have been the base architecture for countless applications. However, as we noted in section \ref{c2criticalissues}, LSTMs aren't always the best way forward. 
+			
+			\textit{Transformers} were introduced in late 2017 by \ref{atayl} and have become a very reliable way to implement various NLP based tasks. In this section we will critically evaluate a few key transformer based architectures \& assess their application particularly on the SQuAD 2.0 dataset.
 
 	        Work done in the field of Long short-term and gated recurrent \citep{lstmoriginal} and \citep{recurrent} neural networks, in particular, has been established as a state of the art approach in sequence modelling, transduction problems such as language modelling and machine translation.  Efforts have been made to push the boundaries of encoder-decoder based \& recurrent language models.
 
@@ -478,11 +500,11 @@
     \section{Research Hypothesis}\label{c33}
     The hypothesis of this research is that implementing a self attention based Transformer model with:
     \begin{itemize}
+    	\item one hot encoding
+    	\item glove embedding
     	\item BERT base\cite{bert}
     	\item Answer pointer output layer\cite{lstmPointer, lstmhu2016question}
-    	\item
-    	\item
-    	\item
+
     \end{itemize}
     \section{Existing Models And Benchmarks}\label{c34}
   %  \chapter{\centering Architecture Creation}\label{c4}
@@ -496,9 +518,10 @@
 		        \includegraphics[scale=0.55,angle=90]{../images/GanttChart-mid.png}
 		     	\caption{Mid-Thesis report Gantt Chart}\label{ganttChartMid}
               \end{figure}
-         \chapter{Research Proposal}\ref{crp}
-               \includepdf[pages=-]{../rp.pdf}
+         \chapter{Research Proposal}\label{crp}
+         \includepdf[pages=-]{../rp.pdf}
     \end{appendices}
+\setcitestyle{numbers}
 \bibliography{MidThesis}
 
 \end{document}
