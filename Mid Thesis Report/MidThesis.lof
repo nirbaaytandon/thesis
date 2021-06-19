@@ -9,10 +9,10 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Overview of the 2 approaches by \citep {lstmhu2016question}, showing the Sequence Model on the left and the Boundary Model on the right.\relax }}{15}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Basic classification model using LSTM \citep {lstmintent}\relax }}{16}{figure.caption.15}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Basic classification model using RNNs \citep {lstmintent}\relax }}{17}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Transformer Architecture built by \citep {atayl}\relax }}{19}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Transformer Architecture built by \citep {atayl}\relax }}{18}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Scale Dot and Multi-Head Attention Models \cite {atayl}\relax }}{20}{figure.caption.18}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Pre-training and Fine Tuning procedures for BERT \citep {bert}\relax }}{21}{figure.caption.19}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Mid-Thesis report Gantt Chart\relax }}{28}{figure.caption.22}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Mid-Thesis report Gantt Chart\relax }}{29}{figure.caption.22}%
 \addvspace {10\p@ }

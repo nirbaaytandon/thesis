@@ -218,7 +218,7 @@
 
             BiLSTMs were introduced as an approach towards phoneme classification for speech recognition applications, however, in their paper ``LSTM-BASED DEEP LEARNING MODELS FOR NON -FACTOID ANSWER SELECTION", \citep{lstmhaighextractive} have shown that extending the biLSTM model 2 different approaches for QA has its advantages. One approach, using a more composite method of using CNNs for representing questions as well as answers. The other, by implementing an \textit{attention mechanism} that helps in generating an answer representation according to the question context.
             Their framework is based on developing a biLSTM model for both questions and answers, applying a connective pooling layer and using a cosine similarity metric to calculate the degree of matching answers. They utilized the InsuranceQA\citep{lstmInsuranceQA} dataset that was created in 2015 and tested primarily on CNN based networks, details of the dataset can be found in table \ref{lstmInsuranceQATable}.
-            
+
             \begin{figure}
             	\centering
             	\includegraphics[scale=0.4]{../images/lstm-bilstmhaig.png}
@@ -234,11 +234,11 @@
 				\includegraphics[scale=0.35]{../images/lstm-bilstmhaigcnn.png}
 				\caption{QA-LSTM with CNN layer \citep{lstmhaighextractive}}\label{lstmhaigcnn}
 			\end{figure}
-		
+
              BiLSTMs have an advantage over traditional LSTMs in that they utilize both previous and future contextual information by processing the input in both directions, forward and backward. This leads to the generation of two independent sequences of output vectors form LSTMs. The final output is a concatenation  of the outputs from both directions ie. $h_t= \overrightarrow{h_t} || \overleftarrow{h_t} $.
              The \textbf{QA-LSTM} model  proposed by \citep{lstmhaighextractive} can be seen in fig. \ref{lstmhaig}. We can see that it generates a distributed representation for both questions(blue) and answers(red) before moving on to perform pooling and cosine similarity operations.
             In fig. \ref{lstmhaigcnn}, it can be seen that the CNN layer has been implemented after the biLSTM layers and before the pooling layers. The pooling layers have been modified to be max-$ k $ pooling layers, similar to standard CNNs.
-         
+
 
             The implementation of this convolution layer forces localized interactions between the inputs within a filter size of $ m $. For each window of size $ m $ in biLSTM output vectors ie.
             \begin{equation}
@@ -362,48 +362,61 @@
 
          The final piece of research to look at in this section is by \cite{lstmintent} titled \textit{Intent Classification in Question-Answering Using LSTM Architectures}. The approach followed is similar to \citep{lstmSubilstm}, using GloVe embeddings, allowing for prefixes to be added and generating word closeness and using a supervised learning technique. In fig. \ref{lstmIntent1} it can be observed how applying one-hot encoding, followed by GloVe embedding before reaching the LSTM layer and using a Softmax activation layer at one prediction classes allows the model to generate better predictions on the TREC \citep{trec} dataset.
 
-		In fig. \ref{lstmIntent2} we see the implementation of a padding layer at the end of each question and adding a subclass prediction strategy at the end of each prediction. This is done to gain better contextual understanding of the question. The subclass acts as a specialization class while the main class acts as a generalization class, therefore narrowing the context while maintaining global outlook. 
+		In fig. \ref{lstmIntent2} we see the implementation of a padding layer at the end of each question and adding a subclass prediction strategy at the end of each prediction. This is done to gain better contextual understanding of the question. The subclass acts as a specialization class while the main class acts as a generalization class, therefore narrowing the context while maintaining global outlook.
 		\begin{figure}[!h]
 			\centering
 			\includegraphics[scale=0.35]{../images/lstm-intent2.png}
 			\caption{Basic classification model using RNNs \citep{lstmintent}}\label{lstmIntent2}
 		\end{figure}
-		To verify their results \citep{lstmintent} implemented a prototype responder by adding a biLSTM on top of the LSTM layer seen in figs. \ref{lstmIntent1} and \ref{lstmIntent2}.  The biLSTM model uses the predictions from the previous layer, both main and subclass predictions, and combines them to form the final output. 
+		To verify their results \citep{lstmintent} implemented a prototype responder by adding a biLSTM on top of the LSTM layer seen in figs. \ref{lstmIntent1} and \ref{lstmIntent2}.  The biLSTM model uses the predictions from the previous layer, both main and subclass predictions, and combines them to form the final output.
 
 		\subsection{Critical Issues in LSTMs}\label{c2criticalissues}
-		
-		From the literature reviewed so far, it has become apparent that LSTMs generate a view of the world in a very sequential manner. While successful in managing banishing gradients and generating better, contextually relevant results, LSTMs or even biLSTMs aren't entirely correct, with none of the models achieving over 90\% accuracy across various datasets consistently. LSTMs suffer from another fatal flaw, their sequential nature makes it extremely difficult to parallelize the work and this leads to extended training times, out of memory errors etc. 
-		
-	    \section{Transformers}\label{23}
-	    
-	    	The previous section highlighted some key advancements in the field of machine comprehension and LSTMs, however, not a lot changed for almost two decades in the field of NLP based machine comprehension tasks architecturally. Since their introduction in 1997, LSTMs \cite{lstmoriginal} have been the base architecture for countless applications. However, as we noted in section \ref{c2criticalissues}, LSTMs aren't always the best way forward. 
-			
-			\textit{Transformers} were introduced in late 2017 by \citep{atayl} and have become a very reliable way to implement various NLP based tasks. 
-			While \citep{atayl} used the BLEU score and showed that their model works better than state of the art models on the WMT 2014 dataset \citep{wmt} In this section we will critically evaluate a few key transformer based architectures \& assess their application particularly on the SQuAD 2.0 dataset.
-			
-			
-	        Work done in the field of Long short-term and gated recurrent \citep{lstmoriginal} and \citep{recurrent} neural networks, in particular, has been established as a state of the art approach in sequence modelling, transduction problems such as language modelling and machine translation.  Efforts have been made to push the boundaries of encoder-decoder based \& recurrent language models.
 
-	        Recurrent models usually adopt a combination approach where they take symbol position of the input and output positions along with the computation. This helps them align positions to steps in computation time and generate a sequence of hidden states $ h_{t} $, which is a function of the previous hidden state $ h_{t-1}$ and the input function $ t $.  This inherently sequential nature of RNNs causes memory issues, leading to reduced batch sizes. \\
+		From the literature reviewed so far, it has become apparent that LSTMs generate a view of the world in a very sequential manner. While successful in managing banishing gradients and generating better, contextually relevant results, LSTMs or even biLSTMs aren't entirely correct, with none of the models achieving over 90\% accuracy across various datasets consistently. LSTMs suffer from another fatal flaw, their sequential nature makes it extremely difficult to parallelize the work and this leads to extended training times, out of memory errors etc.
+
+	    \section{Transformers}\label{23}
+
+	    	The previous section highlighted some key advancements in the field of machine comprehension and LSTMs, however, not a lot changed for almost two decades in the field of NLP based machine comprehension tasks architecturally. Since their introduction in 1997, LSTMs \cite{lstmoriginal} have been the base architecture for countless applications. However, as we noted in section \ref{c2criticalissues}, LSTMs have some critical drawbacks.
+
+			\textit{Transformers} were introduced in late 2017 by \citep{atayl} and have become a very reliable way to implement various NLP based tasks. The basic architecture for which can be seen in fig. \ref{transformerArchitecture}.
 			\begin{figure}[h!]
 				\centering
 				\includegraphics[scale=0.4]{../images/transformer.png}
 				\caption{Transformer Architecture built by \citep{atayl}}\label{transformerArchitecture}
 			\end{figure}
+	        Recurrent models usually adopt a combination approach where they take symbol position of the input and output positions along with the computation. This helps them align positions to steps in computation time and generate a sequence of hidden states $ h_{t} $, which is a function of the previous hidden state $ h_{t-1}$ and the input function $ t $.  This inherently sequential nature of RNNs causes memory issues, leading to reduced batch sizes.
+
 			The architecture for a \textit{Transformer} in this paper is outlined as having an encoder that maps input sequences to a continuous representation. The architecture can be seen in Fig. \ref{transformerArchitecture}. This is then decoded into an output sequence of symbols one at a time. Each step is auto-regressive, ie. it consumes the previously generated symbols as additional input when creating the next. This is similar to an ensemble model. Stacks of 6 encoder and 6 decoder layers is used.\\
 			Each encoder layer has 2 sub-layers of a multi-head self-attention and the other a simple, position-wise fully connected feed-forward network layer. The output from each encoder layer can be represented as $  LayerNorm(x + Sublayer(x)) $, where $ Sublayer(x) $ is the function implemented by the sub-layers in the model. Additionally, supporting residual connections is handled by producing outputs of dimension $ d_{model}=512 $.
 
 			The decoder layer is similar to the encoder layer and has an additional 3rd sub-layer that performs multi-head attention over the output of the encoders. To ensure that the output layer isn't affected by the output of residual connections from the sub-layers, a normalization layer is implemented at the end. Masking the subsequent positions and offsetting the output by 1 position ensures that the predictions for position $ i $ can only depend on outputs from previous positions.
 
-			One of the key features in the Transformer architectures is \textit{self-attention}. Let us look at this in detail below.
+            The \textit{Transformer} architecture was the first one to implement a self-attention based transduction model to compute input and output representations without the use of convolution or sequence-aligned networks.
+
+			One of the key features in a Transformer architectures is \textit{self-attention}, which is covered in-depth in section \ref{231}.
+
 			\subsection{Self Attention}\label{231}
-			The attention mechanism can be described as mapping a query to a set of key-value pairs. This can be seen from Fig. \ref{multiHeadAttention}. \\The evaluations performed on the Wall Street Journal dataset\citep{wsj}, using 40k sentences, showed that even without task-specific tuning the model had better results with a fraction of the training cost.
+
+            In their paper ``Attention Is All You Need", \citep{atayl} highlight that \textit{self-attention} is a key piece of the puzzle. This is due to several reasons such as the ability to parallelize computation, reduce total complexity per layer and the reduced path lengths between various long-range dependencies in the network. It is easier to learn about these dependencies if the distance between them is shorter.
+            Thus, the transformer also computes the length of the longest path between any two input-output positions.
+
+            The attention mechanism was designed by \citep{attentioneMech} to solve a critical issue with encoder-decoder architecture dependent LSTM and RNN based models. As has been highlighted before, LSTMs suffer from an inability to retain long-range sequence dependencies. Using a (soft)-search approach that allows the model to look for parts that are relevant to predicting an output sequence, rather than forming all the segments of a sentence produces better results than existing fixed-length encoder-decoder models.
+            The (soft)-search is performed after a prediction is made. This prediction is based on a set of positions for the source sentence, where the target word hs the highest concentration of context vectors associated with previously generated target words. Another distinguishing feature of the attention mechanism is that it does not try to encode an entire input sentence to a fixed-length vector. Rather, it encodes the input sentence into sequence vectors that can be adaptively decoded during translation. Thus freeing the model from having to squash a lot of information from the source sentence into a vector of fixed-length.
+
+			The work done in \cite{atayl} simplifies that the attention mechanism can be described as mapping a query to a set of key-value pairs. This can be seen from Fig. \ref{multiHeadAttention}. The evaluations performed on the Wall Street Journal dataset\citep{wsj}, using 40k sentences, showed that even without task-specific tuning the model had better results with a fraction of the training cost.
 			\begin{figure}[h!]
 				\centering
 				\includegraphics[scale=0.4]{../images/multihead.png}
 				\caption{Scale Dot and Multi-Head Attention Models \cite{atayl}}\label{multiHeadAttention}
 			\end{figure}
 
+            The ``Scaled Dot-Product Attention" layer implemented in the transformer works by computing the dot products of all the input query with all the keys, divide it by the dimension of the keys and finally apply a softmax function to obtain the weights. This can be represented as:
+            \begin{equation}
+                Attention(Q,K,V)=softmax\bigg(\dfrac{QK^{T}}{\sqrt{d_k}}\bigg)V
+            \end{equation}
+            where $ K, V $ are the matrices containing the keys and values respectively, and $ Q $ is the set of queries. The dimension of the keys is given by $ d_k $. The dot product is used because it is more efficient than the additive attention product and is faster as well \cite{atayl}.
+
+            Instead of using single attention, the transformer implements \textit{multi-head} attention.
 		\subsection{Improvements of Transformer Architectures}\label{232}
 
 		\subsubsection{BERT}\label{2321}
@@ -524,8 +537,8 @@
          \chapter{Research Proposal}\label{crp}
          \includepdf[pages=-]{../rp.pdf}
     \end{appendices}
-%\setcitestyle{numbers}
-\nocite{*}
+\setcitestyle{numbers}
+%\nocite{*}
 \bibliography{MidThesis}
 
 \end{document}
