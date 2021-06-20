@@ -1,18 +1,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces LSTM Memory cell with a Constant Error Carousel having fixed weight 1.0, \citep {lstmoriginal}\relax }}{6}{figure.caption.5}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces LSTM network with 8 input cells, 4 output cells and 2 memory cells of block size 2. Here $ in1 $ marks the input gate, $ out1 $ marks the output gate and $ cell/block1 $ marks the first memory cell block 1. The internal architecture of $ cell/block1 $ is similar to fig. \ref {lstmCEC}. \citep {lstmoriginal}\relax }}{8}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces LSTM network with 8 input cells, 4 output cells and 2 memory cells of block size 2. Here $ in1 \text {and} out1 $ represent the input and output gates and $ cell/block1 $ is the first memory cell. The internal architecture of $ cell/block1 $ is similar to fig. \ref {lstmCEC}. \citep {lstmoriginal}\relax }}{8}{figure.caption.6}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces A memory cell for a biLSTM highlighting a \textit {forget gate}. This forget gate helps in scaling the internal state of a memory cell, for example by resetting the state to 0. We can see that it is different to fig. \ref {lstmCEC}, with the implementation of a connection to the forget gate, while still having an internal weight of 1. \citep {lstmBiLSTM}\relax }}{9}{figure.caption.7}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Basic QA-LSTM model depicting biLSTM implementation \cite {lstmhaighextractive}\relax }}{10}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Basic QA-LSTM model depicting biLSTM implementation \citep {lstmhaighextractive}\relax }}{10}{figure.caption.9}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces QA-LSTM with CNN layer \citep {lstmhaighextractive}\relax }}{11}{figure.caption.10}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces QA-LSTM with Attention layer \citep {lstmhaighextractive}\relax }}{12}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Overview of the 2 approaches by \citep {lstmhu2016question}, showing the Sequence Model on the left and the Boundary Model on the right.\relax }}{15}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Basic classification model using LSTM \citep {lstmintent}\relax }}{16}{figure.caption.15}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Basic classification model using RNNs \citep {lstmintent}\relax }}{17}{figure.caption.16}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Transformer Architecture built by \citep {atayl}\relax }}{18}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Scale Dot and Multi-Head Attention Models \cite {atayl}\relax }}{20}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Pre-training and Fine Tuning procedures for BERT \citep {bert}\relax }}{21}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Scale Dot and Multi-Head Attention Models \citep {atayl}\relax }}{20}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Pre-training and Fine Tuning procedures for BERT \citep {bert}\relax }}{22}{figure.caption.19}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Mid-Thesis report Gantt Chart\relax }}{29}{figure.caption.22}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Mid-Thesis report Gantt Chart\relax }}{30}{figure.caption.22}%
 \addvspace {10\p@ }

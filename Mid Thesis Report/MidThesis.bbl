@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -147,6 +147,13 @@ Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio.
 Mitchell Marcus, Beatrice Santorini, and Mary~Ann Marcinkiewicz.
 \newblock Building a large annotated corpus of english: The penn treebank.
 \newblock 1993.
+
+\bibitem[Gehring et~al.(2017)Gehring, Auli, Grangier, Yarats, and
+  Dauphin]{convs2s}
+Jonas Gehring, Michael Auli, David Grangier, Denis Yarats, and Yann~N. Dauphin.
+\newblock Convolutional sequence to sequence learning.
+\newblock \emph{CoRR}, abs/1705.03122, 2017.
+\newblock URL \url{http://arxiv.org/abs/1705.03122}.
 
 \bibitem[Dai and Le(2015)]{dai}
 Andrew~M Dai and Quoc~V Le.

@@ -12,7 +12,6 @@
 
 \bibliographystyle{unsrtnat}
 
-
 \setcitestyle{authoryear,open={(},close={)}}
 \usepackage[utf8]{inputenc}
 \usepackage{epsfig}
@@ -29,6 +28,8 @@
 %Load nomenclature and glossary files
 \usepackage[nottoc]{tocbibind}
 \usepackage[intoc]{nomencl}
+  \renewcommand{\nomlabel}[1]{#1 \dotfill}
+
 \makenomenclature
 \renewcommand{\nomname}{List of Abbreviations}
 \usepackage{mathtools}
@@ -80,7 +81,7 @@
 
 
     The task of Question-Answering is a machine comprehension problem. If we dig deeper, we can classify it even as a sequential problem. One might wonder how it is a sequential problem? The answer to that is simple, traditionally QA systems work by ``sequentially reading" the input and
-    In a more mathematical context, we can say that the problem we face is of \textit{answer selection} and not \textit{answer provision}. Through numerous studies that have been done, some of which we shall look into detail in chapter \ref{c2}, we see that the problem is not how to provide an answer to a question, it is if the answer provided is the correct one or not in the \textit{context} in which the question has been posed.
+    In a more mathematical context, we can say that the problem we face is of \textit{answer selection} and not \textit{answer provision}. Through numerous studies that have been done, some of which we shall look into detail in chapter \ref{c2litrev}, we see that the problem is not how to provide an answer to a question, it is if the answer provided is the correct one or not in the \textit{context} in which the question has been posed.
 
     Through the work done in this research, the author aims at creating a sustainable, fast, easy to understand Transformer architecture for Question Answering. An advancement on the work done by the team at Google \citep{atayl}. To be able to do so, let us first understand what a \textit{Transformer} is.
     A Transformer is a form of transduction model that relies solely on self-attention to figure out how to represent its inputs and outputs. It does so without the use of any sequence aligned recurrent neural networks(RNNs) or convolutions.
@@ -122,11 +123,11 @@
 
     To be able to effectively deliver on the aims and objectives we have defined in Section \ref{12}, we must first critically analyse the work that has been done in the field of NLP and, in particular, the field of Question-Answering based networks. In this section, we will critically analyse a few key model architectures and how we reached Transformers, which form the base of our proposed architecture.
 
-\cite{fastQA}
+\citep{fastQA}
 
         \section{Long Short-Term Memory}\label{22}
 
-            In 1997 \cite{lstmoriginal} introduced to the world a gradient descent based model in the form of Long Short-Term Memory. They set out to solve the problem of the vanishing gradient which was often seen in "Back-Propagation Through Time"(BPPTs) based neural networks. Extensive studies done on this, some by Hochreiter himself, showed that the problem of vanishing gradients is a real one. It was also seen that in case of BPTTs, the error back-flow mechanisms would either blow up or also suffer from vanishing gradients leading to either oscillating weights or learning to bridge long time gaps would not work. To remediate this, the authors introduced the concept of a \textit{constant} error flow through the internal states of special units.
+            In 1997 \citep{lstmoriginal} introduced to the world a gradient descent based model in the form of Long Short-Term Memory. They set out to solve the problem of the vanishing gradient which was often seen in "Back-Propagation Through Time"(BPPTs) based neural networks. Extensive studies done on this, some by Hochreiter himself, showed that the problem of vanishing gradients is a real one. It was also seen that in case of BPTTs, the error back-flow mechanisms would either blow up or also suffer from vanishing gradients leading to either oscillating weights or learning to bridge long time gaps would not work. To remediate this, the authors introduced the concept of a \textit{constant} error flow through the internal states of special units.
 
             Their paper, Long Short-Term Memory, \citep{lstmoriginal}, highlights that the work previously done using various gradient-descent variants, time-delays, time constants, use of higher order units to influence connections when the network receives conflicting error signals, Kalman filters, Second order nets etc. still suffer from some of the same problems that we have earlier. In the case of Ring's approach \citep{lstmRing}, the network can be really fast but also suffers from memory constraints and lack of generalization. This happens because to bridge $ n $ time lags, the model adds $ n $ additional units.
 
@@ -167,11 +168,11 @@
             \begin{figure}[!h]
 	           \centering
                \includegraphics[scale=0.35]{../images/lstm-network.png}
-      		   \caption{LSTM network with 8 input cells, 4 output cells and 2 memory cells of block size 2. Here $ in1 $ marks the input gate, $ out1 $ marks the output gate and $ cell/block1 $ marks the first memory cell block 1. The internal architecture of $ cell/block1 $ is similar to fig. \ref{lstmCEC}. \citep{lstmoriginal}}\label{lstmNetwork}
+      		   \caption{LSTM network with 8 input cells, 4 output cells and 2 memory cells of block size 2. Here $ in1 \text{and} out1 $ represent the input and output gates and $ cell/block1 $ is the first memory cell. The internal architecture of $ cell/block1 $ is similar to fig. \ref{lstmCEC}. \citep{lstmoriginal}}\label{lstmNetwork}
             \end{figure}
 
             A series of experiments were performed to prove that LSTMs are indeed ``state-of-the-art" and provide an improvement over then existing RNN based architectures.
-            Experiments around temporal order, which is defined as a series of events that happen in a particular order, that were previously unsolved by RNNs, were successfully solved by LSTMs. This was possible because of how LSTMs address time lags vs. how RNNs suffer from vanishing gradients. Details of the analysis and experiments conducted are available in section 5 of the paper ``Long Short-Term Memory" by \cite{lstmoriginal}, with experimental summaries in tables 10 and 11 of the same. Being able to solve for temporal order based problems allowed LSTMs to be capable of solving various real world problems that we will discuss subsequently.
+            Experiments around temporal order, which is defined as a series of events that happen in a particular order, that were previously unsolved by RNNs, were successfully solved by LSTMs. This was possible because of how LSTMs address time lags vs. how RNNs suffer from vanishing gradients. Details of the analysis and experiments conducted are available in section 5 of the paper ``Long Short-Term Memory" by \citep{lstmoriginal}, with experimental summaries in tables 10 and 11 of the same. Being able to solve for temporal order based problems allowed LSTMs to be capable of solving various real world problems that we will discuss subsequently.
             Temporal orders are key in contextual understanding for NLP based tasks and especially in the case of QA based networks. Let us now look at some advantages and limitations of LSTMs, before moving on to understand how they have been applied in the field of QA.
 
 
@@ -222,7 +223,7 @@
             \begin{figure}
             	\centering
             	\includegraphics[scale=0.4]{../images/lstm-bilstmhaig.png}
-            	\caption{Basic QA-LSTM model depicting biLSTM implementation \cite{lstmhaighextractive}}\label{lstmhaig}
+            	\caption{Basic QA-LSTM model depicting biLSTM implementation \citep{lstmhaighextractive}}\label{lstmhaig}
             \end{figure}
 
             Pooling layers are known to suffer from an incapability to retain local linguistic information. To combat this the team proposed an additional CNN layer on top of the biLSTM layer. Additionally, they added a simple and efficient attention model to help their biLSTM model better distinguish between candidate answers according to the question context. This study is significant in the field of both deep learning based models and for the field of Question-Answering because it requires little or no feature engineering to achieve significant results. We will also see later in section \ref{23}, how biLSTMs are implemented with Transformers to produce an even better model.
@@ -360,7 +361,7 @@
 		\end{figure}
 	     Our research has shown that this approach hasn't yet been applied to the SQuAD 2.0 dataset. In chapter \ref{c3researchmeth}, section \ref{c33} we will hypothesize the implementation of this approach along with the use of Transformers, which are covered in the next section.
 
-         The final piece of research to look at in this section is by \cite{lstmintent} titled \textit{Intent Classification in Question-Answering Using LSTM Architectures}. The approach followed is similar to \citep{lstmSubilstm}, using GloVe embeddings, allowing for prefixes to be added and generating word closeness and using a supervised learning technique. In fig. \ref{lstmIntent1} it can be observed how applying one-hot encoding, followed by GloVe embedding before reaching the LSTM layer and using a Softmax activation layer at one prediction classes allows the model to generate better predictions on the TREC \citep{trec} dataset.
+         The final piece of research to look at in this section is by \citep{lstmintent} titled \textit{Intent Classification in Question-Answering Using LSTM Architectures}. The approach followed is similar to \citep{lstmSubilstm}, using GloVe embeddings, allowing for prefixes to be added and generating word closeness and using a supervised learning technique. In fig. \ref{lstmIntent1} it can be observed how applying one-hot encoding, followed by GloVe embedding before reaching the LSTM layer and using a Softmax activation layer at one prediction classes allows the model to generate better predictions on the TREC \citep{trec} dataset.
 
 		In fig. \ref{lstmIntent2} we see the implementation of a padding layer at the end of each question and adding a subclass prediction strategy at the end of each prediction. This is done to gain better contextual understanding of the question. The subclass acts as a specialization class while the main class acts as a generalization class, therefore narrowing the context while maintaining global outlook.
 		\begin{figure}[!h]
@@ -376,7 +377,7 @@
 
 	    \section{Transformers}\label{23}
 
-	    	The previous section highlighted some key advancements in the field of machine comprehension and LSTMs, however, not a lot changed for almost two decades in the field of NLP based machine comprehension tasks architecturally. Since their introduction in 1997, LSTMs \cite{lstmoriginal} have been the base architecture for countless applications. However, as we noted in section \ref{c2criticalissues}, LSTMs have some critical drawbacks.
+	    	The previous section highlighted some key advancements in the field of machine comprehension and LSTMs, however, not a lot changed for almost two decades in the field of NLP based machine comprehension tasks architecturally. Since their introduction in 1997, LSTMs \citep{lstmoriginal} have been the base architecture for countless applications. However, as we noted in section \ref{c2criticalissues}, LSTMs have some critical drawbacks.
 
 			\textit{Transformers} were introduced in late 2017 by \citep{atayl} and have become a very reliable way to implement various NLP based tasks. The basic architecture for which can be seen in fig. \ref{transformerArchitecture}.
 			\begin{figure}[h!]
@@ -400,28 +401,48 @@
             In their paper ``Attention Is All You Need", \citep{atayl} highlight that \textit{self-attention} is a key piece of the puzzle. This is due to several reasons such as the ability to parallelize computation, reduce total complexity per layer and the reduced path lengths between various long-range dependencies in the network. It is easier to learn about these dependencies if the distance between them is shorter.
             Thus, the transformer also computes the length of the longest path between any two input-output positions.
 
-            The attention mechanism was designed by \citep{attentioneMech} to solve a critical issue with encoder-decoder architecture dependent LSTM and RNN based models. As has been highlighted before, LSTMs suffer from an inability to retain long-range sequence dependencies. Using a (soft)-search approach that allows the model to look for parts that are relevant to predicting an output sequence, rather than forming all the segments of a sentence produces better results than existing fixed-length encoder-decoder models.
-            The (soft)-search is performed after a prediction is made. This prediction is based on a set of positions for the source sentence, where the target word hs the highest concentration of context vectors associated with previously generated target words. Another distinguishing feature of the attention mechanism is that it does not try to encode an entire input sentence to a fixed-length vector. Rather, it encodes the input sentence into sequence vectors that can be adaptively decoded during translation. Thus freeing the model from having to squash a lot of information from the source sentence into a vector of fixed-length.
+            The attention mechanism was designed by \citep{attentioneMech} to solve a critical issue with encoder-decoder architecture dependent LSTM and RNN based models. As has been highlighted before, LSTMs suffer from an inability to retain long-range sequence dependencies. Using a (soft)-search approach allows the model to look for parts that are relevant to predicting an output sequence, rather than forming all the segments of a sentence produces better results than existing fixed-length encoder-decoder models.
+            The (soft)-search is performed after a prediction is made. This prediction is based on a set of positions for the source sentence, where the target word has the highest concentration of context vectors associated with previously generated target words. Another distinguishing feature of the attention mechanism is that it does not try to encode an entire input sentence to a fixed-length vector. Rather, it encodes the input sentence into sequence vectors that can be adaptively decoded during translation. Thus freeing the model from having to squash a lot of information from the source sentence into a vector of fixed-length.
 
-			The work done in \cite{atayl} simplifies that the attention mechanism can be described as mapping a query to a set of key-value pairs. This can be seen from Fig. \ref{multiHeadAttention}. The evaluations performed on the Wall Street Journal dataset\citep{wsj}, using 40k sentences, showed that even without task-specific tuning the model had better results with a fraction of the training cost.
+			The work done in \citep{atayl} modified that attention mechanism by mapping a query to a set of key-value pairs and developing \textit{self-attention}. To understand self attention take an example sentence like:
+            \\\\
+            \textit{``The lion was resting in the shade because it was tired after hunting."}\\
+
+             While this is a perfectly normal sentence to a human being, a computer does not know what ``it" means and that ``it" refers to the ``lion" in the second half of this sentence. Self- attention allows a Transformer to understand that the word ``it" refers to the ``lion" in this context.
+             In fig. \ref{multiHeadAttention} shows how \citep{atayl} modified the attention mechanism.
 			\begin{figure}[h!]
 				\centering
 				\includegraphics[scale=0.4]{../images/multihead.png}
-				\caption{Scale Dot and Multi-Head Attention Models \cite{atayl}}\label{multiHeadAttention}
+				\caption{Scale Dot and Multi-Head Attention Models \citep{atayl}}\label{multiHeadAttention}
 			\end{figure}
 
             The ``Scaled Dot-Product Attention" layer implemented in the transformer works by computing the dot products of all the input query with all the keys, divide it by the dimension of the keys and finally apply a softmax function to obtain the weights. This can be represented as:
+
             \begin{equation}
                 Attention(Q,K,V)=softmax\bigg(\dfrac{QK^{T}}{\sqrt{d_k}}\bigg)V
             \end{equation}
-            where $ K, V $ are the matrices containing the keys and values respectively, and $ Q $ is the set of queries. The dimension of the keys is given by $ d_k $. The dot product is used because it is more efficient than the additive attention product and is faster as well \cite{atayl}.
+            where $ K, V $ are the matrices containing the keys and values respectively, and $ Q $ is the set of queries. The dimension of the keys is given by $ d_k $. The dot product is used because it is more efficient than the additive attention product and is faster as well \citep{atayl}.
 
-            Instead of using single attention, the transformer implements \textit{multi-head} attention.
+            Instead of using single attention, the transformer implements \textit{multi-head} attention.  Multi-head attention, which can be seen in fig. \ref{multiHeadAttention} on the right, allows for the model to simultaneously gather information from various different representations in different subspaces and positions.
+            \begin{equation}\label{multiheadEQ}
+            \begin{aligned}
+               \text{MultiHead}(Q,K,V) = Concat(head_1,...,head_h)W^O \\
+                \text{where head}_{\mathrm{i}}=\text { Attention }\left(Q W_{i}^{Q}, K W_{i}^{K}, V W_{i}^{V}\right)
+            \end{aligned}
+           \end{equation}
+
+            Matrices $W_{i}^{Q} \in \mathbb{R}^{d_{\text {model }} \times d_{k}}, W_{i}^{K} \in \mathbb{R}^{d_{\text {model }} \times d_{k}}, W_{i}^{V} \in \mathbb{R}^{d_{\text {mod } 1} \times d_{v}}$ and $W^{O} \in \mathbb{R}^{h d_{v} \times d_{\text {model }}}$ represent the projection parameters. They also implemented $h=8$ parallel attention/head layers. The reduced dimensionality of each head with $d_{k}=d_{v}=d_{\text {model }} / h=64$ means that the total cost is similar to a fully connected, single-head attention layer.
+            The evaluations performed on the Wall Street Journal dataset\citep{wsj}, using 40k sentences, showed that even without task-specific tuning the model had better results with a fraction of the training cost.
+
+            The advantages of the Transformer architecture are clearly evident over the standard RNN based LSTMs and other architectures. Experiments on the WMT 2014 Englist to German translation using the big transformer showed a significant jump in BLEU score 28.4 over various other seq2seq models and even combined ensemble models which earlier had a highest score of 26.36 using a ConvS2S Ensemble \citep{convs2s}.
+
+
 		\subsection{Improvements of Transformer Architectures}\label{232}
 
+            Transformers have significant advantages as highlighted earlier. Improvements to the basic architecture are discussed below
 		\subsubsection{BERT}\label{2321}
 
-			The paper on BERT, which is \textit{Bidirectional Encoder Representations from Transformers} \citep{bert}, introduces a new language model. This model is truly fascinating in many ways. First and foremost it is designed to pre-train deep bidirectional representations using unlabelled data. This is done by jointly conditioning context in all layers to the right and left. This pre-training allows the model to be fine-tuned simply using one additional output layer. These features make this model conceptually simple and very powerful empirically.
+			The paper on \textit{Bidirectional Encoder Representations from Transformers} (BERT) \citep{bert}, introduces a new language model. This model is truly fascinating in many ways. First and foremost it is designed to pre-train deep bidirectional representations using unlabelled data. This is done by jointly conditioning context in all layers to the right and left. This pre-training allows the model to be fine-tuned simply using one additional output layer. These features make this model conceptually simple and very powerful empirically.
 
 			BERT employs language pre-training \citep{dai} which has shown significant advantages in many applications e.g. paraphrasing, language level inference etc. These tasks aim to highlight the relationships between sentences through contextual understanding as well as by using tokenized outputs.
 			\begin{figure}[h!]
@@ -434,13 +455,13 @@
 			BERT performed extremely well on the 11 NLP tasks that the authors ran it against. it showed an average accuracy improvement of 4.5\% and 7\% when compared to the previous state of the art models. Results of BERT and its significant gains make it one of the best candidate models for NLU tasks.
 
 	       \subsubsection{ALBERT}\label{2322}
-	       \cite{albert}
+	       \citep{albert}
 
 	       \subsubsection{ROBERTA}\label{2323}
-	       \cite{roberta}
+	       \citep{roberta}
 
 	       \subsubsection{DISTILBERT}\label{2324}
-	       \cite{distil}
+	       \citep{distil}
         \section{SQuAD Dataset}\label{24}
         \section{Comparison of Techniques}\label{25}
         \section{Summary}\label{26}
@@ -450,7 +471,7 @@
 
     \section{Data Selection}\label{c31}
 
-    mention datasets like \cite{lstmInsuranceQA},
+    mention datasets like \citep{lstmInsuranceQA},
     	We have selected the Stanford Question Answering Dataset (SQuAD). This is as a reading comprehension dataset based on Wikipedia articles. It is based on questions posed by crowd-workers on a set of articles. The answer to every question is a segment of text or span, from the corresponding reading passage, or the question might be unanswerable \citep{dataset}.
 
     	The dataset consists of over 150,000 questions. Split into 100,000 answerable and 50,000+ unanswerable question, which were written to look similar to unanswerable questions. The challenge being that a model should be able to correctly answer the answerable questions and abstain from answering the unanswerable ones.
@@ -458,7 +479,7 @@
 
 	    To effectively use this dataset for our purposes, let us first take a look at what its contents look like below.\\ \\
 	    \noindent\fbox{
-	    	\parbox{\textwidth}{\textbf{Context: } \textit{"The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia."}\\
+	    	\parbox{\textwidth}{\textbf{Context:}\textit{``The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia."}\\
 	    		\textbf{Question: } \textit{Who was the Norse leader?}\\
 	    		\textbf{Answer: } \textit{Rollo}}
 	    }
@@ -518,8 +539,8 @@
     \begin{itemize}
     	\item one hot encoding
     	\item glove embedding
-    	\item BERT base\cite{bert}
-    	\item Answer pointer output layer\cite{lstmPointer, lstmhu2016question}
+    	\item BERT base\citep{bert}
+    	\item Answer pointer output layer\citep{lstmPointer, lstmhu2016question}
 
     \end{itemize}
     \section{Existing Models And Benchmarks}\label{c34}
