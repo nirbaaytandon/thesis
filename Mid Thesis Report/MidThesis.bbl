@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -166,14 +166,6 @@ Wei Wang, Ming Yan, and Chen Wu.
   comprehension and question answering.
 \newblock \emph{arXiv preprint arXiv:1811.11934}, 2018.
 
-\bibitem[Lan et~al.(2019)Lan, Chen, Goodman, Gimpel, Sharma, and
-  Soricut]{albert}
-Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, and
-  Radu Soricut.
-\newblock Albert: A lite bert for self-supervised learning of language
-  representations.
-\newblock \emph{arXiv preprint arXiv:1909.11942}, 2019.
-
 \bibitem[Liu et~al.(2019)Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis,
   Zettlemoyer, and Stoyanov]{roberta}
 Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer
@@ -181,19 +173,12 @@ Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer
 \newblock Roberta: A robustly optimized bert pretraining approach.
 \newblock \emph{arXiv preprint arXiv:1907.11692}, 2019.
 
-\bibitem[Sanh et~al.(2019)Sanh, Debut, Chaumond, and Wolf]{distil}
-Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf.
-\newblock Distilbert, a distilled version of {BERT:} smaller, faster, cheaper
-  and lighter.
-\newblock \emph{CoRR}, abs/1910.01108, 2019.
-\newblock URL \url{http://arxiv.org/abs/1910.01108}.
-
-\bibitem[Corsair(2021)]{RAM}
-Corsair.
-\newblock Vengeance® lpx 8gb (1 x 8gb) ddr4 dram 2400mhz c14 memory kit -
-  black, 2021.
-\newblock URL
-  \url{https://www.corsair.com/uk/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK8GX4M1A2400C14}.
-\newblock Accessed: 2021-04-16.
+\bibitem[Lan et~al.(2019)Lan, Chen, Goodman, Gimpel, Sharma, and
+  Soricut]{albert}
+Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, and
+  Radu Soricut.
+\newblock Albert: A lite bert for self-supervised learning of language
+  representations.
+\newblock \emph{arXiv preprint arXiv:1909.11942}, 2019.
 
 \end{thebibliography}

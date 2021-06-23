@@ -18,18 +18,12 @@
 \contentsline {subsection}{\numberline {2.2.1}Self Attention}{19}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Improvements of Transformer Architectures}{21}{subsection.2.2.2}%
 \contentsline {subsubsection}{BERT}{21}{subsection.2.2.2}%
-\contentsline {subsubsection}{ALBERT}{22}{figure.caption.19}%
-\contentsline {subsubsection}{ROBERTA}{22}{figure.caption.19}%
-\contentsline {subsubsection}{DISTILBERT}{23}{figure.caption.19}%
-\contentsline {section}{\numberline {2.3}SQuAD Dataset}{23}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Comparison of Techniques}{23}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Summary}{23}{section.2.5}%
-\contentsline {chapter}{\numberline {3}\centering Research Methodology}{24}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data Selection}{24}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{26}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Research Hypothesis}{26}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Existing Models And Benchmarks}{27}{section.3.4}%
-\contentsline {chapter}{Appendices}{28}{section*.21}%
-\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{29}{appendix.1.A}%
-\contentsline {chapter}{Appendix \numberline {B}Research Proposal}{31}{appendix.1.B}%
-\contentsline {chapter}{References}{49}{appendix*.23}%
+\contentsline {chapter}{\numberline {3}\centering Research Methodology}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data Selection}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{25}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Research Hypothesis}{25}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Existing Models And Benchmarks}{25}{section.3.4}%
+\contentsline {chapter}{Appendices}{26}{section*.21}%
+\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{27}{appendix.1.A}%
+\contentsline {chapter}{Appendix \numberline {B}Research Proposal}{29}{appendix.1.B}%
+\contentsline {chapter}{References}{47}{appendix*.23}%

@@ -439,7 +439,7 @@
 
 		\subsection{Improvements of Transformer Architectures}\label{232}
 
-            Transformers have significant advantages as highlighted earlier. Improvements to the basic architecture are discussed below
+            Transformers have significant advantages as highlighted earlier. Improvements to the basic architecture are discussed below.
 		\subsubsection{BERT}\label{2321}
 
 			The paper on \textit{Bidirectional Encoder Representations from Transformers} (BERT) \citep{bert}, introduces a new language model. This model is truly fascinating in many ways. First and foremost it is designed to pre-train deep bidirectional representations using unlabelled data. This is done by jointly conditioning context in all layers to the right and left. This pre-training allows the model to be fine-tuned simply using one additional output layer. These features make this model conceptually simple and very powerful empirically.
@@ -454,24 +454,25 @@
 			BERT was tested on The General Language Understanding Evaluation (GLUE) benchmark \citep{wang} which has a large number of diverse NLU tasks.
 			BERT performed extremely well on the 11 NLP tasks that the authors ran it against. it showed an average accuracy improvement of 4.5\% and 7\% when compared to the previous state of the art models. Results of BERT and its significant gains make it one of the best candidate models for NLU tasks.
 
-	       \subsubsection{ALBERT}\label{2322}
-	       \citep{albert}
-
-	       \subsubsection{ROBERTA}\label{2323}
-	       \citep{roberta}
-
-	       \subsubsection{DISTILBERT}\label{2324}
-	       \citep{distil}
-        \section{SQuAD Dataset}\label{24}
-        \section{Comparison of Techniques}\label{25}
-        \section{Summary}\label{26}
-        \citep{RAM}
+			A common theme with BERT is that it takes a long time to train. Especially in the BERT based RoBERTa architecture \cite{roberta}. RoBERTa takes on average 4-5 times more time to train than BERT, however, it also shows a maximum of 20\% improvement over BERT, depending on the application. ALBERT, which is A Lite BERT, \cite{albert} was developed specifically to deal with memory limitations and reduce training times. ALBERT's XXL implementation has been documented to perform better in models trained on the BOOKCORPUS and Wikipedia ones by at least 2\% across multiple applications. In a smaller amount of time.
+%	       \subsubsection{ALBERT}\label{2322}
+%	       \citep{albert}
+%
+%	       \subsubsection{ROBERTA}\label{2323}
+%	       \citep{roberta}
+%
+%	       \subsubsection{DISTILBERT}\label{2324}
+%	       \citep{distil}
+%        \section{SQuAD Dataset}\label{24}
+%        \section{Comparison of Techniques}\label{25}
+%        \section{Summary}\label{26}
+%        \citep{RAM}
 
     \chapter{\centering Research Methodology}\label{c3researchmeth}
 
     \section{Data Selection}\label{c31}
 
-    mention datasets like \citep{lstmInsuranceQA},
+%    mention datasets like,
     	We have selected the Stanford Question Answering Dataset (SQuAD). This is as a reading comprehension dataset based on Wikipedia articles. It is based on questions posed by crowd-workers on a set of articles. The answer to every question is a segment of text or span, from the corresponding reading passage, or the question might be unanswerable \citep{dataset}.
 
     	The dataset consists of over 150,000 questions. Split into 100,000 answerable and 50,000+ unanswerable question, which were written to look similar to unanswerable questions. The challenge being that a model should be able to correctly answer the answerable questions and abstain from answering the unanswerable ones.
@@ -489,61 +490,60 @@
 
 	    The dataset consists of various kinds of English language examples like negation, antonyms, entity swaps, impossible conditions to answer, answerable, etc. making the dataset a well-balanced one.
 
-	    To use this dataset correctly we shall perform the following pre-processing steps on it:
 
-	    \begin{enumerate}
-	    	\item Data splitting into separate Question, Answer and Context lists.
-	    	\item Splitting the data into separate training and validation sets of  question and answers using the 80/20 rule, also known as the Pareto principle. We will have 80\% training data and 20\% test data.
-	    	\item Tokenization of the split data to generate "context-question" pairs
-	    	\item Generating indexes for when an answer begins and ends in the dataset
-	    	\item Adding answer tokens based on their encoded positions
-	    \end{enumerate}
-
+		\begin{table}[h!]
+			\centering
+			\begin{tabular}{|l|l|l|}
+				\hline
+				& SQuAD 1.1 &  SQuAD 2.0 \\
+				\hline
+				\textbf{Train} & & \\
+				Total Examples & 87,599 &  130,319 \\
+				Negative Examples & 0 & 43,498 \\
+				Total articles & 442 & 442 \\
+				Articles with negatives & 0 & 285 \\
+				\hline
+				\textbf{Development} & & \\
+				Total Examples & 10,570 &  11,873 \\
+				Negative Examples & 0 & 5,945 \\
+				Total articles & 48 & 35 \\
+				Articles with negatives & 0 & 35 \\
+				\hline
+				\textbf{Test} &  & \\
+				Total Examples & 9,533 & 8,862 \\
+				Negative Examples & 0 & 4,332 \\
+				Total articles & 46 & 28 \\
+				Articles with negatives & 0 & 28 \\
+				\hline
+			\end{tabular}
+			\caption{Comparison of  SQuAD 2.0 to SQuAD 1.1\citep{dataset}.}\label{datasetDescription}
+		\end{table}
         The SQuAD 2.0 Dataset \citep{dataset}, was developed with funding from Facebook to help address some major issues with existing datasets. Most datasets focus on questions that can be easily answered or use of    automatically generated, unanswerable questions which are easily identifiable.\\
         The SQuAD 2.0 dataset resolves this by combining the SQuAD dataset along with 50,000 crowd worker generated unanswerable questions. The key feature of these being that the unanswerable questions must look similar to answerable ones. For a model to be successful on this new dataset, it must be able to answer all possibly answerable questions as well as determine when no answers are provided for a question in the given paragraph and abstain from answering. A comparative study was done for a Natural Language Understanding(NLU) task that obtained an 86\% score on SQuAD 1.1, only got 66\% on the new 2.0 dataset.
         The dataset helps bridge the gap between true NLU and machine understanding by using the concept of Relevance. Through comparisons with various datasets such as RACE, MCTest, QASENT etc. they have identified the missing links like negative examples, antonyms and helped fill the gap. This dataset forces the models to understand whether a paragraph span has the answer to the question posed.
-
-		\begin{table}[h!]
-		              \centering
-		                \begin{tabular}{|l|l|l|}
-		                    \hline
-		                     & SQuAD 1.1 &  SQuAD 2.0 \\
-		                    \hline
-		                    \textbf{Train} & & \\
-		                        Total Examples & 87,599 &  130,319 \\
-		                        Negative Examples & 0 & 43,498 \\
-		                        Total articles & 442 & 442 \\
-		                        Articles with negatives & 0 & 285 \\
-		                    \hline
-		                    \textbf{Development} & & \\
-		                        Total Examples & 10,570 &  11,873 \\
-		                        Negative Examples & 0 & 5,945 \\
-		                        Total articles & 48 & 35 \\
-		                        Articles with negatives & 0 & 35 \\
-		                    \hline
-		                    \textbf{Test} &  & \\
-		                        Total Examples & 9,533 & 8,862 \\
-		                        Negative Examples & 0 & 4,332 \\
-		                        Total articles & 46 & 28 \\
-		                        Articles with negatives & 0 & 28 \\
-		                    \hline
-		                \end{tabular}
-		                \caption{Comparison of  SQuAD 2.0 to SQuAD 1.1\citep{dataset}.}\label{datasetDescription}
-		 \end{table}
-
+        
+        
+		The table \ref{datasetDescription} shows how much difference there is between SQuAD 1.1 and SQuAD 2.0 datasets.
     \section{Data Pre-processing And Transformation}\label{c32}
     Techniques used.
-    (1) Average pooling; (2) max pooling; (3) the concatenation of the last vectors on both directions. . Dropout operation is performed on the QA representations before cosine similarity matching. Use GloVe embeddings and suffix-prefix encoding in both directions of self attention pass to show improvements.
+    (1) Average pooling; (2) max pooling; (3) the concatenation of the last vectors on both directions. 
     \section{Research Hypothesis}\label{c33}
-    The hypothesis of this research is that implementing a self attention based Transformer model with:
-    \begin{itemize}
-    	\item one hot encoding
-    	\item glove embedding
-    	\item BERT base\citep{bert}
-    	\item Answer pointer output layer\citep{lstmPointer, lstmhu2016question}
+         To use this dataset correctly we shall perform the following pre-processing steps on it with:
+    
+    \begin{enumerate}
+    	\item Data splitting into separate Question, Answer and Context lists.
+    	\item Splitting the data into separate training and validation sets of  question and answers using the 80/20 rule, also known as the Pareto principle. We will have 80\% training data and 20\% test data.
+    	\item Tokenization of the split data to generate "context-question" pairs
+    	\item Generating indexes for when an answer begins and ends in the dataset
+    	\item Adding answer tokens based on their encoded positions
+		\item One hot encoding the context before loading
+		\item BERT base\citep{bert}
+		\item Answer pointer output layer\citep{lstmPointer, lstmhu2016question} before output using softmax layer.
+		
+    \end{enumerate}
 
-    \end{itemize}
     \section{Existing Models And Benchmarks}\label{c34}
+    To disscus, is this to be done here.
   %  \chapter{\centering Architecture Creation}\label{c4}
    % \section{Drawbacks Of Current Architectures}\label{c41}
    % \section{Proposed Architecture Improvements}\label{c42}
@@ -558,7 +558,7 @@
          \chapter{Research Proposal}\label{crp}
          \includepdf[pages=-]{../rp.pdf}
     \end{appendices}
-\setcitestyle{numbers}
+%\setcitestyle{numbers}
 %\nocite{*}
 \bibliography{MidThesis}
 

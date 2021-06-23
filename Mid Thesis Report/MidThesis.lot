@@ -4,6 +4,6 @@
 \contentsline {table}{\numberline {2.2}{\ignorespaces Experimental results from \citep {lstmhaighextractive}, highlighting how QA-LSTM with attention outperforms its various modifications\relax }}{13}{table.caption.12}%
 \contentsline {table}{\numberline {2.3}{\ignorespaces Experiment results from \citep {lstmhu2016question} that highlight various configurations implemented. The best being Match-LSTM with Ans-Ptr using a boundary, search and ensemble technique.\relax }}{16}{table.caption.14}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Comparison of SQuAD 2.0 to SQuAD 1.1\citep {dataset}.\relax }}{26}{table.caption.20}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Comparison of SQuAD 2.0 to SQuAD 1.1\citep {dataset}.\relax }}{24}{table.caption.20}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
