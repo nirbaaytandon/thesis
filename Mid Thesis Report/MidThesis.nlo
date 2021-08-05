@@ -1,0 +1,26 @@
+\nomenclatureentry{aRNNs@[{RNNs}]\begingroup Recurrent Neural Networks\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aLSTMs@[{LSTMs}]\begingroup Long Short-Term Memory Architectures\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aNLP@[{NLP}]\begingroup Natural Language Processing\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aNLU@[{NLU}]\begingroup Natural Language Understanding\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aRACE@[{RACE}]\begingroup ReAding Comprehension Dataset From Examinations\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aMCTest@[{MCTest}]\begingroup Machine Comprehension of Text\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aQASENT@[{QASENT}]\begingroup A challenge dataset for open-domain question answering\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aBPPTs@[{BPPTs}]\begingroup Back-Propagation Through Time\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aSQuAD@[{SQuAD}]\begingroup Stanford Question Answering Dataset\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aCEC@[{CEC}]\begingroup Constant Error Carousel\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aBERT@[{BERT}]\begingroup Bidirectional Encoder Representations from Transformers\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aRoBERTa@[{RoBERTa}]\begingroup Robustly Optimized BERT\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aALBERT@[{ALBERT}]\begingroup A LITE BERT\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aDistilBERT@[{DistilBERT}]\begingroup Distilled Version of BERT\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aQnA@[{QnA}]\begingroup Question and Answering\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aBiLSTM@[{BiLSTM}]\begingroup Bidirectional LSTM\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aSuBiLSTM@[{SuBiLSTM}]\begingroup Suffix Bidirectional LSTM\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aCNNs@[{CNNs}]\begingroup Convolutional Neural Networks\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aEM@[{EM}]\begingroup Exact Match\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aAns-Ptr@[{Ans-Ptr}]\begingroup Answer-Pointer layer\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aGloVe@[{GloVe}]\begingroup Global Vectors for Word Representation\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aBLEU@[{BLEU}]\begingroup Bilingual Evaluation Understudy\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aWMT@[{WMT}]\begingroup Workshop on Statistical Machine Translation\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aGPUs@[{GPUs}]\begingroup Graphical Processing Units\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aFFN@[{FFN}]\begingroup Feed Forward Network(s)\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aMLM@[{MLM}]\begingroup Masked Language Model\nomeqref {0}|nompageref}{iv}

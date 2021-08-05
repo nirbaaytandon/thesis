@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: MidThesis.aux
+The style file: unsrtnat.bst
+Database file #1: MidThesis.bib
+Warning--I'm ignoring squad's extra "author" field
+--line 141 of file MidThesis.bib
+Warning--empty journal in lstmBiLSTM
+Warning--empty journal in lunar
+Warning--empty year in hfTransformers
+Warning--empty journal in wsj
+Warning--empty journal in radford2018improving
+You've used 33 entries,
+            2481 wiz_defined-function locations,
+            734 strings with 10614 characters,
+and the built_in function-call counts, 12462 in all, are:
+= -- 951
+> -- 857
+< -- 14
++ -- 322
+- -- 256
+* -- 960
+:= -- 2125
+add.period$ -- 118
+call.type$ -- 33
+change.case$ -- 66
+chr.to.int$ -- 33
+cite$ -- 38
+duplicate$ -- 622
+empty$ -- 1027
+format.name$ -- 301
+if$ -- 2584
+int.to.chr$ -- 1
+int.to.str$ -- 34
+missing$ -- 30
+newline$ -- 191
+num.names$ -- 99
+pop$ -- 283
+preamble$ -- 1
+purify$ -- 33
+quote$ -- 0
+skip$ -- 390
+stack$ -- 0
+substring$ -- 233
+swap$ -- 90
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 231
+warning$ -- 5
+while$ -- 78
+width$ -- 0
+write$ -- 453
+(There were 6 warnings)

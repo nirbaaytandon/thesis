@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Research_Proposal.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: abbrvnat.bst
+Reallocating 'name_of_file' (item size: 1) to 18 items.
+Database file #1: Research_Proposal.bib
+Warning--empty year in Ram
+Warning--empty year in evga
+Warning--empty year in intel
+Warning--empty journal in wsj
+Warning--empty year in squad
+Warning--empty year in hfTransformers
+You've used 18 entries,
+            2773 wiz_defined-function locations,
+            685 strings with 7820 characters,
+and the built_in function-call counts, 8086 in all, are:
+= -- 665
+> -- 610
+< -- 7
++ -- 207
+- -- 189
+* -- 655
+:= -- 1304
+add.period$ -- 59
+call.type$ -- 18
+change.case$ -- 116
+chr.to.int$ -- 18
+cite$ -- 42
+duplicate$ -- 331
+empty$ -- 585
+format.name$ -- 211
+if$ -- 1638
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 12
+newline$ -- 103
+num.names$ -- 72
+pop$ -- 259
+preamble$ -- 1
+purify$ -- 98
+quote$ -- 0
+skip$ -- 281
+stack$ -- 0
+substring$ -- 92
+swap$ -- 17
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 198
+warning$ -- 6
+while$ -- 58
+width$ -- 0
+write$ -- 232
+(There were 6 warnings)
