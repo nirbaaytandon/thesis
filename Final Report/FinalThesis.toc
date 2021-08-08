@@ -26,4 +26,4 @@
 \contentsline {chapter}{Appendices}{27}{section*.21}%
 \contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{28}{appendix.1.A}%
 \contentsline {chapter}{Appendix \numberline {B}Research Proposal}{30}{appendix.1.B}%
-\contentsline {chapter}{References}{48}{appendix*.23}%
+\contentsline {chapter}{References}{46}{appendix*.23}%
