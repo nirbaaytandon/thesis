@@ -22,8 +22,15 @@
 \contentsline {section}{\numberline {3.1}Data Selection}{23}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{25}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Research Hypothesis}{25}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Existing Models And Benchmarks}{26}{section.3.4}%
-\contentsline {chapter}{Appendices}{27}{section*.21}%
-\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{28}{appendix.1.A}%
-\contentsline {chapter}{Appendix \numberline {B}Research Proposal}{30}{appendix.1.B}%
-\contentsline {chapter}{References}{48}{appendix*.23}%
+\contentsline {chapter}{\numberline {4}Data Analysis \& Architecture Creation}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Data Analysis}{26}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Existing Models And Benchmarks}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Drawbacks Of Current Architectures}{26}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Proposed Architecture Improvements}{26}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Architecture Refinement}{26}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Results And Discussion}{27}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusions And Recommendations}{28}{chapter.6}%
+\contentsline {chapter}{References}{29}{chapter*.21}%
+\contentsline {chapter}{Appendices}{33}{section*.22}%
+\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{34}{appendix.1.A}%
+\contentsline {chapter}{Appendix \numberline {B}Research Proposal}{36}{appendix.1.B}%

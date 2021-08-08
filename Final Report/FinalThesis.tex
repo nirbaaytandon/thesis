@@ -545,16 +545,23 @@
     	\item Answer pointer output layer\citep{lstmPointer, lstmhu2016question}
 
     \end{itemize}
-    \section{Existing Models And Benchmarks}\label{c34}
 
-    To be able to establish the improvements hypothesized in the previous section it is important to have a baseline metric. The BERT \citep{bert}, ALBERT \citep{albert}, RoBERTa \citep{roberta} and DistilBERT \citep{distil} models are available pre-trained through the HuggingFace library \citep{hfTransformers}. The library also provides the SQuAD 2.0 Dataset \citep{dataset} for use.
+  \chapter{Data Analysis \& Architecture Creation}\label{c4}
+      \section{Data Analysis}\label{c41}
+      \section{Existing Models And Benchmarks}\label{c42}
 
-    Each of these models will be run for 10 epochs, their training loss, EM and F1 scores will be taken as baseline metrics against which the improved model will be compared.
+          To be able to establish the improvements hypothesized in the previous section it is important to have a baseline metric. The BERT \citep{bert}, ALBERT \citep{albert}, RoBERTa \citep{roberta} and DistilBERT \citep{distil} models are available pre-trained through the HuggingFace library \citep{hfTransformers}. The library also provides the SQuAD 2.0 Dataset \citep{dataset} for use.
 
-  %  \chapter{\centering Architecture Creation}\label{c4}
-   % \section{Drawbacks Of Current Architectures}\label{c41}
-   % \section{Proposed Architecture Improvements}\label{c42}
-   % \section{Architecture Refinement}\label{c43}
+          Each of these models will be run for 10 epochs, their training loss, EM and F1 scores will be taken as baseline metrics against which the improved model will be compared.
+       \section{Drawbacks Of Current Architectures}\label{c43}
+       \section{Proposed Architecture Improvements}\label{c44}
+       \section{Architecture Refinement}\label{c45}
+    \chapter{Results And Discussion}\label{c5}
+    \chapter{Conclusions And Recommendations}\label{c6}
+
+%    \setcitestyle{numbers}
+    %\nocite{*}
+    \bibliography{FinalThesis}
    \begin{appendices}
     	\chapter{Gantt Chart}\label{cgc}
 		    \begin{figure}[!h]
@@ -563,10 +570,8 @@
 		     	\caption{Mid-Thesis report Gantt Chart}\label{ganttChartMid}
               \end{figure}
          \chapter{Research Proposal}\label{crp}
-         \includepdf[pages=-]{../rp.pdf}
+         \includepdf[pages=1-15]{../rp.pdf}
     \end{appendices}
-\setcitestyle{numbers}
-%\nocite{*}
-\bibliography{MidThesis}
+
 
 \end{document}

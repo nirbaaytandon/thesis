@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -212,13 +212,5 @@ Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf.
   and lighter.
 \newblock \emph{CoRR}, abs/1910.01108, 2019.
 \newblock URL \url{http://arxiv.org/abs/1910.01108}.
-
-\bibitem[Corsair(2021)]{RAM}
-Corsair.
-\newblock Vengeance® lpx 8gb (1 x 8gb) ddr4 dram 2400mhz c14 memory kit -
-  black, 2021.
-\newblock URL
-  \url{https://www.corsair.com/uk/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK8GX4M1A2400C14}.
-\newblock Accessed: 2021-04-16.
 
 \end{thebibliography}
