@@ -106,11 +106,11 @@ footskip=.25in]{geometry}
         	The main aim of this research is to propose an improvement to the transformer architecture that can perform better at Q\&A using the SQuAD 2.0 dataset.
         We shall:
         \begin{enumerate}
-        	\item Implement the existing models that are available via libraries such as HuggingFace \citep{hfTransformers} and PyTorch  on the dataset
-        	\item Obtain F1, Exact Match(EM), etc. scores for existing models and treat them as our benchmark scores
+        	\item Implement the existing models such as AlBert, RoBerta and DistilBert that are available via libraries such as HuggingFace \citep{hfTransformers} and PyTorch  on the dataset
+        	\item Obtain F1, Exact Match(EM), Training Loss and Validation Loss scores for existing models to treat them as our benchmark values
         	\item Identify drawbacks of the current architectures
-        	\item Design our architecture and evaluate its performance
-        	\item Fine-tune the architecture, re-evaluate and report improvements yes yes yes
+        	\item Design our architecture and evaluate its performance against the procided benchmark scores
+        	\item Fine-tune the architecture, re-evaluate and report improvements
         	\item Compare the results of our Transformer model with the benchmark scores.
         \end{enumerate}
 
@@ -619,13 +619,21 @@ footskip=.25in]{geometry}
 			\item \textbf{Class Imbalance}
 			\item \textbf{Prone to Over and Underfitting}
 		\end{enumerate}
+	
+	Before looking at what F1 and Exact Match scores are, one must be able to understand the terminology used there in. 
 
-	Precision
-	
+	\textbf{Precision} is the probability of identifying a correct outcome from all the possible outcomes. 
+	\begin{equation}\label{precision}
+		Precision = \dfrac{True Positive}{True Positive +  False Positive }
+	\end{equation}
 	Recall
-	
+		\begin{equation}\label{recall}
+		Recall = \dfrac{True Positive}{True Positive +  False Negative }
+	\end{equation}
 	F1 Score 
-	
+		\begin{equation}\label{f1}
+		F1 = 2 \times \dfrac{Precision \times Recall}{Precision + Recall}
+	\end{equation}
 	Exact Match
 	
   \chapter{Architecture Creation}\label{c4}
@@ -646,34 +654,111 @@ footskip=.25in]{geometry}
     	\begin{subfigure}[b]{0.475\textwidth}
     		\centering
     		\includegraphics[width=\textwidth]{../images/Albert_Val_F1.png}
-    		\caption{{\small AlBert Validation F1 Score}}    
-    		\label{fig:mean and std of net14}
+    		\caption{\small AlBert Validation F1 Score}   
+    		\label{albertf1}
     	\end{subfigure}
     	\hfill
     	\begin{subfigure}[b]{0.475\textwidth}  
     		\centering 
     		\includegraphics[width=\textwidth]{../images/Albert_Val_EM.png}
-    		\caption{{\small AlBert Validation Exact Match}}    
-    		\label{fig:mean and std of net24}
+    		\caption{\small AlBert Validation Exact Match}  
+    		\label{albertem}
     	\end{subfigure}
     	\vskip\baselineskip
     	\begin{subfigure}[b]{0.475\textwidth}   
     		\centering 
     		\includegraphics[width=\textwidth]{../images/Albert_Val_Loss.png}
-    		\caption{{\small AlBert Validation Loss}}    
-    		\label{fig:mean and std of net34}
+    		\caption{\small AlBert Validation Loss}  
+    		\label{albertValLoss}
     	\end{subfigure}
     	\hfill
     	\begin{subfigure}[b]{0.475\textwidth}   
     		\centering 
-    		\includegraphics[width=\textwidth]{{../images/Albert_Train_Loss.png}}
-    		\caption
-    		{{\small AlBert Training Loss}}    
-    		\label{fig:mean and std of net44}
+    		\includegraphics[width=\textwidth]{../images/Albert_Train_Loss.png}
+    		\caption{\small AlBert Training Loss}
+    		\label{albertTrainLoss}
     	\end{subfigure}
-    	\caption{ AlBert Model Benchmarks} 
+    	\caption{AlBert Model Benchmarks} 
     	\label{albertBenchmarks}
     \end{figure*}
+\\
+   The answer to the aforementioned question is quite simple for humans to comprehend. The challenge is for us to contextualize this and make it machine-understandable so that our model can answer it correctly.
+
+The dataset consists of various kinds of English language examples like negation, antonyms, entity swaps, impossible conditions to answer, answerable, etc. making the dataset a well-balanced one.
+
+To use this dataset correctly we shall perform the following pre-processing steps on it:
+\newline
+  \begin{figure*}
+	\centering
+	\begin{subfigure}[b]{0.475\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../images/Roberta_Val_F1.png}
+		\caption{\small RoBerta Validation F1 Score}
+		\label{robertaf1}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.475\textwidth}  
+		\centering 
+		\includegraphics[width=\textwidth]{../images/Roberta_Val_EM.png}
+		\caption{\small RoBerta Validation Exact Match}
+		\label{robertaem}
+	\end{subfigure}
+	\vskip\baselineskip
+	\begin{subfigure}[b]{0.475\textwidth}   
+		\centering 
+		\includegraphics[width=\textwidth]{../images/Roberta_Val_Loss.png}
+		\caption{\small RoBerta Validation Loss}    
+		\label{robertaValLoss}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.475\textwidth}
+		\centering 
+		\includegraphics[width=\textwidth]{../images/Roberta_Train_Loss.png}
+		\caption{\small RoBerta Training Loss}  
+		\label{robertaTrainloss}
+	\end{subfigure}
+	\caption{RoBerta Model Benchmarks} 
+	\label{robertaBenchmarks}
+\end{figure*}
+\newline
+Roberta Explanation
+
+  \begin{figure*}
+	\centering
+	\begin{subfigure}[b]{0.475\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../images/Distilbert_Val_F1.png}
+		\caption{\small Distilbert Validation F1 Score}
+		\label{Distilbertf1}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.475\textwidth}  
+		\centering 
+		\includegraphics[width=\textwidth]{../images/Distilbert_Val_EM.png}
+		\caption{\small Distilbert Validation Exact Match}
+		\label{Distilbertaem}
+	\end{subfigure}
+	\vskip\baselineskip
+	\begin{subfigure}[b]{0.475\textwidth}   
+		\centering 
+		\includegraphics[width=\textwidth]{../images/Distilbert_Val_Loss.png}
+		\caption{\small Distilbert Validation Loss}    
+		\label{DistilbertValLoss}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.475\textwidth}
+		\centering 
+		\includegraphics[width=\textwidth]{../images/Distilbert_Train_Loss.png}
+		\caption{\small Distilbert Training Loss}  
+		\label{DistilbertTrainloss}
+	\end{subfigure}
+	\caption{Distilbert Model Benchmarks} 
+	\label{distilbertBenchmarks}
+\end{figure*}
+
+DistilBert Explaination
+
+
     \chapter{Conclusions And Recommendations}\label{c6}
     
     Through this work the author has attempted to highlight the advancements and propose a unique modification to the existing transformer architecture using an Answer-Pointer network. 

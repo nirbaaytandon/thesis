@@ -33,9 +33,9 @@
 \contentsline {section}{\numberline {4.3}Architecture Refinement}{24}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Results And Discussion}{25}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Existing Models And Benchmarks}{25}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Conclusions And Recommendations}{27}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Recommendations}{27}{section.6.1}%
-\contentsline {chapter}{References}{28}{chapter*.22}%
-\contentsline {chapter}{Appendices}{31}{section*.23}%
-\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{32}{appendix.1.A}%
-\contentsline {chapter}{Appendix \numberline {B}Research Proposal}{34}{appendix.1.B}%
+\contentsline {chapter}{\numberline {6}Conclusions And Recommendations}{28}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Recommendations}{28}{section.6.1}%
+\contentsline {chapter}{References}{29}{chapter*.24}%
+\contentsline {chapter}{Appendices}{32}{section*.25}%
+\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{33}{appendix.1.A}%
+\contentsline {chapter}{Appendix \numberline {B}Research Proposal}{35}{appendix.1.B}%
