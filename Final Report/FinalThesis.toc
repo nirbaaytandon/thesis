@@ -1,13 +1,13 @@
 \contentsline {chapter}{List of Figures}{iii}{chapter*.2}%
 \contentsline {chapter}{List of Tables}{iv}{chapter*.3}%
 \contentsline {chapter}{\nonumberline List of Abbreviations}{v}{chapter*.4}%
-\contentsline {chapter}{\numberline {1}\centering Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background Of The Study}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Aims And Objectives}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Scope Of The Study}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Significance Of The Study}{3}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Structure Of The Study}{3}{section.1.5}%
-\contentsline {chapter}{\numberline {2}\centering Literature Review}{4}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Literature Review}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Long Short-Term Memory}{4}{section.2.1}%
 \contentsline {subsubsection}{Advantages of LSTMs}{6}{figure.caption.6}%
 \contentsline {subsubsection}{Limitations of LSTMs}{7}{figure.caption.6}%
@@ -22,17 +22,16 @@
 \contentsline {subsubsection}{ROBERTA}{18}{figure.caption.19}%
 \contentsline {subsubsection}{DISTILBERT}{18}{figure.caption.19}%
 \contentsline {section}{\numberline {2.3}Summary}{18}{section.2.3}%
-\contentsline {chapter}{\numberline {3}\centering Research Methodology}{19}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Research Methodology}{19}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Data Selection}{20}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{22}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Research Hypothesis}{22}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Model Evaluation Metrics}{22}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Data Analysis \& Architecture Creation}{24}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Data Analysis}{24}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Existing Models And Benchmarks}{24}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Drawbacks Of Current Architectures}{24}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Proposed Architecture Improvements}{24}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Architecture Refinement}{24}{section.4.5}%
+\contentsline {chapter}{\numberline {4}Architecture Creation}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Existing Models And Benchmarks}{24}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Drawbacks Of Current Architectures}{24}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Proposed Architecture Improvements}{24}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Architecture Refinement}{24}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Results And Discussion}{25}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Conclusions And Recommendations}{26}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Recommendations}{26}{section.6.1}%

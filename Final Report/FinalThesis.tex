@@ -75,7 +75,7 @@ footskip=.25in]{geometry}
 	\end{abstract}
     \cleardoublepage% \clearpage
     \pagenumbering{arabic}
-    \chapter{\centering Introduction}\label{c1introduction}
+    \chapter{Introduction}\label{c1introduction}
 
     One of the most philosophical questions that anyone can encounter is \textit{``Can an answer exist without a question?"}. While that question exists to be solved by philosophers and thinkers, we shall aim to address the \textit{answer} that can be provided to a question in terms of the context that has been asked. While the field of Natural Language Processing(NLP) is vast and many unexplored areas exist, in this thesis the focus is entirely on developing a novel architecture that provides \textit{highly contextual and relevant answers} to the questions asked of it.
 
@@ -123,7 +123,7 @@ footskip=.25in]{geometry}
            We have divided this report into 3 main chapters. Each chapter is broken down into sections and subsections to localize the reference and use it further in the global context of this research. In chapter \ref{c1introduction}, an introduction to the concept of Question-Answering, a brief look at the problem, the motivation, the scope of this research and its significance have been provided. Chapter \ref{c2litrev}, looks in detail at the background studies that have been briefly mentioned in section \ref{c1background}. In this chapter critical analysis is conducted how some of the work that has been selected is relevant to what this research aims to highlight, it helps us understand the merits and shortcomings of current state of the art approaches. Finally, Chapter \ref{c3researchmeth}, details the research methodology used by the author. Chapter \ref{c3researchmeth} helps the reader understand various nuances of the dataset, evaluation metrics, pre-processing techniques, benchmarks from existing systems etc.
            Appendix \ref{cgc} is where the reader can refer to the Gantt chart for the thesis work done and the updates to various stages.
 
-    \chapter{\centering Literature Review}\label{c2litrev}
+    \chapter{Literature Review}\label{c2litrev}
 
     To be able to effectively deliver on the aims and objectives we have defined in Section \ref{12}, we must first critically analyse the work that has been done in the field of NLP and, in particular, the field of Question-Answering based networks. In this section, we will critically analyse a few key model architectures and how we reached Transformers, which form the base of our proposed architecture.
 
@@ -470,7 +470,7 @@ footskip=.25in]{geometry}
         \section{Summary}\label{26}
 
 
-    \chapter{\centering Research Methodology}\label{c3researchmeth}
+    \chapter{Research Methodology}\label{c3researchmeth}
     
     Before diving into anything, lets take a look at a rough flow diagram:
     \newpage
@@ -627,16 +627,17 @@ footskip=.25in]{geometry}
 	
 	Exact Match
 	
-  \chapter{Data Analysis \& Architecture Creation}\label{c4}
-      \section{Data Analysis}\label{c41}
-      \section{Existing Models And Benchmarks}\label{c42}
+  \chapter{Architecture Creation}\label{c4}
+
+      \section{Existing Models And Benchmarks}\label{c41}
 
           To be able to establish the improvements hypothesized in the previous section it is important to have a baseline metric. The BERT \citep{bert}, ALBERT \citep{albert}, RoBERTa \citep{roberta} and DistilBERT \citep{distil} models are available pre-trained through the HuggingFace library \citep{hfTransformers}. The library also provides the SQuAD 2.0 Dataset \citep{dataset} for use.
 
           Each of these models will be run for 10 epochs, their training loss, EM and F1 scores will be taken as baseline metrics against which the improved model will be compared.
-       \section{Drawbacks Of Current Architectures}\label{c43}
-       \section{Proposed Architecture Improvements}\label{c44}
-       \section{Architecture Refinement}\label{c45}
+       \section{Drawbacks Of Current Architectures}\label{c42}
+       \section{Proposed Architecture Improvements}\label{c43}
+       \section{Architecture Refinement}\label{c44}
+       
     \chapter{Results And Discussion}\label{c5}
     \chapter{Conclusions And Recommendations}\label{c6}
     
