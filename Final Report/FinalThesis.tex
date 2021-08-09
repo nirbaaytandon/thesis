@@ -642,13 +642,13 @@ footskip=.25in]{geometry}
        \section{Drawbacks Of Current Architectures}\label{c42}
        \section{Proposed Architecture Improvements}\label{c43}
        \section{Architecture Refinement}\label{c44}
-       
+
     \chapter{Results And Discussion}\label{c5}
      \section{Existing Models And Benchmarks}\label{c41}
     
-    To be able to establish the improvements hypothesized in the previous section it is important to have a baseline metric. The BERT \citep{bert}, ALBERT \citep{albert}, RoBERTa \citep{roberta} and DistilBERT \citep{distil} models are available pre-trained through the HuggingFace library \citep{hfTransformers}. The library also provides the SQuAD 2.0 Dataset \citep{dataset} for use.
+    To be able to establish the improvements hypothesized in the previous section it is important to have a baseline metric. The ALBERT \citep{albert}, RoBERTa \citep{roberta} and DistilBERT \citep{distil} models are available pre-trained through the HuggingFace library \citep{hfTransformers}. The library also provides the SQuAD 2.0 Dataset \citep{dataset} for use.
     
-    Each of these models will be run for 10 epochs, their training loss, EM and F1 scores will be taken as baseline metrics against which the improved model will be compared.
+    
     \begin{figure*}
     	\centering
     	\begin{subfigure}[b]{0.475\textwidth}
@@ -682,11 +682,7 @@ footskip=.25in]{geometry}
     	\label{albertBenchmarks}
     \end{figure*}
 \\
-   The answer to the aforementioned question is quite simple for humans to comprehend. The challenge is for us to contextualize this and make it machine-understandable so that our model can answer it correctly.
-
-The dataset consists of various kinds of English language examples like negation, antonyms, entity swaps, impossible conditions to answer, answerable, etc. making the dataset a well-balanced one.
-
-To use this dataset correctly we shall perform the following pre-processing steps on it:
+ 
 \newline
   \begin{figure*}
 	\centering
