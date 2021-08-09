@@ -24,3 +24,4 @@
 \nomenclatureentry{aGPUs@[{GPUs}]\begingroup Graphical Processing Units\nomeqref {0}|nompageref}{iv}
 \nomenclatureentry{aFFN@[{FFN}]\begingroup Feed Forward Network(s)\nomeqref {0}|nompageref}{iv}
 \nomenclatureentry{aMLM@[{MLM}]\begingroup Masked Language Model\nomeqref {0}|nompageref}{iv}
+\nomenclatureentry{aVRAM@[{VRAM}]\begingroup Virtual Random Access Memory\nomeqref {0}|nompageref}{iv}

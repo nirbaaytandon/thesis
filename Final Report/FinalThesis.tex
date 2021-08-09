@@ -1,5 +1,3 @@
-%% VLTT = Very Light Transformer Traversal
-% VAULT = Very Albert-like Uniform Lite Transformer
 
 \documentclass[a4paper,12pt]{report}
 % arara: pdflatex: { draft: true }
@@ -9,7 +7,9 @@
 % add makeIndex:makeIndex  makeindex %.nlo -s nomencl.ist -o %.nls to commands when running in
 \usepackage[square,sort,comma,numbers]{natbib}
 \renewcommand{\bibname}{References}
-
+\usepackage[a4paper,bindingoffset=0.2in,%
+left=1in,right=1in,top=1in,bottom=1in,%
+footskip=.25in]{geometry}
 \bibliographystyle{unsrtnat}
 
 \setcitestyle{authoryear,open={(},close={)}}
@@ -19,6 +19,9 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
 \usepackage{amssymb}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning,chains}
 
 
 \usepackage[font=scriptsize,labelfont=bf,format=plain,justification=raggedright, singlelinecheck=false]{caption}
@@ -53,7 +56,7 @@
 
     \title{Develop New Transformer Architecture For \\ Question and Answering}
 
-    \author{Nirbhay P. Tandon}
+    \author{Nirbhay P. Tandon\\ Master's of Science in Data Science\\Liverpool John Moore's University}
 
     \date{\vfill \monthyeardate\today}
     \maketitle
@@ -99,14 +102,14 @@
 
 
         \section{Aims And Objectives}\label{12}
-        	The main aim of this research is to propose a new transformer architecture that can perform better at Q\&A using the SQuAD 2.0 dataset.
+        	The main aim of this research is to propose an improvement to the transformer architecture that can perform better at Q\&A using the SQuAD 2.0 dataset.
         We shall:
         \begin{enumerate}
-        	\item Implement the existing models that are available via libraries such as HuggingFace \citep{hfTransformers}, PyTorch and Tensorflow on the dataset
+        	\item Implement the existing models that are available via libraries such as HuggingFace \citep{hfTransformers} and PyTorch  on the dataset
         	\item Obtain F1, Exact Match(EM), etc. scores for existing models and treat them as our benchmark scores
         	\item Identify drawbacks of the current architectures
         	\item Design our architecture and evaluate its performance
-        	\item Fine-tune the architecture, re-evaluate and report improvements
+        	\item Fine-tune the architecture, re-evaluate and report improvements yes yes yes
         	\item Compare the results of our Transformer model with the benchmark scores.
         \end{enumerate}
 
@@ -419,7 +422,7 @@
 
             The ``Scaled Dot-Product Attention" layer implemented in the transformer works by computing the dot products of all the input query with all the keys, divide it by the dimension of the keys and finally apply a softmax function to obtain the weights. This can be represented as:
 
-            \begin{equation}
+            \begin{equation}\label{attentionEq}
                 Attention(Q,K,V)=softmax\bigg(\dfrac{QK^{T}}{\sqrt{d_k}}\bigg)V
             \end{equation}
             where $ K, V $ are the matrices containing the keys and values respectively, and $ Q $ is the set of queries. The dimension of the keys is given by $ d_k $. The dot product is used because it is more efficient than the additive attention product and is faster as well \citep{atayl}.
@@ -455,20 +458,77 @@
 			BERT was tested on The General Language Understanding Evaluation (GLUE) benchmark \citep{wang} which has a large number of diverse NLU tasks.
 			BERT performed extremely well on the 11 NLP tasks that the authors ran it against. It showed an average accuracy improvement of 4.5\% and 7\% when compared to the previous state of the art models. Results of BERT and its significant gains make it one of the best candidate models for NLU tasks.
 
-%	       \subsubsection{ALBERT}\label{2322}
-%	       \citep{albert}
-%
-%	       \subsubsection{ROBERTA}\label{2323}
-%	       \citep{roberta}
-%
-%	       \subsubsection{DISTILBERT}\label{2324}
-%	       \citep{distil}
-%        \section{SQuAD Dataset}\label{24}
-%        \section{Comparison of Techniques}\label{25}
-%        \section{Summary}\label{26}
-%        \citep{RAM}
+	       \subsubsection{ALBERT}\label{2322}
+	       \citep{albert}
+
+	       \subsubsection{ROBERTA}\label{2323}
+	       \citep{roberta}
+
+	       \subsubsection{DISTILBERT}\label{2324}
+	       \citep{distil}
+
+        \section{Summary}\label{26}
+
 
     \chapter{\centering Research Methodology}\label{c3researchmeth}
+    
+    Before diving into anything, lets take a look at a rough flow diagram:
+    \newpage
+    \resizebox{\columnwidth}{!}{
+
+		\begin{tikzpicture}[
+		node distance=15mm and 10mm,
+		start chain=going below,
+		mynode/.style = {
+			draw, rectangle, align=center, text width=5cm,
+			font=\small, inner sep=3ex, outer sep=0pt,
+			on chain},
+		mylabel/.style = {
+			draw, rectangle, align=center, rounded corners, 
+			font=\small\bfseries, inner sep=2ex, outer sep=0pt,
+			fill=cyan!30, minimum height=38mm,
+			on chain},
+		every join/.style = arrow,
+		arrow/.style = {very thick,-stealth}
+		] 
+		\coordinate (tc);
+		% the title
+		\node[above=of tc,font=\bfseries] {PRISMA 2009 Flow Diagram};
+		% the nodes at the top
+		\node (n1a) [mynode, left=of tc]    {\# of records is identified 
+			through database searching};
+		\node (n1b) [mynode,right=of tc]    {\# of additional records indentified\\
+			through other sources};
+		% the chain in the center
+		\node (n2)  [mynode, below=of tc]   {\# of records after duplicates removed};
+		\node (n3)  [mynode,join]   {\# of additional records indentified\\
+			through other sources};
+		\node (n4)  [mynode,join]   {\# of full-text articles accessed 
+			for eligibility};
+		\node (n5)  [mynode,join]   {\# of studies included in qualitative synthesis};
+		\node (n6)  [mynode,join]   {\# of studies included in quantitative sysntesis\\
+			(meta-analysis)};
+		% the branches to the right
+		\node (n3r) [mynode,right=of n3]    {\# of records excluded};
+		\node (n4r) [mynode,right=of n4]    {\# of full-text articles excluded,
+			with reasons};
+		% lines not included in join                                        
+		\draw[arrow] ([xshift=+22mm] n1a.south) coordinate (a)
+		-- (a |- n2.north);
+		\draw[arrow] ([xshift=-22mm] n1b.south) coordinate (b)
+		-- (b |- n2.north);
+		\draw[arrow] (n3) -- (n3r);
+		\draw[arrow] (n4) -- (n4r);
+		% the labels on the left
+		\begin{scope}[node distance=7mm]
+			\node[mylabel,below left=-3mm and 11mm of n1a.north west]
+			{\rotatebox{90}{Identification}};
+			\node[mylabel]  {\rotatebox{90}{Screening}};
+			\node[mylabel]  {\rotatebox{90}{Eligibility}};
+			\node[mylabel]  {\rotatebox{90}{Included}};
+		\end{scope}
+	\end{tikzpicture}
+}
 
     \section{Data Selection}\label{c31}
 
@@ -539,13 +599,34 @@
     \section{Research Hypothesis}\label{c33}
     The hypothesis of this research is that implementing a self attention based Transformer model with:
     \begin{itemize}
-    	\item one hot encoding
     	\item glove embedding
     	\item BERT base\citep{bert}
     	\item Answer pointer output layer\citep{lstmPointer, lstmhu2016question}
 
     \end{itemize}
+	\section{Model Evaluation Metrics}\label{33}
+	
+		To successfully evaluate the model two metrics will be used. The \textit{F1 - Score} and \textit{Exact Match Score} will be used to measure the success of the model developed. While accuracy is a good score to measure how well a model is performing, the problem with accuracy is that it is prone to overfitting, and underfitting, which might lead to great accuracy scores but real world predictions wont be as accurate.
+		
+		Accuracy also doesn't work because it is a simplistic probability metric that assumes both false positives and false negatives have an equal weight in predicting the outcome as shown in eq. \ref{accuracy}.
+				\begin{equation}\label{accuracy}
+			Accuracy = \dfrac{True Positive +  True Negative}{True Positive +  False Positive + True Negative +  False Negative}
+		\end{equation}
+	\\
+		Outlined below are some reasons why accuracy is not a good measure:
+		\begin{enumerate}
+			\item \textbf{Class Imbalance}
+			\item \textbf{Prone to Over and Underfitting}
+		\end{enumerate}
 
+	Precision
+	
+	Recall
+	
+	F1 Score 
+	
+	Exact Match
+	
   \chapter{Data Analysis \& Architecture Creation}\label{c4}
       \section{Data Analysis}\label{c41}
       \section{Existing Models And Benchmarks}\label{c42}
@@ -558,8 +639,21 @@
        \section{Architecture Refinement}\label{c45}
     \chapter{Results And Discussion}\label{c5}
     \chapter{Conclusions And Recommendations}\label{c6}
+    
+    Through this work the author has attempted to highlight the advancements and propose a unique modification to the existing transformer architecture using an Answer-Pointer network. 
+    
+    \section{Recommendations}
+    
+    This work provides a unique opportunity to introduce improvements to an already state of the art architecture by adding a layer of LSTM based pointers. Highlighted below are some recommendations, that the author believes, can improve the architecture further.
+    
+    \begin{itemize}
+    	
+    	\item \textbf{Increased Batch-Size}: The experiments presented in this work are limited by a relatively small batch size of 8. Systemic increase of batch size can allow for reduced training times, possibly better performance overall and an opportunity to test this model against various other NLP applications such as Sequence Classification, Token Classification, Sentence Predictions, etc. 
+    	\item \textbf{Better Hardware}: One of the key limiting factors for the work presented in this thesis is the limiting amount of VRAM, The current hardware used by the author only had 8GB of VRAM available on the EVGA 2070 Super GPU, which was insufficient for the benchmark batch size of 8. Reducing the batch size any further led to increased training times per epoch, upwards of 3 hours per epoch at a batch size of 6. This problem was slightly remediated by the use of Google Colab Pro, which is a subscriptions service that allows you to run experiments using better GPUs such as Tesla P100 GPU with 16GB VRAM. This service is time limited and thus not suitable for running long experiments. To effectively quantify the proposed architecture in this thesis it is recommended that it be run for at least 10 epochs on a multi-gpu setup that allows for mini-batches. This approach is discussed below.
+    	\item \textbf{Mini-Batches Across Multiple GPUs}: Creating a multi-gpu setup, with 2 or more gpus, allows for accelerated training \citep{multigpu1}. A simple guide on how to set this up for PyTorch has been created on the Towards Data Science Medium page \citep{multigpu2} and even in the 
+    \end{itemize}
 
-%    \setcitestyle{numbers}
+   \setcitestyle{numbers}
     %\nocite{*}
     \bibliography{FinalThesis}
    \begin{appendices}

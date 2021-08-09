@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -212,5 +212,20 @@ Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf.
   and lighter.
 \newblock \emph{CoRR}, abs/1910.01108, 2019.
 \newblock URL \url{http://arxiv.org/abs/1910.01108}.
+
+\bibitem[Pal et~al.(2019)Pal, Ebrahimi, Zulfiqar, Fu, Zhang, Migacz, Nellans,
+  and Gupta]{multigpu1}
+Saptadeep Pal, Eiman Ebrahimi, Arslan Zulfiqar, Yaosheng Fu, Victor Zhang,
+  Szymon Migacz, David~W. Nellans, and Puneet Gupta.
+\newblock Optimizing multi-gpu parallelization strategies for deep learning
+  training.
+\newblock \emph{CoRR}, abs/1907.13257, 2019.
+\newblock URL \url{http://arxiv.org/abs/1907.13257}.
+
+\bibitem[Giacaglia(2020)]{multigpu2}
+Giuliano Giacaglia.
+\newblock How to scale training on multiple gpus, Dec 2020.
+\newblock URL
+  \url{https://towardsdatascience.com/how-to-scale-training-on-multiple-gpus-dae1041f49d2}.
 
 \end{thebibliography}
