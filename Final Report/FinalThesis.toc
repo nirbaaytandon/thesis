@@ -18,28 +18,21 @@
 \contentsline {subsection}{\numberline {2.2.1}Self Attention}{16}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Improvements of Transformer Architectures}{18}{subsection.2.2.2}%
 \contentsline {subsubsection}{BERT}{18}{subsection.2.2.2}%
-\contentsline {subsubsection}{ALBERT}{18}{figure.caption.19}%
-\contentsline {subsubsection}{ROBERTA}{19}{figure.caption.19}%
-\contentsline {subsubsection}{DISTILBERT}{19}{figure.caption.19}%
-\contentsline {section}{\numberline {2.3}Summary}{19}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Research Methodology}{20}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data Selection}{20}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{22}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Research Hypothesis}{22}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Model Evaluation Metrics}{22}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Research Flow Diagram}{23}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Architecture Creation}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{25}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Architecture Refinement}{25}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Results And Discussion}{26}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Existing Models And Benchmarks}{26}{section.5.1}%
+\contentsline {chapter}{\numberline {3}Research Methodology}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data Selection}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Research Hypothesis}{21}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Model Evaluation Metrics}{21}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Research Flow Diagram}{22}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Architecture Creation}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{24}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{24}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Architecture Refinement}{24}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Results And Discussion}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Existing Models And Benchmarks}{25}{section.5.1}%
 \contentsline {chapter}{\numberline {6}Conclusions And Recommendations}{29}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Recommendations}{29}{section.6.1}%
-\contentsline {chapter}{Appendices}{30}{section*.25}%
+\contentsline {chapter}{Appendices}{30}{section*.28}%
 \contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{31}{appendix.1.A}%
 \contentsline {chapter}{Appendix \numberline {B}Research Proposal}{33}{appendix.1.B}%
-\contentsline {chapter}{Appendix \numberline {C}Thesis Code}{49}{appendix.1.C}%
-\contentsline {section}{\numberline {C.1}Benchmarks}{49}{section.1.C.1}%
-\contentsline {section}{\numberline {C.2}Custom Bert Model Code}{112}{section.1.C.2}%
-\contentsline {chapter}{References}{215}{appendix*.27}%
+\contentsline {chapter}{References}{49}{appendix*.30}%

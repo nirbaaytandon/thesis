@@ -470,16 +470,16 @@ footskip=.25in]{geometry}
 			BERT was tested on The General Language Understanding Evaluation (GLUE) benchmark \citep{wang} which has a large number of diverse NLU tasks.
 			BERT performed extremely well on the 11 NLP tasks that the authors ran it against. It showed an average accuracy improvement of 4.5\% and 7\% when compared to the previous state of the art models. Results of BERT and its significant gains make it one of the best candidate models for NLU tasks.
 
-	       \subsubsection{ALBERT}\label{2322}
-	       \citep{albert}
+	 %      \subsubsection{ALBERT}\label{2322}
+	    %   \citep{albert}
 
-	       \subsubsection{ROBERTA}\label{2323}
-	       \citep{roberta}
+	   %    \subsubsection{ROBERTA}\label{2323}
+	  %     \citep{roberta}
 
-	       \subsubsection{DISTILBERT}\label{2324}
-	       \citep{distil}
+	    %   \subsubsection{DISTILBERT}\label{2324}
+	   %    \citep{distil}
 
-        \section{Summary}\label{26}
+      %  \section{Summary}\label{26}
 
 
     \chapter{Research Methodology}\label{c3researchmeth}
@@ -780,13 +780,28 @@ Roberta Explanation
 		\caption{\small Distilbert Training Loss}  
 		\label{DistilbertTrainloss}
 	\end{subfigure}
-	\caption{Distilbert Model Benchmarks} 
+	\caption{DistilBert Model Benchmarks} 
 	\label{distilbertBenchmarks}
 \end{figure*}
 
-DistilBert Explaination
 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.4]{../images/AdamW5e.png}
+	\caption{Custom BERT Model with AdamW Optimizer at 5e-5 rate}\label{adam5e}
+\end{figure}
 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.4]{../images/AdamW3e.png}
+	\caption{Custom BERT Model with AdamW Optimizer at 3e-5 rate}\label{adam3e}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.4]{../images/AdaFactor3e.png}
+	\caption{Custom BERT Model with AdaFactor Optimizer at 3e-5 rate}\label{ada3e}
+\end{figure}
     \chapter{Conclusions And Recommendations}\label{c6}
     
     Through this work the author has attempted to highlight the advancements and propose a unique modification to the existing transformer architecture using an Answer-Pointer network. 
@@ -811,24 +826,24 @@ DistilBert Explaination
               \end{figure}
          \chapter{Research Proposal}\label{crp}
          	\includepdf[pages=1-15]{../rp.pdf}
-         \chapter{Thesis Code}\label{thesisCode}
-          This chapter contains the code for the various benchmarks and the 2 custom models implemented in this thesis. 
+ %        \chapter{Thesis Code}\label{thesisCode}
+    %      This chapter contains the code for the various benchmarks and the 2 custom models implemented in this thesis. 
           
-          \section{Benchmarks}\label{benchmarkCode}
-          	This section contains the code for various benchmark models that have been used to compare the Custom Bert Model against. 
+    %      \section{Benchmarks}\label{benchmarkCode}
+       %   	This section contains the code for various benchmark models that have been used to compare the Custom Bert Model against. 
           	
-	          \textbf{AlBert Benchmark}\label{albertBenchmarkcode}
-	          \includepdf[pages=1-]{../AlBert Benchmark.pdf}
+	   %       \textbf{AlBert Benchmark}\label{albertBenchmarkcode}
+	      %    \includepdf[pages=1-]{../AlBert Benchmark.pdf}
 	          
-	          \textbf{RoBerta Benchmark}\label{robertaBenchmarkcode}
-	          \includepdf[pages=1-]{../RoBerta Benchmark.pdf}
+	         % \textbf{RoBerta Benchmark}\label{robertaBenchmarkcode}
+	        %  \includepdf[pages=1-]{../RoBerta Benchmark.pdf}
 	          
-	          \textbf{DistilBert Benchmark}\label{distilbertBenchmarkcode}
-	          \includepdf[pages=1-]{../DistilBert Benchmark.pdf}
+	      %    \textbf{DistilBert Benchmark}\label{distilbertBenchmarkcode}
+	     %     \includepdf[pages=1-]{../DistilBert Benchmark.pdf}
           
-          \section{Custom Bert Model Code}\label{custommodelcode}
-                   	\includepdf[pages=1-]{../Custom Bert Model AdaFactor 3e.pdf}
-                   	 \includepdf[pages=1-]{../Custom Bert Model AdamW 5e.pdf}
+         % \section{Custom Bert Model Code}\label{custommodelcode}
+            %       	\includepdf[pages=1-]{../Custom Bert Model AdaFactor 3e.pdf}
+               %    	 \includepdf[pages=1-]{../Custom Bert Model AdamW 5e.pdf}
     \end{appendices}
 
 
