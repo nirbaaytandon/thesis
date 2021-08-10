@@ -475,84 +475,8 @@ footskip=.25in]{geometry}
 
     \chapter{Research Methodology}\label{c3researchmeth}
     
-To be able to achieve the objectives set out in the previous chapters, it is important to organize the research in such a way that it achieves its objective. This is represented in the research flow diagram \ref{researchFlow}.
-
- \begin{figure*}
-\begin{center}
-	\begin{tikzpicture}[auto,
-		%decision/.style={diamond, draw=black, thick, fill=white,
-		%text width=8em, text badly centered,
-		%inner sep=1pt, font=\sffamily\small},
-		block_center/.style ={rectangle, draw=black, thick, fill=white,
-			text width=8em, text badly centered,font=\small},
-		block_left/.style ={rectangle, draw=black, thick, fill=white,
-			text width=18em, text badly centered,inner sep=0.2em,font=\small},
-		line/.style ={draw, thick, -latex', shorten >=0pt}]
-		% outlining the flowchart using the PGF/TikZ matrix funtion
-		\matrix [column sep=5mm,row sep=3mm] {
-			% enrollment - row 1
-			\node [block_center] (introduction) {Introduction};
-			& \node [block_left] (introductionLeft) {\begin{itemize}
-				\item Introduction
-				\item Define Problem Statement
-				\item Propose advantages of research
-		\end{itemize}}; \\
-			% enrollment - row 2
-			\node [block_center] (litreview) {Literature Review}; 
-			& \node [block_left] (litreviewleft) {\begin{itemize}
-				\item Review literature on previous \& current approaches
-				\item Shortlist state of the art approaches \& critically review them 
-				\item Summarize approaches \& identify drawbacks to improve on
-		\end{itemize}}; \\
-						% enrollment - row 3
-			\node [block_center] (researchMeth) {Research Methodology};
-			& \node [block_left] (researchMethleft) {\begin{itemize}
-					\item Introduction
-					\item Define Problem Statement
-					\item Propose advantages of research
-					\item Define evaluation metrics 
-			\end{itemize}}; \\
-			% enrollment - row 2
-			\node [block_center] (dc) {Data Collection}; 
-			& \node [block_left] (dcleft) {\begin{itemize}
-					\item Review sample datasets
-					\item Finalize dataset
-			\end{itemize}}; \\
-					% enrollment - row 1
-		\node [block_center] (researchExperiments) {Research Experiments};
-		& \node [block_left] (researchExperimentsleft) {\begin{itemize}
-				\item Pre-process dataset for experiments
-				\item Define experiment criteria
-				\item Prepare \& perfrom experiments
-		\end{itemize}}; \\
-		% enrollment - row 2
-		\node [block_center] (results) {Results}; 
-		& \node [block_left] (resultsleft) {\begin{itemize}
-				\item Collect results
-				\item Draw conclusions from the results
-				\item Propose future improvements \& applications
-		\end{itemize}}; \\
-		};% end matrix
-		% connecting nodes with paths
-		\begin{scope}[every path/.style=line]
-			% paths for enrollemnt rows
-			\path (introduction)   -- (introductionLeft);
-			\path (introduction)   -- (litreview);
-			\path (litreview) -- (litreviewleft);
-			\path (litreview) -- (researchMeth);
-			\path (researchMeth)     -- (researchMethleft);
-			\path (researchMeth)     -- (dc);
-			\path (dc)     -- (dcleft);
-			\path (dc)     -- (researchExperiments);
-			\path (researchExperiments)     -- (researchExperimentsleft);
-			\path (researchExperiments)     -- (results);
-			\path (results)     -- (resultsleft);
-
-		\end{scope}
-	\end{tikzpicture}
-\end{center}
-\caption{Research Flow Diagram}\label{researchFlow}
-\end{figure*}
+    In this chapter 
+    
     \section{Data Selection}\label{c31}
 
     	We have selected the Stanford Question Answering Dataset (SQuAD). This is as a reading comprehension dataset based on Wikipedia articles. It is based on questions posed by crowd-workers on a set of articles. The answer to every question is a segment of text or span, from the corresponding reading passage, or the question might be unanswerable \citep{dataset}.
@@ -569,11 +493,9 @@ To be able to achieve the objectives set out in the previous chapters, it is imp
 	    \newline
 	    \newline
 
-	    The answer to the aforementioned question is quite simple for humans to comprehend. The challenge is for us to contextualize this and make it machine-understandable so that our model can answer it correctly.
-
+	    The answer to the aforementioned question is quite simple for humans to comprehend. The challenge is for computational systems is to contextualize this and make it machine-understandable so that the produced model can answer it correctly.
 	    The dataset consists of various kinds of English language examples like negation, antonyms, entity swaps, impossible conditions to answer, answerable, etc. making the dataset a well-balanced one.
-
-	    To use this dataset correctly we shall perform the following pre-processing steps on it:
+	    It is important to prepare this dataset appropriately 
 
 	    \begin{enumerate}
 	    	\item Data splitting into separate Question, Answer and Context lists.
@@ -633,7 +555,7 @@ To be able to achieve the objectives set out in the previous chapters, it is imp
 		
 		Accuracy also doesn't work because it is a simplistic probability metric that assumes both false positives and false negatives have an equal weight in predicting the outcome as shown in eq. \ref{accuracy}.
 				\begin{equation}\label{accuracy}
-			Accuracy = \small \dfrac{True Positive +  True Negative}{True Positive +  False Positive + True Negative +  False Negative}
+			Accuracy = \small \dfrac{True Positive + True Negative}{True Positive + False Positive + True Negative + False Negative}
 		\end{equation}
 
 		Outlined below are some reasons why accuracy is not a good measure:
@@ -658,6 +580,85 @@ To be able to achieve the objectives set out in the previous chapters, it is imp
 	\end{equation}
 	Exact Match
 	
+	\section{Research Flow Diagram}\label{c34}
+	 To be able to achieve the objectives set out in the previous chapters, it is important to organize the research in such a way that it achieves its objective. This is represented in the research flow diagram \ref{researchFlow}. The steps identified in \ref{researchFlow} encapsulate the broad format of this thesis and its various stages. 
+	
+	\begin{figure*}
+		\begin{center}
+			\begin{tikzpicture}[auto,
+				%decision/.style={diamond, draw=black, thick, fill=white,
+				%text width=8em, text badly centered,
+				%inner sep=1pt, font=\sffamily\small},
+				block_center/.style ={rectangle, draw=black, 
+					text width=8cm, text badly centered,font=\small,},
+				block_left/.style ={rectangle, draw=black,
+					text width=5cm, text badly centered,inner sep=0.5cm,font=\tiny},
+				line/.style ={draw, thick, -latex', shorten >=0pt}]
+				% outlining the flowchart using the PGF/TikZ matrix funtion
+				\matrix [column sep=5mm,row sep=3mm] {
+					% enrollment - row 1
+					\node [block_center] (introduction) {\textbf{Introduction}};
+					& \node [block_left] (introductionLeft) {\begin{itemize}
+							\item Introduction
+							\item Define Problem Statement
+							\item Propose advantages of research
+					\end{itemize}}; \\
+					% enrollment - row 2
+					\node [block_center] (litreview) {\textbf{Literature Review}}; 
+					& \node [block_left] (litreviewleft) {\begin{itemize}
+							\item Review literature on previous \& current approaches
+							\item Shortlist state of the art approaches \& critically review them 
+							\item Summarize approaches \& identify drawbacks to improve on
+					\end{itemize}}; \\
+					% enrollment - row 3
+					\node [block_center] (researchMeth) {\textbf{Research Methodology}};
+					& \node [block_left] (researchMethleft) {\begin{itemize}
+							\item Introduction
+							\item Define Problem Statement
+							\item Propose advantages of research
+							\item Define evaluation metrics 
+					\end{itemize}}; \\
+					% enrollment - row 2
+					\node [block_center] (dc) {\textbf{Data Collection}}; 
+					& \node [block_left] (dcleft) {\begin{itemize}
+							\item Review sample datasets
+							\item Finalize dataset
+					\end{itemize}}; \\
+					% enrollment - row 1
+					\node [block_center] (researchExperiments) {\textbf{Research Experiments}};
+					& \node [block_left] (researchExperimentsleft) {\begin{itemize}
+							\item Pre-process dataset for experiments
+							\item Define experiment criteria
+							\item Prepare \& perfrom experiments
+					\end{itemize}}; \\
+					% enrollment - row 2
+					\node [block_center] (results) {\textbf{Results}}; 
+					& \node [block_left] (resultsleft) {\begin{itemize}
+							\item Collect results
+							\item Draw conclusions from the results
+							\item Propose future improvements \& applications
+					\end{itemize}}; \\
+				};% end matrix
+				% connecting nodes with paths
+				\begin{scope}[every path/.style=line]
+					% paths for enrollemnt rows
+					\path (introduction)   -- (introductionLeft);
+					\path (introduction)   -- (litreview);
+					\path (litreview) -- (litreviewleft);
+					\path (litreview) -- (researchMeth);
+					\path (researchMeth)  -- (researchMethleft);
+					\path (researchMeth) -- (dc);
+					\path (dc)  -- (dcleft);
+					\path (dc)  -- (researchExperiments);
+					\path (researchExperiments)   -- (researchExperimentsleft);
+					\path (researchExperiments)   -- (results);
+					\path (results)   -- (resultsleft);
+					
+				\end{scope}
+			\end{tikzpicture}
+		\end{center}
+		\caption{Research Flow Diagram}\label{researchFlow}
+	\end{figure*}
   \chapter{Architecture Creation}\label{c4}
 
      In this cahpter we yaba daba do

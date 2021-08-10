@@ -26,16 +26,17 @@
 \contentsline {section}{\numberline {3.1}Data Selection}{19}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Data Pre-processing And Transformation}{21}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Research Hypothesis}{21}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Model Evaluation Metrics}{22}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Architecture Creation}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{23}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{23}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Architecture Refinement}{23}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Results And Discussion}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Existing Models And Benchmarks}{24}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Conclusions And Recommendations}{27}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Recommendations}{27}{section.6.1}%
-\contentsline {chapter}{References}{28}{chapter*.25}%
-\contentsline {chapter}{Appendices}{31}{section*.26}%
-\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{32}{appendix.1.A}%
-\contentsline {chapter}{Appendix \numberline {B}Research Proposal}{34}{appendix.1.B}%
+\contentsline {section}{\numberline {3.4}Model Evaluation Metrics}{21}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Research Flow Diagram}{22}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Architecture Creation}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{24}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{24}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Architecture Refinement}{24}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Results And Discussion}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Existing Models And Benchmarks}{25}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Conclusions And Recommendations}{28}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Recommendations}{28}{section.6.1}%
+\contentsline {chapter}{References}{29}{chapter*.25}%
+\contentsline {chapter}{Appendices}{32}{section*.26}%
+\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{33}{appendix.1.A}%
+\contentsline {chapter}{Appendix \numberline {B}Research Proposal}{35}{appendix.1.B}%
