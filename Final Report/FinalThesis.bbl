@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -76,6 +76,28 @@ William~A Woods and WOODS WA.
   question answering.
 \newblock 1977.
 
+\bibitem[Lan et~al.(2019)Lan, Chen, Goodman, Gimpel, Sharma, and
+  Soricut]{albert}
+Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, and
+  Radu Soricut.
+\newblock Albert: A lite bert for self-supervised learning of language
+  representations.
+\newblock \emph{arXiv preprint arXiv:1909.11942}, 2019.
+
+\bibitem[Liu et~al.(2019)Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis,
+  Zettlemoyer, and Stoyanov]{roberta}
+Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer
+  Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov.
+\newblock Roberta: A robustly optimized bert pretraining approach.
+\newblock \emph{arXiv preprint arXiv:1907.11692}, 2019.
+
+\bibitem[Sanh et~al.(2019)Sanh, Debut, Chaumond, and Wolf]{distil}
+Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf.
+\newblock Distilbert, a distilled version of {BERT:} smaller, faster, cheaper
+  and lighter.
+\newblock \emph{CoRR}, abs/1910.01108, 2019.
+\newblock URL \url{http://arxiv.org/abs/1910.01108}.
+
 \bibitem[Team()]{hfTransformers}
 The Hugging~Face Team.
 \newblock Transformers.
@@ -87,13 +109,6 @@ Pranav Rajpurkar.
 \newblock Squad2.0, 2021.
 \newblock URL \url{https://rajpurkar.github.io/SQuAD-explorer/}.
 \newblock Accessed: 2021-04-16.
-
-\bibitem[Weissenborn et~al.(2017)Weissenborn, Wiese, and Seiffe]{fastQA}
-Dirk Weissenborn, Georg Wiese, and Laura Seiffe.
-\newblock Fastqa: {A} simple and efficient neural architecture for question
-  answering.
-\newblock \emph{CoRR}, abs/1703.04816, 2017.
-\newblock URL \url{http://arxiv.org/abs/1703.04816}.
 
 \bibitem[Ring(1993)]{lstmRing}
 Mark~B Ring.
@@ -190,28 +205,6 @@ Wei Wang, Ming Yan, and Chen Wu.
 \newblock Multi-granularity hierarchical attention fusion networks for reading
   comprehension and question answering.
 \newblock \emph{arXiv preprint arXiv:1811.11934}, 2018.
-
-\bibitem[Lan et~al.(2019)Lan, Chen, Goodman, Gimpel, Sharma, and
-  Soricut]{albert}
-Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, and
-  Radu Soricut.
-\newblock Albert: A lite bert for self-supervised learning of language
-  representations.
-\newblock \emph{arXiv preprint arXiv:1909.11942}, 2019.
-
-\bibitem[Liu et~al.(2019)Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis,
-  Zettlemoyer, and Stoyanov]{roberta}
-Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer
-  Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov.
-\newblock Roberta: A robustly optimized bert pretraining approach.
-\newblock \emph{arXiv preprint arXiv:1907.11692}, 2019.
-
-\bibitem[Sanh et~al.(2019)Sanh, Debut, Chaumond, and Wolf]{distil}
-Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf.
-\newblock Distilbert, a distilled version of {BERT:} smaller, faster, cheaper
-  and lighter.
-\newblock \emph{CoRR}, abs/1910.01108, 2019.
-\newblock URL \url{http://arxiv.org/abs/1910.01108}.
 
 \bibitem[Pal et~al.(2019)Pal, Ebrahimi, Zulfiqar, Fu, Zhang, Migacz, Nellans,
   and Gupta]{multigpu1}

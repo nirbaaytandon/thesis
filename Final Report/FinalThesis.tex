@@ -7,8 +7,7 @@
 % add makeIndex:makeIndex  makeindex %.nlo -s nomencl.ist -o %.nls to commands when running in
 \usepackage[square,sort,comma,numbers]{natbib}
 \renewcommand{\bibname}{References}
-\usepackage[a4paper,bindingoffset=0.2in,%
-left=1in,right=1in,top=1in,bottom=1in,%
+\usepackage[a4paper,bindingoffset=0.2in,left=1in,right=0.75in,top=1in,bottom=1in,%
 footskip=.25in]{geometry}
 \bibliographystyle{unsrtnat}
 
@@ -82,36 +81,33 @@ footskip=.25in]{geometry}
 
     One of the most philosophical questions that anyone can encounter is \textit{``Can an answer exist without a question?"}. While that question exists to be solved by philosophers and thinkers, we shall aim to address the \textit{answer} that can be provided to a question in terms of the context that has been asked. While the field of Natural Language Processing(NLP) is vast and many unexplored areas exist, in this thesis the focus is entirely on developing a novel architecture that provides \textit{highly contextual and relevant answers} to the questions asked of it.
 
-    The earliest examples of Question-Answering(QA) systems can be traced back to 1961, in the form of BASEBALL,\citep{green1961baseball}, a system developed by Bert F. Green and team to answer basic questions posed using punch cards in ordinary English language about stored data on baseball games. The team implemented a dictionary structure to allow for answers to be looked up and printed. For example, the system could answer very direct questions such as: ``Where did each team play on July 7?".
-    A highly impressive feat for the early days of neural networks in the 1960s, the work done by Green paved the way for systems like LUNAR,\citep{lunar}, answered geological questions for the rocks brought back from the Apollo moon missions. LUNAR, which was first presented in 1971, had an astounding 90\% accuracy rate for questions that were asked by people who didn't know how the system worked!
-    Question-Answering based systems have gained a lot of popularity, especially in the form of ``chatbots''. These systems depend highly on contextual understanding of the input, the training corpus and the question asked. They use this knowledge to output an answer that can help the user with whatever their query is. Recurrent neural networks and architectures based on them, have been able to provide great advancements in the field of Question-answering and chatbots in general. However, there is a behaviour of over-fitting and a lack of contextual understanding of the question. This, coupled with long training times and extremely complex mathematical model designs, have often kept the field of Natural Language Processing slightly obscured from the masses.
-
-
-    The task of Question-Answering is a machine comprehension problem. If we dig deeper, we can classify it even as a sequential problem. One might wonder how it is a sequential problem? The answer to that is simple, traditionally QA systems work by ``sequentially reading" the input and
-    In a more mathematical context, we can say that the problem we face is of \textit{answer selection} and not \textit{answer provision}. Through numerous studies that have been done, some of which we shall look into detail in chapter \ref{c2litrev}, we see that the problem is not how to provide an answer to a question, it is if the answer provided is the correct one or not in the \textit{context} in which the question has been posed.
-
-    Through the work done in this research, the author aims at creating a sustainable, fast, easy to understand Transformer architecture for Question Answering. An advancement on the work done by the team at Google \citep{atayl}. To be able to do so, let us first understand what a \textit{Transformer} is.
-    A Transformer is a form of transduction model that relies solely on self-attention to figure out how to represent its inputs and outputs. It does so without the use of any sequence aligned recurrent neural networks(RNNs) or convolutions.
-
-
-        \section{Background Of The Study}\label{c1background}
-        	In this section, we shall highlight what has led us this far and some of the interesting challenges that it poses. In \ref{back}, we briefly look at the history of Natural Language Processing and how some of the challenges were addressed. In \ref{rr}, we look at the latest research that has gone into creating the Transformer architecture, identify some of the common patterns and use that information to strategise our model in later sections.
-
+        \section{Background Of The Study}\label{c11}
+		    The earliest examples of Question-Answering(QA) systems can be traced back to 1961, in the form of BASEBALL,\citep{green1961baseball}, a system developed by Bert F. Green and team to answer basic questions posed using punch cards in ordinary English language about stored data on baseball games. The team implemented a dictionary structure to allow for answers to be looked up and printed. For example, the system could answer very direct questions such as: ``Where did each team play on July 7?".
+		    A highly impressive feat for the early days of neural networks in the 1960s, the work done by Green paved the way for systems like LUNAR,\citep{lunar}, answered geological questions for the rocks brought back from the Apollo moon missions. LUNAR, which was first presented in 1971, had an astounding 90\% accuracy rate for questions that were asked by people who didn't know how the system worked!
+		    Question-Answering based systems have gained a lot of popularity, especially in the form of ``chatbots''. These systems depend highly on contextual understanding of the input, the training corpus and the question asked. They use this knowledge to output an answer that can help the user with whatever their query is. Recurrent neural networks and architectures based on them, have been able to provide great advancements in the field of Question-answering and chatbots in general. However, there is a behaviour of over-fitting and a lack of contextual understanding of the question. This, coupled with long training times and extremely complex mathematical model designs, have often kept the field of Natural Language Processing slightly obscured from the masses.
+		    
+		    The task of Question-Answering is a machine comprehension problem. On digging deeper, once can classify it as a sequential problem too. One might wonder how it is a sequential problem? The answer to that is simple, traditionally QA systems work by ``sequentially reading" the input and producing an output based on what they understand semantically or contextually. 
+		    In a more mathematical context, we can say that the problem we face is of \textit{answer selection} and not \textit{answer provision}. Through numerous studies that have been done, some of which we shall look into detail in chapter \ref{c2litrev}, we see that the problem is not how to provide an answer to a question, it is if the answer provided is the correct one or not in the \textit{context} in which the question has been posed.
+		
+		    The research presented forth here is aimed at proposing a new variation to an already successful architecture in the field of NLP, namely \textit{Transformers}, created by the team at Google \citep{atayl}. A critically assessed attempt is made at combining state of the art approaches that have been treated as separate elements so far and to show that the proposed improvements are at par, if not better than the current approach.
+		    
+		    A Transformer is a form of transduction model that relies solely on self-attention to figure out how to represent its inputs and outputs. It does so without the use of any sequence aligned recurrent neural networks(RNNs) or convolutions.
+		  
             The area of Natural language Processing has taken significant leaps in the last two decades. Work done towards improving the ability of machine learning models to first recognize words, then sentences, followed by contextual understanding has led to several interesting and novel approaches in the field. From early on neural networks to creating Long Short-Term Memory architectures \citep{lstmoriginal} by Sepp Hochreiter and Jurgen Schmidhuber in the mid-'90s that resolved the vanishing gradient problem of classical neural networks, we have come a long way.
 
-           The latest advancements in this field come from Google's research lab in the form of \textit{Transformers}. We look into this in a bit more detail later. However, no model can be successful without a good dataset to train on. This is where the SQuAD 2.0 dataset \citep{dataset} comes in. This dataset is what forces the machine learning models to do contextual understanding. One might even say that it forces the models to ``think'' for themselves before answering a task.
-
-           Let us now look at some of the key research that has been done in this regard.
+           The latest advancements in this field come from Google's research lab in the form of \textit{Transformers}. We look into this in a bit more detail later in \ref{c2litrev}. However, no model can be successful without a good dataset to train on. This is where the SQuAD 2.0 dataset \citep{dataset} comes in. This dataset is what forces the machine learning models to do contextual understanding. One might even say that it forces the models to ``think'' for themselves before answering a task.
 
 
         \section{Aims And Objectives}\label{12}
-        	The main aim of this research is to propose an improvement to the transformer architecture that can perform better at Q\&A using the SQuAD 2.0 dataset.
-        We shall:
+        	The main aim of this research is to propose an improvement to the transformer architecture that can perform better at Q\&A using the SQuAD 2.0 dataset. This shall require understanding the nuances of various Transformer-type architectures like AlBert \citep{albert}, RoBerta \citep{roberta} and DistilBert \citep{distil} which are variations of the BERT \citep{bert} architecture. 
+        	
+        	To achieve the main aim of this research it  is important to first outline a few steps that will be taken:
         \begin{enumerate}
+        	\item Obtain SQuAD2.0 dataset and prepare it for training
         	\item Implement the existing models such as AlBert, RoBerta and DistilBert that are available via libraries such as HuggingFace \citep{hfTransformers} and PyTorch  on the dataset
         	\item Obtain F1, Exact Match(EM), Training Loss and Validation Loss scores for existing models to treat them as our benchmark values
         	\item Identify drawbacks of the current architectures
-        	\item Design our architecture and evaluate its performance against the procided benchmark scores
+        	\item Design our architecture and evaluate its performance against the provided benchmark scores
         	\item Fine-tune the architecture, re-evaluate and report improvements
         	\item Compare the results of our Transformer model with the benchmark scores.
         \end{enumerate}
@@ -119,18 +115,31 @@ footskip=.25in]{geometry}
         \section{Scope Of The Study}\label{13}
 
         This research work is entirely focused on the area of Question-Answering based networks. This focus helps in significantly narrowing down the scope and critically assessing the problem that needs to be solved. The practical applications of the field of QA are endless. From chatbots to QA systems on domain-specific knowledge or conversational applications for voice assistants, a light, robust, highly accurate Transformer based architecture can help ease the daily lives of millions of users.
+        
         \section{Significance Of The Study}\label{14}
 
-        The current state of the art systems, some of which have been highlighted in section \ref{c1background}, suffer from various drawbacks and even the best models have only been able to achieve an EM score of 90.871 with an F1 score of 93.183 on the SQuAD 2.0 leaderboard \citep{squad}.
+        The current state of the art systems, some of which have been highlighted in section \ref{c11}, suffer from various drawbacks and even the best models have only been able to achieve an EM score of 90.871 with an F1 score of 93.183 on the SQuAD 2.0 leaderboard \citep{squad}. Current models such as AlBert and DistilBert are highly useful, however, they aren't scalable entirely for QA applications. A narrowed focus on the specific field of Question-Answering can help eliminate certain issues with the current models such as contextual uderstanding and being able to get correct responses to questions. 
+        
         \section{Structure Of The Study}\label{15}
-           We have divided this report into 3 main chapters. Each chapter is broken down into sections and subsections to localize the reference and use it further in the global context of this research. In chapter \ref{c1introduction}, an introduction to the concept of Question-Answering, a brief look at the problem, the motivation, the scope of this research and its significance have been provided. Chapter \ref{c2litrev}, looks in detail at the background studies that have been briefly mentioned in section \ref{c1background}. In this chapter critical analysis is conducted how some of the work that has been selected is relevant to what this research aims to highlight, it helps us understand the merits and shortcomings of current state of the art approaches. Finally, Chapter \ref{c3researchmeth}, details the research methodology used by the author. Chapter \ref{c3researchmeth} helps the reader understand various nuances of the dataset, evaluation metrics, pre-processing techniques, benchmarks from existing systems etc.
+        
+        This report is divided into 6 main parts, each chapter is further broken down into sections and subsections to localize the reference and use it further in the global context of this research.
+        
+        In chapter \ref{c1introduction}, an introduction to the concept of Question-Answering, a brief look at the problem, motivation, scope of this research and its significance have been provided. Chapter \ref{c1introduction} lays the basis of the problem, takes the reader briefly back in time to where QA systems first started and how they have advanced today. 
+        
+        Chapter \ref{c2litrev}, looks in detail at the background studies that have been briefly mentioned in section \ref{c11}. In this chapter critical analysis is conducted how some of the work that has been selected is relevant to what this research aims to highlight, it helps us understand the merits and shortcomings of current state of the art approaches. Detailed analysis of Long Short-Term Memory(LSTM) and Transformer architectures is written, with special attention to applications in the field of Question Answering. There is particular focus on the advancements and applications of existing architectures as well as acknowledgement of why LSTMs reigned supreme for almost 2 decades. Transformers provide a unique opportunity to perform highly accurate predictive tasks in NLP. The most key advances to both LSTMs and Transformers are their bi-directional applications which are also discussed. Finally, this chapter ends with a summary of the approaches and highlights certain drawbacks. These drawbacks are discussed in more detail in \ref{c4}.
+        
+        Next, chapter \ref{c3researchmeth} proposes the research methods that have been implemented. It explains the various metrics that have been used and why they were chosen, specifically highlighting why Accuracy isn't a good measure for creating a successful model and highlighting the use of Precision, Recall and F1 as useful metrics for the experiments conducted in this particular thesis, Exact Match scores are also introduced and discussed in this chapter. The chapter ends with a research flow diagram describing the prorcesses followed for the experiments and application stages of various methods in a visual manner.
+        
+        
+        
+        
            Appendix \ref{cgc} is where the reader can refer to the Gantt chart for the thesis work done and the updates to various stages.
 
     \chapter{Literature Review}\label{c2litrev}
 
     To be able to effectively deliver on the aims and objectives we have defined in Section \ref{12}, we must first critically analyse the work that has been done in the field of NLP and, in particular, the field of Question-Answering based networks. In this section, we will critically analyse a few key model architectures and how we reached Transformers, which form the base of our proposed architecture.
 
-\citep{fastQA}
+
 
         \section{Long Short-Term Memory}\label{22}
 
@@ -662,14 +671,14 @@ footskip=.25in]{geometry}
   \chapter{Architecture Creation}\label{c4}
 
      In this cahpter we yaba daba do
-       \section{Drawbacks Of Current Architectures}\label{c42}
+       \section{Drawbacks Of Current Architectures}\label{c41}
        
        To aid in understanding the drawbacks of current architectures the author presents the table below
        \section{Proposed Architecture Improvements}\label{c43}
        \section{Architecture Refinement}\label{c44}
 
     \chapter{Results And Discussion}\label{c5}
-     \section{Existing Models And Benchmarks}\label{c41}
+     \section{Existing Models And Benchmarks}\label{c51}
     
     To be able to establish the improvements hypothesized in the previous section it is important to have a baseline metric. The ALBERT \citep{albert}, RoBERTa \citep{roberta} and DistilBERT \citep{distil} models are available pre-trained through the HuggingFace library \citep{hfTransformers}. The library also provides the SQuAD 2.0 Dataset \citep{dataset} for use.
     
@@ -804,7 +813,21 @@ DistilBert Explaination
 		     	\caption{Mid-Thesis report Gantt Chart}\label{ganttChartMid}
               \end{figure}
          \chapter{Research Proposal}\label{crp}
-         \includepdf[pages=1-15]{../rp.pdf}
+         	\includepdf[pages=1-15]{../rp.pdf}
+         \chapter{Thesis Code}\label{thesisCode}
+          This chapter contains the code for the various benchmarks and the 2 custom models implemented in this thesis. 
+          
+          \section{Benchmarks}\label{benchmarkCode}
+          
+	          \textbf{AlBert Benchmark}\label{albertBenchmarkcode}
+	          
+	          \textbf{RoBerta Benchmark}\label{robertaBenchmarkcode}
+	          
+	          \textbf{DistilBert Benchmark}\label{distilbertBenchmarkcode}
+          
+          \section{Custom Bert Model Code}\label{custommodel}
+          
+          
     \end{appendices}
 
 
