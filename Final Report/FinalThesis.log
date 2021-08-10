@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  10 AUG 2021 21:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  10 AUG 2021 22:16
 entering extended mode
 **./FinalThesis.tex
 (FinalThesis.tex
@@ -1445,29 +1445,3186 @@ png> <../images/Roberta_Val_EM.png> <../images/Roberta_Val_Loss.png> <../images
 ilbert_Val_EM.png> <../images/Distilbert_Val_Loss.png> <../images/Distilbert_Tr
 ain_Loss.png>]
 Chapter 6.
-(FinalThesis.bbl [29
+[29
 
 ] [30
 
+
 ]
-Underfull \hbox (badness 1810) in paragraph at lines 102--106
-[]\OT1/cmr/m/n/12 The Hug-ging Face Team.  Trans-form-ers.  URL []$\OT1/cmtt/m/
-n/12 https : / / huggingface . co /
- []
+Appendix A.
+<../images/GanttChart-mid.png, id=812, 1059.96pt x 819.06pt>
+File: ../images/GanttChart-mid.png Graphic file (type png)
+<use ../images/GanttChart-mid.png>
+Package pdftex.def Info: ../images/GanttChart-mid.png  used on input line 809.
+(pdftex.def)             Requested size: 582.9798pt x 450.48439pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Underfull \hbox (badness 1400) in paragraph at lines 108--112
+[31
+
+] [32 <../images/GanttChart-mid.png>]
+Appendix B.
+<../rp.pdf, id=822, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf>
+Package pdftex.def Info: ../rp.pdf  used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf>
+Package pdftex.def Info: ../rp.pdf  used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<../rp.pdf, id=825, page=1, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 1>
+Package pdftex.def Info: ../rp.pdf , page1 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 1>
+Package pdftex.def Info: ../rp.pdf , page1 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[33
+
+]
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 1>
+Package pdftex.def Info: ../rp.pdf , page1 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 1>
+Package pdftex.def Info: ../rp.pdf , page1 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 1>
+Package pdftex.def Info: ../rp.pdf , page1 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [34 <../rp.pdf>]
+<../rp.pdf, id=850, page=2, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 2>
+Package pdftex.def Info: ../rp.pdf , page2 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 2>
+Package pdftex.def Info: ../rp.pdf , page2 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 2>
+Package pdftex.def Info: ../rp.pdf , page2 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [35 <../rp.pdf>]
+<../rp.pdf, id=866, page=3, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 3>
+Package pdftex.def Info: ../rp.pdf , page3 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 3>
+Package pdftex.def Info: ../rp.pdf , page3 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 3>
+Package pdftex.def Info: ../rp.pdf , page3 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [36 <../rp.pdf>]
+<../rp.pdf, id=876, page=4, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 4>
+Package pdftex.def Info: ../rp.pdf , page4 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 4>
+Package pdftex.def Info: ../rp.pdf , page4 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 4>
+Package pdftex.def Info: ../rp.pdf , page4 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [37 <../rp.pdf>]
+<../rp.pdf, id=881, page=5, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 5>
+Package pdftex.def Info: ../rp.pdf , page5 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 5>
+Package pdftex.def Info: ../rp.pdf , page5 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 5>
+Package pdftex.def Info: ../rp.pdf , page5 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[38 <../rp.pdf>]
+<../rp.pdf, id=886, page=6, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 6>
+Package pdftex.def Info: ../rp.pdf , page6 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 6>
+Package pdftex.def Info: ../rp.pdf , page6 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 6>
+Package pdftex.def Info: ../rp.pdf , page6 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [39 <../rp.pdf>]
+<../rp.pdf, id=891, page=7, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 7>
+Package pdftex.def Info: ../rp.pdf , page7 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 7>
+Package pdftex.def Info: ../rp.pdf , page7 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 7>
+Package pdftex.def Info: ../rp.pdf , page7 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [40 <../rp.pdf>]
+<../rp.pdf, id=899, page=8, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 8>
+Package pdftex.def Info: ../rp.pdf , page8 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 8>
+Package pdftex.def Info: ../rp.pdf , page8 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 8>
+Package pdftex.def Info: ../rp.pdf , page8 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [41 <../rp.pdf>]
+<../rp.pdf, id=908, page=9, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 9>
+Package pdftex.def Info: ../rp.pdf , page9 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 9>
+Package pdftex.def Info: ../rp.pdf , page9 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 9>
+Package pdftex.def Info: ../rp.pdf , page9 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [42 <../rp.pdf>]
+<../rp.pdf, id=916, page=10, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 10>
+Package pdftex.def Info: ../rp.pdf , page10 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 10>
+Package pdftex.def Info: ../rp.pdf , page10 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 10>
+Package pdftex.def Info: ../rp.pdf , page10 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [43 <../rp.pdf>]
+<../rp.pdf, id=921, page=11, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 11>
+Package pdftex.def Info: ../rp.pdf , page11 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 11>
+Package pdftex.def Info: ../rp.pdf , page11 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 11>
+Package pdftex.def Info: ../rp.pdf , page11 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [44 <../rp.pdf>]
+<../rp.pdf, id=926, page=12, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 12>
+Package pdftex.def Info: ../rp.pdf , page12 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 12>
+Package pdftex.def Info: ../rp.pdf , page12 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 12>
+Package pdftex.def Info: ../rp.pdf , page12 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [45 <../rp.pdf>]
+<../rp.pdf, id=931, page=13, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 13>
+Package pdftex.def Info: ../rp.pdf , page13 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 13>
+Package pdftex.def Info: ../rp.pdf , page13 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 13>
+Package pdftex.def Info: ../rp.pdf , page13 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [46 <../rp.pdf>]
+<../rp.pdf, id=943, page=14, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 14>
+Package pdftex.def Info: ../rp.pdf , page14 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 14>
+Package pdftex.def Info: ../rp.pdf , page14 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 14>
+Package pdftex.def Info: ../rp.pdf , page14 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[47 <../rp.pdf>]
+<../rp.pdf, id=949, page=15, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 15>
+Package pdftex.def Info: ../rp.pdf , page15 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 15>
+Package pdftex.def Info: ../rp.pdf , page15 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 15>
+Package pdftex.def Info: ../rp.pdf , page15 used on input line 813.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [48 <../rp.pdf>]
+Appendix C.
+<../AlBert Benchmark.pdf, id=957, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf>
+Package pdftex.def Info: ../AlBert Benchmark.pdf  used on input line 821.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf>
+Package pdftex.def Info: ../AlBert Benchmark.pdf  used on input line 821.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<../AlBert Benchmark.pdf, id=960, page=1, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 1>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page1 used on input line 821
+.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 1>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page1 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[49
+
+]
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 1>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page1 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 1>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page1 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 1>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page1 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [50 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1000, page=2, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 2>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page2 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 2>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page2 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 2>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page2 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [51 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1005, page=3, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 3>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page3 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 3>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page3 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 3>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page3 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [52 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1010, page=4, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 4>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page4 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 4>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page4 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 4>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page4 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [53 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1016, page=5, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 5>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page5 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 5>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page5 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 5>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page5 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [54 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1044, page=6, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 6>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page6 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 6>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page6 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 6>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page6 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [55 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1049, page=7, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 7>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page7 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 7>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page7 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 7>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page7 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [56 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1054, page=8, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 8>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page8 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 8>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page8 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 8>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page8 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [57 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1059, page=9, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 9>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page9 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 9>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page9 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 9>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page9 used on input line 821
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [58 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1070, page=10, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 10>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page10 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 10>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page10 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 10>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page10 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [59 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1076, page=11, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 11>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page11 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 11>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page11 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 11>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page11 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[60 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1081, page=12, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 12>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page12 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 12>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page12 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 12>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page12 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [61 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1086, page=13, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 13>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page13 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 13>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page13 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 13>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page13 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [62 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1091, page=14, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 14>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page14 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 14>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page14 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 14>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page14 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [63 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1096, page=15, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 15>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page15 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 15>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page15 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 15>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page15 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [64 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1101, page=16, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 16>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page16 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 16>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page16 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 16>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page16 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[65 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1107, page=17, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 17>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page17 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 17>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page17 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 17>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page17 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [66 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1112, page=18, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 18>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page18 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 18>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page18 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 18>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page18 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [67 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1117, page=19, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 19>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page19 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 19>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page19 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 19>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page19 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [68 <../AlBert Benchmark.pdf>]
+<../AlBert Benchmark.pdf, id=1122, page=20, 614.295pt x 794.97pt>
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 20>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page20 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 20>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page20 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../AlBert Benchmark.pdf Graphic file (type pdf)
+<use ../AlBert Benchmark.pdf, page 20>
+Package pdftex.def Info: ../AlBert Benchmark.pdf , page20 used on input line 82
+1.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [69 <../AlBert Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1127, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf  used on input line 824.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf  used on input line 824.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<../RoBerta Benchmark.pdf, id=1130, page=1, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 1>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page1 used on input line 82
+4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 1>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page1 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[70]
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 1>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page1 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 1>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page1 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 1>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page1 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [71 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1171, page=2, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 2>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page2 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 2>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page2 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 2>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page2 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [72 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1176, page=3, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 3>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page3 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 3>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page3 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 3>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page3 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [73 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1181, page=4, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 4>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page4 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 4>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page4 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 4>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page4 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [74 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1199, page=5, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 5>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page5 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 5>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page5 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 5>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page5 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [75 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1210, page=6, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 6>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page6 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 6>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page6 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 6>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page6 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [76 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1215, page=7, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 7>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page7 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 7>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page7 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 7>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page7 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [77 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1221, page=8, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 8>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page8 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 8>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page8 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 8>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page8 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [78 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1232, page=9, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 9>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page9 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 9>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page9 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 9>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page9 used on input line 82
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [79 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1237, page=10, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 10>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page10 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 10>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page10 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 10>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page10 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [80 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1242, page=11, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 11>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page11 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 11>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page11 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 11>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page11 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [81 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1247, page=12, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 12>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page12 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 12>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page12 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 12>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page12 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [82 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1252, page=13, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 13>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page13 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 13>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page13 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 13>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page13 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[83 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1258, page=14, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 14>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page14 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 14>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page14 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 14>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page14 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [84 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1263, page=15, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 15>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page15 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 15>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page15 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 15>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page15 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [85 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1268, page=16, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 16>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page16 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 16>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page16 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 16>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page16 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [86 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1273, page=17, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 17>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page17 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 17>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page17 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 17>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page17 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [87 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1278, page=18, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 18>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page18 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 18>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page18 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 18>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page18 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [88 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1283, page=19, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 19>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page19 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 19>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page19 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 19>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page19 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [89 <../RoBerta Benchmark.pdf>]
+<../RoBerta Benchmark.pdf, id=1289, page=20, 614.295pt x 794.97pt>
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 20>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page20 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 20>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page20 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../RoBerta Benchmark.pdf Graphic file (type pdf)
+<use ../RoBerta Benchmark.pdf, page 20>
+Package pdftex.def Info: ../RoBerta Benchmark.pdf , page20 used on input line 8
+24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [90 <../RoBerta Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1294, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf  used on input line 827.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf  used on input line 827.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<../DistilBert Benchmark.pdf, id=1297, page=1, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 1>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page1 used on input line
+ 827.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 1>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page1 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [91]
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 1>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page1 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 1>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page1 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 1>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page1 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [92 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1337, page=2, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 2>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page2 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 2>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page2 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 2>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page2 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [93 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1342, page=3, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 3>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page3 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 3>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page3 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 3>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page3 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [94 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1347, page=4, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 4>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page4 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 4>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page4 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 4>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page4 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [95 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1353, page=5, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 5>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page5 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 5>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page5 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 5>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page5 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [96 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1364, page=6, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 6>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page6 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 6>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page6 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 6>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page6 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [97 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1382, page=7, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 7>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page7 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 7>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page7 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 7>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page7 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[98 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1387, page=8, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 8>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page8 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 8>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page8 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 8>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page8 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [99 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1392, page=9, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 9>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page9 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 9>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page9 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 9>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page9 used on input line
+ 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [100 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1403, page=10, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 10>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page10 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 10>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page10 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 10>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page10 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [101 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1409, page=11, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 11>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page11 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 11>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page11 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 11>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page11 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [102 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1414, page=12, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 12>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page12 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 12>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page12 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 12>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page12 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [103 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1419, page=13, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 13>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page13 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 13>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page13 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 13>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page13 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [104 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1424, page=14, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 14>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page14 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 14>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page14 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 14>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page14 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [105 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1429, page=15, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 15>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page15 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 15>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page15 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 15>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page15 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [106 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1434, page=16, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 16>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page16 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 16>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page16 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 16>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page16 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [107 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1440, page=17, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 17>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page17 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 17>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page17 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 17>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page17 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [108 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1445, page=18, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 18>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page18 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 18>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page18 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 18>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page18 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[109 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1450, page=19, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 19>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page19 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 19>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page19 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 19>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page19 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [110 <../DistilBert Benchmark.pdf>]
+<../DistilBert Benchmark.pdf, id=1455, page=20, 614.295pt x 794.97pt>
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 20>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page20 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 20>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page20 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../DistilBert Benchmark.pdf Graphic file (type pdf)
+<use ../DistilBert Benchmark.pdf, page 20>
+Package pdftex.def Info: ../DistilBert Benchmark.pdf , page20 used on input lin
+e 827.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[111 <../DistilBert Benchmark.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1460, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf  used on input l
+ine 830.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf  used on input l
+ine 830.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<../Custom Bert Model AdaFactor 3e.pdf, id=1463, page=1, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 1>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page1 used on 
+input line 830.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 1>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page1 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [112]
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 1>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page1 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 1>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page1 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 1>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page1 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [113 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1504, page=2, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 2>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page2 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 2>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page2 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 2>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page2 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [114 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1509, page=3, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 3>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page3 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 3>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page3 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 3>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page3 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [115 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1514, page=4, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 4>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page4 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 4>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page4 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 4>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page4 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [116 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1519, page=5, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 5>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page5 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 5>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page5 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 5>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page5 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [117 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1524, page=6, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 6>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page6 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 6>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page6 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 6>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page6 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [118 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1529, page=7, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 7>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page7 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 7>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page7 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 7>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page7 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [119 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1535, page=8, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 8>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page8 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 8>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page8 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 8>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page8 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [120 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1540, page=9, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 9>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page9 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 9>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page9 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 9>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page9 used on 
+input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [121 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1545, page=10, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 10>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page10 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 10>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page10 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 10>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page10 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [122 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1550, page=11, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 11>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page11 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 11>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page11 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 11>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page11 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [123 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1555, page=12, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 12>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page12 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 12>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page12 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 12>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page12 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[124 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1560, page=13, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 13>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page13 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 13>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page13 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 13>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page13 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [125 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1566, page=14, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 14>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page14 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 14>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page14 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 14>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page14 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [126 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1584, page=15, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 15>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page15 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 15>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page15 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 15>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page15 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [127 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1595, page=16, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 16>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page16 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 16>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page16 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 16>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page16 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [128 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1600, page=17, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 17>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page17 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 17>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page17 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 17>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page17 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[129 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1605, page=18, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 18>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page18 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 18>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page18 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 18>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page18 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [130 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1610, page=19, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 19>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page19 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 19>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page19 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 19>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page19 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [131 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1616, page=20, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 20>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page20 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 20>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page20 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 20>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page20 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [132 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1627, page=21, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 21>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page21 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 21>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page21 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 21>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page21 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [133 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1632, page=22, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 22>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page22 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 22>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page22 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 22>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page22 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[134 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1637, page=23, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 23>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page23 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 23>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page23 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 23>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page23 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [135 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1642, page=24, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 24>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page24 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 24>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page24 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 24>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page24 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [136 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1647, page=25, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 25>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page25 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 25>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page25 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 25>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page25 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [137 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1653, page=26, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 26>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page26 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 26>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page26 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 26>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page26 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [138 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1658, page=27, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 27>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page27 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 27>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page27 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 27>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page27 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[139 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1663, page=28, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 28>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page28 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 28>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page28 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 28>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page28 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [140 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1668, page=29, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 29>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page29 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 29>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page29 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 29>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page29 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [141 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1673, page=30, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 30>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page30 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 30>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page30 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 30>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page30 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [142 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1678, page=31, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 31>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page31 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 31>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page31 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 31>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page31 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [143 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1684, page=32, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 32>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page32 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 32>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page32 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 32>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page32 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[144 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1689, page=33, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 33>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page33 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 33>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page33 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 33>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page33 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [145 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1694, page=34, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 34>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page34 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 34>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page34 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 34>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page34 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [146 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1699, page=35, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 35>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page35 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 35>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page35 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 35>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page35 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [147 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1704, page=36, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 36>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page36 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 36>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page36 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 36>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page36 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [148 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1709, page=37, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 37>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page37 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 37>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page37 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 37>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page37 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[149 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1715, page=38, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 38>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page38 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 38>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page38 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 38>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page38 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [150 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1720, page=39, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 39>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page39 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 39>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page39 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 39>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page39 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [151 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1725, page=40, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 40>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page40 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 40>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page40 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 40>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page40 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [152 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1730, page=41, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 41>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page41 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 41>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page41 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 41>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page41 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [153 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1735, page=42, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 42>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page42 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 42>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page42 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 42>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page42 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[154 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1740, page=43, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 43>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page43 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 43>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page43 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 43>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page43 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [155 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1746, page=44, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 44>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page44 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 44>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page44 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 44>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page44 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [156 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1751, page=45, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 45>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page45 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 45>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page45 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 45>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page45 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [157 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1756, page=46, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 46>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page46 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 46>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page46 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 46>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page46 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [158 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1761, page=47, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 47>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page47 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 47>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page47 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 47>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page47 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[159 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1766, page=48, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 48>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page48 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 48>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page48 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 48>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page48 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [160 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1771, page=49, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 49>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page49 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 49>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page49 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 49>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page49 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [161 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1777, page=50, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 50>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page50 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 50>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page50 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 50>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page50 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [162 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdaFactor 3e.pdf, id=1782, page=51, 614.295pt x 794.97pt>
+
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 51>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page51 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 51>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page51 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdaFactor 3e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdaFactor 3e.pdf, page 51>
+Package pdftex.def Info: ../Custom Bert Model AdaFactor 3e.pdf , page51 used on
+ input line 830.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [163 <../Custom Bert Model AdaFactor 3e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1787, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf  used on input line 
+831.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf  used on input line 
+831.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<../Custom Bert Model AdamW 5e.pdf, id=1790, page=1, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 1>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page1 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 1>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page1 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 1>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page1 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 1>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page1 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 1>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page1 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[164 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1826, page=2, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 2>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page2 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 2>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page2 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 2>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page2 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [165 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1831, page=3, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 3>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page3 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 3>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page3 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 3>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page3 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [166 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1836, page=4, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 4>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page4 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 4>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page4 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 4>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page4 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [167 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1842, page=5, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 5>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page5 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 5>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page5 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 5>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page5 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [168 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1847, page=6, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 6>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page6 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 6>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page6 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 6>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page6 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [169 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1852, page=7, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 7>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page7 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 7>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page7 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 7>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page7 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [170 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1857, page=8, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 8>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page8 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 8>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page8 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 8>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page8 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [171 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1862, page=9, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 9>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page9 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 9>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page9 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 9>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page9 used on inpu
+t line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [172 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1867, page=10, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 10>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page10 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 10>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page10 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 10>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page10 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [173 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1873, page=11, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 11>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page11 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 11>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page11 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 11>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page11 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [174 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1878, page=12, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 12>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page12 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 12>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page12 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 12>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page12 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [175 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1883, page=13, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 13>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page13 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 13>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page13 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 13>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page13 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [176 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1888, page=14, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 14>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page14 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 14>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page14 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 14>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page14 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[177 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1906, page=15, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 15>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page15 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 15>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page15 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 15>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page15 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [178 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1917, page=16, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 16>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page16 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 16>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page16 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 16>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page16 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [179 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1923, page=17, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 17>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page17 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 17>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page17 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 17>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page17 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [180 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1928, page=18, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 18>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page18 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 18>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page18 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 18>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page18 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [181 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1933, page=19, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 19>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page19 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 19>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page19 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 19>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page19 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [182 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1938, page=20, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 20>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page20 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 20>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page20 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 20>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page20 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [183 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1949, page=21, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 21>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page21 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 21>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page21 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 21>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page21 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [184 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1954, page=22, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 22>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page22 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 22>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page22 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 22>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page22 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [185 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1960, page=23, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 23>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page23 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 23>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page23 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 23>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page23 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [186 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1965, page=24, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 24>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page24 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 24>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page24 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 24>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page24 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [187 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1970, page=25, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 25>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page25 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 25>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page25 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 25>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page25 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [188 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1975, page=26, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 26>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page26 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 26>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page26 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 26>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page26 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [189 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1980, page=27, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 27>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page27 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 27>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page27 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 27>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page27 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[190 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1985, page=28, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 28>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page28 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 28>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page28 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 28>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page28 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [191 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1991, page=29, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 29>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page29 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 29>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page29 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 29>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page29 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [192 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=1996, page=30, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 30>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page30 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 30>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page30 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 30>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page30 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [193 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2001, page=31, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 31>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page31 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 31>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page31 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 31>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page31 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [194 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2006, page=32, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 32>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page32 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 32>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page32 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 32>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page32 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [195 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2011, page=33, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 33>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page33 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 33>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page33 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 33>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page33 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [196 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2016, page=34, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 34>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page34 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 34>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page34 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 34>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page34 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [197 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2022, page=35, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 35>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page35 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 35>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page35 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 35>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page35 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [198 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2027, page=36, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 36>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page36 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 36>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page36 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 36>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page36 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [199 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2032, page=37, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 37>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page37 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 37>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page37 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 37>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page37 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [200 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2037, page=38, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 38>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page38 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 38>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page38 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 38>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page38 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [201 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2042, page=39, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 39>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page39 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 39>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page39 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 39>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page39 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [202 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2047, page=40, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 40>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page40 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 40>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page40 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 40>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page40 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[203 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2053, page=41, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 41>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page41 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 41>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page41 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 41>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page41 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [204 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2058, page=42, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 42>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page42 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 42>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page42 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 42>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page42 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [205 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2063, page=43, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 43>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page43 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 43>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page43 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 43>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page43 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [206 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2068, page=44, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 44>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page44 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 44>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page44 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 44>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page44 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [207 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2073, page=45, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 45>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page45 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 45>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page45 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 45>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page45 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [208 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2078, page=46, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 46>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page46 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 46>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page46 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 46>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page46 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [209 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2084, page=47, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 47>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page47 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 47>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page47 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 47>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page47 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [210 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2089, page=48, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 48>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page48 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 48>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page48 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 48>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page48 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [211 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2094, page=49, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 49>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page49 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 49>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page49 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 49>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page49 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [212 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2099, page=50, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 50>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page50 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 50>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page50 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 50>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page50 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [213 <../Custom Bert Model AdamW 5e.pdf>]
+<../Custom Bert Model AdamW 5e.pdf, id=2104, page=51, 614.295pt x 794.97pt>
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 51>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page51 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 51>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page51 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../Custom Bert Model AdamW 5e.pdf Graphic file (type pdf)
+<use ../Custom Bert Model AdamW 5e.pdf, page 51>
+Package pdftex.def Info: ../Custom Bert Model AdamW 5e.pdf , page51 used on inp
+ut line 831.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [214 <../Custom Bert Model AdamW 5e.pdf>] (FinalThesis.bbl [215
+
+]
+Underfull \hbox (badness 5274) in paragraph at lines 108--112
 []\OT1/cmr/m/n/12 Pranav Ra-jpurkar.  Squad2.0, 2021.  URL []$\OT1/cmtt/m/n/12 
 https : / / rajpurkar . github . io /
  []
 
-
-Underfull \hbox (badness 1596) in paragraph at lines 128--132
-[]\OT1/cmr/m/n/12 Siddhartha Brahma.  Suf-fix bidi-rec-tional long short-term m
-em-ory.  \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
- []
-
-[31]
+[216]
 Underfull \hbox (badness 10000) in paragraph at lines 219--223
 []\OT1/cmr/m/n/12 Giuliano Gi-acaglia.  How to scale train-ing on mul-ti-ple
  []
@@ -1478,256 +4635,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--223
 ascience . com /
  []
 
-) [32] [33
-
-
-]
-Appendix A.
-<../images/GanttChart-mid.png, id=848, 1059.96pt x 819.06pt>
-File: ../images/GanttChart-mid.png Graphic file (type png)
-<use ../images/GanttChart-mid.png>
-Package pdftex.def Info: ../images/GanttChart-mid.png  used on input line 812.
-(pdftex.def)             Requested size: 582.9798pt x 450.48439pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[34
-
-] [35 <../images/GanttChart-mid.png>]
-Appendix B.
-<../rp.pdf, id=859, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf>
-Package pdftex.def Info: ../rp.pdf  used on input line 816.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf>
-Package pdftex.def Info: ../rp.pdf  used on input line 816.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<../rp.pdf, id=862, page=1, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 1>
-Package pdftex.def Info: ../rp.pdf , page1 used on input line 816.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 1>
-Package pdftex.def Info: ../rp.pdf , page1 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[36
-
-]
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 1>
-Package pdftex.def Info: ../rp.pdf , page1 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 1>
-Package pdftex.def Info: ../rp.pdf , page1 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 1>
-Package pdftex.def Info: ../rp.pdf , page1 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [37 <../rp.pdf>]
-<../rp.pdf, id=887, page=2, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 2>
-Package pdftex.def Info: ../rp.pdf , page2 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 2>
-Package pdftex.def Info: ../rp.pdf , page2 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 2>
-Package pdftex.def Info: ../rp.pdf , page2 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [38 <../rp.pdf>]
-<../rp.pdf, id=902, page=3, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 3>
-Package pdftex.def Info: ../rp.pdf , page3 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 3>
-Package pdftex.def Info: ../rp.pdf , page3 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 3>
-Package pdftex.def Info: ../rp.pdf , page3 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [39 <../rp.pdf>]
-<../rp.pdf, id=912, page=4, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 4>
-Package pdftex.def Info: ../rp.pdf , page4 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 4>
-Package pdftex.def Info: ../rp.pdf , page4 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 4>
-Package pdftex.def Info: ../rp.pdf , page4 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [40 <../rp.pdf>]
-<../rp.pdf, id=917, page=5, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 5>
-Package pdftex.def Info: ../rp.pdf , page5 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 5>
-Package pdftex.def Info: ../rp.pdf , page5 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 5>
-Package pdftex.def Info: ../rp.pdf , page5 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-
-[41 <../rp.pdf>]
-<../rp.pdf, id=923, page=6, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 6>
-Package pdftex.def Info: ../rp.pdf , page6 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 6>
-Package pdftex.def Info: ../rp.pdf , page6 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 6>
-Package pdftex.def Info: ../rp.pdf , page6 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [42 <../rp.pdf>]
-<../rp.pdf, id=928, page=7, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 7>
-Package pdftex.def Info: ../rp.pdf , page7 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 7>
-Package pdftex.def Info: ../rp.pdf , page7 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 7>
-Package pdftex.def Info: ../rp.pdf , page7 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [43 <../rp.pdf>]
-<../rp.pdf, id=936, page=8, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 8>
-Package pdftex.def Info: ../rp.pdf , page8 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 8>
-Package pdftex.def Info: ../rp.pdf , page8 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 8>
-Package pdftex.def Info: ../rp.pdf , page8 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [44 <../rp.pdf>]
-<../rp.pdf, id=944, page=9, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 9>
-Package pdftex.def Info: ../rp.pdf , page9 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 9>
-Package pdftex.def Info: ../rp.pdf , page9 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 9>
-Package pdftex.def Info: ../rp.pdf , page9 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [45 <../rp.pdf>]
-<../rp.pdf, id=952, page=10, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 10>
-Package pdftex.def Info: ../rp.pdf , page10 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 10>
-Package pdftex.def Info: ../rp.pdf , page10 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 10>
-Package pdftex.def Info: ../rp.pdf , page10 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [46 <../rp.pdf>]
-<../rp.pdf, id=957, page=11, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 11>
-Package pdftex.def Info: ../rp.pdf , page11 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 11>
-Package pdftex.def Info: ../rp.pdf , page11 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 11>
-Package pdftex.def Info: ../rp.pdf , page11 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [47 <../rp.pdf>]
-<../rp.pdf, id=963, page=12, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 12>
-Package pdftex.def Info: ../rp.pdf , page12 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 12>
-Package pdftex.def Info: ../rp.pdf , page12 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 12>
-Package pdftex.def Info: ../rp.pdf , page12 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [48 <../rp.pdf>]
-<../rp.pdf, id=968, page=13, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 13>
-Package pdftex.def Info: ../rp.pdf , page13 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 13>
-Package pdftex.def Info: ../rp.pdf , page13 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 13>
-Package pdftex.def Info: ../rp.pdf , page13 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [49 <../rp.pdf>]
-<../rp.pdf, id=980, page=14, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 14>
-Package pdftex.def Info: ../rp.pdf , page14 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 14>
-Package pdftex.def Info: ../rp.pdf , page14 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 14>
-Package pdftex.def Info: ../rp.pdf , page14 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-
-[50 <../rp.pdf>]
-<../rp.pdf, id=985, page=15, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 15>
-Package pdftex.def Info: ../rp.pdf , page15 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 15>
-Package pdftex.def Info: ../rp.pdf , page15 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 15>
-Package pdftex.def Info: ../rp.pdf , page15 used on input line 816.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [51 <../rp.pdf>]
-Appendix C.
+)
 
 Package caption Warning: Unused \captionsetup[figure] on input line \caption@op
 t@figure@lineno .
@@ -1738,16 +4646,14 @@ Package caption Warning: Unused \captionsetup[ table] on input line \caption@op
 t@ table@lineno .
 See the caption package documentation for explanation.
 
-[52
-
-]
+[217]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     834.
+(LaTeX3)     838.
 
  (FinalThesis.aux)
 Package rerunfilecheck Info: File `FinalThesis.out' has not changed.
-(rerunfilecheck)             Checksum: A438C9F5A8D322EE30416765D9EB6E12;2535.
+(rerunfilecheck)             Checksum: 68D307E3ED18BBDFA8A13F798DEC07D7;2536.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1758,10 +4664,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25891 strings out of 479799
- 510791 string characters out of 2869722
- 874159 words of memory out of 3000000
- 42137 multiletter control sequences out of 15000+200000
+ 26581 strings out of 479799
+ 537355 string characters out of 2869722
+ 874108 words of memory out of 3000000
+ 42652 multiletter control sequences out of 15000+200000
  552216 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,21n,111p,1099b,1156s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1784,16 +4690,17 @@ ublic/amsfonts/cm/cmr12.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts
 eX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/nirbh/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nirbh/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nirbh/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ni
-rbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
-/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti1
-2.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmti8.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmtt12.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb>
-Output written on FinalThesis.pdf (60 pages, 1799485 bytes).
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/ni
+rbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/
+Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10
+.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmti12.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmti8.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmtt12.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on FinalThesis.pdf (225 pages, 2627490 bytes).
 PDF statistics:
- 1105 PDF objects out of 1200 (max. 8388607)
- 186 named destinations out of 1000 (max. 500000)
- 540 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2294 PDF objects out of 2487 (max. 8388607)
+ 351 named destinations out of 1000 (max. 500000)
+ 1425 words of extra memory for PDF output out of 10000 (max. 10000000)
 

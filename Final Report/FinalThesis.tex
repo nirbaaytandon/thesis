@@ -802,9 +802,6 @@ DistilBert Explaination
     	\item \textbf{Mini-Batches Across Multiple GPUs}: Creating a multi-gpu setup, with 2 or more gpus, allows for accelerated training \citep{multigpu1}. A simple guide on how to set this up for PyTorch has been created on the Towards Data Science Medium page \citep{multigpu2} and even in the 
     \end{itemize}
 
-   \setcitestyle{numbers}
-    %\nocite{*}
-    \bibliography{FinalThesis}
    \begin{appendices}
     	\chapter{Gantt Chart}\label{cgc}
 		    \begin{figure}[!h]
@@ -818,17 +815,24 @@ DistilBert Explaination
           This chapter contains the code for the various benchmarks and the 2 custom models implemented in this thesis. 
           
           \section{Benchmarks}\label{benchmarkCode}
-          
+          	This section contains the code for various benchmark models that have been used to compare the Custom Bert Model against. 
+          	
 	          \textbf{AlBert Benchmark}\label{albertBenchmarkcode}
+	          \includepdf[pages=1-]{../AlBert Benchmark.pdf}
 	          
 	          \textbf{RoBerta Benchmark}\label{robertaBenchmarkcode}
+	          \includepdf[pages=1-]{../RoBerta Benchmark.pdf}
 	          
 	          \textbf{DistilBert Benchmark}\label{distilbertBenchmarkcode}
+	          \includepdf[pages=1-]{../DistilBert Benchmark.pdf}
           
-          \section{Custom Bert Model Code}\label{custommodel}
-          
-          
+          \section{Custom Bert Model Code}\label{custommodelcode}
+                   	\includepdf[pages=1-]{../Custom Bert Model AdaFactor 3e.pdf}
+                   	 \includepdf[pages=1-]{../Custom Bert Model AdamW 5e.pdf}
     \end{appendices}
 
 
+%\setcitestyle{numbers}
+%\nocite{*}
+\bibliography{FinalThesis}
 \end{document}

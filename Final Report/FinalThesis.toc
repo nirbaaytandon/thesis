@@ -36,10 +36,10 @@
 \contentsline {section}{\numberline {5.1}Existing Models And Benchmarks}{26}{section.5.1}%
 \contentsline {chapter}{\numberline {6}Conclusions And Recommendations}{29}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Recommendations}{29}{section.6.1}%
-\contentsline {chapter}{References}{30}{chapter*.25}%
-\contentsline {chapter}{Appendices}{33}{section*.26}%
-\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{34}{appendix.1.A}%
-\contentsline {chapter}{Appendix \numberline {B}Research Proposal}{36}{appendix.1.B}%
-\contentsline {chapter}{Appendix \numberline {C}Thesis Code}{52}{appendix.1.C}%
-\contentsline {section}{\numberline {C.1}Benchmarks}{52}{section.1.C.1}%
-\contentsline {section}{\numberline {C.2}Custom Bert Model Code}{52}{section.1.C.2}%
+\contentsline {chapter}{Appendices}{30}{section*.25}%
+\contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{31}{appendix.1.A}%
+\contentsline {chapter}{Appendix \numberline {B}Research Proposal}{33}{appendix.1.B}%
+\contentsline {chapter}{Appendix \numberline {C}Thesis Code}{49}{appendix.1.C}%
+\contentsline {section}{\numberline {C.1}Benchmarks}{49}{section.1.C.1}%
+\contentsline {section}{\numberline {C.2}Custom Bert Model Code}{112}{section.1.C.2}%
+\contentsline {chapter}{References}{215}{appendix*.27}%
