@@ -23,6 +23,8 @@ footskip=.25in]{geometry}
 
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows,positioning,chains}
+\newcommand*{\h}{\hspace{5pt}}% for indentation
+\newcommand*{\hh}{\h\h}% double indentation
 
 
 \usepackage[font=scriptsize,labelfont=bf,format=plain,justification=raggedright, singlelinecheck=false]{caption}
@@ -473,64 +475,84 @@ footskip=.25in]{geometry}
 
     \chapter{Research Methodology}\label{c3researchmeth}
     
-    Before diving into anything, lets take a look at a rough flow diagram:
-    \newpage
-    \resizebox{\columnwidth}{!}{
+To be able to achieve the objectives set out in the previous chapters, it is important to organize the research in such a way that it achieves its objective. This is represented in the research flow diagram \ref{researchFlow}.
 
-		\begin{tikzpicture}[
-		node distance=15mm and 10mm,
-		start chain=going below,
-		mynode/.style = {
-			draw, rectangle, align=center, text width=5cm,
-			font=\small, inner sep=3ex, outer sep=0pt,
-			on chain},
-		mylabel/.style = {
-			draw, rectangle, align=center, rounded corners, 
-			font=\small\bfseries, inner sep=2ex, outer sep=0pt,
-			fill=cyan!30, minimum height=38mm,
-			on chain},
-		every join/.style = arrow,
-		arrow/.style = {very thick,-stealth}
-		] 
-		\coordinate (tc);
-		% the title
-		\node[above=of tc,font=\bfseries] {PRISMA 2009 Flow Diagram};
-		% the nodes at the top
-		\node (n1a) [mynode, left=of tc]    {\# of records is identified 
-			through database searching};
-		\node (n1b) [mynode,right=of tc]    {\# of additional records indentified\\
-			through other sources};
-		% the chain in the center
-		\node (n2)  [mynode, below=of tc]   {\# of records after duplicates removed};
-		\node (n3)  [mynode,join]   {\# of additional records indentified\\
-			through other sources};
-		\node (n4)  [mynode,join]   {\# of full-text articles accessed 
-			for eligibility};
-		\node (n5)  [mynode,join]   {\# of studies included in qualitative synthesis};
-		\node (n6)  [mynode,join]   {\# of studies included in quantitative sysntesis\\
-			(meta-analysis)};
-		% the branches to the right
-		\node (n3r) [mynode,right=of n3]    {\# of records excluded};
-		\node (n4r) [mynode,right=of n4]    {\# of full-text articles excluded,
-			with reasons};
-		% lines not included in join                                        
-		\draw[arrow] ([xshift=+22mm] n1a.south) coordinate (a)
-		-- (a |- n2.north);
-		\draw[arrow] ([xshift=-22mm] n1b.south) coordinate (b)
-		-- (b |- n2.north);
-		\draw[arrow] (n3) -- (n3r);
-		\draw[arrow] (n4) -- (n4r);
-		% the labels on the left
-		\begin{scope}[node distance=7mm]
-			\node[mylabel,below left=-3mm and 11mm of n1a.north west]
-			{\rotatebox{90}{Identification}};
-			\node[mylabel]  {\rotatebox{90}{Screening}};
-			\node[mylabel]  {\rotatebox{90}{Eligibility}};
-			\node[mylabel]  {\rotatebox{90}{Included}};
+ \begin{figure*}
+\begin{center}
+	\begin{tikzpicture}[auto,
+		%decision/.style={diamond, draw=black, thick, fill=white,
+		%text width=8em, text badly centered,
+		%inner sep=1pt, font=\sffamily\small},
+		block_center/.style ={rectangle, draw=black, thick, fill=white,
+			text width=8em, text badly centered,font=\small},
+		block_left/.style ={rectangle, draw=black, thick, fill=white,
+			text width=18em, text badly centered,inner sep=0.2em,font=\small},
+		line/.style ={draw, thick, -latex', shorten >=0pt}]
+		% outlining the flowchart using the PGF/TikZ matrix funtion
+		\matrix [column sep=5mm,row sep=3mm] {
+			% enrollment - row 1
+			\node [block_center] (introduction) {Introduction};
+			& \node [block_left] (introductionLeft) {\begin{itemize}
+				\item Introduction
+				\item Define Problem Statement
+				\item Propose advantages of research
+		\end{itemize}}; \\
+			% enrollment - row 2
+			\node [block_center] (litreview) {Literature Review}; 
+			& \node [block_left] (litreviewleft) {\begin{itemize}
+				\item Review literature on previous \& current approaches
+				\item Shortlist state of the art approaches \& critically review them 
+				\item Summarize approaches \& identify drawbacks to improve on
+		\end{itemize}}; \\
+						% enrollment - row 3
+			\node [block_center] (researchMeth) {Research Methodology};
+			& \node [block_left] (researchMethleft) {\begin{itemize}
+					\item Introduction
+					\item Define Problem Statement
+					\item Propose advantages of research
+					\item Define evaluation metrics 
+			\end{itemize}}; \\
+			% enrollment - row 2
+			\node [block_center] (dc) {Data Collection}; 
+			& \node [block_left] (dcleft) {\begin{itemize}
+					\item Review sample datasets
+					\item Finalize dataset
+			\end{itemize}}; \\
+					% enrollment - row 1
+		\node [block_center] (researchExperiments) {Research Experiments};
+		& \node [block_left] (researchExperimentsleft) {\begin{itemize}
+				\item Pre-process dataset for experiments
+				\item Define experiment criteria
+				\item Prepare \& perfrom experiments
+		\end{itemize}}; \\
+		% enrollment - row 2
+		\node [block_center] (results) {Results}; 
+		& \node [block_left] (resultsleft) {\begin{itemize}
+				\item Collect results
+				\item Draw conclusions from the results
+				\item Propose future improvements \& applications
+		\end{itemize}}; \\
+		};% end matrix
+		% connecting nodes with paths
+		\begin{scope}[every path/.style=line]
+			% paths for enrollemnt rows
+			\path (introduction)   -- (introductionLeft);
+			\path (introduction)   -- (litreview);
+			\path (litreview) -- (litreviewleft);
+			\path (litreview) -- (researchMeth);
+			\path (researchMeth)     -- (researchMethleft);
+			\path (researchMeth)     -- (dc);
+			\path (dc)     -- (dcleft);
+			\path (dc)     -- (researchExperiments);
+			\path (researchExperiments)     -- (researchExperimentsleft);
+			\path (researchExperiments)     -- (results);
+			\path (results)     -- (resultsleft);
+
 		\end{scope}
 	\end{tikzpicture}
-}
-
+\end{center}
+\caption{Research Flow Diagram}\label{researchFlow}
+\end{figure*}
     \section{Data Selection}\label{c31}
 
     	We have selected the Stanford Question Answering Dataset (SQuAD). This is as a reading comprehension dataset based on Wikipedia articles. It is based on questions posed by crowd-workers on a set of articles. The answer to every question is a segment of text or span, from the corresponding reading passage, or the question might be unanswerable \citep{dataset}.
@@ -611,13 +633,13 @@ footskip=.25in]{geometry}
 		
 		Accuracy also doesn't work because it is a simplistic probability metric that assumes both false positives and false negatives have an equal weight in predicting the outcome as shown in eq. \ref{accuracy}.
 				\begin{equation}\label{accuracy}
-			Accuracy = \dfrac{True Positive +  True Negative}{True Positive +  False Positive + True Negative +  False Negative}
+			Accuracy = \small \dfrac{True Positive +  True Negative}{True Positive +  False Positive + True Negative +  False Negative}
 		\end{equation}
-	\\
+
 		Outlined below are some reasons why accuracy is not a good measure:
 		\begin{enumerate}
 			\item \textbf{Class Imbalance}
-			\item \textbf{Prone to Over and Underfitting}
+			\item \textbf{Prone to Over and Under-fitting}
 		\end{enumerate}
 	
 	Before looking at what F1 and Exact Match scores are, one must be able to understand the terminology used there in. 
@@ -640,6 +662,8 @@ footskip=.25in]{geometry}
 
      In this cahpter we yaba daba do
        \section{Drawbacks Of Current Architectures}\label{c42}
+       
+       To aid in understanding the drawbacks of current architectures the author presents the table below
        \section{Proposed Architecture Improvements}\label{c43}
        \section{Architecture Refinement}\label{c44}
 
@@ -681,9 +705,7 @@ footskip=.25in]{geometry}
     	\caption{AlBert Model Benchmarks} 
     	\label{albertBenchmarks}
     \end{figure*}
-\\
- 
-\newline
+
   \begin{figure*}
 	\centering
 	\begin{subfigure}[b]{0.475\textwidth}
@@ -716,7 +738,7 @@ footskip=.25in]{geometry}
 	\caption{RoBerta Model Benchmarks} 
 	\label{robertaBenchmarks}
 \end{figure*}
-\newline
+
 Roberta Explanation
 
   \begin{figure*}
