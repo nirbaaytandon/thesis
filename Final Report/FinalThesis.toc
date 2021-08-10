@@ -30,6 +30,7 @@
 \contentsline {section}{\numberline {4.3}Architecture Refinement}{24}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Results And Discussion}{25}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Existing Models And Benchmarks}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Custom Bert Model Results}{25}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Conclusions And Recommendations}{29}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Recommendations}{29}{section.6.1}%
 \contentsline {chapter}{Appendices}{30}{section*.28}%

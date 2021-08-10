@@ -128,12 +128,14 @@ footskip=.25in]{geometry}
         
         Chapter \ref{c2litrev}, looks in detail at the background studies that have been briefly mentioned in section \ref{c11}. In this chapter critical analysis is conducted how some of the work that has been selected is relevant to what this research aims to highlight, it helps us understand the merits and shortcomings of current state of the art approaches. Detailed analysis of Long Short-Term Memory(LSTM) and Transformer architectures is written, with special attention to applications in the field of Question Answering. There is particular focus on the advancements and applications of existing architectures as well as acknowledgement of why LSTMs reigned supreme for almost 2 decades. Transformers provide a unique opportunity to perform highly accurate predictive tasks in NLP. The most key advances to both LSTMs and Transformers are their bi-directional applications which are also discussed. Finally, this chapter ends with a summary of the approaches and highlights certain drawbacks. These drawbacks are discussed in more detail in \ref{c4}.
         
-        Next, chapter \ref{c3researchmeth} proposes the research methods that have been implemented. It explains the various metrics that have been used and why they were chosen, specifically highlighting why Accuracy isn't a good measure for creating a successful model and highlighting the use of Precision, Recall and F1 as useful metrics for the experiments conducted in this particular thesis, Exact Match scores are also introduced and discussed in this chapter. The chapter ends with a research flow diagram describing the prorcesses followed for the experiments and application stages of various methods in a visual manner.
+        Next, chapter \ref{c3researchmeth} proposes the research methods that have been implemented. It explains the various metrics that have been used and why they were chosen, specifically highlighting why Accuracy isn't a good measure for creating a successful model and highlighting the use of Precision, Recall and F1 as useful metrics for the experiments conducted in this particular thesis, Exact Match scores are also introduced and discussed in this chapter. The chapter ends with a research flow diagram describing the processes followed for the experiments and application stages of various methods in a visual manner.
         
         
+        In chapter \ref{c4} the proposed architecture is discussed along with drawbacks of current architectures. The chapter also describes ways in which the proposed architecture can be refined. 
         
+        Finally, in chapters \ref{c5} and \ref{c6} the outcomes of the models are discussed while comparing them to current architectures and their benchmarks. The author discusses the outcomes and presents various recommendations that can help improve the work presented in this thesis further.         
         
-           Appendix \ref{cgc} is where the reader can refer to the Gantt chart for the thesis work done and the updates to various stages.
+        Appendix \ref{cgc} is where the reader can refer to the Gantt chart for the thesis work done.
 
     \chapter{Literature Review}\label{c2litrev}
 
@@ -685,28 +687,28 @@ footskip=.25in]{geometry}
     
     \begin{figure*}
     	\centering
-    	\begin{subfigure}[b]{0.475\textwidth}
+    	\begin{subfigure}[b]{0.45\textwidth}
     		\centering
     		\includegraphics[width=\textwidth]{../images/Albert_Val_F1.png}
     		\caption{\small AlBert Validation F1 Score}   
     		\label{albertf1}
     	\end{subfigure}
     	\hfill
-    	\begin{subfigure}[b]{0.475\textwidth}  
+    	\begin{subfigure}[b]{0.45\textwidth}  
     		\centering 
     		\includegraphics[width=\textwidth]{../images/Albert_Val_EM.png}
     		\caption{\small AlBert Validation Exact Match}  
     		\label{albertem}
     	\end{subfigure}
     	\vskip\baselineskip
-    	\begin{subfigure}[b]{0.475\textwidth}   
+    	\begin{subfigure}[b]{0.45\textwidth}   
     		\centering 
     		\includegraphics[width=\textwidth]{../images/Albert_Val_Loss.png}
     		\caption{\small AlBert Validation Loss}  
     		\label{albertValLoss}
     	\end{subfigure}
     	\hfill
-    	\begin{subfigure}[b]{0.475\textwidth}   
+    	\begin{subfigure}[b]{0.45\textwidth}   
     		\centering 
     		\includegraphics[width=\textwidth]{../images/Albert_Train_Loss.png}
     		\caption{\small AlBert Training Loss}
@@ -718,28 +720,28 @@ footskip=.25in]{geometry}
 
   \begin{figure*}
 	\centering
-	\begin{subfigure}[b]{0.475\textwidth}
+	\begin{subfigure}[b]{0.45\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{../images/Roberta_Val_F1.png}
 		\caption{\small RoBerta Validation F1 Score}
 		\label{robertaf1}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[b]{0.475\textwidth}  
+	\begin{subfigure}[b]{0.45\textwidth}  
 		\centering 
 		\includegraphics[width=\textwidth]{../images/Roberta_Val_EM.png}
 		\caption{\small RoBerta Validation Exact Match}
 		\label{robertaem}
 	\end{subfigure}
 	\vskip\baselineskip
-	\begin{subfigure}[b]{0.475\textwidth}   
+	\begin{subfigure}[b]{0.45\textwidth}   
 		\centering 
 		\includegraphics[width=\textwidth]{../images/Roberta_Val_Loss.png}
 		\caption{\small RoBerta Validation Loss}    
 		\label{robertaValLoss}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[b]{0.475\textwidth}
+	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
 		\includegraphics[width=\textwidth]{../images/Roberta_Train_Loss.png}
 		\caption{\small RoBerta Training Loss}  
@@ -749,32 +751,30 @@ footskip=.25in]{geometry}
 	\label{robertaBenchmarks}
 \end{figure*}
 
-Roberta Explanation
-
   \begin{figure*}
 	\centering
-	\begin{subfigure}[b]{0.475\textwidth}
+	\begin{subfigure}[b]{0.45\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{../images/Distilbert_Val_F1.png}
 		\caption{\small Distilbert Validation F1 Score}
 		\label{Distilbertf1}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[b]{0.475\textwidth}  
+	\begin{subfigure}[b]{0.45\textwidth}  
 		\centering 
 		\includegraphics[width=\textwidth]{../images/Distilbert_Val_EM.png}
 		\caption{\small Distilbert Validation Exact Match}
 		\label{Distilbertaem}
 	\end{subfigure}
 	\vskip\baselineskip
-	\begin{subfigure}[b]{0.475\textwidth}   
+	\begin{subfigure}[b]{0.45\textwidth}   
 		\centering 
 		\includegraphics[width=\textwidth]{../images/Distilbert_Val_Loss.png}
 		\caption{\small Distilbert Validation Loss}    
 		\label{DistilbertValLoss}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[b]{0.475\textwidth}
+	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
 		\includegraphics[width=\textwidth]{../images/Distilbert_Train_Loss.png}
 		\caption{\small Distilbert Training Loss}  
@@ -785,6 +785,8 @@ Roberta Explanation
 \end{figure*}
 
 
+\section{Custom Bert Model Results}\label{c52}
+
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.4]{../images/AdamW5e.png}
@@ -793,7 +795,7 @@ Roberta Explanation
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.4]{../images/AdamW3e.png}
+	\includegraphics[scale=0.5]{../images/AdamW3e.png}
 	\caption{Custom BERT Model with AdamW Optimizer at 3e-5 rate}\label{adam3e}
 \end{figure}
 
@@ -802,9 +804,14 @@ Roberta Explanation
 	\includegraphics[scale=0.4]{../images/AdaFactor3e.png}
 	\caption{Custom BERT Model with AdaFactor Optimizer at 3e-5 rate}\label{ada3e}
 \end{figure}
+
+
+
     \chapter{Conclusions And Recommendations}\label{c6}
     
     Through this work the author has attempted to highlight the advancements and propose a unique modification to the existing transformer architecture using an Answer-Pointer network. 
+    
+    The results obtained from experiments in section \ref{c52} show that the models performance is at par with the DistilBert model. While this result isnt graphically present due to timeout issues in Google Colab, visually tracking the various scores we can see that the models.
     
     \section{Recommendations}
     
@@ -814,7 +821,7 @@ Roberta Explanation
     	
     	\item \textbf{Increased Batch-Size}: The experiments presented in this work are limited by a relatively small batch size of 8. Systemic increase of batch size can allow for reduced training times, possibly better performance overall and an opportunity to test this model against various other NLP applications such as Sequence Classification, Token Classification, Sentence Predictions, etc. 
     	\item \textbf{Better Hardware}: One of the key limiting factors for the work presented in this thesis is the limiting amount of VRAM, The current hardware used by the author only had 8GB of VRAM available on the EVGA 2070 Super GPU, which was insufficient for the benchmark batch size of 8. Reducing the batch size any further led to increased training times per epoch, upwards of 3 hours per epoch at a batch size of 6. This problem was slightly remediated by the use of Google Colab Pro, which is a subscriptions service that allows you to run experiments using better GPUs such as Tesla P100 GPU with 16GB VRAM. This service is time limited and thus not suitable for running long experiments. To effectively quantify the proposed architecture in this thesis it is recommended that it be run for at least 10 epochs on a multi-gpu setup that allows for mini-batches. This approach is discussed below.
-    	\item \textbf{Mini-Batches Across Multiple GPUs}: Creating a multi-gpu setup, with 2 or more gpus, allows for accelerated training \citep{multigpu1}. A simple guide on how to set this up for PyTorch has been created on the Towards Data Science Medium page \citep{multigpu2} and even in the 
+    	\item \textbf{Mini-Batches Across Multiple GPUs}: Creating a multi-gpu setup, with 2 or more gpus, allows for accelerated training \citep{multigpu1}. A simple guide on how to set this up for PyTorch has been created on the Towards Data Science Medium page \citep{multigpu2}. 
     \end{itemize}
 
    \begin{appendices}
