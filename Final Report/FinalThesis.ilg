@@ -1,14 +1,14 @@
-This is makeindex, version 2.15 [MiKTeX 20.11].
-Scanning style file C:/Users/nirbh/AppData/Local/Programs/MiKTeX/makeindex/nomencl/nomencl.ist........
-** Input style error (file = C:/Users/nirbh/AppData/Local/Programs/MiKTeX/makeindex/nomencl/nomencl.ist, line = 36):
+This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
+Scanning style file /usr/share/texlive/texmf-dist/makeindex/nomencl/nomencl.ist........
+** Input style error (file = /usr/share/texlive/texmf-dist/makeindex/nomencl/nomencl.ist, line = 36):
    -- Unknown specifier lethead_prefix.
-** Input style error (file = C:/Users/nirbh/AppData/Local/Programs/MiKTeX/makeindex/nomencl/nomencl.ist, line = 37):
+** Input style error (file = /usr/share/texlive/texmf-dist/makeindex/nomencl/nomencl.ist, line = 37):
    -- Unknown specifier lethead_suffix.
-** Input style error (file = C:/Users/nirbh/AppData/Local/Programs/MiKTeX/makeindex/nomencl/nomencl.ist, line = 38):
+** Input style error (file = /usr/share/texlive/texmf-dist/makeindex/nomencl/nomencl.ist, line = 38):
    -- Unknown specifier lethead_flag.
 ....done (12 attributes redefined, 3 ignored).
-Scanning input file FinalThesis.nlo....done (26 entries accepted, 0 rejected).
-Sorting entries....done (125 comparisons).
-Generating output file FinalThesis.nls....done (31 lines written, 0 warnings).
+Scanning input file FinalThesis.nlo....done (27 entries accepted, 0 rejected).
+Sorting entries....done (128 comparisons).
+Generating output file FinalThesis.nls....done (32 lines written, 0 warnings).
 Output written in FinalThesis.nls.
 Transcript written in FinalThesis.ilg.

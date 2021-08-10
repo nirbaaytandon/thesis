@@ -472,7 +472,7 @@ footskip=.25in]{geometry}
 
 
     \chapter{Research Methodology}\label{c3researchmeth}
-    
+
     Before diving into anything, lets take a look at a rough flow diagram:
     \newpage
     \resizebox{\columnwidth}{!}{
@@ -485,18 +485,18 @@ footskip=.25in]{geometry}
 			font=\small, inner sep=3ex, outer sep=0pt,
 			on chain},
 		mylabel/.style = {
-			draw, rectangle, align=center, rounded corners, 
+			draw, rectangle, align=center, rounded corners,
 			font=\small\bfseries, inner sep=2ex, outer sep=0pt,
 			fill=cyan!30, minimum height=38mm,
 			on chain},
 		every join/.style = arrow,
 		arrow/.style = {very thick,-stealth}
-		] 
+		]
 		\coordinate (tc);
 		% the title
 		\node[above=of tc,font=\bfseries] {PRISMA 2009 Flow Diagram};
 		% the nodes at the top
-		\node (n1a) [mynode, left=of tc]    {\# of records is identified 
+		\node (n1a) [mynode, left=of tc]    {\# of records is identified
 			through database searching};
 		\node (n1b) [mynode,right=of tc]    {\# of additional records indentified\\
 			through other sources};
@@ -504,7 +504,7 @@ footskip=.25in]{geometry}
 		\node (n2)  [mynode, below=of tc]   {\# of records after duplicates removed};
 		\node (n3)  [mynode,join]   {\# of additional records indentified\\
 			through other sources};
-		\node (n4)  [mynode,join]   {\# of full-text articles accessed 
+		\node (n4)  [mynode,join]   {\# of full-text articles accessed
 			for eligibility};
 		\node (n5)  [mynode,join]   {\# of studies included in qualitative synthesis};
 		\node (n6)  [mynode,join]   {\# of studies included in quantitative sysntesis\\
@@ -513,7 +513,7 @@ footskip=.25in]{geometry}
 		\node (n3r) [mynode,right=of n3]    {\# of records excluded};
 		\node (n4r) [mynode,right=of n4]    {\# of full-text articles excluded,
 			with reasons};
-		% lines not included in join                                        
+		% lines not included in join
 		\draw[arrow] ([xshift=+22mm] n1a.south) coordinate (a)
 		-- (a |- n2.north);
 		\draw[arrow] ([xshift=-22mm] n1b.south) coordinate (b)
@@ -606,9 +606,9 @@ footskip=.25in]{geometry}
 
     \end{itemize}
 	\section{Model Evaluation Metrics}\label{33}
-	
+
 		To successfully evaluate the model two metrics will be used. The \textit{F1 - Score} and \textit{Exact Match Score} will be used to measure the success of the model developed. While accuracy is a good score to measure how well a model is performing, the problem with accuracy is that it is prone to overfitting, and underfitting, which might lead to great accuracy scores but real world predictions wont be as accurate.
-		
+
 		Accuracy also doesn't work because it is a simplistic probability metric that assumes both false positives and false negatives have an equal weight in predicting the outcome as shown in eq. \ref{accuracy}.
 				\begin{equation}\label{accuracy}
 			Accuracy = \dfrac{True Positive +  True Negative}{True Positive +  False Positive + True Negative +  False Negative}
@@ -619,10 +619,10 @@ footskip=.25in]{geometry}
 			\item \textbf{Class Imbalance}
 			\item \textbf{Prone to Over and Underfitting}
 		\end{enumerate}
-	
-	Before looking at what F1 and Exact Match scores are, one must be able to understand the terminology used there in. 
 
-	\textbf{Precision} is the probability of identifying a correct outcome from all the possible outcomes. 
+	Before looking at what F1 and Exact Match scores are, one must be able to understand the terminology used there in.
+
+	\textbf{Precision} is the probability of identifying a correct outcome from all the possible outcomes.
 	\begin{equation}\label{precision}
 		Precision = \dfrac{True Positive}{True Positive +  False Positive }
 	\end{equation}
@@ -630,12 +630,12 @@ footskip=.25in]{geometry}
 		\begin{equation}\label{recall}
 		Recall = \dfrac{True Positive}{True Positive +  False Negative }
 	\end{equation}
-	F1 Score 
+	F1 Score
 		\begin{equation}\label{f1}
 		F1 = 2 \times \dfrac{Precision \times Recall}{Precision + Recall}
 	\end{equation}
 	Exact Match
-	
+
   \chapter{Architecture Creation}\label{c4}
 
      In this cahpter we yaba daba do
@@ -644,46 +644,46 @@ footskip=.25in]{geometry}
        \section{Architecture Refinement}\label{c44}
 
     \chapter{Results And Discussion}\label{c5}
+    To be able to successfully quantify the improvements suggested in this work as having meaningful impact, it is important to first generate some benchmarks from existing models that will serve
      \section{Existing Models And Benchmarks}\label{c41}
-    
+
     To be able to establish the improvements hypothesized in the previous section it is important to have a baseline metric. The ALBERT \citep{albert}, RoBERTa \citep{roberta} and DistilBERT \citep{distil} models are available pre-trained through the HuggingFace library \citep{hfTransformers}. The library also provides the SQuAD 2.0 Dataset \citep{dataset} for use.
-    
-    
+
+
     \begin{figure*}
     	\centering
     	\begin{subfigure}[b]{0.475\textwidth}
     		\centering
     		\includegraphics[width=\textwidth]{../images/Albert_Val_F1.png}
-    		\caption{\small AlBert Validation F1 Score}   
+    		\caption{\small AlBert Validation F1 Score}
     		\label{albertf1}
     	\end{subfigure}
     	\hfill
-    	\begin{subfigure}[b]{0.475\textwidth}  
-    		\centering 
+    	\begin{subfigure}[b]{0.475\textwidth}
+    		\centering
     		\includegraphics[width=\textwidth]{../images/Albert_Val_EM.png}
-    		\caption{\small AlBert Validation Exact Match}  
+    		\caption{\small AlBert Validation Exact Match}
     		\label{albertem}
     	\end{subfigure}
     	\vskip\baselineskip
-    	\begin{subfigure}[b]{0.475\textwidth}   
-    		\centering 
+    	\begin{subfigure}[b]{0.475\textwidth}
+    		\centering
     		\includegraphics[width=\textwidth]{../images/Albert_Val_Loss.png}
-    		\caption{\small AlBert Validation Loss}  
+    		\caption{\small AlBert Validation Loss}
     		\label{albertValLoss}
     	\end{subfigure}
     	\hfill
-    	\begin{subfigure}[b]{0.475\textwidth}   
-    		\centering 
+    	\begin{subfigure}[b]{0.475\textwidth}
+    		\centering
     		\includegraphics[width=\textwidth]{../images/Albert_Train_Loss.png}
     		\caption{\small AlBert Training Loss}
     		\label{albertTrainLoss}
     	\end{subfigure}
-    	\caption{AlBert Model Benchmarks} 
+    	\caption{AlBert Model Benchmarks}
     	\label{albertBenchmarks}
     \end{figure*}
-\\
- 
-\newline
+alkhwveflka\\
+.k,hjgvaweklf
   \begin{figure*}
 	\centering
 	\begin{subfigure}[b]{0.475\textwidth}
@@ -693,30 +693,30 @@ footskip=.25in]{geometry}
 		\label{robertaf1}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[b]{0.475\textwidth}  
-		\centering 
+	\begin{subfigure}[b]{0.475\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{../images/Roberta_Val_EM.png}
 		\caption{\small RoBerta Validation Exact Match}
 		\label{robertaem}
 	\end{subfigure}
 	\vskip\baselineskip
-	\begin{subfigure}[b]{0.475\textwidth}   
-		\centering 
+	\begin{subfigure}[b]{0.475\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{../images/Roberta_Val_Loss.png}
-		\caption{\small RoBerta Validation Loss}    
+		\caption{\small RoBerta Validation Loss}
 		\label{robertaValLoss}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.475\textwidth}
-		\centering 
+		\centering
 		\includegraphics[width=\textwidth]{../images/Roberta_Train_Loss.png}
-		\caption{\small RoBerta Training Loss}  
+		\caption{\small RoBerta Training Loss}
 		\label{robertaTrainloss}
 	\end{subfigure}
-	\caption{RoBerta Model Benchmarks} 
+	\caption{RoBerta Model Benchmarks}
 	\label{robertaBenchmarks}
 \end{figure*}
-\newline
+
 Roberta Explanation
 
   \begin{figure*}
@@ -728,27 +728,27 @@ Roberta Explanation
 		\label{Distilbertf1}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[b]{0.475\textwidth}  
-		\centering 
+	\begin{subfigure}[b]{0.475\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{../images/Distilbert_Val_EM.png}
 		\caption{\small Distilbert Validation Exact Match}
 		\label{Distilbertaem}
 	\end{subfigure}
 	\vskip\baselineskip
-	\begin{subfigure}[b]{0.475\textwidth}   
-		\centering 
+	\begin{subfigure}[b]{0.475\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{../images/Distilbert_Val_Loss.png}
-		\caption{\small Distilbert Validation Loss}    
+		\caption{\small Distilbert Validation Loss}
 		\label{DistilbertValLoss}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.475\textwidth}
-		\centering 
+		\centering
 		\includegraphics[width=\textwidth]{../images/Distilbert_Train_Loss.png}
-		\caption{\small Distilbert Training Loss}  
+		\caption{\small Distilbert Training Loss}
 		\label{DistilbertTrainloss}
 	\end{subfigure}
-	\caption{Distilbert Model Benchmarks} 
+	\caption{Distilbert Model Benchmarks}
 	\label{distilbertBenchmarks}
 \end{figure*}
 
@@ -756,18 +756,18 @@ DistilBert Explaination
 
 
     \chapter{Conclusions And Recommendations}\label{c6}
-    
-    Through this work the author has attempted to highlight the advancements and propose a unique modification to the existing transformer architecture using an Answer-Pointer network. 
-    
+
+    Through this work the author has attempted to highlight the advancements and propose a unique modification to the existing transformer architecture using an Answer-Pointer network.
+
     \section{Recommendations}
-    
+
     This work provides a unique opportunity to introduce improvements to an already state of the art architecture by adding a layer of LSTM based pointers. Highlighted below are some recommendations, that the author believes, can improve the architecture further.
-    
+
     \begin{itemize}
-    	
-    	\item \textbf{Increased Batch-Size}: The experiments presented in this work are limited by a relatively small batch size of 8. Systemic increase of batch size can allow for reduced training times, possibly better performance overall and an opportunity to test this model against various other NLP applications such as Sequence Classification, Token Classification, Sentence Predictions, etc. 
+
+    	\item \textbf{Increased Batch-Size}: The experiments presented in this work are limited by a relatively small batch size of 8. Systemic increase of batch size can allow for reduced training times, possibly better performance overall and an opportunity to test this model against various other NLP applications such as Sequence Classification, Token Classification, Sentence Predictions, etc.
     	\item \textbf{Better Hardware}: One of the key limiting factors for the work presented in this thesis is the limiting amount of VRAM, The current hardware used by the author only had 8GB of VRAM available on the EVGA 2070 Super GPU, which was insufficient for the benchmark batch size of 8. Reducing the batch size any further led to increased training times per epoch, upwards of 3 hours per epoch at a batch size of 6. This problem was slightly remediated by the use of Google Colab Pro, which is a subscriptions service that allows you to run experiments using better GPUs such as Tesla P100 GPU with 16GB VRAM. This service is time limited and thus not suitable for running long experiments. To effectively quantify the proposed architecture in this thesis it is recommended that it be run for at least 10 epochs on a multi-gpu setup that allows for mini-batches. This approach is discussed below.
-    	\item \textbf{Mini-Batches Across Multiple GPUs}: Creating a multi-gpu setup, with 2 or more gpus, allows for accelerated training \citep{multigpu1}. A simple guide on how to set this up for PyTorch has been created on the Towards Data Science Medium page \citep{multigpu2} and even in the 
+    	\item \textbf{Mini-Batches Across Multiple GPUs}: Creating a multi-gpu setup, with 2 or more gpus, allows for accelerated training \citep{multigpu1}. A simple guide on how to set this up for PyTorch has been created on the Towards Data Science Medium page \citep{multigpu2} and even in the
     \end{itemize}
 
    \setcitestyle{numbers}

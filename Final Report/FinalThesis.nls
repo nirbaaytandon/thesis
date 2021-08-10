@@ -26,6 +26,7 @@
   \item [{RoBERTa}]\begingroup Robustly Optimized BERT\nomeqref {0}\nompageref{iv}
   \item [{SQuAD}]\begingroup Stanford Question Answering Dataset\nomeqref {0}\nompageref{iv}
   \item [{SuBiLSTM}]\begingroup Suffix Bidirectional LSTM\nomeqref {0}\nompageref{iv}
+  \item [{VRAM}]\begingroup Virtual Random Access Memory\nomeqref {0}\nompageref{iv}
   \item [{WMT}]\begingroup Workshop on Statistical Machine Translation\nomeqref {0}\nompageref{iv}
 
 \end{thenomenclature}
