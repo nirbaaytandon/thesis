@@ -73,7 +73,8 @@ footskip=.25in]{geometry}
     \input{nomenclature.tex}
     \printnomenclature[1in]
 	\begin{abstract}
-		Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of our work will be to create a new kind of Transformer architecture. Compare and contrast its performance against other architectures such as BERT, DistilBERT, ALBERT etc. using the SQuAD 2.0 Dataset. Through our research, we aim to produce a new architecture that has a better performance than existing models specifically for Question Answering based applications.
+		Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of this work will be to introduce a variation to the Transformer architecture. Compare and contrast its performance against other architectures such as RoBerta, DistilBERT and ALBERT using the SQuAD 2.0 Dataset. Through this research, it is shown that at par, if not better, performance can be obtained on Transformer architecture based models with the application of a simple LSTM based Answer Pointer layer. 
+		
 	\end{abstract}
     \cleardoublepage% \clearpage
     \pagenumbering{arabic}
@@ -663,16 +664,17 @@ footskip=.25in]{geometry}
 		\end{center}
 		\caption{Research Flow Diagram}\label{researchFlow}
 	\end{figure*}
+
+
   \chapter{Architecture Creation}\label{c4}
 
-WIP
        \section{Drawbacks Of Current Architectures}\label{c41}
        
        To aid in understanding the drawbacks of current architectures the author presents the table below
        \section{Proposed Architecture Improvements}\label{c43}
        \section{Architecture Refinement}\label{c44}
 
-    \chapter{Results And Discussion}\label{c5}
+    \chapter{Results}\label{c5}
     
         To establish the improvements hypothesized in the previous section it is important to have a baseline metric. The ALBERT \citep{albert}, RoBERTa \citep{roberta} and DistilBERT \citep{distil} models are available pre-trained through the HuggingFace library \citep{hfTransformers}. The library also provides the SQuAD 2.0 Dataset \citep{dataset} for use. The dataset is also available for download directly and to aid understanding of the data correctly that approach is implemented. 
         
@@ -881,9 +883,6 @@ While the results for the DistilBert model aren't exactly perfect, it does allow
 	In the final experiment, that is shown in fig. \ref{ada3e}, the custom model is run with a modified AdaFactor optimizer with a learning rate of 3e-5, this again presents similar results to the results in the previous experiment where the lower value of the learning rate helped the custom model learn better. The training loss for this run also falls similar to the loss in the previous custom model experiments as well as the DistilBert benchmark, while maintaing an F1 score that is higher than the DistilBert benchmark but roughly similar to the custom model with AdamW optimizer at a learning rate of 3e-5.
 	
 	
-	\section{Discussion}
-	
-	The experiments conducted 
 
 
 
@@ -892,6 +891,13 @@ While the results for the DistilBert model aren't exactly perfect, it does allow
     Through this work the author has attempted to highlight the advancements and propose a unique modification to the existing transformer architecture using an Answer-Pointer network. 
     
     The results obtained from experiments in section \ref{c52} show that the models performance is at par with the DistilBert model. While this result isn't graphically present due to timeout issues in Google Colab, visually the various scores printed in figures \ref{adam5e}, \ref{adam3e} and \ref{ada3e}, the model does perform well initially. 
+    
+    The experiments conducted in this thesis highlight that a properly implemented LSTM based Answer Pointer network layer that is incorporated with the Transformer architecture can perform at par with a current state of the art model. 
+    While the custom model presents an opportunity for improvement in terms of training times, the results and the metrics are at par with the benchmark models.
+    
+    The benchmarked models are current state of the art approaches that are used industry wide for various applications and readily available via libraries like PyTorch, Hugging Face and TensorFlow. The model presented here has shown potential through the limited amount of testing and resources available. 
+    
+    It is highly probable that given the right resources and time to optimize the model, it will be able to perform better than the DistilBert model at least. 
     
     \section{Recommendations}
     

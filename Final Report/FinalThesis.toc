@@ -27,11 +27,10 @@
 \contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{25}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{25}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Architecture Refinement}{25}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Results And Discussion}{26}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Results}{26}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Experiment Data Pre-Processing And Analysis}{26}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Existing Architecture Benchmarks}{27}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Custom BERT Model Results}{30}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Discussion}{32}{section.5.4}%
 \contentsline {chapter}{\numberline {6}Conclusions And Recommendations}{33}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Recommendations}{33}{section.6.1}%
 \contentsline {chapter}{Appendices}{35}{section*.28}%
