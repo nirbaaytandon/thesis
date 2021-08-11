@@ -14,7 +14,7 @@ Warning--empty journal in wsj
 Warning--empty journal in radford2018improving
 You've used 33 entries,
             2481 wiz_defined-function locations,
-            735 strings with 10710 characters,
+            735 strings with 10700 characters,
 and the built_in function-call counts, 12585 in all, are:
 = -- 949
 > -- 887

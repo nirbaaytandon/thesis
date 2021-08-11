@@ -98,8 +98,8 @@ Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf.
 \newblock \emph{CoRR}, abs/1910.01108, 2019.
 \newblock URL \url{http://arxiv.org/abs/1910.01108}.
 
-\bibitem[Team()]{hfTransformers}
-The Hugging~Face Team.
+\bibitem[HuggingFace()]{hfTransformers}
+HuggingFace.
 \newblock Transformers.
 \newblock URL \url{https://huggingface.co/transformers/}.
 \newblock Accessed: 2021-04-16.
