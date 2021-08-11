@@ -472,21 +472,21 @@ footskip=.25in]{geometry}
 			BERT was tested on The General Language Understanding Evaluation (GLUE) benchmark \citep{wang} which has a large number of diverse NLU tasks.
 			BERT performed extremely well on the 11 NLP tasks that the authors ran it against. It showed an average accuracy improvement of 4.5\% and 7\% when compared to the previous state of the art models. Results of BERT and its significant gains make it one of the best candidate models for NLU tasks.
 
-	       \subsubsection{ALBERT}\label{2322}
-	    \citep{albert}
+%	       \subsubsection{ALBERT}\label{2322}
+%	    \citep{albert}
 
-	     \subsubsection{ROBERTA}\label{2323}
-	      \citep{roberta}
+%	     \subsubsection{ROBERTA}\label{2323}
+%	      \citep{roberta}
 
-	    \subsubsection{DISTILBERT}\label{2324}
-	     \citep{distil}
+%	    \subsubsection{DISTILBERT}\label{2324}
+%	     \citep{distil}
 
-  \section{Summary}\label{26}
+%  \section{Summary}\label{26}
 
 
     \chapter{Research Methodology}\label{c3researchmeth}
     
-    In this chapter 
+    
     
     \section{Data Selection}\label{c31}
 
@@ -506,14 +506,13 @@ footskip=.25in]{geometry}
 
 	    The answer to the aforementioned question is quite simple for humans to comprehend. The challenge is for computational systems is to contextualize this and make it machine-understandable so that the produced model can answer it correctly.
 	    The dataset consists of various kinds of English language examples like negation, antonyms, entity swaps, impossible conditions to answer, answerable, etc. making the dataset a well-balanced one.
-	    It is important to prepare this dataset appropriately 
+	    It is important to prepare this dataset appropriately, this will be done
 
 	    \begin{enumerate}
-	    	\item Data splitting into separate Question, Answer and Context lists.
-	    	\item Splitting the data into separate training and validation sets of  question and answers using the 80/20 rule, also known as the Pareto principle. We will have 80\% training data and 20\% test data.
+	    	\item Data splitting into separate Question, Answer and Context lists for use for both the training data and the validation data
 	    	\item Tokenization of the split data to generate "context-question" pairs
 	    	\item Generating indexes for when an answer begins and ends in the dataset
-	    	\item Adding answer tokens based on their encoded positions
+	    	\item Adding answer and context tokens based on their encoded positions
 	    \end{enumerate}
 
         The SQuAD 2.0 Dataset \citep{dataset}, was developed with funding from Facebook to help address some major issues with existing datasets. Most datasets focus on questions that can be easily answered or use of    automatically generated, unanswerable questions which are easily identifiable.\\
@@ -548,7 +547,7 @@ footskip=.25in]{geometry}
 		                \caption{Comparison of  SQuAD 2.0 to SQuAD 1.1\citep{dataset}.}\label{datasetDescription}
 		 \end{table}
 
-    Table \ref{datasetDescription} shows the difference between
+    Table \ref{datasetDescription} shows the difference between SQuAD 1.1 and SQuAD 2.0 datasets. 
    
     \section{Research Hypothesis}\label{c33}
     The hypothesis of this research is that implementing a self attention based Transformer model with:
@@ -560,7 +559,9 @@ footskip=.25in]{geometry}
 
 	Will help improve the prediction capability of the transformer architecture. 
 	
-	The DistilBert model \citep{distil}, which is a lighter, distilled version of the BERT model, and has 40\% less parameters at 66 million, instead of 110 million in BERT, as discussed in 
+	The DistilBert model \citep{distil}, which is a lighter, distilled version of the BERT model, and has 40\% less parameters at 66 million, instead of 110 million in BERT, as discussed in \citep{bert}, will be customized with the implementation of the answer pointer layer to generate answers for the questions posed. 
+	
+	
 	\section{Model Evaluation Metrics}\label{33}
 	
 		To successfully evaluate the model two metrics will be used. The \textit{F1 - Score} and \textit{Exact Match Score} will be used to measure the success of the model developed. While accuracy is a good score to measure how well a model is performing, the problem with accuracy is that it is prone to overfitting, and underfitting, which might lead to great accuracy scores but real world predictions wont be as accurate.
@@ -578,25 +579,25 @@ footskip=.25in]{geometry}
 	
 	Before looking at what F1 and Exact Match scores are, one must be able to understand the terminology used there in. 
 
-	\textbf{Precision} is the probability of identifying a correct outcome from all the possible outcomes. 
+	\textbf{Precision} is the probability of identifying a correct positive outcome from all the predicted positive outcomes. Precision is used for cases when the cost of a false positive has a very high negative impact.
 	\begin{equation}\label{precision}
 		Precision = \dfrac{True Positive}{True Positive +  False Positive }
 	\end{equation}
-	Recall
+	
+	\textbf{Recall} is defined as the probability of a correctly identifying a positive outcome from all the positive outcomes. Recall is very important in cases where the cost of negative responses or false negatives is high.
 		\begin{equation}\label{recall}
 		Recall = \dfrac{True Positive}{True Positive +  False Negative }
 	\end{equation}
-	F1 Score 
+
+	\textbf{F1 Score } is the harmonic mean of recall and precision. It is used as an evaluation metric in places where the impact of both false positives and negatives is very high. 
 		\begin{equation}\label{f1}
 		F1 = 2 \times \dfrac{Precision \times Recall}{Precision + Recall}
 	\end{equation}
-	Exact Match
+
+	\textbf{Exact Match} is a binary metric, i.e. it is 1 if the predicted answer matches the expected answer and 0 if it doesn't.
 	
-	 \section{Data Pre-processing And Transformation}\label{c32}
-	Techniques used.
-	(1) Average pooling; (2) max pooling; (3) the concatenation of the last vectors on both directions. Dropout operation is performed on the QA representations before cosine similarity matching. Use GloVe embeddings and suffix-prefix encoding in both directions of self attention pass to show improvements.
 	\section{Research Flow Diagram}\label{c34}
-	 To be able to achieve the objectives set out in the previous chapters, it is important to organize the research in such a way that it achieves its objective. This is represented in the research flow diagram \ref{researchFlow}. The steps identified in \ref{researchFlow} encapsulate the broad format of this thesis and its various stages. 
+	 To be able to achieve the objectives set out in the previous chapters, it is important to organize the research in such a way that it achieves its objective. This is represented in the research flow diagram \ref{researchFlow}. 
 	
 	\begin{figure*}
 		\begin{center}
@@ -607,44 +608,35 @@ footskip=.25in]{geometry}
 				block_center/.style ={rectangle, draw=black, 
 					text width=8cm, text badly centered,font=\small,},
 				block_left/.style ={rectangle, draw=black,
-					text width=5cm, text badly centered,inner sep=0.5cm,font=\tiny},
+					text width=5cm, text centered,inner sep=0.5cm,font=\tiny},
 				line/.style ={draw, thick, -latex', shorten >=0pt}]
 				% outlining the flowchart using the PGF/TikZ matrix funtion
 				\matrix [column sep=5mm,row sep=3mm] {
 					% enrollment - row 1
-					\node [block_center] (introduction) {\textbf{Introduction}};
+					\node [block_center] (introduction) {\textbf{Data Preprocessing}};
 					& \node [block_left] (introductionLeft) {\begin{itemize}
-							\item Introduction
-							\item Define Problem Statement
-							\item Propose advantages of research
+							\item Obtain training and validation datasets
+							\item Split both datasets into questions, answers and context lists
 					\end{itemize}}; \\
 					% enrollment - row 2
-					\node [block_center] (litreview) {\textbf{Literature Review}}; 
+					\node [block_center] (litreview) {\textbf{Data Preperation}}; 
 					& \node [block_left] (litreviewleft) {\begin{itemize}
-							\item Review literature on previous \& current approaches
-							\item Shortlist state of the art approaches \& critically review them 
-							\item Summarize approaches \& identify drawbacks to improve on
+							\item Add index positions to both training and validation contexts and answers
+							\item Embed token positions into both sets
+							\item Add dataset lengths to both embeded and tokenized training and validation sets
 					\end{itemize}}; \\
 					% enrollment - row 3
-					\node [block_center] (researchMeth) {\textbf{Research Methodology}};
+					\node [block_center] (researchMeth) {\textbf{Benchmarks}};
 					& \node [block_left] (researchMethleft) {\begin{itemize}
-							\item Introduction
-							\item Define Problem Statement
-							\item Propose advantages of research
-							\item Define evaluation metrics 
+							\item Run prepared dataset through ALBERT model and obtain results
+							\item Run prepared dataset through RoBerta model and obtain results
+							\item Run prepared dataset through DistilBert model and obtain results
 					\end{itemize}}; \\
 					% enrollment - row 2
-					\node [block_center] (dc) {\textbf{Data Collection}}; 
+					\node [block_center] (dc) {\textbf{Custom Model Preperation and Evaluation}}; 
 					& \node [block_left] (dcleft) {\begin{itemize}
 							\item Review sample datasets
 							\item Finalize dataset
-					\end{itemize}}; \\
-					% enrollment - row 1
-					\node [block_center] (researchExperiments) {\textbf{Research Experiments}};
-					& \node [block_left] (researchExperimentsleft) {\begin{itemize}
-							\item Pre-process dataset for experiments
-							\item Define experiment criteria
-							\item Prepare \& perfrom experiments
 					\end{itemize}}; \\
 					% enrollment - row 2
 					\node [block_center] (results) {\textbf{Results}}; 
@@ -664,11 +656,8 @@ footskip=.25in]{geometry}
 					\path (researchMeth)  -- (researchMethleft);
 					\path (researchMeth) -- (dc);
 					\path (dc)  -- (dcleft);
-					\path (dc)  -- (researchExperiments);
-					\path (researchExperiments)   -- (researchExperimentsleft);
-					\path (researchExperiments)   -- (results);
-					\path (results)   -- (resultsleft);
-					
+					\path (dc)  -- (results);
+					\path (results)   -- (resultsleft);					
 				\end{scope}
 			\end{tikzpicture}
 		\end{center}
@@ -676,7 +665,7 @@ footskip=.25in]{geometry}
 	\end{figure*}
   \chapter{Architecture Creation}\label{c4}
 
-     In this cahpter we yaba daba do
+WIP
        \section{Drawbacks Of Current Architectures}\label{c41}
        
        To aid in understanding the drawbacks of current architectures the author presents the table below
@@ -690,6 +679,19 @@ footskip=.25in]{geometry}
         The code used to prepare the datasets as well as the results gathered are available as examples from the HuggingFace library documentation, some changes have been mde to them to accomodate upgrades from different dependencies.
         
         For the sake of consistency of the results presented, the experiments were conducted using a Google Colab Pro account with Tesla series GPUs and 16GB of VRAM. Google Colab hosts GPUs in the cloud environment, which impacts performance but is the best alternative to investing and buying a GPU given the silicon shortage and exhorbitant prices in the current market. 
+        
+        \section{Experiment Data Pre-Processing And Analysis}
+        
+        Before performing the experiments on the custom BERT models designed, the SQuAD 2.0 dataset needs to be prepared for use. As outlined chapter \ref{c3researchmeth}, the dataset consists of over 130 thousand questions in the training set. 
+        Below are some of the steps taken to prepare the dataset and some details from the same:
+        
+        \begin{itemize}
+        	\item \textbf{Splitting Dataset}: The dataset consists of 2 files "dev-v2.0.json" and "train-v2.0.json", which serve as validation and training sets. These consist of questions, relevant contexts and answers, respectively. The dataset is prepared by extracting these into separate data structures(lists) for use. 
+        	\item \textbf{Training Context}: Upon reading and splitting the data into training contexts, questions and answers, it can be seen that there are 86,821 contexts provided in the training set and 20,302 contexts in the validation set. 
+        	\item \textbf{Indexing Ends}: The training and validation datasets are then embedded with index position that help identify the answer to the questions in the context layers.
+        	\item \textbf{Tokenization}: The training and validation datasets are then embedded with token positions that are obtained from the pre-trained DistilBertTokenizer available from the Hugging Face library.
+        	\item \textbf{Training and Validation Datasets}: The encoded datasets are then modified to contain the length of each set as that is required by the modified architecture as well as the base architectures.         
+        \end{itemize}
         	     
         
      \section{Existing Architecture Benchmarks}\label{c51}
@@ -700,28 +702,28 @@ footskip=.25in]{geometry}
     	
     	 \begin{figure*}
     		\centering
-    		\begin{subfigure}[b]{0.45\textwidth}
+    		\begin{subfigure}[b]{0.4\textwidth}
     			\centering
     			\includegraphics[width=\textwidth]{../images/Albert_Val_F1.png}
     			\caption{\small ALBERT Validation F1 Score}   
     			\label{albertf1}
     		\end{subfigure}
     		\hfill
-    		\begin{subfigure}[b]{0.45\textwidth}  
+    		\begin{subfigure}[b]{0.4\textwidth}  
     			\centering 
     			\includegraphics[width=\textwidth]{../images/Albert_Val_EM.png}
     			\caption{\small ALBERT Validation Exact Match}  
     			\label{albertem}
     		\end{subfigure}
     		\vskip\baselineskip
-    		\begin{subfigure}[b]{0.45\textwidth}   
+    		\begin{subfigure}[b]{0.4\textwidth}   
     			\centering 
     			\includegraphics[width=\textwidth]{../images/Albert_Val_Loss.png}
     			\caption{\small ALBERT Validation Loss}  
     			\label{albertValLoss}
     		\end{subfigure}
     		\hfill
-    		\begin{subfigure}[b]{0.45\textwidth}   
+    		\begin{subfigure}[b]{0.4\textwidth}   
     			\centering 
     			\includegraphics[width=\textwidth]{../images/Albert_Train_Loss.png}
     			\caption{\small ALBERT Training Loss}
@@ -746,6 +748,40 @@ footskip=.25in]{geometry}
     		\item \textbf{Validation Loss}: $\sim$0.04\%
     	\end{itemize}
 
+
+\begin{figure*}
+	\centering
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../images/Roberta_Val_F1.png}
+		\caption{\small RoBerta Validation F1 Score}
+		\label{robertaf1}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.4\textwidth}  
+		\centering 
+		\includegraphics[width=\textwidth]{../images/Roberta_Val_EM.png}
+		\caption{\small RoBerta Validation Exact Match}
+		\label{robertaem}
+	\end{subfigure}
+	\vskip\baselineskip
+	\begin{subfigure}[b]{0.4\textwidth}   
+		\centering 
+		\includegraphics[width=\textwidth]{../images/Roberta_Val_Loss.png}
+		\caption{\small RoBerta Validation Loss}    
+		\label{robertaValLoss}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering 
+		\includegraphics[width=\textwidth]{../images/Roberta_Train_Loss.png}
+		\caption{\small RoBerta Training Loss}  
+		\label{robertaTrainloss}
+	\end{subfigure}
+	\caption{RoBerta Model Benchmarks} 
+	\label{robertaBenchmarks}
+\end{figure*}
+
 	Figure \ref{robertaBenchmarks} shows the experimental results for the RoBerta architecutre and model. Unlike the ALBERT benchmarks above, the RoBerta benchmark results seem very erratic in nature. The validation F1 and exact match scores for the RoBerta model, while performing significantly better than ALBERT, remain around 83\% and between 74.4 - 75.4\% respectively. This is a roughly 10\% better performance than the ALBERT model, although the training time for the model is around 2 hours per epoch at 1.21 iterations/second. The validation epoch takes around 21 minutes to complete at 4.06 iterations/second. 
 	
 	This increased training time can be attributed to the almost double number of parameters in the model at 125 million, compared to 66 million in ALBERT when using the "roberta-base" pre-trained model. 
@@ -760,39 +796,6 @@ footskip=.25in]{geometry}
 		\item \textbf{Validation Loss}: $\sim$0.5\%
 	\end{itemize}
 
-  \begin{figure*}
-	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{../images/Roberta_Val_F1.png}
-		\caption{\small RoBerta Validation F1 Score}
-		\label{robertaf1}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.45\textwidth}  
-		\centering 
-		\includegraphics[width=\textwidth]{../images/Roberta_Val_EM.png}
-		\caption{\small RoBerta Validation Exact Match}
-		\label{robertaem}
-	\end{subfigure}
-	\vskip\baselineskip
-	\begin{subfigure}[b]{0.45\textwidth}   
-		\centering 
-		\includegraphics[width=\textwidth]{../images/Roberta_Val_Loss.png}
-		\caption{\small RoBerta Validation Loss}    
-		\label{robertaValLoss}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.45\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{../images/Roberta_Train_Loss.png}
-		\caption{\small RoBerta Training Loss}  
-		\label{robertaTrainloss}
-	\end{subfigure}
-	\caption{RoBerta Model Benchmarks} 
-	\label{robertaBenchmarks}
-\end{figure*}
-
 
 	In figure \ref{distilbertBenchmarks}, the behaviour of the model can be observed to be very different from the other models. The behaviour can be described simply as a combination of the behaviours seen for ALBERT and RoBerta models. Just like in \ref{robertaTrainloss}, the training loss for the DistilBert model as seen in \ref{distilbertTrainloss} is extremely consistent and smooth in nature, showing a steady decline till the final epoch. training loss and validation loss, fig. \ref{distilbertValLoss} are lower compared to both models above, the validation F1 and exact match scores are not exactly comparable. 
 	
@@ -800,28 +803,28 @@ footskip=.25in]{geometry}
 	
   \begin{figure*}
 	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
+	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{../images/Distilbert_Val_F1.png}
 		\caption{\small Distilbert Validation F1 Score}
 		\label{distilbertf1}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[b]{0.45\textwidth}  
+	\begin{subfigure}[b]{0.4\textwidth}  
 		\centering 
 		\includegraphics[width=\textwidth]{../images/Distilbert_Val_EM.png}
 		\caption{\small Distilbert Validation Exact Match}
 		\label{distilbertaem}
 	\end{subfigure}
 	\vskip\baselineskip
-	\begin{subfigure}[b]{0.45\textwidth}   
+	\begin{subfigure}[b]{0.4\textwidth}   
 		\centering 
 		\includegraphics[width=\textwidth]{../images/Distilbert_Val_Loss.png}
 		\caption{\small Distilbert Validation Loss}    
 		\label{distilbertValLoss}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[b]{0.45\textwidth}
+	\begin{subfigure}[b]{0.4\textwidth}
 		\centering 
 		\includegraphics[width=\textwidth]{../images/Distilbert_Train_Loss.png}
 		\caption{\small Distilbert Training Loss}  
@@ -844,30 +847,43 @@ While the results for the DistilBert model aren't exactly perfect, it does allow
 
 \section{Custom BERT Model Results}\label{c52}
 
-	As discussed in chapter \ref{c4}, the modifications have been applied to the DistilBert model, specifically the DistilBertModel class offered by the HuggingFace Transformers library \citep{hfTransformers}. 
+	As discussed in chapter \ref{c4}, the modifications have been applied to the DistilBert model, specifically the DistilBertModel class offered by the HuggingFace Transformers library \citep{hfTransformers} and a modified implemetation of an Answer Pointer Network designed using PyTorch by \citep{pointernetGit} is used to generate the answer pointer layer results for these custom models. All the custom models utilised the same pre-trained "distilbert-base-uncased" class from the Hugging Face Transformers library.	
 	
-	In figure \ref{adam5e} it can be observed that the model takes significantly longer to train than a regular DistilBert model which takes around 37 minutes. h
-	Though the training and validation times are higher than existing models, the training loss values track consistently down and are comparable to the ones seen in \ref{distilbertTrainloss}.
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.35]{../images/AdamW5e.png}
+		\caption{Custom BERT Model with AdamW Optimizer at 5e-5 rate}\label{adam5e}
+	\end{figure}
 	
-	Due to timing limitations on Google Colab the experiments couldn't fully complete and had to be run for a lower number of epochs. However, the results are comparable to the DistilBert model.
+	The first figure \ref{adam5e} shows the various epochs for the modified DistilBert model with the Answer Pointer network implemented with a batch size of 8 and the AdamW optimizer with a learning rate of 5e-5, which  are the same parameters as the benchmark models. 
 	
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.3]{../images/AdamW5e.png}
-	\caption{Custom BERT Model with AdamW Optimizer at 5e-5 rate}\label{adam5e}
-\end{figure}
-
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.3]{../images/AdamW3e.png}
-	\caption{Custom BERT Model with AdamW Optimizer at 3e-5 rate}\label{adam3e}
-\end{figure}
-
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.3]{../images/AdaFactor3e.png}
-	\caption{Custom BERT Model with AdaFactor Optimizer at 3e-5 rate}\label{ada3e}
-\end{figure}
+	In figure \ref{adam5e} it can be observed that the model takes significantly longer to train than a regular DistilBert model which takes around 37 minutes. Though the training and validation times are higher than existing models, the training loss values track consistently down and are comparable to the ones seen in \ref{distilbertTrainloss}. The increased training and validation set times can however be less than the ones shown as there is a significant decrease in the validation set running time towards the 5th epoch. This is quite peculiar and goes to highlight the distributed nature of the cloud based training environment that is Google Colab. 
+	
+	The F1 scores for the model continuously hover around the 72\% mark, which is a slight improvement over the 70\% mark observed for the benchmarked DistilBert model as seen in \ref{distilbertf1}.
+	The validation loss for the custom model hovers lower than the values in the DistilBert model as well. 
+	
+	In the next experiment, shown in fig. \ref{adam3e}, a different learning rate is used with the same AdamW optimizer. Using a leaerning rate of 3e-5 or 0.00003, we can see that there is a slight increase in F1 and exact match scores, reaching almost 75\% and 65\% values respectively. This suggests that the custom model responds well to lower learning rates.
+	
+	The training times remain roughly the same with a sudden drop in the validation time seen again towards the end. 
+	
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.35]{../images/AdamW3e.png}
+			\caption{Custom BERT Model with AdamW Optimizer at 3e-5 rate}\label{adam3e}
+		\end{figure}
+		
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.35]{../images/AdaFactor3e.png}
+			\caption{Custom BERT Model with AdaFactor Optimizer at 3e-5 rate}\label{ada3e}
+		\end{figure}
+	
+	In the final experiment, that is shown in fig. \ref{ada3e}, the custom model is run with a modified AdaFactor optimizer with a learning rate of 3e-5, this again presents similar results to the results in the previous experiment where the lower value of the learning rate helped the custom model learn better. The training loss for this run also falls similar to the loss in the previous custom model experiments as well as the DistilBert benchmark, while maintaing an F1 score that is higher than the DistilBert benchmark but roughly similar to the custom model with AdamW optimizer at a learning rate of 3e-5.
+	
+	
+	\section{Discussion}
+	
+	The experiments conducted 
 
 
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -98,11 +98,11 @@ Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf.
 \newblock \emph{CoRR}, abs/1910.01108, 2019.
 \newblock URL \url{http://arxiv.org/abs/1910.01108}.
 
-\bibitem[HuggingFace()]{hfTransformers}
+\bibitem[HuggingFace(2021)]{hfTransformers}
 HuggingFace.
-\newblock Transformers.
+\newblock Transformers, June 2021.
 \newblock URL \url{https://huggingface.co/transformers/}.
-\newblock Accessed: 2021-04-16.
+\newblock Accessed: 2021-06-20.
 
 \bibitem[Rajpurkar(2021)]{squad}
 Pranav Rajpurkar.
@@ -205,6 +205,13 @@ Wei Wang, Ming Yan, and Chen Wu.
 \newblock Multi-granularity hierarchical attention fusion networks for reading
   comprehension and question answering.
 \newblock \emph{arXiv preprint arXiv:1811.11934}, 2018.
+
+\bibitem[Gur(2017)]{pointernetGit}
+Shir Gur.
+\newblock Pointer net, Sep 2017.
+\newblock URL
+  \url{https://github.com/shirgur/PointerNet/blob/master/PointerNet.py}.
+\newblock Accessed: 2021-07-4.
 
 \bibitem[Pal et~al.(2019)Pal, Ebrahimi, Zulfiqar, Fu, Zhang, Migacz, Nellans,
   and Gupta]{multigpu1}

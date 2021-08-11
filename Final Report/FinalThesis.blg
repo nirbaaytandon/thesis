@@ -7,50 +7,51 @@ Reallocating 'name_of_file' (item size: 1) to 12 items.
 Database file #1: FinalThesis.bib
 Warning--I'm ignoring squad's extra "author" field
 --line 141 of file FinalThesis.bib
+Warning--I'm ignoring hfTransformers's extra "author" field
+--line 159 of file FinalThesis.bib
 Warning--empty journal in lstmBiLSTM
 Warning--empty journal in lunar
-Warning--empty year in hfTransformers
 Warning--empty journal in wsj
 Warning--empty journal in radford2018improving
-You've used 33 entries,
+You've used 34 entries,
             2481 wiz_defined-function locations,
-            735 strings with 10700 characters,
-and the built_in function-call counts, 12585 in all, are:
-= -- 949
-> -- 887
-< -- 14
-+ -- 332
-- -- 266
-* -- 982
-:= -- 2153
-add.period$ -- 117
-call.type$ -- 33
-change.case$ -- 66
-chr.to.int$ -- 33
+            745 strings with 10873 characters,
+and the built_in function-call counts, 12856 in all, are:
+= -- 974
+> -- 894
+< -- 15
++ -- 336
+- -- 268
+* -- 997
+:= -- 2195
+add.period$ -- 121
+call.type$ -- 34
+change.case$ -- 68
+chr.to.int$ -- 34
 cite$ -- 38
-duplicate$ -- 622
-empty$ -- 1027
-format.name$ -- 311
-if$ -- 2602
+duplicate$ -- 636
+empty$ -- 1057
+format.name$ -- 314
+if$ -- 2662
 int.to.chr$ -- 1
-int.to.str$ -- 34
+int.to.str$ -- 35
 missing$ -- 30
-newline$ -- 190
-num.names$ -- 99
-pop$ -- 283
+newline$ -- 196
+num.names$ -- 102
+pop$ -- 292
 preamble$ -- 1
-purify$ -- 33
+purify$ -- 34
 quote$ -- 0
-skip$ -- 390
+skip$ -- 401
 stack$ -- 0
-substring$ -- 233
-swap$ -- 91
+substring$ -- 235
+swap$ -- 95
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 231
-warning$ -- 5
-while$ -- 78
+type$ -- 238
+warning$ -- 4
+while$ -- 80
 width$ -- 0
-write$ -- 451
+write$ -- 466
 (There were 6 warnings)
