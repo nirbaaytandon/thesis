@@ -7,49 +7,50 @@ Reallocating 'name_of_file' (item size: 1) to 12 items.
 Database file #1: FinalThesis.bib
 Warning--I'm ignoring squad's extra "author" field
 --line 141 of file FinalThesis.bib
+Warning--I'm ignoring hfTransformers's extra "author" field
+--line 159 of file FinalThesis.bib
 Warning--empty journal in lstmBiLSTM
 Warning--empty journal in lunar
-Warning--empty year in hfTransformers
 Warning--empty journal in wsj
 Warning--empty journal in radford2018improving
 You've used 34 entries,
             2481 wiz_defined-function locations,
-            741 strings with 10891 characters,
-and the built_in function-call counts, 12922 in all, are:
-= -- 977
-> -- 908
-< -- 14
-+ -- 340
-- -- 272
-* -- 1008
-:= -- 2212
+            745 strings with 10873 characters,
+and the built_in function-call counts, 12856 in all, are:
+= -- 974
+> -- 894
+< -- 15
++ -- 336
+- -- 268
+* -- 997
+:= -- 2195
 add.period$ -- 121
 call.type$ -- 34
 change.case$ -- 68
 chr.to.int$ -- 34
-cite$ -- 39
-duplicate$ -- 640
-empty$ -- 1055
-format.name$ -- 318
-if$ -- 2672
+cite$ -- 38
+duplicate$ -- 636
+empty$ -- 1057
+format.name$ -- 314
+if$ -- 2662
 int.to.chr$ -- 1
 int.to.str$ -- 35
-missing$ -- 31
+missing$ -- 30
 newline$ -- 196
 num.names$ -- 102
-pop$ -- 289
+pop$ -- 292
 preamble$ -- 1
 purify$ -- 34
 quote$ -- 0
 skip$ -- 401
 stack$ -- 0
 substring$ -- 235
-swap$ -- 93
+swap$ -- 95
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 238
-warning$ -- 5
+warning$ -- 4
 while$ -- 80
 width$ -- 0
 write$ -- 466

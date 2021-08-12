@@ -15,21 +15,22 @@
 \BOOKMARK [1][-]{section.2.2}{Transformers}{chapter.2}% 15
 \BOOKMARK [2][-]{subsection.2.2.1}{Self Attention}{section.2.2}% 16
 \BOOKMARK [2][-]{subsection.2.2.2}{Improvements of Transformer Architectures}{section.2.2}% 17
-\BOOKMARK [1][-]{section.2.3}{Summary}{chapter.2}% 18
-\BOOKMARK [0][-]{chapter.3}{Research Methodology}{}% 19
-\BOOKMARK [1][-]{section.3.1}{Data Selection}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.2}{Data Pre-processing And Transformation}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.3}{Research Hypothesis}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.4}{Model Evaluation Metrics}{chapter.3}% 23
-\BOOKMARK [0][-]{chapter.4}{Architecture Creation}{}% 24
-\BOOKMARK [1][-]{section.4.1}{Drawbacks Of Current Architectures}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.2}{Proposed Architecture Improvements}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.3}{Architecture Refinement}{chapter.4}% 27
-\BOOKMARK [0][-]{chapter.5}{Results And Discussion}{}% 28
-\BOOKMARK [1][-]{section.5.1}{Existing Models And Benchmarks}{chapter.5}% 29
-\BOOKMARK [0][-]{chapter.6}{Conclusions And Recommendations}{}% 30
-\BOOKMARK [1][-]{section.6.1}{Recommendations}{chapter.6}% 31
-\BOOKMARK [0][-]{chapter*.24}{References}{}% 32
-\BOOKMARK [0][-]{section*.25}{Appendices}{}% 33
+\BOOKMARK [0][-]{chapter.3}{Research Methodology}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Data Selection}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Research Hypothesis}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.3}{Model Evaluation Metrics}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.4}{Research Flow Diagram}{chapter.3}% 22
+\BOOKMARK [0][-]{chapter.4}{Architecture Creation}{}% 23
+\BOOKMARK [1][-]{section.4.1}{Drawbacks Of Current Architectures}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.2}{Proposed Architecture Improvements}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.3}{Architecture Refinement}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 27
+\BOOKMARK [1][-]{section.5.1}{Experiment Data Pre-Processing And Analysis}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.2}{Existing Architecture Benchmarks}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.3}{Custom BERT Model Results}{chapter.5}% 30
+\BOOKMARK [0][-]{chapter.6}{Conclusions And Recommendations}{}% 31
+\BOOKMARK [1][-]{section.6.1}{Recommendations}{chapter.6}% 32
+\BOOKMARK [0][-]{section*.28}{Appendices}{}% 33
 \BOOKMARK [0][-]{appendix.1.A}{Appendix Gantt Chart}{}% 34
 \BOOKMARK [0][-]{appendix.1.B}{Appendix Research Proposal}{}% 35
+\BOOKMARK [0][-]{appendix*.30}{References}{}% 36
