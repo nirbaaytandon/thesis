@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  11 AUG 2021 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.21)  12 AUG 2021 11:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -930,7 +930,12 @@ LaTeX Font Info:    ... okay on input line 56.
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box84
 Package hyperref Info: Link coloring OFF on input line 56.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -947,7 +952,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 56.
 LaTeX Info: Redefining \pageref on input line 56.
 LaTeX Info: Redefining \nameref on input line 56.
- (FinalThesis.out) (FinalThesis.out)
+
+(./FinalThesis.out) (./FinalThesis.out)
 \@outlinefile=\write5
 \openout5 = `FinalThesis.out'.
 
@@ -1018,13 +1024,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92 		
-        [1
+l.92 
+      [1
 
 
 ] [2] [3] [4]
 Chapter 2.
-<../images/lstm-memorycell.png, id=403, 1169.36874pt x 492.84125pt>
+<../images/lstm-memorycell.png, id=406, 1169.36874pt x 492.84125pt>
 File: ../images/lstm-memorycell.png Graphic file (type png)
 <use ../images/lstm-memorycell.png>
 Package pdftex.def Info: ../images/lstm-memorycell.png  used on input line 155.
@@ -1036,7 +1042,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [5
 
 ]
-<../images/lstm-network.png, id=419, 1276.77pt x 736.7525pt>
+<../images/lstm-network.png, id=422, 1276.77pt x 736.7525pt>
 File: ../images/lstm-network.png Graphic file (type png)
 <use ../images/lstm-network.png>
 Package pdftex.def Info: ../images/lstm-network.png  used on input line 189.
@@ -1050,7 +1056,7 @@ Overfull \hbox (8.36206pt too wide) in paragraph at lines 189--190
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6 <../images/lstm-memorycell.png>] [7 <../images/lstm-network.png>]
-<../images/lstm-biLstm.png, id=449, 537.00626pt x 558.085pt>
+<../images/lstm-biLstm.png, id=453, 537.00626pt x 558.085pt>
 File: ../images/lstm-biLstm.png Graphic file (type png)
 <use ../images/lstm-biLstm.png>
 Package pdftex.def Info: ../images/lstm-biLstm.png  used on input line 216.
@@ -1060,20 +1066,20 @@ Package pdftex.def Info: ../images/lstm-biLstm.png  used on input line 216.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [8 <../images/lstm-biLstm.png>]
-<../images/lstm-bilstmhaig.png, id=469, 732.7375pt x 297.11pt>
+<../images/lstm-bilstmhaig.png, id=473, 732.7375pt x 297.11pt>
 File: ../images/lstm-bilstmhaig.png Graphic file (type png)
 <use ../images/lstm-bilstmhaig.png>
 Package pdftex.def Info: ../images/lstm-bilstmhaig.png  used on input line 244.
 
 (pdftex.def)             Requested size: 293.08981pt x 118.84189pt.
-<../images/lstm-bilstmhaigcnn.png, id=475, 783.92876pt x 482.80376pt>
+<../images/lstm-bilstmhaigcnn.png, id=479, 783.92876pt x 482.80376pt>
 File: ../images/lstm-bilstmhaigcnn.png Graphic file (type png)
 <use ../images/lstm-bilstmhaigcnn.png>
 Package pdftex.def Info: ../images/lstm-bilstmhaigcnn.png  used on input line 2
 54.
 (pdftex.def)             Requested size: 274.37918pt x 168.98384pt.
  [9 <../images/lstm-bilstmhaig.png>]
-<../images/lstm-bilstmhaighattention.png, id=492, 922.44624pt x 352.31625pt>
+<../images/lstm-bilstmhaighattention.png, id=496, 922.44624pt x 352.31625pt>
 File: ../images/lstm-bilstmhaighattention.png Graphic file (type png)
 <use ../images/lstm-bilstmhaighattention.png>
 Package pdftex.def Info: ../images/lstm-bilstmhaighattention.png  used on input
@@ -1082,12 +1088,12 @@ Package pdftex.def Info: ../images/lstm-bilstmhaighattention.png  used on input
  [10 <../images/lstm-bilstmhaigcnn.png>] [11 <../images/lstm-bilstmhaighattenti
 on.png>]
 [12]
-<../images/lstmMatch.png, id=557, 910.90312pt x 519.44063pt>
+<../images/lstmMatch.png, id=561, 910.90312pt x 519.44063pt>
 File: ../images/lstmMatch.png Graphic file (type png)
 <use ../images/lstmMatch.png>
 Package pdftex.def Info: ../images/lstmMatch.png  used on input line 350.
 (pdftex.def)             Requested size: 364.3548pt x 207.77257pt.
-<../images/lstm-intent1.png, id=565, 872.25874pt x 656.4525pt>
+<../images/lstm-intent1.png, id=569, 872.25874pt x 656.4525pt>
 File: ../images/lstm-intent1.png Graphic file (type png)
 <use ../images/lstm-intent1.png>
 Package pdftex.def Info: ../images/lstm-intent1.png  used on input line 378.
@@ -1096,7 +1102,7 @@ Package pdftex.def Info: ../images/lstm-intent1.png  used on input line 378.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../images/lstm-intent2.png, id=578, 808.01875pt x 564.1075pt>
+<../images/lstm-intent2.png, id=582, 808.01875pt x 564.1075pt>
 File: ../images/lstm-intent2.png Graphic file (type png)
 <use ../images/lstm-intent2.png>
 Package pdftex.def Info: ../images/lstm-intent2.png  used on input line 388.
@@ -1106,7 +1112,7 @@ Package pdftex.def Info: ../images/lstm-intent2.png  used on input line 388.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [14 <../images/lstm-intent1.png>]
-<../images/transformer.png, id=604, 508.90125pt x 599.99156pt>
+<../images/transformer.png, id=609, 508.90125pt x 599.99156pt>
 File: ../images/transformer.png Graphic file (type png)
 <use ../images/transformer.png>
 Package pdftex.def Info: ../images/transformer.png  used on input line 404.
@@ -1115,7 +1121,7 @@ Package pdftex.def Info: ../images/transformer.png  used on input line 404.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15 <../images/lstm-intent2.png>] [16 <../images/transformer.png>]
+[15 <../images/lstm-intent2.png>] [16 <../images/transformer.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 426--429
 
  []
@@ -1125,7 +1131,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 426--429
 
  []
 
-<../images/multihead.png, id=629, 746.03719pt x 436.63126pt>
+<../images/multihead.png, id=634, 746.03719pt x 436.63126pt>
 File: ../images/multihead.png Graphic file (type png)
 <use ../images/multihead.png>
 Package pdftex.def Info: ../images/multihead.png  used on input line 434.
@@ -1138,8 +1144,8 @@ Overfull \hbox (8.64336pt too wide) in paragraph at lines 453--455
 it/12 W[] \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 R[]$
  []
 
-[17 <../images/multihead.png>]
-<../images/BERT.png, id=657, 1086.0575pt x 479.7925pt>
+[17 <../images/multihead.PNG>]
+<../images/BERT.png, id=662, 1086.0575pt x 479.7925pt>
 File: ../images/BERT.png Graphic file (type png)
 <use ../images/BERT.png>
 Package pdftex.def Info: ../images/BERT.png  used on input line 469.
@@ -1233,137 +1239,137 @@ LaTeX Font Warning: Font shape `U/lasy/m/n' in size <0.7> not available
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <0.5> not available
 (Font)              size <5> substituted on input line 573.
 
-[22] [23] [24]
+[22] [23]
 Chapter 4.
-[25
+[24
 
 ]
 Chapter 5.
-[26
+[25
 
 ]
 
-LaTeX Warning: Reference `c32' on page 27 undefined on input line 701.
+LaTeX Warning: Reference `c32' on page 26 undefined on input line 703.
 
-<../images/Albert_Val_F1.png, id=758, 331.2375pt x 200.75pt>
+<../images/Albert_Val_F1.png, id=760, 331.2375pt x 200.75pt>
 File: ../images/Albert_Val_F1.png Graphic file (type png)
 <use ../images/Albert_Val_F1.png>
-Package pdftex.def Info: ../images/Albert_Val_F1.png  used on input line 709.
+Package pdftex.def Info: ../images/Albert_Val_F1.png  used on input line 711.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Albert_Val_EM.png, id=759, 331.2375pt x 200.75pt>
+<../images/Albert_Val_EM.png, id=761, 331.2375pt x 200.75pt>
 File: ../images/Albert_Val_EM.png Graphic file (type png)
 <use ../images/Albert_Val_EM.png>
-Package pdftex.def Info: ../images/Albert_Val_EM.png  used on input line 716.
+Package pdftex.def Info: ../images/Albert_Val_EM.png  used on input line 718.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Albert_Val_Loss.png, id=760, 331.2375pt x 200.75pt>
+<../images/Albert_Val_Loss.png, id=762, 331.2375pt x 200.75pt>
 File: ../images/Albert_Val_Loss.png Graphic file (type png)
 <use ../images/Albert_Val_Loss.png>
-Package pdftex.def Info: ../images/Albert_Val_Loss.png  used on input line 723.
+Package pdftex.def Info: ../images/Albert_Val_Loss.png  used on input line 725.
 
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Albert_Train_Loss.png, id=761, 331.2375pt x 200.75pt>
+<../images/Albert_Train_Loss.png, id=763, 331.2375pt x 200.75pt>
 File: ../images/Albert_Train_Loss.png Graphic file (type png)
 <use ../images/Albert_Train_Loss.png>
 Package pdftex.def Info: ../images/Albert_Train_Loss.png  used on input line 73
-0.
+2.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-[27 <../images/Albert_Val_F1.png> <../images/Albert_Val_EM.png> <../images/Albe
+[26 <../images/Albert_Val_F1.png> <../images/Albert_Val_EM.png> <../images/Albe
 rt_Val_Loss.png> <../images/Albert_Train_Loss.png>]
-<../images/Roberta_Val_F1.png, id=776, 331.2375pt x 200.75pt>
+<../images/Roberta_Val_F1.png, id=778, 331.2375pt x 200.75pt>
 File: ../images/Roberta_Val_F1.png Graphic file (type png)
 <use ../images/Roberta_Val_F1.png>
-Package pdftex.def Info: ../images/Roberta_Val_F1.png  used on input line 758.
+Package pdftex.def Info: ../images/Roberta_Val_F1.png  used on input line 760.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Roberta_Val_EM.png, id=777, 331.2375pt x 200.75pt>
+<../images/Roberta_Val_EM.png, id=779, 331.2375pt x 200.75pt>
 File: ../images/Roberta_Val_EM.png Graphic file (type png)
 <use ../images/Roberta_Val_EM.png>
-Package pdftex.def Info: ../images/Roberta_Val_EM.png  used on input line 765.
+Package pdftex.def Info: ../images/Roberta_Val_EM.png  used on input line 767.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Roberta_Val_Loss.png, id=778, 331.2375pt x 200.75pt>
+<../images/Roberta_Val_Loss.png, id=780, 331.2375pt x 200.75pt>
 File: ../images/Roberta_Val_Loss.png Graphic file (type png)
 <use ../images/Roberta_Val_Loss.png>
-Package pdftex.def Info: ../images/Roberta_Val_Loss.png  used on input line 772
+Package pdftex.def Info: ../images/Roberta_Val_Loss.png  used on input line 774
 .
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Roberta_Train_Loss.png, id=779, 331.2375pt x 200.75pt>
+<../images/Roberta_Train_Loss.png, id=781, 331.2375pt x 200.75pt>
 File: ../images/Roberta_Train_Loss.png Graphic file (type png)
 <use ../images/Roberta_Train_Loss.png>
 Package pdftex.def Info: ../images/Roberta_Train_Loss.png  used on input line 7
-79.
+81.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
- [28 <../images/Roberta_Val_F1.png> <../images/Roberta_Val_EM.png> <../images/R
+ [27 <../images/Roberta_Val_F1.png> <../images/Roberta_Val_EM.png> <../images/R
 oberta_Val_Loss.png> <../images/Roberta_Train_Loss.png>]
-<../images/Distilbert_Val_F1.png, id=794, 331.2375pt x 200.75pt>
+<../images/Distilbert_Val_F1.png, id=797, 331.2375pt x 200.75pt>
 File: ../images/Distilbert_Val_F1.png Graphic file (type png)
 <use ../images/Distilbert_Val_F1.png>
 Package pdftex.def Info: ../images/Distilbert_Val_F1.png  used on input line 81
-0.
+2.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Distilbert_Val_EM.png, id=795, 331.2375pt x 200.75pt>
+<../images/Distilbert_Val_EM.png, id=798, 331.2375pt x 200.75pt>
 File: ../images/Distilbert_Val_EM.png Graphic file (type png)
 <use ../images/Distilbert_Val_EM.png>
 Package pdftex.def Info: ../images/Distilbert_Val_EM.png  used on input line 81
-7.
+9.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Distilbert_Val_Loss.png, id=796, 331.2375pt x 200.75pt>
+<../images/Distilbert_Val_Loss.png, id=799, 331.2375pt x 200.75pt>
 File: ../images/Distilbert_Val_Loss.png Graphic file (type png)
 <use ../images/Distilbert_Val_Loss.png>
 Package pdftex.def Info: ../images/Distilbert_Val_Loss.png  used on input line 
-824.
+826.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Distilbert_Train_Loss.png, id=797, 331.2375pt x 200.75pt>
+<../images/Distilbert_Train_Loss.png, id=800, 331.2375pt x 200.75pt>
 File: ../images/Distilbert_Train_Loss.png Graphic file (type png)
 <use ../images/Distilbert_Train_Loss.png>
 Package pdftex.def Info: ../images/Distilbert_Train_Loss.png  used on input lin
-e 831.
+e 833.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
- [29 <../images/Distilbert_Val_F1.png> <../images/Distilbert_Val_EM.png> <../im
+ [28 <../images/Distilbert_Val_F1.png> <../images/Distilbert_Val_EM.png> <../im
 ages/Distilbert_Val_Loss.png> <../images/Distilbert_Train_Loss.png>]
-<../images/AdamW5e.png, id=812, 847.165pt x 704.6325pt>
+<../images/AdamW5e.png, id=814, 847.165pt x 704.6325pt>
 File: ../images/AdamW5e.png Graphic file (type png)
 <use ../images/AdamW5e.png>
-Package pdftex.def Info: ../images/AdamW5e.png  used on input line 856.
+Package pdftex.def Info: ../images/AdamW5e.png  used on input line 858.
 (pdftex.def)             Requested size: 296.51219pt x 246.62508pt.
- [30 <../images/AdamW5e.png>]
-<../images/AdamW3e.png, id=824, 700.86844pt x 520.19344pt>
+ [29 <../images/AdamW5e.png>]
+<../images/AdamW3e.png, id=827, 700.86844pt x 520.19344pt>
 File: ../images/AdamW3e.png Graphic file (type png)
 <use ../images/AdamW3e.png>
-Package pdftex.def Info: ../images/AdamW3e.png  used on input line 873.
+Package pdftex.def Info: ../images/AdamW3e.png  used on input line 875.
 (pdftex.def)             Requested size: 245.30763pt x 182.07042pt.
-<../images/AdaFactor3e.png, id=825, 949.5475pt x 727.71875pt>
+<../images/AdaFactor3e.png, id=828, 949.5475pt x 727.71875pt>
 File: ../images/AdaFactor3e.png Graphic file (type png)
 <use ../images/AdaFactor3e.png>
-Package pdftex.def Info: ../images/AdaFactor3e.png  used on input line 879.
+Package pdftex.def Info: ../images/AdaFactor3e.png  used on input line 881.
 (pdftex.def)             Requested size: 332.3466pt x 254.70537pt.
- [31 <../images/AdamW3e.png> <../images/AdaFactor3e.png>] [32]
+ [30 <../images/AdamW3e.png> <../images/AdaFactor3e.png>] [31]
 Chapter 6.
-[33
+[32
 
-] [34] [35
+] [33] [34
 
 
 ]
 Appendix A.
-<../images/GanttChart-mid.png, id=860, 1059.96pt x 819.06pt>
+<../images/GanttChart-mid.png, id=862, 1059.96pt x 819.06pt>
 File: ../images/GanttChart-mid.png Graphic file (type png)
 <use ../images/GanttChart-mid.png>
-Package pdftex.def Info: ../images/GanttChart-mid.png  used on input line 923.
+Package pdftex.def Info: ../images/GanttChart-mid.png  used on input line 925.
 (pdftex.def)             Requested size: 582.9798pt x 450.48439pt.
 
-Overfull \hbox (11.97026pt too wide) in paragraph at lines 923--924
+Overfull \hbox (11.97026pt too wide) in paragraph at lines 925--926
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[36
+[35
 
-] [37 <../images/GanttChart-mid.png>]
+] [36 <../images/GanttChart-mid.png>]
 Appendix B.
-(FinalThesis.bbl [38
+(./FinalThesis.bbl [37
 
-] [39
+] [38
 
 ]
 Underfull \hbox (badness 3460) in paragraph at lines 102--106
@@ -1383,7 +1389,7 @@ Underfull \hbox (badness 2197) in paragraph at lines 128--132
 em-ory.  \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
  []
 
-[40]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 226--230
 []\OT1/cmr/m/n/12 Giuliano Gi-acaglia.  How to scale train-ing on mul-ti-ple
  []
@@ -1405,12 +1411,12 @@ Package caption Warning: Unused \captionsetup[ table] on input line \caption@op
 t@ table@lineno .
 See the caption package documentation for explanation.
 
-[41]
-
-LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     935.
-
- (FinalThesis.aux)
+[40]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 937.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 937.
+ (./FinalThesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 937.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 937.
 Package rerunfilecheck Info: File `FinalThesis.out' has not changed.
 (rerunfilecheck)             Checksum: 4BAEDBA6169D723D6F0922AC2E93D270;2351.
 
@@ -1421,44 +1427,41 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 787.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 937.
  ) 
 Here is how much of TeX's memory you used:
- 25815 strings out of 479799
- 509053 string characters out of 2869722
- 868007 words of memory out of 3000000
- 42072 multiletter control sequences out of 15000+200000
- 552216 words of font info for 100 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 108i,21n,111p,1099b,1162s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\nirbh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-0600.pk> <C:\Users\nirbh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\tcrm1200.pk><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/nirbh/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/nirbh/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/nirbh/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/nir
-bh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
-Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.
-pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmmi8.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr10.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/nirbh/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nirbh/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nirbh/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ni
-rbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
-/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8
-.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmtt12.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/symbols/msbm10.pfb>
-Output written on FinalThesis.pdf (49 pages, 1649687 bytes).
+ 25459 strings out of 483183
+ 488410 string characters out of 5966292
+ 819290 words of memory out of 5000000
+ 39742 multiletter control sequences out of 15000+600000
+ 549466 words of font info for 95 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 60i,21n,69p,1097b,1148s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/nirbhay/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0600.6
+00pk> </home/nirbhay/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm120
+0.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/symbols/msbm10.pfb>
+Output written on FinalThesis.pdf (48 pages, 1534375 bytes).
 PDF statistics:
- 1023 PDF objects out of 1200 (max. 8388607)
- 175 named destinations out of 1000 (max. 500000)
+ 1027 PDF objects out of 1200 (max. 8388607)
+ 890 compressed objects within 9 object streams
+ 174 named destinations out of 1000 (max. 500000)
  441 words of extra memory for PDF output out of 10000 (max. 10000000)
 
