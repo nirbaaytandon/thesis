@@ -18,10 +18,7 @@
 \contentsline {subsection}{\numberline {2.2.1}Self Attention}{16}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Improvements of Transformer Architectures}{18}{subsection.2.2.2}%
 \contentsline {subsubsection}{BERT}{18}{subsection.2.2.2}%
-\contentsline {subsubsection}{ALBERT}{19}{figure.caption.19}%
-\contentsline {subsubsection}{ROBERTA}{19}{figure.caption.19}%
-\contentsline {subsubsection}{DISTILBERT}{19}{figure.caption.19}%
-\contentsline {section}{\numberline {2.3}Summary}{19}{section.2.3}%
+\contentsline {subsubsection}{DistilBERT}{19}{figure.caption.19}%
 \contentsline {chapter}{\numberline {3}Research Methodology}{20}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Data Selection}{20}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Research Hypothesis}{21}{section.3.2}%
@@ -30,7 +27,6 @@
 \contentsline {chapter}{\numberline {4}Architecture Creation}{24}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Drawbacks Of Current Architectures}{24}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Proposed Architecture Improvements}{24}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Architecture Refinement}{24}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Results}{25}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Experiment Data Pre-Processing And Analysis}{25}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Existing Architecture Benchmarks}{26}{section.5.2}%

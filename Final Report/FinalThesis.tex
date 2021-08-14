@@ -100,12 +100,12 @@ footskip=.25in]{geometry}
 
 
         \section{Aims And Objectives}\label{12}
-        	The main aim of this research is to propose an improvement to the transformer architecture that can perform better at Q\&A using the SQuAD 2.0 dataset. This shall require understanding the nuances of various Transformer-type architectures like ALBERT \citep{albert}, RoBerta \citep{roberta} and DistilBert \citep{distil} which are variations of the BERT \citep{bert} architecture.
+        	The main aim of this research is to propose an improvement to the transformer architecture that can perform better at Q\&A using the SQuAD 2.0 dataset. This shall require understanding the nuances of various Transformer-type architectures like ALBERT \citep{albert}, RoBerta \citep{roberta} and DistilBERT \citep{distil} which are variations of the BERT \citep{bert} architecture.
 
         	To achieve the main aim of this research it  is important to first outline a few steps that will be taken:
         \begin{enumerate}
         	\item Obtain SQuAD2.0 dataset and prepare it for training
-        	\item Implement the existing models such as ALBERT, RoBerta and DistilBert that are available via libraries such as HuggingFace \citep{hfTransformers} and PyTorch  on the dataset
+        	\item Implement the existing models such as ALBERT, RoBerta and DistilBERT that are available via libraries such as HuggingFace \citep{hfTransformers} and PyTorch  on the dataset
         	\item Obtain F1, Exact Match(EM), Training Loss and Validation Loss scores for existing models to treat them as our benchmark values
         	\item Identify drawbacks of the current architectures
         	\item Design our architecture and evaluate its performance against the provided benchmark scores
@@ -119,7 +119,7 @@ footskip=.25in]{geometry}
 
         \section{Significance Of The Study}\label{14}
 
-        The current state of the art systems, some of which have been highlighted in section \ref{c11}, suffer from various drawbacks and even the best models have only been able to achieve an EM score of 90.871 with an F1 score of 93.183 on the SQuAD 2.0 leaderboard \citep{squad}. Current models such as ALBERT and DistilBert are highly useful, however, they aren't scalable entirely for QA applications. A narrowed focus on the specific field of Question-Answering can help eliminate certain issues with the current models such as contextual uderstanding and being able to get correct responses to questions.
+        The current state of the art systems, some of which have been highlighted in section \ref{c11}, suffer from various drawbacks and even the best models have only been able to achieve an EM score of 90.871 with an F1 score of 93.183 on the SQuAD 2.0 leaderboard \citep{squad}. Current models such as ALBERT and DistilBERT are highly useful, however, they aren't scalable entirely for QA applications. A narrowed focus on the specific field of Question-Answering can help eliminate certain issues with the current models such as contextual uderstanding and being able to get correct responses to questions.
 
         \section{Structure Of The Study}\label{15}
 
@@ -473,20 +473,26 @@ footskip=.25in]{geometry}
 			BERT was tested on The General Language Understanding Evaluation (GLUE) benchmark \citep{wang} which has a large number of diverse NLU tasks.
 			BERT performed extremely well on the 11 NLP tasks that it ran against. It showed an average accuracy improvement of 4.5\% and 7\% when compared to the previous state of the art models. Results of BERT and its significant gains make it one of the best candidate models for NLU tasks.
 
-	       \subsubsection{ALBERT}\label{albertLitrev}
-	    \citep{albert}
+%	       \subsubsection{ALBERT}\label{albertLitrev}
+%	    \citep{albert}
 
-	     \subsubsection{ROBERTA}\label{robertaLitrev}
-	      \citep{roberta}
+%	     \subsubsection{ROBERTA}\label{robertaLitrev}
+%	      \citep{roberta}
 
-	    \subsubsection{DISTILBERT}\label{distilLitrev}
-	     \citep{distil}
+	    \subsubsection{DistilBERT}\label{distilLitrev}
+	    The DistilBERT model by \citep{distil} was created with a few factors in  mind such as model size, complexity, ability to generalize tasks and the high environmental cost of running larger models. Models like RoBerta \citep{roberta}, BERT \citep{bert} etc. have several hundred million model parameters that take particularly longer to train, even through use of advanced pre-training techniques. 
+	    
+	    Larger models often tend to exponential increase model computational requirements \citep{schwarts}, these models also fail to generalize. The DistilBERT model shows that by applying a triple loss function on top of a smaller Transformer \citep{atayl} that is trained using a knowledge distillation compression technique \citep{knowledgeDistilation} can provide similar results in 60\% less time. 
+	    
+	    The work proposes a \textit{"Student-Teacher"} architecture. The DistilBERT model, which is the student architecture, has the same kind of layout as the BERT model but without the tokenized embeddings and the pooler architecture, with a further reduction in the number of layers. 
+	    
+	    Experiments showed that training a DistilBERT model produced similar results to BERT-base model but in a lot less time than its parent architecture BERT. The model is 0.6\% behind BERT on the IMDB and only 3.9\% behind BERT on the SQuAD 1 dataset. 
+	    
+	    These speed and accuracy advantages make this model and architecure worthy of being explored further and will serve as the basis of the improvements suggested in this thesis.
 
-  \section{Summary}\label{26}
 
 
     \chapter{Research Methodology}\label{c3researchmeth}
-
 
 
     \section{Data Selection}\label{c31}
@@ -560,7 +566,7 @@ footskip=.25in]{geometry}
 
 	Will help improve the prediction capability of the transformer architecture.
 
-	The DistilBert model \citep{distil}, which is a lighter, distilled version of the BERT model, and has 40\% less parameters at 66 million, instead of 110 million in BERT, as discussed in \citep{bert}, will be customized with the implementation of the answer pointer layer to generate answers for the questions posed.
+	The DistilBERT model \citep{distil}, which is a lighter, distilled version of the BERT model, and has 40\% less parameters at 66 million, instead of 110 million in BERT, as discussed in \citep{bert}, will be customized with the implementation of the answer pointer layer to generate answers for the questions posed.
 
 
 	\section{Model Evaluation Metrics}\label{33}
@@ -629,14 +635,14 @@ footskip=.25in]{geometry}
 					& \node [block_left] (researchMethleft) {\begin{itemize}
 							\item Run prepared dataset through ALBERT model and obtain results
 							\item Run prepared dataset through RoBerta model and obtain results
-							\item Run prepared dataset through DistilBert model and obtain results
+							\item Run prepared dataset through DistilBERT model and obtain results
 					\end{itemize}}; \\
 					% enrollment - row 2
 					\node [block_center] (dc) {\textbf{Custom Model Preperation and Evaluation}};
 					& \node [block_left] (dcleft) {\begin{itemize}
 							\item Prepare Pointer network with 1 LSTM that has 1 input layer, 8 hidden layers and 1 output layer
 							\item Prepare Pointer Encoders and Decoders
-							\item Prepare DistilBert based Transformer model
+							\item Prepare DistilBERT based Transformer model
 							\item Modify transformer model with implementation of pointer layer
 					\end{itemize}}; \\
 					% enrollment - row 2
@@ -668,16 +674,27 @@ footskip=.25in]{geometry}
 
   \chapter{Architecture Creation}\label{c4}
   
-  	The literature reviewed in chapter \ref{c2litrev} highlights some exceptional work that has been done in the field of NLP, LSTM and Transformer architectures. This chapter lays the groundwork for the improvements proposed in chapter \ref{c3researchmeth}. Starting off with a review of the drawbacks of the architectures that have been chosen for benchmarks and comparisons, then the improvements are proposed to a BERT based DistilBert architecture are mentioned in section \ref{c42}. Finally, the refinement steps are mentioned in section \ref{c43}.
+  	The literature reviewed in chapter \ref{c2litrev} highlights some exceptional work that has been done in the field of NLP, LSTM and Transformer architectures. This chapter lays the groundwork for the improvements proposed in chapter \ref{c3researchmeth}. Starting off with a review of the drawbacks of the architectures that have been chosen for benchmarks and comparisons, then the improvements are proposed to a BERT based DistilBERT architecture are mentioned in section \ref{c42}. Finally, the refinement steps are mentioned in section \ref{c43}.
   	
 
        \section{Drawbacks Of Current Architectures}\label{c41}
 
-       To aid in understanding the drawbacks of current architectures the author presents the table below
+       The transformer based architectures reviewed in sections \ref{robertaLitrev}- \ref{distilLitrev} and the Bi-LSTM \citep{bilstmHerman} have shown great advantages. However, they suffer from certain flaws that are outlined below:
+       
+       
        \section{Proposed Architecture Improvements}\label{c42}
 
-            As identified in
-       \section{Architecture Refinement}\label{c43}
+            The proposed architecture is an implementation of the transformer architecture along with a biLSTM based Answer-Pointer network. 
+            
+            The DistilBERT model that is available through the Hugging Face Library \citep{hfTransformers}, will be modified with the implementation of an Answer-Pointer network. The hypothesis is that by passing the results from DistilBERT encoder layer to the an Answer-Pointer based architecture will provide better results. 
+            
+            To achieve this the Answer-Pointer based network is designed initially with 1 LSTM cell containing 8 hidden layers and one output layer.
+            
+            The process begins by serving tokenized inputs that are created as a part of pre-processing the input data and embedding it by using the "distilbert-base-uncased" pre-trained embeddings from Hugging Face libarary. Then the input is then fed to the "DistilBertForQuestionAnsweringC" class, which is the modified class from the Hugging Face Transformers library mentioned before.
+            
+            The DistilBertForQuestionAnsweringC class takes a pre-trained model config file as input along with the embedded inputs, passes thrm through a linear layer and a dropout layer. 
+            
+            
 
     \chapter{Results}\label{c5}
 
@@ -804,44 +821,44 @@ footskip=.25in]{geometry}
 	\end{itemize}
 
 
-	In figure \ref{distilbertBenchmarks}, the behaviour of the model can be observed to be very different from the other models. The behaviour can be described simply as a combination of the behaviours seen for ALBERT and RoBerta models. Just like in \ref{robertaTrainloss}, the training loss for the DistilBert model as seen in \ref{distilbertTrainloss} is extremely consistent and smooth in nature, showing a steady decline till the final epoch. training loss and validation loss, fig. \ref{distilbertValLoss} are lower compared to both models above, the validation F1 and exact match scores are not exactly comparable.
+	In figure \ref{distilbertBenchmarks}, the behaviour of the model can be observed to be very different from the other models. The behaviour can be described simply as a combination of the behaviours seen for ALBERT and RoBerta models. Just like in \ref{robertaTrainloss}, the training loss for the DistilBERT model as seen in \ref{distilbertTrainloss} is extremely consistent and smooth in nature, showing a steady decline till the final epoch. training loss and validation loss, fig. \ref{distilbertValLoss} are lower compared to both models above, the validation F1 and exact match scores are not exactly comparable.
 
-	Using the same training criteria of a batch size of 8 and an AdamW optimizer set to a learning rate of 5e-5, it can be seen that the DistilBert model with performs slightly poorly when compared to ALBERT and RoBerta. However, the time taken to train a DistilBert model is significanty less than that of RoBerta and ALBERT. One epoch for a DistilBert model takes approximately 37 minutes to complete, almost half that of ALBERT and 3x less than RoBerta. The validation set takes around 5 minutes as well.
+	Using the same training criteria of a batch size of 8 and an AdamW optimizer set to a learning rate of 5e-5, it can be seen that the DistilBERT model with performs slightly poorly when compared to ALBERT and RoBerta. However, the time taken to train a DistilBERT model is significanty less than that of RoBerta and ALBERT. One epoch for a DistilBERT model takes approximately 37 minutes to complete, almost half that of ALBERT and 3x less than RoBerta. The validation set takes around 5 minutes as well.
 
   \begin{figure*}
 	\centering
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{../images/Distilbert_Val_F1.png}
-		\caption{\small Distilbert Validation F1 Score}
+		\caption{\small DistilBERT Validation F1 Score}
 		\label{distilbertf1}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{../images/Distilbert_Val_EM.png}
-		\caption{\small Distilbert Validation Exact Match}
+		\caption{\small DistilBERT Validation Exact Match}
 		\label{distilbertaem}
 	\end{subfigure}
 	\vskip\baselineskip
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{../images/Distilbert_Val_Loss.png}
-		\caption{\small Distilbert Validation Loss}
+		\caption{\small DistilBERT Validation Loss}
 		\label{distilbertValLoss}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{../images/Distilbert_Train_Loss.png}
-		\caption{\small Distilbert Training Loss}
+		\caption{\small DistilBERT Training Loss}
 		\label{distilbertTrainloss}
 	\end{subfigure}
-	\caption{DistilBert Model Benchmarks}
+	\caption{DistilBERT Model Benchmarks}
 	\label{distilbertBenchmarks}
 \end{figure*}
 
-	The final benchmark scores for the DistilBert model at epoch 10 are:
+	The final benchmark scores for the DistilBERT model at epoch 10 are:
 \begin{itemize}
 	\item \textbf{F1 Score}:  $\sim$70.4\%
 	\item \textbf{Exact Match Score}: $\sim$58.5\%
@@ -849,12 +866,12 @@ footskip=.25in]{geometry}
 	\item \textbf{Validation Loss}: $\sim$0.1\%
 \end{itemize}
 
-While the results for the DistilBert model aren't exactly perfect, it does allow for quick prototyping and achieves almost near accurate results.
+While the results for the DistilBERT model aren't exactly perfect, it does allow for quick prototyping and achieves almost near accurate results.
 
 
 \section{Custom BERT Model Results}\label{c52}
 
-	As discussed in chapter \ref{c4}, the modifications have been applied to the DistilBert model, specifically the DistilBertModel class offered by the HuggingFace Transformers library \citep{hfTransformers} and a modified implemetation of an Answer Pointer Network designed using PyTorch by \citep{pointernetGit} is used to generate the answer pointer layer results for these custom models. All the custom models utilised the same pre-trained "distilbert-base-uncased" class from the Hugging Face Transformers library.
+	As discussed in chapter \ref{c4}, the modifications have been applied to the DistilBERT model, specifically the DistilBertModel class offered by the HuggingFace Transformers library \citep{hfTransformers} and a modified implemetation of an Answer Pointer Network designed using PyTorch by \citep{pointernetGit} is used to generate the answer pointer layer results for these custom models. All the custom models utilised the same pre-trained "DistilBERT-base-uncased" class from the Hugging Face Transformers library.
 
 	\begin{figure}[!h]
 		\centering
@@ -862,12 +879,12 @@ While the results for the DistilBert model aren't exactly perfect, it does allow
 		\caption{Custom BERT Model with AdamW Optimizer at 5e-5 rate}\label{adam5e}
 	\end{figure}
 
-	The first figure \ref{adam5e} shows the various epochs for the modified DistilBert model with the Answer Pointer network implemented with a batch size of 8 and the AdamW optimizer with a learning rate of 5e-5, which  are the same parameters as the benchmark models.
+	The first figure \ref{adam5e} shows the various epochs for the modified DistilBERT model with the Answer Pointer network implemented with a batch size of 8 and the AdamW optimizer with a learning rate of 5e-5, which  are the same parameters as the benchmark models.
 
-	In figure \ref{adam5e} it can be observed that the model takes significantly longer to train than a regular DistilBert model which takes around 37 minutes. Though the training and validation times are higher than existing models, the training loss values track consistently down and are comparable to the ones seen in \ref{distilbertTrainloss}. The increased training and validation set times can however be less than the ones shown as there is a significant decrease in the validation set running time towards the 5th epoch. This is quite peculiar and goes to highlight the distributed nature of the cloud based training environment that is Google Colab.
+	In figure \ref{adam5e} it can be observed that the model takes significantly longer to train than a regular DistilBERT model which takes around 37 minutes. Though the training and validation times are higher than existing models, the training loss values track consistently down and are comparable to the ones seen in \ref{distilbertTrainloss}. The increased training and validation set times can however be less than the ones shown as there is a significant decrease in the validation set running time towards the 5th epoch. This is quite peculiar and goes to highlight the distributed nature of the cloud based training environment that is Google Colab.
 
-	The F1 scores for the model continuously hover around the 72\% mark, which is a slight improvement over the 70\% mark observed for the benchmarked DistilBert model as seen in \ref{distilbertf1}.
-	The validation loss for the custom model hovers lower than the values in the DistilBert model as well.
+	The F1 scores for the model continuously hover around the 72\% mark, which is a slight improvement over the 70\% mark observed for the benchmarked DistilBERT model as seen in \ref{distilbertf1}.
+	The validation loss for the custom model hovers lower than the values in the DistilBERT model as well.
 
 	In the next experiment, shown in fig. \ref{adam3e}, a different learning rate is used with the same AdamW optimizer. Using a leaerning rate of 3e-5 or 0.00003, we can see that there is a slight increase in F1 and exact match scores, reaching almost 75\% and 65\% values respectively. This suggests that the custom model responds well to lower learning rates.
 
@@ -885,7 +902,7 @@ While the results for the DistilBert model aren't exactly perfect, it does allow
 			\caption{Custom BERT Model with AdaFactor Optimizer at 3e-5 rate}\label{ada3e}
 		\end{figure}
 
-	In the final experiment, that is shown in fig. \ref{ada3e}, the custom model is run with a modified AdaFactor optimizer with a learning rate of 3e-5, this again presents similar results to the results in the previous experiment where the lower value of the learning rate helped the custom model learn better. The training loss for this run also falls similar to the loss in the previous custom model experiments as well as the DistilBert benchmark, while maintaing an F1 score that is higher than the DistilBert benchmark but roughly similar to the custom model with AdamW optimizer at a learning rate of 3e-5.
+	In the final experiment, that is shown in fig. \ref{ada3e}, the custom model is run with a modified AdaFactor optimizer with a learning rate of 3e-5, this again presents similar results to the results in the previous experiment where the lower value of the learning rate helped the custom model learn better. The training loss for this run also falls similar to the loss in the previous custom model experiments as well as the DistilBERT benchmark, while maintaing an F1 score that is higher than the DistilBERT benchmark but roughly similar to the custom model with AdamW optimizer at a learning rate of 3e-5.
 
 
 
@@ -895,14 +912,14 @@ While the results for the DistilBert model aren't exactly perfect, it does allow
 
     Through this work it has attempted to highlight the advancements and propose a unique modification to the existing transformer architecture using an Answer-Pointer network.
 
-    The results obtained from experiments in section \ref{c52} show that the models performance is at par with the DistilBert model. While this result isn't graphically present due to timeout issues in Google Colab, visually the various scores printed in figures \ref{adam5e}, \ref{adam3e} and \ref{ada3e}, the model does perform well initially.
+    The results obtained from experiments in section \ref{c52} show that the models performance is at par with the DistilBERT model. While this result isn't graphically present due to timeout issues in Google Colab, visually the various scores printed in figures \ref{adam5e}, \ref{adam3e} and \ref{ada3e}, the model does perform well initially.
 
     The experiments conducted in this thesis highlight that a properly implemented LSTM based Answer Pointer network layer that is incorporated with the Transformer architecture can perform at par with a current state of the art model.
     While the custom model presents an opportunity for improvement in terms of training times, the results and the metrics are at par with the benchmark models.
 
     The benchmarked models are current state of the art approaches that are used industry wide for various applications and readily available via libraries like PyTorch, Hugging Face and TensorFlow. The model presented here has shown potential through the limited amount of testing and resources available.
 
-    It is highly probable that given the right resources and time to optimize the model, it will be able to perform better than the DistilBert model at least.
+    It is highly probable that given the right resources and time to optimize the model, it will be able to perform better than the DistilBERT model at least.
 
     \section{Recommendations}
 

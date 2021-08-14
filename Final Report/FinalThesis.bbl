@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -205,6 +205,23 @@ Wei Wang, Ming Yan, and Chen Wu.
 \newblock Multi-granularity hierarchical attention fusion networks for reading
   comprehension and question answering.
 \newblock \emph{arXiv preprint arXiv:1811.11934}, 2018.
+
+\bibitem[Schwartz et~al.(2019)Schwartz, Dodge, Smith, and Etzioni]{schwarts}
+Roy Schwartz, Jesse Dodge, Noah~A. Smith, and Oren Etzioni.
+\newblock Green {AI}.
+\newblock \emph{CoRR}, abs/1907.10597, 2019.
+\newblock URL \url{http://arxiv.org/abs/1907.10597}.
+
+\bibitem[Bucilu et~al.(2006)Bucilu, Caruana, and
+  Niculescu-Mizil]{knowledgeDistilation}
+Cristian Bucilu, Rich Caruana, and Alexandru Niculescu-Mizil.
+\newblock Model compression.
+\newblock In \emph{Proceedings of the 12th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '06, page 535–541, New York,
+  NY, USA, 2006. Association for Computing Machinery.
+\newblock ISBN 1595933395.
+\newblock \doi{10.1145/1150402.1150464}.
+\newblock URL \url{https://doi.org/10.1145/1150402.1150464}.
 
 \bibitem[Gur(2017)]{pointernetGit}
 Shir Gur.
