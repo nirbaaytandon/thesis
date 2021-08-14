@@ -18,6 +18,10 @@
 \contentsline {subsection}{\numberline {2.2.1}Self Attention}{16}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Improvements of Transformer Architectures}{18}{subsection.2.2.2}%
 \contentsline {subsubsection}{BERT}{18}{subsection.2.2.2}%
+\contentsline {subsubsection}{ALBERT}{19}{figure.caption.19}%
+\contentsline {subsubsection}{ROBERTA}{19}{figure.caption.19}%
+\contentsline {subsubsection}{DISTILBERT}{19}{figure.caption.19}%
+\contentsline {section}{\numberline {2.3}Summary}{19}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Research Methodology}{20}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Data Selection}{20}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Research Hypothesis}{21}{section.3.2}%
@@ -36,4 +40,4 @@
 \contentsline {chapter}{Appendices}{34}{section*.28}%
 \contentsline {chapter}{Appendix \numberline {A}Gantt Chart}{35}{appendix.1.A}%
 \contentsline {chapter}{Appendix \numberline {B}Research Proposal}{37}{appendix.1.B}%
-\contentsline {chapter}{References}{38}{appendix*.30}%
+\contentsline {chapter}{References}{53}{appendix*.30}%

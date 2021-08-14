@@ -134,7 +134,7 @@ footskip=.25in]{geometry}
 
         In chapter \ref{c4} the proposed architecture is discussed along with drawbacks of current architectures. The chapter also describes ways in which the proposed architecture can be refined.
 
-        Finally, in chapters \ref{c5} and \ref{c6} the outcomes of the models are discussed while comparing them to current architectures and their benchmarks. The author discusses the outcomes and presents various recommendations that can help improve the work presented in this thesis further.
+        Finally, in chapters \ref{c5} and \ref{c6} the results of the models are discussed while comparing them to current architectures and their benchmarks. The outcomes and various recommendations are outlined that can help improve the work presented in this thesis further.
 
         Appendix \ref{cgc} is where the reader can refer to the Gantt chart for the thesis work done.
 
@@ -146,7 +146,7 @@ footskip=.25in]{geometry}
 
         \section{Long Short-Term Memory}\label{22}
 
-            In 1997 \citep{lstmoriginal} introduced to the world a gradient descent based model in the form of Long Short-Term Memory. They set out to solve the problem of the vanishing gradient which was often seen in "Back-Propagation Through Time"(BPPTs) based neural networks. Extensive studies done on this, some by Hochreiter himself, showed that the problem of vanishing gradients is a real one. It was also seen that in case of BPTTs, the error back-flow mechanisms would either blow up or also suffer from vanishing gradients leading to either oscillating weights or learning to bridge long time gaps would not work. To remediate this, the authors introduced the concept of a \textit{constant} error flow through the internal states of special units.
+            In 1997 \citep{lstmoriginal} introduced to the world a gradient descent based model in the form of Long Short-Term Memory. They set out to solve the problem of the vanishing gradient which was often seen in "Back-Propagation Through Time"(BPPTs) based neural networks. Extensive studies done on this, some by Hochreiter himself, showed that the problem of vanishing gradients is a real one. It was also seen that in case of BPTTs, the error back-flow mechanisms would either blow up or also suffer from vanishing gradients leading to either oscillating weights or learning to bridge long time gaps would not work. To remediate this, \citep{lstmoriginal} introduced the concept of a \textit{constant} error flow through the internal states of special units.
 
             Their paper, Long Short-Term Memory, \citep{lstmoriginal}, highlights that the work previously done using various gradient-descent variants, time-delays, time constants, use of higher order units to influence connections when the network receives conflicting error signals, Kalman filters, Second order nets etc. still suffer from some of the same problems that we have earlier. In the case of Ring's approach \citep{lstmRing}, the network can be really fast but also suffers from memory constraints and lack of generalization. This happens because to bridge $ n $ time lags, the model adds $ n $ additional units.
 
@@ -269,7 +269,7 @@ footskip=.25in]{geometry}
                 o_{F}(t) = tanh \bigg[\bigg(\sum_{i=0}^{m-1}\textbf{h}(t+i)^{T}\textbf{F}(i)\bigg)+b\bigg]
             \end{equation}
 
-            Using $ k $-MaxPooling, the authors emphasized that a maximum of $ k $ values will be kept  for one filter, thereby indicating the highest degree that a filter matches the input sequence. To end this approach, there are $ N $ parallel filters, with different parameter initialization which provide the CNN layer with $ N $-dimension output vectors. This produces two output vectors of dimension $ kN $ for each question and answer.  Their experiments intuitively took $k=1$ as anything greater showed no improvements and it helped emphasize aspects of the answer such that this CNN based hybrid biLSTM could differentiate ground truths and incorrect answers efficiently.
+            Using $ k $-MaxPooling,\citep{lstmhaighextractive} emphasized that a maximum of $ k $ values will be kept  for one filter, thereby indicating the highest degree that a filter matches the input sequence. To end this approach, there are $ N $ parallel filters, with different parameter initialization which provide the CNN layer with $ N $-dimension output vectors. This produces two output vectors of dimension $ kN $ for each question and answer.  Their experiments intuitively took $k=1$ as anything greater showed no improvements and it helped emphasize aspects of the answer such that this CNN based hybrid biLSTM could differentiate ground truths and incorrect answers efficiently.
 
             The second approach adopted in this paper is actually inspired by another paper \citep{bilstmHerman} where attention based deep LSTM networks were used to enhance the capabilities of reading comprehension in LSTM based models. Here, in \citep{lstmhaighextractive}, a modification has been introduced in the form of attention-based connections along with biLSTM layers as depicted in fig. \ref{lstmhaigattention}.
             \begin{figure}
@@ -312,7 +312,7 @@ footskip=.25in]{geometry}
             \end{table}
 
 			  An improvement to this approach was done in 2018 by \citep{lstmSubilstm} who proposed \textit{Suffix Bidirectional LSTM} or \textit{SuBiLSTM} adding prefixes and suffixes to the inputs over both directions.  There are a few obvious differences between the biLSTM and SuBiLSTM like the doubling of parameters, increased time complexity which happens over quadratic time for worst case scenarios compared to linear in biLSTMs.
-			  The author of this paper has shown that despite higher time complexity, there are significant gains in accuracy in text encoding and classification in their experiments, of particular note is the Paraphrase Detection experiment which uses GloVe embeddings and shows an 88.2\% score in the test set, which is marginally higher than other models implemented.
+			  \citep{lstmSubilstm} of this paper has shown that despite higher time complexity, there are significant gains in accuracy in text encoding and classification in their experiments, of particular note is the Paraphrase Detection experiment which uses GloVe embeddings and shows an 88.2\% score in the test set, which is marginally higher than other models implemented.
 			  The work presented in this thesis will also implement paraphrase detection and GloVe embeddings to potentially improve model performance and answer detection.
 
 			  \subsection{LSTM And Question Answering}\label{c2lstmqa}
@@ -471,18 +471,18 @@ footskip=.25in]{geometry}
 			\end{figure}
 
 			BERT was tested on The General Language Understanding Evaluation (GLUE) benchmark \citep{wang} which has a large number of diverse NLU tasks.
-			BERT performed extremely well on the 11 NLP tasks that the authors ran it against. It showed an average accuracy improvement of 4.5\% and 7\% when compared to the previous state of the art models. Results of BERT and its significant gains make it one of the best candidate models for NLU tasks.
+			BERT performed extremely well on the 11 NLP tasks that it ran against. It showed an average accuracy improvement of 4.5\% and 7\% when compared to the previous state of the art models. Results of BERT and its significant gains make it one of the best candidate models for NLU tasks.
 
-%	       \subsubsection{ALBERT}\label{2322}
-%	    \citep{albert}
+	       \subsubsection{ALBERT}\label{albertLitrev}
+	    \citep{albert}
 
-%	     \subsubsection{ROBERTA}\label{2323}
-%	      \citep{roberta}
+	     \subsubsection{ROBERTA}\label{robertaLitrev}
+	      \citep{roberta}
 
-%	    \subsubsection{DISTILBERT}\label{2324}
-%	     \citep{distil}
+	    \subsubsection{DISTILBERT}\label{distilLitrev}
+	     \citep{distil}
 
-%  \section{Summary}\label{26}
+  \section{Summary}\label{26}
 
 
     \chapter{Research Methodology}\label{c3researchmeth}
@@ -667,14 +667,17 @@ footskip=.25in]{geometry}
 
 
   \chapter{Architecture Creation}\label{c4}
+  
+  	The literature reviewed in chapter \ref{c2litrev} highlights some exceptional work that has been done in the field of NLP, LSTM and Transformer architectures. This chapter lays the groundwork for the improvements proposed in chapter \ref{c3researchmeth}. Starting off with a review of the drawbacks of the architectures that have been chosen for benchmarks and comparisons, then the improvements are proposed to a BERT based DistilBert architecture are mentioned in section \ref{c42}. Finally, the refinement steps are mentioned in section \ref{c43}.
+  	
 
        \section{Drawbacks Of Current Architectures}\label{c41}
 
        To aid in understanding the drawbacks of current architectures the author presents the table below
-       \section{Proposed Architecture Improvements}\label{c43}
+       \section{Proposed Architecture Improvements}\label{c42}
 
             As identified in
-       \section{Architecture Refinement}\label{c44}
+       \section{Architecture Refinement}\label{c43}
 
     \chapter{Results}\label{c5}
 
@@ -890,7 +893,7 @@ While the results for the DistilBert model aren't exactly perfect, it does allow
 
     \chapter{Conclusions And Recommendations}\label{c6}
 
-    Through this work the author has attempted to highlight the advancements and propose a unique modification to the existing transformer architecture using an Answer-Pointer network.
+    Through this work it has attempted to highlight the advancements and propose a unique modification to the existing transformer architecture using an Answer-Pointer network.
 
     The results obtained from experiments in section \ref{c52} show that the models performance is at par with the DistilBert model. While this result isn't graphically present due to timeout issues in Google Colab, visually the various scores printed in figures \ref{adam5e}, \ref{adam3e} and \ref{ada3e}, the model does perform well initially.
 
@@ -903,7 +906,7 @@ While the results for the DistilBert model aren't exactly perfect, it does allow
 
     \section{Recommendations}
 
-    This work provides a unique opportunity to introduce improvements to an already state of the art architecture by adding a layer of LSTM based pointers. Highlighted below are some recommendations, that the author believes, can improve the architecture further.
+    This work provides a unique opportunity to introduce improvements to an already state of the art architecture by adding a layer of LSTM based pointers. Highlighted below are some recommendations that can improve the architecture further.
 
     \begin{itemize}
 
@@ -911,7 +914,7 @@ While the results for the DistilBert model aren't exactly perfect, it does allow
 
     	\item \textbf{Increased Batch-Size}: The experiments presented in this work are limited by a relatively small batch size of 8. Systemic increase of batch size can allow for reduced training times, possibly better performance overall and an opportunity to test this model against various other NLP applications such as Sequence Classification, Token Classification, Sentence Predictions, etc.
 
-    	\item \textbf{Better Hardware}: One of the key limiting factors for the work presented in this thesis is the limiting amount of VRAM, The current hardware used by the author only had 8GB of VRAM available on the EVGA 2070 Super GPU, which was insufficient for the benchmark batch size of 8. Reducing the batch size any further led to increased training times per epoch, upwards of 3 hours per epoch at a batch size of 6. This problem was slightly remediated by the use of Google Colab Pro, which is a subscriptions service that allows you to run experiments using better GPUs such as Tesla P100 GPU with 16GB VRAM. This service is time limited and thus not suitable for running long experiments. To effectively quantify the proposed architecture in this thesis it is recommended that it be run for at least 10 epochs on a multi-GPU setup that allows for mini-batches. This approach is discussed below.
+    	\item \textbf{Better Hardware}: One of the key limiting factors for the work presented in this thesis is the limiting amount of VRAM, The current hardware used only had 8GB of VRAM available on the EVGA 2070 Super GPU, which was insufficient for the benchmark batch size of 8. Reducing the batch size any further led to increased training times per epoch, upwards of 3 hours per epoch at a batch size of 6. This problem was slightly remediated by the use of Google Colab Pro, which is a subscriptions service that allows you to run experiments using better GPUs such as Tesla P100 GPU with 16GB VRAM. This service is time limited and thus not suitable for running long experiments. To effectively quantify the proposed architecture in this thesis it is recommended that it be run for at least 10 epochs on a multi-GPU setup that allows for mini-batches. This approach is discussed below.
 
     	\item \textbf{Mini-Batches Across Multiple GPUs}: Creating a multi-GPU setup, with 2 or more gpus, allows for accelerated training \citep{multigpu1}. A simple guide on how to set this up for PyTorch has been created on the Towards Data Science Medium page \citep{multigpu2}. Having multiple smaller batches train across a multi-GPU setup can allow the model to not only train faster but also perfrom slightly better than just on a single GPU.
 
@@ -926,8 +929,8 @@ While the results for the DistilBert model aren't exactly perfect, it does allow
 		     	\caption{Mid-Thesis report Gantt Chart}\label{ganttChartMid}
               \end{figure}
          \chapter{Research Proposal}\label{crp}
- %        	\includepdf[pages=1-15]{../rp.pdf}
-
+         	\includepdf[pages=1-15]{../rp.pdf}
+   
     \end{appendices}
 
 
