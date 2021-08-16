@@ -692,7 +692,11 @@ footskip=.25in]{geometry}
             
             The process begins by serving tokenized inputs that are created as a part of pre-processing the input data and embedding it by using the "distilbert-base-uncased" pre-trained embeddings from Hugging Face libarary. Then the input is then fed to the "DistilBertForQuestionAnsweringC" class, which is the modified class from the Hugging Face Transformers library mentioned before.
             
-            The DistilBertForQuestionAnsweringC class takes a pre-trained model config file as input along with the embedded inputs, passes thrm through a linear layer and a dropout layer. 
+            The DistilBertForQuestionAnsweringC class takes a pre-trained model config file as input along with the embedded inputs, passes them through a linear layer and a dropout layer. These processed outputs are then processesed through Encoder and Decoder layers that allow the model to process and produce relevant results.
+            
+            \subsection{Answer-Pointer Layer Implementation}
+            
+            \subsection{Custom DistilBERT Model}
             
             
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  14 AUG 2021 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  16 AUG 2021 10:53
 entering extended mode
 **./FinalThesis.tex
 (FinalThesis.tex
@@ -1164,7 +1164,7 @@ l.92
 
 ] [2] [3] [4]
 Chapter 2.
-<../images/lstm-memorycell.png, id=400, 1169.36874pt x 492.84125pt>
+<../images/lstm-memorycell.png, id=410, 1169.36874pt x 492.84125pt>
 File: ../images/lstm-memorycell.png Graphic file (type png)
 <use ../images/lstm-memorycell.png>
 Package pdftex.def Info: ../images/lstm-memorycell.png  used on input line 155.
@@ -1176,7 +1176,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [5
 
 ]
-<../images/lstm-network.png, id=417, 1276.77pt x 736.7525pt>
+<../images/lstm-network.png, id=427, 1276.77pt x 736.7525pt>
 File: ../images/lstm-network.png Graphic file (type png)
 <use ../images/lstm-network.png>
 Package pdftex.def Info: ../images/lstm-network.png  used on input line 189.
@@ -1190,7 +1190,7 @@ Overfull \hbox (8.36206pt too wide) in paragraph at lines 189--190
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6 <../images/lstm-memorycell.png>] [7 <../images/lstm-network.png>]
-<../images/lstm-biLstm.png, id=447, 537.00626pt x 558.085pt>
+<../images/lstm-biLstm.png, id=457, 537.00626pt x 558.085pt>
 File: ../images/lstm-biLstm.png Graphic file (type png)
 <use ../images/lstm-biLstm.png>
 Package pdftex.def Info: ../images/lstm-biLstm.png  used on input line 216.
@@ -1200,20 +1200,20 @@ Package pdftex.def Info: ../images/lstm-biLstm.png  used on input line 216.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [8 <../images/lstm-biLstm.png>]
-<../images/lstm-bilstmhaig.png, id=467, 732.7375pt x 297.11pt>
+<../images/lstm-bilstmhaig.png, id=477, 732.7375pt x 297.11pt>
 File: ../images/lstm-bilstmhaig.png Graphic file (type png)
 <use ../images/lstm-bilstmhaig.png>
 Package pdftex.def Info: ../images/lstm-bilstmhaig.png  used on input line 244.
 
 (pdftex.def)             Requested size: 293.08981pt x 118.84189pt.
-<../images/lstm-bilstmhaigcnn.png, id=473, 783.92876pt x 482.80376pt>
+<../images/lstm-bilstmhaigcnn.png, id=483, 783.92876pt x 482.80376pt>
 File: ../images/lstm-bilstmhaigcnn.png Graphic file (type png)
 <use ../images/lstm-bilstmhaigcnn.png>
 Package pdftex.def Info: ../images/lstm-bilstmhaigcnn.png  used on input line 2
 54.
 (pdftex.def)             Requested size: 274.37918pt x 168.98384pt.
  [9 <../images/lstm-bilstmhaig.png>]
-<../images/lstm-bilstmhaighattention.png, id=492, 922.44624pt x 352.31625pt>
+<../images/lstm-bilstmhaighattention.png, id=502, 922.44624pt x 352.31625pt>
 File: ../images/lstm-bilstmhaighattention.png Graphic file (type png)
 <use ../images/lstm-bilstmhaighattention.png>
 Package pdftex.def Info: ../images/lstm-bilstmhaighattention.png  used on input
@@ -1222,12 +1222,12 @@ Package pdftex.def Info: ../images/lstm-bilstmhaighattention.png  used on input
  [10 <../images/lstm-bilstmhaigcnn.png>] [11 <../images/lstm-bilstmhaighattenti
 on.png>]
 [12]
-<../images/lstmMatch.png, id=559, 910.90312pt x 519.44063pt>
+<../images/lstmMatch.png, id=569, 910.90312pt x 519.44063pt>
 File: ../images/lstmMatch.png Graphic file (type png)
 <use ../images/lstmMatch.png>
 Package pdftex.def Info: ../images/lstmMatch.png  used on input line 350.
 (pdftex.def)             Requested size: 364.3548pt x 207.77257pt.
-<../images/lstm-intent1.png, id=567, 872.25874pt x 656.4525pt>
+<../images/lstm-intent1.png, id=577, 872.25874pt x 656.4525pt>
 File: ../images/lstm-intent1.png Graphic file (type png)
 <use ../images/lstm-intent1.png>
 Package pdftex.def Info: ../images/lstm-intent1.png  used on input line 378.
@@ -1236,7 +1236,7 @@ Package pdftex.def Info: ../images/lstm-intent1.png  used on input line 378.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../images/lstm-intent2.png, id=580, 808.01875pt x 564.1075pt>
+<../images/lstm-intent2.png, id=590, 808.01875pt x 564.1075pt>
 File: ../images/lstm-intent2.png Graphic file (type png)
 <use ../images/lstm-intent2.png>
 Package pdftex.def Info: ../images/lstm-intent2.png  used on input line 388.
@@ -1246,7 +1246,7 @@ Package pdftex.def Info: ../images/lstm-intent2.png  used on input line 388.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [14 <../images/lstm-intent1.png>]
-<../images/transformer.png, id=606, 508.90125pt x 599.99156pt>
+<../images/transformer.png, id=616, 508.90125pt x 599.99156pt>
 File: ../images/transformer.png Graphic file (type png)
 <use ../images/transformer.png>
 Package pdftex.def Info: ../images/transformer.png  used on input line 404.
@@ -1265,7 +1265,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 426--429
 
  []
 
-<../images/multihead.png, id=631, 746.03719pt x 436.63126pt>
+<../images/multihead.png, id=641, 746.03719pt x 436.63126pt>
 File: ../images/multihead.png Graphic file (type png)
 <use ../images/multihead.png>
 Package pdftex.def Info: ../images/multihead.png  used on input line 434.
@@ -1279,7 +1279,7 @@ it/12 W[] \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 R[]$
  []
 
 [17 <../images/multihead.png>]
-<../images/BERT.png, id=659, 1086.0575pt x 479.7925pt>
+<../images/BERT.png, id=669, 1086.0575pt x 479.7925pt>
 File: ../images/BERT.png Graphic file (type png)
 <use ../images/BERT.png>
 Package pdftex.def Info: ../images/BERT.png  used on input line 469.
@@ -1384,362 +1384,362 @@ LaTeX Warning: Reference `robertaLitrev' on page 24 undefined on input line 682
 
 [24
 
-]
+] [25]
 Chapter 5.
-[25
+[26
 
 ]
 
-LaTeX Warning: Reference `c32' on page 26 undefined on input line 723.
+LaTeX Warning: Reference `c32' on page 27 undefined on input line 727.
 
-<../images/Albert_Val_F1.png, id=780, 331.2375pt x 200.75pt>
+<../images/Albert_Val_F1.png, id=794, 331.2375pt x 200.75pt>
 File: ../images/Albert_Val_F1.png Graphic file (type png)
 <use ../images/Albert_Val_F1.png>
-Package pdftex.def Info: ../images/Albert_Val_F1.png  used on input line 731.
+Package pdftex.def Info: ../images/Albert_Val_F1.png  used on input line 735.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Albert_Val_EM.png, id=781, 331.2375pt x 200.75pt>
+<../images/Albert_Val_EM.png, id=795, 331.2375pt x 200.75pt>
 File: ../images/Albert_Val_EM.png Graphic file (type png)
 <use ../images/Albert_Val_EM.png>
-Package pdftex.def Info: ../images/Albert_Val_EM.png  used on input line 738.
+Package pdftex.def Info: ../images/Albert_Val_EM.png  used on input line 742.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Albert_Val_Loss.png, id=782, 331.2375pt x 200.75pt>
+<../images/Albert_Val_Loss.png, id=796, 331.2375pt x 200.75pt>
 File: ../images/Albert_Val_Loss.png Graphic file (type png)
 <use ../images/Albert_Val_Loss.png>
-Package pdftex.def Info: ../images/Albert_Val_Loss.png  used on input line 745.
+Package pdftex.def Info: ../images/Albert_Val_Loss.png  used on input line 749.
 
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Albert_Train_Loss.png, id=783, 331.2375pt x 200.75pt>
+<../images/Albert_Train_Loss.png, id=797, 331.2375pt x 200.75pt>
 File: ../images/Albert_Train_Loss.png Graphic file (type png)
 <use ../images/Albert_Train_Loss.png>
 Package pdftex.def Info: ../images/Albert_Train_Loss.png  used on input line 75
-2.
+6.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-[26 <../images/Albert_Val_F1.png> <../images/Albert_Val_EM.png> <../images/Albe
+[27 <../images/Albert_Val_F1.png> <../images/Albert_Val_EM.png> <../images/Albe
 rt_Val_Loss.png> <../images/Albert_Train_Loss.png>]
-<../images/Roberta_Val_F1.png, id=798, 331.2375pt x 200.75pt>
+<../images/Roberta_Val_F1.png, id=812, 331.2375pt x 200.75pt>
 File: ../images/Roberta_Val_F1.png Graphic file (type png)
 <use ../images/Roberta_Val_F1.png>
-Package pdftex.def Info: ../images/Roberta_Val_F1.png  used on input line 780.
+Package pdftex.def Info: ../images/Roberta_Val_F1.png  used on input line 784.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Roberta_Val_EM.png, id=799, 331.2375pt x 200.75pt>
+<../images/Roberta_Val_EM.png, id=813, 331.2375pt x 200.75pt>
 File: ../images/Roberta_Val_EM.png Graphic file (type png)
 <use ../images/Roberta_Val_EM.png>
-Package pdftex.def Info: ../images/Roberta_Val_EM.png  used on input line 787.
+Package pdftex.def Info: ../images/Roberta_Val_EM.png  used on input line 791.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Roberta_Val_Loss.png, id=800, 331.2375pt x 200.75pt>
+<../images/Roberta_Val_Loss.png, id=814, 331.2375pt x 200.75pt>
 File: ../images/Roberta_Val_Loss.png Graphic file (type png)
 <use ../images/Roberta_Val_Loss.png>
-Package pdftex.def Info: ../images/Roberta_Val_Loss.png  used on input line 794
+Package pdftex.def Info: ../images/Roberta_Val_Loss.png  used on input line 798
 .
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Roberta_Train_Loss.png, id=801, 331.2375pt x 200.75pt>
+<../images/Roberta_Train_Loss.png, id=815, 331.2375pt x 200.75pt>
 File: ../images/Roberta_Train_Loss.png Graphic file (type png)
 <use ../images/Roberta_Train_Loss.png>
 Package pdftex.def Info: ../images/Roberta_Train_Loss.png  used on input line 8
-01.
+05.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
- [27 <../images/Roberta_Val_F1.png> <../images/Roberta_Val_EM.png> <../images/R
+ [28 <../images/Roberta_Val_F1.png> <../images/Roberta_Val_EM.png> <../images/R
 oberta_Val_Loss.png> <../images/Roberta_Train_Loss.png>]
-<../images/Distilbert_Val_F1.png, id=816, 331.2375pt x 200.75pt>
+<../images/Distilbert_Val_F1.png, id=830, 331.2375pt x 200.75pt>
 File: ../images/Distilbert_Val_F1.png Graphic file (type png)
 <use ../images/Distilbert_Val_F1.png>
 Package pdftex.def Info: ../images/Distilbert_Val_F1.png  used on input line 83
-2.
+6.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Distilbert_Val_EM.png, id=817, 331.2375pt x 200.75pt>
+<../images/Distilbert_Val_EM.png, id=831, 331.2375pt x 200.75pt>
 File: ../images/Distilbert_Val_EM.png Graphic file (type png)
 <use ../images/Distilbert_Val_EM.png>
-Package pdftex.def Info: ../images/Distilbert_Val_EM.png  used on input line 83
-9.
+Package pdftex.def Info: ../images/Distilbert_Val_EM.png  used on input line 84
+3.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Distilbert_Val_Loss.png, id=818, 331.2375pt x 200.75pt>
+<../images/Distilbert_Val_Loss.png, id=832, 331.2375pt x 200.75pt>
 File: ../images/Distilbert_Val_Loss.png Graphic file (type png)
 <use ../images/Distilbert_Val_Loss.png>
 Package pdftex.def Info: ../images/Distilbert_Val_Loss.png  used on input line 
-846.
+850.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
-<../images/Distilbert_Train_Loss.png, id=819, 331.2375pt x 200.75pt>
+<../images/Distilbert_Train_Loss.png, id=833, 331.2375pt x 200.75pt>
 File: ../images/Distilbert_Train_Loss.png Graphic file (type png)
 <use ../images/Distilbert_Train_Loss.png>
 Package pdftex.def Info: ../images/Distilbert_Train_Loss.png  used on input lin
-e 853.
+e 857.
 (pdftex.def)             Requested size: 175.40297pt x 106.30508pt.
- [28 <../images/Distilbert_Val_F1.png> <../images/Distilbert_Val_EM.png> <../im
+ [29 <../images/Distilbert_Val_F1.png> <../images/Distilbert_Val_EM.png> <../im
 ages/Distilbert_Val_Loss.png> <../images/Distilbert_Train_Loss.png>]
-<../images/AdamW5e.png, id=833, 847.165pt x 704.6325pt>
+<../images/AdamW5e.png, id=848, 847.165pt x 704.6325pt>
 File: ../images/AdamW5e.png Graphic file (type png)
 <use ../images/AdamW5e.png>
-Package pdftex.def Info: ../images/AdamW5e.png  used on input line 878.
+Package pdftex.def Info: ../images/AdamW5e.png  used on input line 882.
 (pdftex.def)             Requested size: 296.51219pt x 246.62508pt.
- [29 <../images/AdamW5e.png>]
-<../images/AdamW3e.png, id=846, 700.86844pt x 520.19344pt>
+ [30 <../images/AdamW5e.png>]
+<../images/AdamW3e.png, id=860, 700.86844pt x 520.19344pt>
 File: ../images/AdamW3e.png Graphic file (type png)
 <use ../images/AdamW3e.png>
-Package pdftex.def Info: ../images/AdamW3e.png  used on input line 895.
+Package pdftex.def Info: ../images/AdamW3e.png  used on input line 899.
 (pdftex.def)             Requested size: 245.30763pt x 182.07042pt.
-<../images/AdaFactor3e.png, id=847, 949.5475pt x 727.71875pt>
+<../images/AdaFactor3e.png, id=861, 949.5475pt x 727.71875pt>
 File: ../images/AdaFactor3e.png Graphic file (type png)
 <use ../images/AdaFactor3e.png>
-Package pdftex.def Info: ../images/AdaFactor3e.png  used on input line 901.
+Package pdftex.def Info: ../images/AdaFactor3e.png  used on input line 905.
 (pdftex.def)             Requested size: 332.3466pt x 254.70537pt.
- [30 <../images/AdamW3e.png> <../images/AdaFactor3e.png>] [31]
+ [31 <../images/AdamW3e.png> <../images/AdaFactor3e.png>] [32]
 Chapter 6.
-[32
+[33
 
-] [33] [34
+] [34] [35
 
 
 ]
 Appendix A.
-<../images/GanttChart-mid.png, id=881, 1059.96pt x 819.06pt>
+<../images/GanttChart-mid.png, id=896, 1059.96pt x 819.06pt>
 File: ../images/GanttChart-mid.png Graphic file (type png)
 <use ../images/GanttChart-mid.png>
-Package pdftex.def Info: ../images/GanttChart-mid.png  used on input line 945.
+Package pdftex.def Info: ../images/GanttChart-mid.png  used on input line 949.
 (pdftex.def)             Requested size: 582.9798pt x 450.48439pt.
 
-Overfull \hbox (11.97026pt too wide) in paragraph at lines 945--946
+Overfull \hbox (11.97026pt too wide) in paragraph at lines 949--950
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35
+[36
 
-] [36 <../images/GanttChart-mid.png>]
+] [37 <../images/GanttChart-mid.png>]
 Appendix B.
-<../rp.pdf, id=892, 614.295pt x 794.97pt>
+<../rp.pdf, id=906, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf>
-Package pdftex.def Info: ../rp.pdf  used on input line 949.
+Package pdftex.def Info: ../rp.pdf  used on input line 953.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf>
-Package pdftex.def Info: ../rp.pdf  used on input line 949.
+Package pdftex.def Info: ../rp.pdf  used on input line 953.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<../rp.pdf, id=895, page=1, 614.295pt x 794.97pt>
+<../rp.pdf, id=909, page=1, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 1>
-Package pdftex.def Info: ../rp.pdf , page1 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page1 used on input line 953.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 1>
-Package pdftex.def Info: ../rp.pdf , page1 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page1 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[37
+[38
 
 ]
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 1>
-Package pdftex.def Info: ../rp.pdf , page1 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page1 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 1>
-Package pdftex.def Info: ../rp.pdf , page1 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page1 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 1>
-Package pdftex.def Info: ../rp.pdf , page1 used on input line 949.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [38 <../rp.pdf>]
-<../rp.pdf, id=920, page=2, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 2>
-Package pdftex.def Info: ../rp.pdf , page2 used on input line 949.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 2>
-Package pdftex.def Info: ../rp.pdf , page2 used on input line 949.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 2>
-Package pdftex.def Info: ../rp.pdf , page2 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page1 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [39 <../rp.pdf>]
-<../rp.pdf, id=935, page=3, 614.295pt x 794.97pt>
+<../rp.pdf, id=934, page=2, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 3>
-Package pdftex.def Info: ../rp.pdf , page3 used on input line 949.
+<use ../rp.pdf, page 2>
+Package pdftex.def Info: ../rp.pdf , page2 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 3>
-Package pdftex.def Info: ../rp.pdf , page3 used on input line 949.
+<use ../rp.pdf, page 2>
+Package pdftex.def Info: ../rp.pdf , page2 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 3>
-Package pdftex.def Info: ../rp.pdf , page3 used on input line 949.
+<use ../rp.pdf, page 2>
+Package pdftex.def Info: ../rp.pdf , page2 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [40 <../rp.pdf>]
-<../rp.pdf, id=945, page=4, 614.295pt x 794.97pt>
+<../rp.pdf, id=949, page=3, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 4>
-Package pdftex.def Info: ../rp.pdf , page4 used on input line 949.
+<use ../rp.pdf, page 3>
+Package pdftex.def Info: ../rp.pdf , page3 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 4>
-Package pdftex.def Info: ../rp.pdf , page4 used on input line 949.
+<use ../rp.pdf, page 3>
+Package pdftex.def Info: ../rp.pdf , page3 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 4>
-Package pdftex.def Info: ../rp.pdf , page4 used on input line 949.
+<use ../rp.pdf, page 3>
+Package pdftex.def Info: ../rp.pdf , page3 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [41 <../rp.pdf>]
-<../rp.pdf, id=951, page=5, 614.295pt x 794.97pt>
+<../rp.pdf, id=960, page=4, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 4>
+Package pdftex.def Info: ../rp.pdf , page4 used on input line 953.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 4>
+Package pdftex.def Info: ../rp.pdf , page4 used on input line 953.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 4>
+Package pdftex.def Info: ../rp.pdf , page4 used on input line 953.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [42 <../rp.pdf>]
+<../rp.pdf, id=965, page=5, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 5>
-Package pdftex.def Info: ../rp.pdf , page5 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page5 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 5>
-Package pdftex.def Info: ../rp.pdf , page5 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page5 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 5>
-Package pdftex.def Info: ../rp.pdf , page5 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page5 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
-[42 <../rp.pdf>]
-<../rp.pdf, id=956, page=6, 614.295pt x 794.97pt>
+[43 <../rp.pdf>]
+<../rp.pdf, id=970, page=6, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 6>
-Package pdftex.def Info: ../rp.pdf , page6 used on input line 949.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 6>
-Package pdftex.def Info: ../rp.pdf , page6 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page6 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 6>
-Package pdftex.def Info: ../rp.pdf , page6 used on input line 949.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [43 <../rp.pdf>]
-<../rp.pdf, id=961, page=7, 614.295pt x 794.97pt>
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 7>
-Package pdftex.def Info: ../rp.pdf , page7 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page6 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 7>
-Package pdftex.def Info: ../rp.pdf , page7 used on input line 949.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 7>
-Package pdftex.def Info: ../rp.pdf , page7 used on input line 949.
+<use ../rp.pdf, page 6>
+Package pdftex.def Info: ../rp.pdf , page6 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [44 <../rp.pdf>]
-<../rp.pdf, id=969, page=8, 614.295pt x 794.97pt>
+<../rp.pdf, id=975, page=7, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 8>
-Package pdftex.def Info: ../rp.pdf , page8 used on input line 949.
+<use ../rp.pdf, page 7>
+Package pdftex.def Info: ../rp.pdf , page7 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 8>
-Package pdftex.def Info: ../rp.pdf , page8 used on input line 949.
+<use ../rp.pdf, page 7>
+Package pdftex.def Info: ../rp.pdf , page7 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 8>
-Package pdftex.def Info: ../rp.pdf , page8 used on input line 949.
+<use ../rp.pdf, page 7>
+Package pdftex.def Info: ../rp.pdf , page7 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [45 <../rp.pdf>]
-<../rp.pdf, id=977, page=9, 614.295pt x 794.97pt>
+<../rp.pdf, id=983, page=8, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 9>
-Package pdftex.def Info: ../rp.pdf , page9 used on input line 949.
+<use ../rp.pdf, page 8>
+Package pdftex.def Info: ../rp.pdf , page8 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 9>
-Package pdftex.def Info: ../rp.pdf , page9 used on input line 949.
+<use ../rp.pdf, page 8>
+Package pdftex.def Info: ../rp.pdf , page8 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 9>
-Package pdftex.def Info: ../rp.pdf , page9 used on input line 949.
+<use ../rp.pdf, page 8>
+Package pdftex.def Info: ../rp.pdf , page8 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [46 <../rp.pdf>]
-<../rp.pdf, id=985, page=10, 614.295pt x 794.97pt>
+<../rp.pdf, id=991, page=9, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 10>
-Package pdftex.def Info: ../rp.pdf , page10 used on input line 949.
+<use ../rp.pdf, page 9>
+Package pdftex.def Info: ../rp.pdf , page9 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 10>
-Package pdftex.def Info: ../rp.pdf , page10 used on input line 949.
+<use ../rp.pdf, page 9>
+Package pdftex.def Info: ../rp.pdf , page9 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 10>
-Package pdftex.def Info: ../rp.pdf , page10 used on input line 949.
+<use ../rp.pdf, page 9>
+Package pdftex.def Info: ../rp.pdf , page9 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [47 <../rp.pdf>]
-<../rp.pdf, id=991, page=11, 614.295pt x 794.97pt>
+<../rp.pdf, id=1000, page=10, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 11>
-Package pdftex.def Info: ../rp.pdf , page11 used on input line 949.
+<use ../rp.pdf, page 10>
+Package pdftex.def Info: ../rp.pdf , page10 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 11>
-Package pdftex.def Info: ../rp.pdf , page11 used on input line 949.
+<use ../rp.pdf, page 10>
+Package pdftex.def Info: ../rp.pdf , page10 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 11>
-Package pdftex.def Info: ../rp.pdf , page11 used on input line 949.
+<use ../rp.pdf, page 10>
+Package pdftex.def Info: ../rp.pdf , page10 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [48 <../rp.pdf>]
-<../rp.pdf, id=996, page=12, 614.295pt x 794.97pt>
+<../rp.pdf, id=1005, page=11, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 12>
-Package pdftex.def Info: ../rp.pdf , page12 used on input line 949.
+<use ../rp.pdf, page 11>
+Package pdftex.def Info: ../rp.pdf , page11 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 12>
-Package pdftex.def Info: ../rp.pdf , page12 used on input line 949.
+<use ../rp.pdf, page 11>
+Package pdftex.def Info: ../rp.pdf , page11 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 12>
-Package pdftex.def Info: ../rp.pdf , page12 used on input line 949.
+<use ../rp.pdf, page 11>
+Package pdftex.def Info: ../rp.pdf , page11 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [49 <../rp.pdf>]
-<../rp.pdf, id=1001, page=13, 614.295pt x 794.97pt>
+<../rp.pdf, id=1010, page=12, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 13>
-Package pdftex.def Info: ../rp.pdf , page13 used on input line 949.
+<use ../rp.pdf, page 12>
+Package pdftex.def Info: ../rp.pdf , page12 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 13>
-Package pdftex.def Info: ../rp.pdf , page13 used on input line 949.
+<use ../rp.pdf, page 12>
+Package pdftex.def Info: ../rp.pdf , page12 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
-<use ../rp.pdf, page 13>
-Package pdftex.def Info: ../rp.pdf , page13 used on input line 949.
+<use ../rp.pdf, page 12>
+Package pdftex.def Info: ../rp.pdf , page12 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [50 <../rp.pdf>]
-<../rp.pdf, id=1013, page=14, 614.295pt x 794.97pt>
+<../rp.pdf, id=1015, page=13, 614.295pt x 794.97pt>
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 13>
+Package pdftex.def Info: ../rp.pdf , page13 used on input line 953.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 13>
+Package pdftex.def Info: ../rp.pdf , page13 used on input line 953.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../rp.pdf Graphic file (type pdf)
+<use ../rp.pdf, page 13>
+Package pdftex.def Info: ../rp.pdf , page13 used on input line 953.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [51 <../rp.pdf>]
+<../rp.pdf, id=1027, page=14, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 14>
-Package pdftex.def Info: ../rp.pdf , page14 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page14 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 14>
-Package pdftex.def Info: ../rp.pdf , page14 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page14 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 14>
-Package pdftex.def Info: ../rp.pdf , page14 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page14 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
-[51 <../rp.pdf>]
-<../rp.pdf, id=1018, page=15, 614.295pt x 794.97pt>
+[52 <../rp.pdf>]
+<../rp.pdf, id=1032, page=15, 614.295pt x 794.97pt>
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 15>
-Package pdftex.def Info: ../rp.pdf , page15 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page15 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 15>
-Package pdftex.def Info: ../rp.pdf , page15 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page15 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../rp.pdf Graphic file (type pdf)
 <use ../rp.pdf, page 15>
-Package pdftex.def Info: ../rp.pdf , page15 used on input line 949.
+Package pdftex.def Info: ../rp.pdf , page15 used on input line 953.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [52 <../rp.pdf>] (FinalThesis.bbl [53
+ [53 <../rp.pdf>] (FinalThesis.bbl [54
 
 ]
 Underfull \hbox (badness 3460) in paragraph at lines 102--106
@@ -1759,7 +1759,7 @@ Underfull \hbox (badness 2197) in paragraph at lines 128--132
 em-ory.  \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
  []
 
-[54]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 243--247
 []\OT1/cmr/m/n/12 Giuliano Gi-acaglia.  How to scale train-ing on mul-ti-ple
  []
@@ -1781,14 +1781,14 @@ Package caption Warning: Unused \captionsetup[ table] on input line \caption@op
 t@ table@lineno .
 See the caption package documentation for explanation.
 
-[55]
+[56]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     957.
+(LaTeX3)     961.
 
  (FinalThesis.aux)
 Package rerunfilecheck Info: File `FinalThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 90487935B82EFCE585602F9ED6D33509;2281.
+(rerunfilecheck)             Checksum: 4B5EA9283A084E25B182DBF188E829DE;2447.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1799,10 +1799,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25891 strings out of 479799
- 510645 string characters out of 2869722
- 869141 words of memory out of 3000000
- 42130 multiletter control sequences out of 15000+200000
+ 25896 strings out of 479799
+ 510720 string characters out of 2869722
+ 869144 words of memory out of 3000000
+ 42132 multiletter control sequences out of 15000+200000
  552216 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,21n,111p,1099b,1158s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1832,9 +1832,9 @@ rbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
 /cm/cmti8.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb><C:/Users/nirbh/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on FinalThesis.pdf (63 pages, 1982348 bytes).
+Output written on FinalThesis.pdf (64 pages, 1984501 bytes).
 PDF statistics:
- 1176 PDF objects out of 1200 (max. 8388607)
- 190 named destinations out of 1000 (max. 500000)
- 523 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1191 PDF objects out of 1200 (max. 8388607)
+ 193 named destinations out of 1000 (max. 500000)
+ 539 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -23,13 +23,15 @@
 \BOOKMARK [0][-]{chapter.4}{Architecture Creation}{}% 23
 \BOOKMARK [1][-]{section.4.1}{Drawbacks Of Current Architectures}{chapter.4}% 24
 \BOOKMARK [1][-]{section.4.2}{Proposed Architecture Improvements}{chapter.4}% 25
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 26
-\BOOKMARK [1][-]{section.5.1}{Experiment Data Pre-Processing And Analysis}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.2}{Existing Architecture Benchmarks}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.3}{Custom BERT Model Results}{chapter.5}% 29
-\BOOKMARK [0][-]{chapter.6}{Conclusions And Recommendations}{}% 30
-\BOOKMARK [1][-]{section.6.1}{Recommendations}{chapter.6}% 31
-\BOOKMARK [0][-]{section*.28}{Appendices}{}% 32
-\BOOKMARK [0][-]{appendix.1.A}{Appendix Gantt Chart}{}% 33
-\BOOKMARK [0][-]{appendix.1.B}{Appendix Research Proposal}{}% 34
-\BOOKMARK [0][-]{appendix*.30}{References}{}% 35
+\BOOKMARK [2][-]{subsection.4.2.1}{Answer-Pointer Layer Implementation}{section.4.2}% 26
+\BOOKMARK [2][-]{subsection.4.2.2}{Custom DistilBERT Model}{section.4.2}% 27
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 28
+\BOOKMARK [1][-]{section.5.1}{Experiment Data Pre-Processing And Analysis}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.2}{Existing Architecture Benchmarks}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.3}{Custom BERT Model Results}{chapter.5}% 31
+\BOOKMARK [0][-]{chapter.6}{Conclusions And Recommendations}{}% 32
+\BOOKMARK [1][-]{section.6.1}{Recommendations}{chapter.6}% 33
+\BOOKMARK [0][-]{section*.28}{Appendices}{}% 34
+\BOOKMARK [0][-]{appendix.1.A}{Appendix Gantt Chart}{}% 35
+\BOOKMARK [0][-]{appendix.1.B}{Appendix Research Proposal}{}% 36
+\BOOKMARK [0][-]{appendix*.30}{References}{}% 37
