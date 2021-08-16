@@ -8,24 +8,24 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces QA-LSTM with Attention layer \citep {lstmhaighextractive}\relax }}{11}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Overview of the 2 approaches by \citep {lstmhu2016question}, showing the Sequence Model on the left and the Boundary Model on the right.\relax }}{13}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Basic classification model using LSTM \citep {lstmintent}\relax }}{14}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Basic classification model using RNNs \citep {lstmintent}\relax }}{15}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Transformer Architecture built by \citep {atayl}\relax }}{16}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Basic classification model using RNNs \citep {lstmintent}\relax }}{14}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Transformer Architecture built by \citep {atayl}\relax }}{15}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Scale Dot and Multi-Head Attention Models \citep {atayl}\relax }}{17}{figure.caption.18}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Pre-training and Fine Tuning procedures for BERT \citep {bert}\relax }}{18}{figure.caption.19}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Research Flow Diagram\relax }}{23}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Research Flow Diagram\relax }}{24}{figure.caption.21}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces BOLT Data Flow Diagram\relax }}{25}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces BOLT Data Flow Diagram\relax }}{27}{figure.caption.22}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces ALBERT Model Benchmarks\relax }}{28}{figure.caption.23}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces RoBerta Model Benchmarks\relax }}{29}{figure.caption.24}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces DistilBERT Model Benchmarks\relax }}{30}{figure.caption.25}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces BOLT with AdamW Optimizer at 5e-5 rate\relax }}{31}{figure.caption.26}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces BOLT with AdamW Optimizer at 3e-5 rate\relax }}{32}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces BOLT with AdaFactor Optimizer at 3e-5 rate\relax }}{32}{figure.caption.28}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces BOLT with AdaFactor Optimizer at 3e-5 rate outputs to questions asked\relax }}{33}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces DistilBERT model outputs to questions asked\relax }}{34}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces ALBERT Model Benchmarks\relax }}{30}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces RoBerta Model Benchmarks\relax }}{31}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces DistilBERT Model Benchmarks\relax }}{32}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces BOLT with AdamW Optimizer at 5e-5 rate\relax }}{33}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces BOLT with AdamW Optimizer at 3e-5 rate\relax }}{34}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces BOLT with AdaFactor Optimizer at 3e-5 rate\relax }}{34}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces BOLT with AdaFactor Optimizer at 3e-5 rate outputs to questions asked\relax }}{35}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces DistilBERT model outputs to questions asked\relax }}{36}{figure.caption.30}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Thesis Gantt Chart\relax }}{39}{figure.caption.32}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Thesis Gantt Chart\relax }}{41}{figure.caption.32}%
 \addvspace {10\p@ }

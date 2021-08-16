@@ -21,7 +21,8 @@ footskip=.25in]{geometry}
 \usepackage{amssymb}
 
 \usepackage{tikz}
-\usetikzlibrary{shapes.geometric,arrows,positioning,chains}
+\usetikzlibrary{shapes,positioning,chains}
+\usetikzlibrary{arrows}
 \newcommand*{\h}{\hspace{5pt}}% for indentation
 \newcommand*{\hh}{\h\h}% double indentation
 
@@ -73,14 +74,14 @@ footskip=.25in]{geometry}
     \input{nomenclature.tex}
     \printnomenclature[1in]
 	\begin{abstract}
-		Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of this work will be to introduce a variation of the Transformer architecture, \textit{BOLT} or BERT Optimized LSTM Transformer. BOLT is an attempt at combining LSTM based Pointer networks along with a Bidirectional Transformer variant to produce another lighter model specifically for the use of Question Answering. Compare and contrast its performance against other architectures such as RoBerta, DistilBERT and ALBERT using the SQuAD 2.0 Dataset. Through this research it is shown that BOLT is at par with current state of the art architectures and that by combining an LSTM with a Transformer can actually yield slightly better results when correctly optimized.
+		Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of this work will be to introduce a variation of the Transformer architecture, BERT Optimized LSTM Transformer or \textit{BOLT}. BOLT is an attempt at combining LSTM based Pointer networks along with a Bidirectional Transformer variant to produce another lighter model specifically for the use of Question Answering. Compare and contrast its performance against other architectures such as RoBerta, DistilBERT and ALBERT using the SQuAD 2.0 Dataset. Through this research it is shown that BOLT is at par with current state of the art architectures and that by combining an LSTM with a Transformer can actually yield slightly better results when correctly optimized.
 
 	\end{abstract}
     \cleardoublepage% \clearpage
     \pagenumbering{arabic}
     \chapter{Introduction}\label{c1introduction}
 
-    One of the most philosophical questions that anyone can encounter is \textit{``Can an answer exist without a question?"}. While that question exists to be solved by philosophers and thinkers, we shall aim to address the \textit{answer} that can be provided to a question in terms of the context that has been asked. While the field of Natural Language Processing(NLP) is vast and many unexplored areas exist, in this thesis the focus is entirely on developing a novel architecture that provides \textit{highly contextual and relevant answers} to the questions asked of it.
+    One of the most philosophical questions that anyone can encounter is \textit{``Can an answer exist without a question?"}. While that question exists to be solved by philosophers and thinkers, this work shall aim to address the \textit{answer} that can be provided to a question in terms of the context that has been asked. While the scope of exploration in the field Natural Language Processing(NLP) is vast and many unexplored areas exist, in this thesis the focus is entirely on developing a novel architecture that provides \textit{highly contextual and relevant answers} to the questions asked of it.
 
         \section{Background Of The Study}\label{c11}
 		    The earliest examples of Question-Answering(QA) systems can be traced back to 1961, in the form of BASEBALL,\citep{green1961baseball}, a system developed by Bert F. Green and team to answer basic questions posed using punch cards in ordinary English language about stored data on baseball games. The team implemented a dictionary structure to allow for answers to be looked up and printed. For example, the system could answer very direct questions such as: ``Where did each team play on July 7?".
@@ -88,13 +89,13 @@ footskip=.25in]{geometry}
 		    Question-Answering based systems have gained a lot of popularity, especially in the form of ``chatbots''. These systems depend highly on contextual understanding of the input, the training corpus and the question asked. They use this knowledge to output an answer that can help the user with whatever their query is. Recurrent neural networks and architectures based on them, have been able to provide great advancements in the field of Question-answering and chatbots in general. However, there is a behaviour of over-fitting and a lack of contextual understanding of the question. This, coupled with long training times and extremely complex mathematical model designs, have often kept the field of Natural Language Processing slightly obscured from the masses.
 
 		    The task of Question-Answering is a machine comprehension problem. On digging deeper, once can classify it as a sequential problem too. One might wonder how it is a sequential problem? The answer to that is simple, traditionally QA systems work by ``sequentially reading" the input and producing an output based on what they understand semantically or contextually.
-		    In a more mathematical context, we can say that the problem we face is of \textit{answer selection} and not \textit{answer provision}. Through numerous studies that have been done, some of which we shall look into detail in chapter \ref{c2litrev}, we see that the problem is not how to provide an answer to a question, it is if the answer provided is the correct one or not in the \textit{context} in which the question has been posed.
+		    In a more mathematical context, one can say that the problem is of \textit{answer selection} and not \textit{answer provision}. Through numerous studies that have been done, some of which shall be analyzed in detail in chapter \ref{c2litrev}, it becomes clear that the problem is not how to provide an answer to a question, it is if the answer provided is the correct one or not in the \textit{context} in which the question has been posed.
 
-		    The research presented forth here is aimed at proposing a new variation to an already successful architecture in the field of NLP, namely \textit{Transformers}, created by the team at Google \citep{atayl}. A critically assessed attempt is made at combining state of the art approaches that have been treated as separate elements so far and to show that the proposed improvements are at par, if not better than the current approach.
+		    The research presented forth here is aims to propose a new variation to an already successful architecture in the field of NLP, namely \textit{Transformers}, created by the team at Google \citep{atayl}. A critically assessed attempt is made at combining state of the art approaches that have been treated as separate elements so far and to show that the proposed improvements are at par, if not better than the current approach.
 
 		    A Transformer is a form of transduction model that relies solely on self-attention to figure out how to represent its inputs and outputs. It does so without the use of any sequence aligned recurrent neural networks(RNNs) or convolutions.
 
-            The area of Natural language Processing has taken significant leaps in the last two decades. Work done towards improving the ability of machine learning models to first recognize words, then sentences, followed by contextual understanding has led to several interesting and novel approaches in the field. From early on neural networks to creating Long Short-Term Memory architectures \citep{lstmoriginal} by Sepp Hochreiter and Jurgen Schmidhuber in the mid-'90s that resolved the vanishing gradient problem of classical neural networks, we have come a long way.
+            The area of Natural language Processing has taken significant leaps in the last two decades. Work done towards improving the ability of machine learning models to first recognize words, then sentences, followed by contextual understanding has led to several interesting and novel approaches in the field. From early on neural networks to creating Long Short-Term Memory architectures \citep{lstmoriginal} by Sepp Hochreiter and Jurgen Schmidhuber in the mid-'90s that resolved the vanishing gradient problem of classical neural networks, NLP architectures have come a long way.
 
            The latest advancements in this field come from Google's research lab in the form of \textit{Transformers}. This is studied in a bit more detail later in \ref{c2litrev}. However, no model can be successful without a good dataset to train on. This is where the SQuAD 2.0 dataset \citep{dataset} comes in. This dataset is what forces the machine learning models to do contextual understanding. One might even say that it forces the models to ``think'' for themselves before answering a task.
 
@@ -106,11 +107,11 @@ footskip=.25in]{geometry}
         \begin{enumerate}
         	\item Obtain SQuAD2.0 dataset and prepare it for training
         	\item Implement the existing models such as ALBERT, RoBerta and DistilBERT that are available via libraries such as HuggingFace \citep{hfTransformers} and PyTorch  on the dataset
-        	\item Obtain F1, Exact Match(EM), Training Loss and Validation Loss scores for existing models to treat them as our benchmark values
+        	\item Obtain F1, Exact Match(EM), Training Loss and Validation Loss scores for existing models to treat them as benchmark values
         	\item Identify drawbacks of the current architectures
-        	\item Design our architecture and evaluate its performance against the provided benchmark scores
+        	\item Design BOLT architecture and evaluate its performance against the provided benchmark scores
         	\item Fine-tune the architecture, re-evaluate and report improvements
-        	\item Compare the results of our Transformer model with the benchmark scores.
+        	\item Compare the results of BOLT model with the benchmark scores.
         \end{enumerate}
 
         \section{Scope Of The Study}\label{13}
@@ -127,7 +128,7 @@ footskip=.25in]{geometry}
 
         In chapter \ref{c1introduction}, an introduction to the concept of Question-Answering, a brief look at the problem, motivation, scope of this research and its significance have been provided. Chapter \ref{c1introduction} lays the basis of the problem, takes the reader briefly back in time to where QA systems first started and how they have advanced today.
 
-        Chapter \ref{c2litrev}, looks in detail at the background studies that have been briefly mentioned in section \ref{c11}. In this chapter critical analysis is conducted how some of the work that has been selected is relevant to what this research aims to highlight, it helps us understand the merits and shortcomings of current state of the art approaches. Detailed analysis of Long Short-Term Memory(LSTM) and Transformer architectures is written, with special attention to applications in the field of Question Answering. There is particular focus on the advancements and applications of existing architectures as well as acknowledgement of why LSTMs reigned supreme for almost 2 decades. Transformers provide a unique opportunity to perform highly accurate predictive tasks in NLP. The most key advances to both LSTMs and Transformers are their bi-directional applications which are also discussed. Finally, this chapter ends with a summary of the approaches and highlights certain drawbacks. These drawbacks are discussed in more detail in \ref{c4}.
+        Chapter \ref{c2litrev}, looks in detail at the background studies that have been briefly mentioned in section \ref{c11}. In this chapter critical analysis is conducted how some of the work that has been selected is relevant to what this research aims to highlight, it helps in understanding the merits and shortcomings of current state of the art approaches. Detailed analysis of Long Short-Term Memory(LSTM) and Transformer architectures is written, with special attention to applications in the field of Question Answering. There is particular focus on the advancements and applications of existing architectures as well as acknowledgement of why LSTMs reigned supreme for almost 2 decades. Transformers provide a unique opportunity to perform highly accurate predictive tasks in NLP. The most key advances to both LSTMs and Transformers are their bi-directional applications which are also discussed. Finally, this chapter ends with a summary of the approaches and highlights certain drawbacks. These drawbacks are discussed in more detail in \ref{c4}.
 
         Next, chapter \ref{c3researchmeth} proposes the research methods that have been implemented. It explains the various metrics that have been used and why they were chosen, specifically highlighting why Accuracy isn't a good measure for creating a successful model and highlighting the use of Precision, Recall and F1 as useful metrics for the experiments conducted in this particular thesis, Exact Match scores are also introduced and discussed in this chapter. The chapter ends with a research flow diagram describing the processes followed for the experiments and application stages of various methods in a visual manner.
 
@@ -140,7 +141,7 @@ footskip=.25in]{geometry}
 
     \chapter{Literature Review}\label{c2litrev}
 
-    To be able to effectively deliver on the aims and objectives we have defined in Section \ref{12}, we must first critically analyse the work that has been done in the field of NLP and, in particular, the field of Question-Answering based networks. In this section, we will critically analyse a few key model architectures and how we reached Transformers, which form the base of our proposed architecture.
+    To be able to effectively deliver on the aims and objectives defined in section \ref{12}, it is important to first critically analyse the work that has been done in the field of NLP and, in particular, the field of Question-Answering based networks. This chapter explores a few key model architectures and how they led to reached Transformers, which form the base of the proposed architecture.
 
 
 
@@ -148,9 +149,9 @@ footskip=.25in]{geometry}
 
             In 1997 \citep{lstmoriginal} introduced to the world a gradient descent based model in the form of Long Short-Term Memory. They set out to solve the problem of the vanishing gradient which was often seen in ``Back-Propagation Through Time"(BPPTs) based neural networks. Extensive studies done on this, some by Hochreiter himself, showed that the problem of vanishing gradients is a real one. It was also seen that in case of BPTTs, the error back-flow mechanisms would either blow up or also suffer from vanishing gradients leading to either oscillating weights or learning to bridge long time gaps would not work. To remediate this, \citep{lstmoriginal} introduced the concept of a \textit{constant} error flow through the internal states of special units.
 
-            Their paper, Long Short-Term Memory, \citep{lstmoriginal}, highlights that the work previously done using various gradient-descent variants, time-delays, time constants, use of higher order units to influence connections when the network receives conflicting error signals, Kalman filters, Second order nets etc. still suffer from some of the same problems that we have earlier. In the case of Ring's approach \citep{lstmRing}, the network can be really fast but also suffers from memory constraints and lack of generalization. This happens because to bridge $ n $ time lags, the model adds $ n $ additional units.
+            Long Short-Term Memory by \citep{lstmoriginal}, highlights that the work previously done using various gradient-descent variants, time-delays, time constants, use of higher order units to influence connections when the network receives conflicting error signals, Kalman filters, Second order nets etc. still suffer from some of the same problems that have always existed. In the case of Ring's approach \citep{lstmRing}, the network can be really fast but also suffers from memory constraints and lack of generalization. This happens because to bridge $ n $ time lags, the model adds $ n $ additional units.
 
-            It is essential for us to understand how LSTMs function as it forms the basis of Transformers to exist. Hochreiter and Scmidhuber designed a \textit{memory cell} that  allows for a constant error flow. This is achieved by introducing \textit{constant error carousel}(CEC), a multiplicative input gate unit and a multiplicative output gate unit. These \textit{multiplicative} units help shield the contents of the memory cell from irrelevant inputs. The CEC, input and output gates together form the \textit{memory cell}, as seen in Fig. \ref{lstmCEC}.
+            It is essential for to understand how LSTMs function as it forms the basis of Transformers to exist. Hochreiter and Scmidhuber designed a \textit{memory cell} that  allows for a constant error flow. This is achieved by introducing \textit{constant error carousel}(CEC), a multiplicative input gate unit and a multiplicative output gate unit. These \textit{multiplicative} units help shield the contents of the memory cell from irrelevant inputs. The CEC, input and output gates together form the \textit{memory cell}, as seen in Fig. \ref{lstmCEC}.
            	\begin{figure}[h!]
       				\includegraphics[scale=0.35]{../images/lstm-memorycell.png}
       				\caption{LSTM Memory cell with a Constant Error Carousel having fixed weight 1.0, \citep{lstmoriginal}}\label{lstmCEC}
@@ -183,7 +184,7 @@ footskip=.25in]{geometry}
             \end{equation}
             Where $ u $ may stand for input, output or gate units, memory cells or even conventional hidden units, if they are being used.
 
-            In fig. \ref{lstmNetwork}, we see the internal workings of how an LSTM network could look like.
+            Figure \ref{lstmNetwork} shows the internal workings of how an LSTM network could look like.
             \begin{figure}[!h]
 	           \centering
                \includegraphics[scale=0.35]{../images/lstm-network.png}
@@ -191,8 +192,8 @@ footskip=.25in]{geometry}
             \end{figure}
 
             A series of experiments were performed to prove that LSTMs are indeed ``state-of-the-art" and provide an improvement over then existing RNN based architectures.
-            Experiments around temporal order, which is defined as a series of events that happen in a particular order, that were previously unsolved by RNNs, were successfully solved by LSTMs. This was possible because of how LSTMs address time lags vs. how RNNs suffer from vanishing gradients. Details of the analysis and experiments conducted are available in section 5 of the paper ``Long Short-Term Memory" by \citep{lstmoriginal}, with experimental summaries in tables 10 and 11 of the same. Being able to solve for temporal order based problems allowed LSTMs to be capable of solving various real world problems that we will discuss subsequently.
-            Temporal orders are key in contextual understanding for NLP based tasks and especially in the case of QA based networks. Let us now look at some advantages and limitations of LSTMs, before moving on to understand how they have been applied in the field of QA.
+            Experiments around temporal order, which is defined as a series of events that happen in a particular order, that were previously unsolved by RNNs, were successfully solved by LSTMs. This was possible because of how LSTMs address time lags vs. how RNNs suffer from vanishing gradients. Details of the analysis and experiments conducted are available in section 5 of the paper ``Long Short-Term Memory" by \citep{lstmoriginal}, with experimental summaries in tables 10 and 11 of the same. Being able to solve for temporal order based problems allowed LSTMs to be capable of solving various real world problems that will be discussed later.
+            Temporal orders are key in contextual understanding for NLP based tasks and especially in the case of QA based networks. Let's now look at some advantages and limitations of LSTMs, before moving on to understand how they have been applied in the field of QA.
 
 
             \subsubsection{Advantages of LSTMs}
@@ -293,7 +294,7 @@ footskip=.25in]{geometry}
             \end{equation}
             where  $ \textbf{W}_{am}, \textbf{W}_{qm} $ and $ \textbf{w}_ms $ are attention parameters. Attention parameters show somewhat similar behaviour to tf-idf  where some words get more attention or weights associated to them. The main difference being that the attention mechanism adjusts its weights according to question information.
 
-            Critically, this attention based approach from \citep{lstmhaighextractive} emphasizes on attention-driven representations and uses that to calculate the distances between questions and their respective answers. A combination approach with CNNs and attention based connections helps in localizing various internal connections, correctly scaling the errors and reducing unnecessary noise. From eq. \ref{bilstmAttentioneq}-\ref{bilstmattentioneq3}, \citep{lstmhaighextractive} we can mathematically prove how the average distances are computed.
+            Critically, this attention based approach from \citep{lstmhaighextractive} emphasizes on attention-driven representations and uses that to calculate the distances between questions and their respective answers. A combination approach with CNNs and attention based connections helps in localizing various internal connections, correctly scaling the errors and reducing unnecessary noise. From eq. \ref{bilstmAttentioneq}-\ref{bilstmattentioneq3}, \citep{lstmhaighextractive} one can mathematically prove how the average distances are computed.
             Experiments conducted on the InsuranceQA dataset showed that the \textit{QA-LSTM/CNN with Attention} model can outperform the taken baseline models, which were based purely on QAs using CNNs.
             \begin{table}
                 \begin{tabular}{|l|llll|}
@@ -325,7 +326,7 @@ footskip=.25in]{geometry}
 
              The match-LSTM model architecture consists of:
              \begin{itemize}
-             	\item \textbf{LSTM Preprocessing Layer}: As we can see from \ref{lstmMatch}, there are 2 LSTM preporcessing layers. This layer is used to integrate contextual information directly into the representation of how each token in the passage and question is represented. This is based directly on the simple LSTM \citep{lstmoriginal} and not the BiLSTM.
+             	\item \textbf{LSTM Preprocessing Layer}: As can be seen from \ref{lstmMatch}, there are 2 LSTM pre-processing layers. This layer is used to integrate contextual information directly into the representation of how each token in the passage and question is represented. This is based directly on the simple LSTM \citep{lstmoriginal} and not the BiLSTM.
              	\item \textbf{Match-LSTM Layer}: Here, the model treats the question as a premise and the passage as hypothesis. The layer sequentially reads the passage and calculates an attention weight vector $ \vec{\alpha}_{i} \in \mathbb{R}^{Q}$ as:
              	\begin{equation}\label{eqmatchlstm}
              		\begin{aligned}
@@ -335,7 +336,7 @@ footskip=.25in]{geometry}
              	\end{equation}
 
 			where $\mathbf{W}^{\mathrm{q}}, \mathbf{W}^{\mathrm{p}}, \mathbf{W}^{\mathrm{r}} \in \mathbb{R}^{l \times l}, \mathbf{b}^{\mathrm{p}}, \mathbf{w} \in \mathbb{R}^{l}$ and $b \in \mathbb{R}$ are parameters to be learned, $\overrightarrow{\mathbf{h}}_{i-1}^{\mathrm{r}} \in \mathbb{R}^{l}$ is the hidden vector of the one-directional match-LSTM at position $i-1$, and the outer product $\left(\cdot \otimes \mathbf{e}_{Q}\right)$ produces a matrix or row vector by repeating the vector or scalar on the left for $Q$ times.
-			To simply summarise, the above equation \ref{eqmatchlstm} produces  $ \vec{\alpha}_{i,j} $ that gives us the degree of matching between token $ i $ in the passage with token $ j $ in the question. This is the forward pass representation of the mathc-LSTM, the backward pass, which generates encodings for each token in the passage is given by:
+			To simply summarise, the above equation \ref{eqmatchlstm} produces  $ \vec{\alpha}_{i,j} $ that gives the degree of matching between token $ i $ in the passage with token $ j $ in the question. This is the forward pass representation of the mathc-LSTM, the backward pass, which generates encodings for each token in the passage is given by:
 			\begin{equation}\label{eqmatchlstmreverse}
 				\begin{aligned}
 					&\overleftarrow{\mathbf{G}}_{i}=\tanh \left(\mathbf{W}^{\mathrm{q}} \mathbf{H}^{\mathrm{q}}+\left(\mathbf{W}^{\mathrm{p}} \mathbf{h}_{i}^{\mathrm{p}}+\mathbf{W}^{\mathrm{r}} \overleftarrow{\mathbf{h}}_{i+1}^{\mathrm{r}}+\mathbf{b}^{\mathbf{p}}\right) \otimes \mathbf{e}_{Q}\right) \\
@@ -352,7 +353,7 @@ footskip=.25in]{geometry}
 	         	\caption{Overview of the 2 approaches by \citep{lstmhu2016question}, showing the Sequence Model on the left and the Boundary Model on the right.}\label{lstmMatch}
 	         \end{figure}
 
-		It is important to highlight that the sequence model represents the answers as integers in a sequence that refer to the position of the selected token in the original passage. The Ans-Ptr layer models these sequentially as well. For the purposes of this thesis we will focus on the boundary model from the paper by \citep{lstmhu2016question}. As we can see from table \ref{tableMatchLSTM}, the results are significantly better for SQuAD 1.1 dataset. Further enhancements to this have been made and various other models have come out on top, however this paper pioneered the use of a bidirectional Ans-Ptr approach.
+		It is important to highlight that the sequence model represents the answers as integers in a sequence that refer to the position of the selected token in the original passage. The Ans-Ptr layer models these sequentially as well. This thesis will focus on the boundary model from the paper by \citep{lstmhu2016question}. Table \ref{tableMatchLSTM} shows the results are significantly better for SQuAD 1.1 dataset. Further enhancements to this have been made and various other models have come out on top, however this paper pioneered the use of a bidirectional Ans-Ptr approach.
 		\begin{table}[!htbp]
 			\centering
 		\resizebox{\columnwidth}{!}{
@@ -379,11 +380,12 @@ footskip=.25in]{geometry}
 			\includegraphics[scale=0.35]{../images/lstm-intent1.png}
 			\caption{Basic classification model using LSTM \citep{lstmintent}}\label{lstmIntent1}
 		\end{figure}
-	     Our research has shown that this approach hasn't yet been applied to the SQuAD 2.0 dataset. In chapter \ref{c3researchmeth}, section \ref{c33} we will hypothesize the implementation of this approach along with the use of Transformers, which are covered in the next section.
+
+	     Background research done for this thesis has shown that this approach hasn't yet been applied to the SQuAD 2.0 dataset. In chapter \ref{c3researchmeth}, section \ref{c33} a hypothesis is presented for the implementation of this approach along with the use of Transformers, which are covered in the next section.
 
          The final piece of research to look at in this section is by \citep{lstmintent} titled \textit{Intent Classification in Question-Answering Using LSTM Architectures}. The approach followed is similar to \citep{lstmSubilstm}, using GloVe embeddings, allowing for prefixes to be added and generating word closeness and using a supervised learning technique. In fig. \ref{lstmIntent1} it can be observed how applying one-hot encoding, followed by GloVe embedding before reaching the LSTM layer and using a Softmax activation layer at one prediction classes allows the model to generate better predictions on the TREC \citep{trec} dataset.
 
-		In fig. \ref{lstmIntent2} we see the implementation of a padding layer at the end of each question and adding a subclass prediction strategy at the end of each prediction. This is done to gain better contextual understanding of the question. The subclass acts as a specialization class while the main class acts as a generalization class, therefore narrowing the context while maintaining global outlook.
+		In fig. \ref{lstmIntent2} one can see the implementation of a padding layer at the end of each question and adding a subclass prediction strategy at the end of each prediction. This is done to gain better contextual understanding of the question. The subclass acts as a specialization class while the main class acts as a generalization class, therefore narrowing the context while maintaining global outlook.
 		\begin{figure}[!h]
 			\centering
 			\includegraphics[scale=0.35]{../images/lstm-intent2.png}
@@ -397,7 +399,7 @@ footskip=.25in]{geometry}
 
 	    \section{Transformers}\label{23}
 
-	    	The previous section highlighted some key advancements in the field of machine comprehension and LSTMs, however, not a lot changed for almost two decades in the field of NLP based machine comprehension tasks architecturally. Since their introduction in 1997, LSTMs \citep{lstmoriginal} have been the base architecture for countless applications. However, as we noted in section \ref{c2criticalissues}, LSTMs have some critical drawbacks.
+	    	The previous section highlighted some key advancements in the field of machine comprehension and LSTMs, however, not a lot changed for almost two decades in the field of NLP based machine comprehension tasks architecturally. Since their introduction in 1997, LSTMs \citep{lstmoriginal} have been the base architecture for countless applications. However, as noted in section \ref{c2criticalissues}, LSTMs have some critical drawbacks.
 
 			\textit{Transformers} were introduced in late 2017 by \citep{atayl} and have become a very reliable way to implement various NLP based tasks. The basic architecture for which can be seen in fig. \ref{transformerArchitecture}.
 			\begin{figure}[h!]
@@ -503,7 +505,7 @@ footskip=.25in]{geometry}
     	The dataset consists of over 150,000 questions. Split into 100,000 answerable and 50,000+ unanswerable question, which were written to look similar to unanswerable questions. The challenge being that a model should be able to correctly answer the answerable questions and abstain from answering the unanswerable ones.
 	    The dataset is freely available as a part of the Transformers package in python or it can be downloaded from the SQuAD 2.0 website \citep{squad}.
 
-	    To effectively use this dataset for our purposes, let us first take a look at what its contents look like below.\\ \\
+	    To effectively use this dataset it is important to first take a look at what its contents look like below.\\ \\
 	    \noindent\fbox{
 	    	\parbox{\textwidth}{\textbf{Context:}\textit{``The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (``Norman" comes from ``Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia."}\\
 	    		\textbf{Question: } \textit{Who was the Norse leader?}\\
@@ -581,9 +583,12 @@ footskip=.25in]{geometry}
 
 		Outlined below are some reasons why accuracy is not a good measure:
 		\begin{enumerate}
-			\item \textbf{Class Imbalance}
-			\item \textbf{Prone to Over and Under-fitting}
+			\item \textbf{Class Imbalance}: Class imbalance refers to a situation when the data contains a large number of values that belong to one particular category. This means that the data is skewed in favour of that category and if this data is used, it can lead to results that positively favour the results from that category, thus leading to inaccurate predictions. Since accuracy assigns equal weights to both false positives and false negatives, in case of critical predictions using classifiers, skewed data can lead to disastrous consequences.
+			\item \textbf{Prone to Over and Under-fitting}: Overfitting happens when you model ``specializes" on the training dataset so well that it suffers from a poor performance on the testing or validation sets, thus having poor real world performance. Underfitting happens when the model ``generalizes" extremely well on the training dataset because it contains lots of different scenarios with overlapping outcomes, thus failing to specialize on a particular context, again leading to poor validation or real world performance. Since the output from the model is skewed in its training regime, its accuracy in either case is very poor on real world applications, thus making accuracy not a good measure.
 		\end{enumerate}
+
+        Having established that accuracy is not a good measure. It is important to understand the following metrics that form the basis for F1 and Exact Match. Precision and Recall are highly used metrics that provide a deeper insights into the dataset and model prediction results. The F1 score helps balance these metrics by combining them into one single metric.
+
 
 	\textbf{Precision} is the probability of identifying a correct positive outcome from all the predicted positive outcomes. Precision is used for cases when the cost of a false positive has a very high negative impact.
 	\begin{equation}\label{precision}
@@ -680,8 +685,16 @@ footskip=.25in]{geometry}
 
        \section{Drawbacks Of Current Architectures}\label{c41}
 
-       The transformer based architectures reviewed in section  and the Bi-LSTM \citep{bilstmHerman} have shown great advantages. However, they suffer from certain flaws that are outlined below:
+       The transformer based architectures reviewed in chapter \ref{c2litrev} have shown great advantages. However, they suffer from certain flaws that are outlined below:
 
+       \begin{itemize}
+        \item \textbf{Fixed Length Strings} - Transformers apply attention mechanism that need the text to be split into smaller, sizeable chunks to be processed.
+        \item \textbf{Context Fragmentation} - Since input text is split into smaller chunks, context is often lost because if an input sentence is split down the middle its meaning changes completely.
+        \item \textbf{Abstraction of Higher Level Representations Fragmentation} - Each layer in a transformer adds a layer of abstraction and processes them in parallel for a given input sequence. This causes it to lose out on knowledge from previous layers during current computation, leading to recalculation even though it has already been calculated.
+        \item \textbf{Feed-Forward Belief State} - Transformers apply an internal belief state that is quickly accessible to the future layers, however, this information isn't accessible to the previous layers. This means that only a limited number of transformations can be applied to the input before it is produced as output. This is also limited by the depth of the model. \citep{fan2020addressing}
+       \end{itemize}
+
+       To address a few of these concerns some improvements are advised in the next section.
 
        \section{Proposed Architecture Improvements}\label{c42}
 
@@ -695,7 +708,7 @@ footskip=.25in]{geometry}
 
             The DistilBertForQuestionAnsweringC class takes a pre-trained model config file as input along with the embedded inputs, passes them through a linear layer and a dropout layer. These processed outputs are then processesed through Encoder and Decoder layers that allow the model to process and produce relevant results.
 
-                             	\begin{figure*}
+                             	\begin{figure*}[!h]
                              		\begin{center}
                              			\begin{tikzpicture}[auto,
                              				%decision/.style={diamond, draw=black, thick, fill=white,
@@ -705,18 +718,25 @@ footskip=.25in]{geometry}
                              					text width=8cm, text badly centered,font=\small,},
                              				block_left/.style ={rectangle, draw=black,
                              					text width=5cm, text centered,font=\tiny},
-                             				line/.style ={draw, thick, -latex', shorten >=0pt}]
+                                            block_noborder/.style ={rectangle, draw=none, thick, fill=none,
+                                                  text width=8cm, text centered, font=\tiny},
+                                            block_assign/.style ={rectangle, draw=black, thick, fill=white,
+                                              text width=8cm, text centered,font=\tiny},
+                                            block_lost/.style ={rectangle, draw=black, thick, fill=white,
+                                              text width=6cm, text centered, minimum height=3em, inner sep=6pt},
+                             				line/.style ={draw, thick, -latex', shorten >=0pt},
+                                             Arr/.style={->},]
                                              \tikzstyle{arrow} = [thick,->,>=stealth]
 
                              				% outlining the flowchart using the PGF/TikZ matrix funtion
                              				\matrix [column sep=5mm,row sep=3mm] {
                              					% enrollment - row 1
-                             					\node [block_center] (input) {\textbf{Input}};
+                             					\node [block_center] (input) {\textbf{BOLT Input}};
                              					& \node [block_left] (inputl) {\begin{enumerate}
-                             							\item Input tokenized context and question to the model
+                             							\item Receive Input tokenized context and question to the model
                              					\end{enumerate}}; \\
                              					% enrollment - row 2
-                             					\node [block_center] (el) {\textbf{ Answer-Pointer Network Encoder Layer}};
+                             					\node [block_center] (el) {\textbf{Pointer Network Encoder Layer}};
                              					& \node [block_left] (ell) {\begin{enumerate}
                              							\item Embed tokenized inputs
                              							\item Encode inputs using LSTM layer
@@ -732,16 +752,23 @@ footskip=.25in]{geometry}
                              							\item Retreive Attention layer output
                              							\item Apply one-hot-encoding to outputs and obtain maximum probability of an Answer
                              					\end{enumerate}}; \\
-                             					% enrollment - row 2
-                             					\node [block_center] (al) {\textbf{Attention Layer}};
-                             					& child {\node [block_left] (all) {\begin{enumerate}
+
+                             					\node [block_left] (al) {\textbf{Attention Layer}};
+                             					& \node [block_left] (all) {\begin{enumerate}
                              							\item Prepare Pointer network with 1 LSTM that has 1 input layer, 8 hidden layers and 1 output layer
                              							\item Prepare Pointer Encoders and Decoders
                              							\item Prepare DistilBERT based Transformer model
                              							\item Modify transformer model with implementation of pointer layer
-                             					\end{enumerate}};} \\
+                             					\end{enumerate}}; \\
                              					% enrollment - row 2
-                             					\node [block_center] (results) {\textbf{Results}};\\
+                             					\node [block_center] (results) {\textbf{Pointer Network Results}};\\
+                             					\node [block_center] (distilBert) {\textbf{DistilBERT Model}};
+                                            	& \node [block_left] (distilBertLeft) {\begin{enumerate}
+                               							\item Receive outputs from Pointer Network
+                               							\item Perform normal DistilBERT processing using Encoders, Attention layers and Decoders
+                               							\item Generate model predictions
+                               					\end{enumerate}}; \\
+                                                \node [block_center] (final) {\textbf{BOLT Predictions}};\\
                              				};% end matrix
                              				% connecting nodes with paths
                              				\begin{scope}[every path/.style=line]
@@ -753,7 +780,11 @@ footskip=.25in]{geometry}
                              					\path (dl) -- (dll);
                              					\path (dl)  -- (al);
                              					\path (al) -- (all);
-                             					\path (dl)  (results);
+                             					\path (al) -- (dl);
+                             					\path (results) -- (distilBert);
+                             					\path (distilBert) -- (distilBertLeft);
+                             					\path (distilBert) -- (final);
+                                                 \draw[Arr] (dl) to [bend right=80](results);
                              				\end{scope}
                              			\end{tikzpicture}
                              		\end{center}
@@ -777,6 +808,7 @@ footskip=.25in]{geometry}
                 The BOLT model uses the existing implementation of the DistilBERT model from the Hugging Face library \citep{hfTransformers} and modifies its base class with an implementation of the Answer Pointer layer mentioned earlier in this chapter.
 
                 The output from that layer is then fed through to the DistilBERT based transformer where it takens the outputs from the Pointer network as input embeddings, applies an attention mask in case the input sequence is smaller in length than the current batch, before finally producing a set of output sequence tokens that serve as pointers to identify which words are the predicted outputs of the model. The architecture of the DistilBERT model is not modified but used as an extension to the pointer network.
+                This approach allows for the highly optimized DistilBERT model implementation to be retained in its purest form, removing the chances of miscalculated layers and producing incorrect outputs.
 
     \chapter{Results}\label{c5}
 
@@ -968,7 +1000,7 @@ While the results for the DistilBERT model aren't exactly perfect, it does allow
 	The F1 scores for the model continuously hover around the 72\% mark, which is a slight improvement over the 70\% mark observed for the benchmarked DistilBERT model as seen in \ref{distilbertf1}.
 	The validation loss for the custom model hovers lower than the values in the DistilBERT model as well.
 
-	In the next experiment, shown in fig. \ref{adam3e}, a different learning rate is used with the same AdamW optimizer. Using a leaerning rate of 3e-5 or 0.00003, we can see that there is a slight increase in F1 and exact match scores, reaching almost 75\% and 65\% values respectively. This suggests that the custom model responds well to lower learning rates.
+	In the next experiment, shown in fig. \ref{adam3e}, a different learning rate is used with the same AdamW optimizer. Using a learning rate of 3e-5 or 0.00003 there is a slight increase in F1 and exact match scores, reaching almost 75\% and 65\% values respectively. This suggests that the custom model responds well to lower learning rates.
 
 	The training times remain roughly the same with a sudden drop in the validation time seen again towards the end.
 
@@ -1002,7 +1034,7 @@ While the results for the DistilBERT model aren't exactly perfect, it does allow
 
     \chapter{Conclusions And Recommendations}\label{c6}
 
-    Through this work it has attempted to highlight the advancements and propose a unique modification to the existing transformer architecture using an Answer-Pointer network.
+    Through this work it has been attempted to highlight the advancements and propose a unique modification to the existing transformer architecture using an Answer-Pointer network.
 
     The results obtained from experiments in section \ref{c52} show that the models performance is at par with the DistilBERT model. While this result isn't graphically present due to timeout issues in Google Colab, visually the various scores printed in figures \ref{adam5e}, \ref{adam3e} and \ref{ada3e}, the model does perform well initially.
 

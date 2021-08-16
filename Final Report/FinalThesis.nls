@@ -6,6 +6,7 @@
   \item [{BERT}]\begingroup Bidirectional Encoder Representations from Transformers\nomeqref {0}\nompageref{iv}
   \item [{BiLSTM}]\begingroup Bidirectional LSTM\nomeqref {0}\nompageref{iv}
   \item [{BLEU}]\begingroup Bilingual Evaluation Understudy\nomeqref {0}\nompageref{iv}
+  \item [{BOLT}]\begingroup BERT Optimized LSTM Transformer\nomeqref {0}\nompageref{iv}
   \item [{BPPTs}]\begingroup Back-Propagation Through Time\nomeqref {0}\nompageref{iv}
   \item [{CEC}]\begingroup Constant Error Carousel\nomeqref {0}\nompageref{iv}
   \item [{CNNs}]\begingroup Convolutional Neural Networks\nomeqref {0}\nompageref{iv}
