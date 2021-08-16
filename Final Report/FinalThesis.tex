@@ -21,7 +21,7 @@ footskip=.25in]{geometry}
 \usepackage{amssymb}
 
 \usepackage{tikz}
-\usetikzlibrary{shapes,arrows,positioning,chains}
+\usetikzlibrary{shapes.geometric,arrows,positioning,chains}
 \newcommand*{\h}{\hspace{5pt}}% for indentation
 \newcommand*{\hh}{\h\h}% double indentation
 
@@ -73,7 +73,7 @@ footskip=.25in]{geometry}
     \input{nomenclature.tex}
     \printnomenclature[1in]
 	\begin{abstract}
-		Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of this work will be to introduce a variation to the Transformer architecture. Compare and contrast its performance against other architectures such as RoBerta, DistilBERT and ALBERT using the SQuAD 2.0 Dataset. Through this research, it is shown that at par, if not better, performance can be obtained on Transformer architecture based models with the application of a simple LSTM based Answer Pointer layer.
+		Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of this work will be to introduce a variation of the Transformer architecture, \textit{BOLT} or BERT Optimized LSTM Transformer. BOLT is an attempt at combining LSTM based Pointer networks along with a Bidirectional Transformer variant to produce another lighter model specifically for the use of Question Answering. Compare and contrast its performance against other architectures such as RoBerta, DistilBERT and ALBERT using the SQuAD 2.0 Dataset. Through this research it is shown that BOLT is at par with current state of the art architectures and that by combining an LSTM with a Transformer can actually yield slightly better results when correctly optimized.
 
 	\end{abstract}
     \cleardoublepage% \clearpage
@@ -96,7 +96,7 @@ footskip=.25in]{geometry}
 
             The area of Natural language Processing has taken significant leaps in the last two decades. Work done towards improving the ability of machine learning models to first recognize words, then sentences, followed by contextual understanding has led to several interesting and novel approaches in the field. From early on neural networks to creating Long Short-Term Memory architectures \citep{lstmoriginal} by Sepp Hochreiter and Jurgen Schmidhuber in the mid-'90s that resolved the vanishing gradient problem of classical neural networks, we have come a long way.
 
-           The latest advancements in this field come from Google's research lab in the form of \textit{Transformers}. We look into this in a bit more detail later in \ref{c2litrev}. However, no model can be successful without a good dataset to train on. This is where the SQuAD 2.0 dataset \citep{dataset} comes in. This dataset is what forces the machine learning models to do contextual understanding. One might even say that it forces the models to ``think'' for themselves before answering a task.
+           The latest advancements in this field come from Google's research lab in the form of \textit{Transformers}. This is studied in a bit more detail later in \ref{c2litrev}. However, no model can be successful without a good dataset to train on. This is where the SQuAD 2.0 dataset \citep{dataset} comes in. This dataset is what forces the machine learning models to do contextual understanding. One might even say that it forces the models to ``think'' for themselves before answering a task.
 
 
         \section{Aims And Objectives}\label{12}
@@ -146,7 +146,7 @@ footskip=.25in]{geometry}
 
         \section{Long Short-Term Memory}\label{22}
 
-            In 1997 \citep{lstmoriginal} introduced to the world a gradient descent based model in the form of Long Short-Term Memory. They set out to solve the problem of the vanishing gradient which was often seen in "Back-Propagation Through Time"(BPPTs) based neural networks. Extensive studies done on this, some by Hochreiter himself, showed that the problem of vanishing gradients is a real one. It was also seen that in case of BPTTs, the error back-flow mechanisms would either blow up or also suffer from vanishing gradients leading to either oscillating weights or learning to bridge long time gaps would not work. To remediate this, \citep{lstmoriginal} introduced the concept of a \textit{constant} error flow through the internal states of special units.
+            In 1997 \citep{lstmoriginal} introduced to the world a gradient descent based model in the form of Long Short-Term Memory. They set out to solve the problem of the vanishing gradient which was often seen in ``Back-Propagation Through Time"(BPPTs) based neural networks. Extensive studies done on this, some by Hochreiter himself, showed that the problem of vanishing gradients is a real one. It was also seen that in case of BPTTs, the error back-flow mechanisms would either blow up or also suffer from vanishing gradients leading to either oscillating weights or learning to bridge long time gaps would not work. To remediate this, \citep{lstmoriginal} introduced the concept of a \textit{constant} error flow through the internal states of special units.
 
             Their paper, Long Short-Term Memory, \citep{lstmoriginal}, highlights that the work previously done using various gradient-descent variants, time-delays, time constants, use of higher order units to influence connections when the network receives conflicting error signals, Kalman filters, Second order nets etc. still suffer from some of the same problems that we have earlier. In the case of Ring's approach \citep{lstmRing}, the network can be really fast but also suffers from memory constraints and lack of generalization. This happens because to bridge $ n $ time lags, the model adds $ n $ additional units.
 
@@ -245,7 +245,8 @@ footskip=.25in]{geometry}
             	\caption{Basic QA-LSTM model depicting biLSTM implementation \citep{lstmhaighextractive}}\label{lstmhaig}
             \end{figure}
 
-            Pooling layers are known to suffer from an incapability to retain local linguistic information. To combat this the team proposed an additional CNN layer on top of the biLSTM layer. Additionally, they added a simple and efficient attention model to help their biLSTM model better distinguish between candidate answers according to the question context. This study is significant in the field of both deep learning based models and for the field of Question-Answering because it requires little or no feature engineering to achieve significant results. We will also see later in section \ref{23}, how biLSTMs are implemented with Transformers to produce an even better model.
+            Pooling layers are known to suffer from an incapability to retain local linguistic information. To combat this the team proposed an additional CNN layer on top of the biLSTM layer. Additionally, they added a simple and efficient attention model to help their biLSTM model better distinguish between candidate answers according to the question context. This study is significant in the field of both deep learning based models and for the field of Question-Answering because it requires little or no feature engineering to achieve significant results. In section \ref{23}, how biLSTMs are implemented with Transformers to produce an even better model.
+
             In their work \citep{lstmhaighextractive} have shown that biLSTMs are capable of capitalizing long-range sequential context information. This is important as it is often seen that the answer is not directly semantically related to the question but more contextually related. Long-range exploitations help the model understand the question more holistically, therefore helping produce a more relevant answer.
 
 
@@ -256,7 +257,7 @@ footskip=.25in]{geometry}
 			\end{figure}
 
              BiLSTMs have an advantage over traditional LSTMs in that they utilize both previous and future contextual information by processing the input in both directions, forward and backward. This leads to the generation of two independent sequences of output vectors form LSTMs. The final output is a concatenation  of the outputs from both directions ie. $h_t= \overrightarrow{h_t} || \overleftarrow{h_t} $.
-             The \textbf{QA-LSTM} model  proposed by \citep{lstmhaighextractive} can be seen in fig. \ref{lstmhaig}. We can see that it generates a distributed representation for both questions(blue) and answers(red) before moving on to perform pooling and cosine similarity operations.
+             The \textbf{QA-LSTM} model  proposed by \citep{lstmhaighextractive} can be seen in fig. \ref{lstmhaig}. It can be seen that it generates a distributed representation for both questions(blue) and answers(red) before moving on to perform pooling and cosine similarity operations.
             In fig. \ref{lstmhaigcnn}, it can be seen that the CNN layer has been implemented after the biLSTM layers and before the pooling layers. The pooling layers have been modified to be max-$ k $ pooling layers, similar to standard CNNs.
 
 
@@ -480,14 +481,14 @@ footskip=.25in]{geometry}
 %	      \citep{roberta}
 
 	    \subsubsection{DistilBERT}\label{distilLitrev}
-	    The DistilBERT model by \citep{distil} was created with a few factors in  mind such as model size, complexity, ability to generalize tasks and the high environmental cost of running larger models. Models like RoBerta \citep{roberta}, BERT \citep{bert} etc. have several hundred million model parameters that take particularly longer to train, even through use of advanced pre-training techniques. 
-	    
-	    Larger models often tend to exponential increase model computational requirements \citep{schwarts}, these models also fail to generalize. The DistilBERT model shows that by applying a triple loss function on top of a smaller Transformer \citep{atayl} that is trained using a knowledge distillation compression technique \citep{knowledgeDistilation} can provide similar results in 60\% less time. 
-	    
-	    The work proposes a \textit{"Student-Teacher"} architecture. The DistilBERT model, which is the student architecture, has the same kind of layout as the BERT model but without the tokenized embeddings and the pooler architecture, with a further reduction in the number of layers. 
-	    
-	    Experiments showed that training a DistilBERT model produced similar results to BERT-base model but in a lot less time than its parent architecture BERT. The model is 0.6\% behind BERT on the IMDB and only 3.9\% behind BERT on the SQuAD 1 dataset. 
-	    
+	    The DistilBERT model by \citep{distil} was created with a few factors in  mind such as model size, complexity, ability to generalize tasks and the high environmental cost of running larger models. Models like RoBerta \citep{roberta}, BERT \citep{bert} etc. have several hundred million model parameters that take particularly longer to train, even through use of advanced pre-training techniques.
+
+	    Larger models often tend to exponential increase model computational requirements \citep{schwarts}, these models also fail to generalize. The DistilBERT model shows that by applying a triple loss function on top of a smaller Transformer \citep{atayl} that is trained using a knowledge distillation compression technique \citep{knowledgeDistilation} can provide similar results in 60\% less time.
+
+	    The work proposes a \textit{``Student-Teacher"} architecture. The DistilBERT model, which is the student architecture, has the same kind of layout as the BERT model but without the tokenized embeddings and the pooler architecture, with a further reduction in the number of layers.
+
+	    Experiments showed that training a DistilBERT model produced similar results to BERT-base model but in a lot less time than its parent architecture BERT. The model is 0.6\% behind BERT on the IMDB and only 3.9\% behind BERT on the SQuAD 1 dataset.
+
 	    These speed and accuracy advantages make this model and architecure worthy of being explored further and will serve as the basis of the improvements suggested in this thesis.
 
 
@@ -497,14 +498,14 @@ footskip=.25in]{geometry}
 
     \section{Data Selection}\label{c31}
 
-    	We have selected the Stanford Question Answering Dataset (SQuAD). This is as a reading comprehension dataset based on Wikipedia articles. It is based on questions posed by crowd-workers on a set of articles. The answer to every question is a segment of text or span, from the corresponding reading passage, or the question might be unanswerable \citep{dataset}.
+    	The Stanford Question Answering Dataset (SQuAD) 2.0 has been chosen as the dataset for the experiments proposed. This is as a reading comprehension dataset based on Wikipedia articles. It is based on questions posed by crowd-workers on a set of articles. The answer to every question is a segment of text or span, from the corresponding reading passage, or the question might be unanswerable \citep{dataset}.
 
     	The dataset consists of over 150,000 questions. Split into 100,000 answerable and 50,000+ unanswerable question, which were written to look similar to unanswerable questions. The challenge being that a model should be able to correctly answer the answerable questions and abstain from answering the unanswerable ones.
 	    The dataset is freely available as a part of the Transformers package in python or it can be downloaded from the SQuAD 2.0 website \citep{squad}.
 
 	    To effectively use this dataset for our purposes, let us first take a look at what its contents look like below.\\ \\
 	    \noindent\fbox{
-	    	\parbox{\textwidth}{\textbf{Context:}\textit{``The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia."}\\
+	    	\parbox{\textwidth}{\textbf{Context:}\textit{``The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (``Norman" comes from ``Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia."}\\
 	    		\textbf{Question: } \textit{Who was the Norse leader?}\\
 	    		\textbf{Answer: } \textit{Rollo}}
 	    }
@@ -517,7 +518,7 @@ footskip=.25in]{geometry}
 
 	    \begin{enumerate}
 	    	\item Data splitting into separate Question, Answer and Context lists for use for both the training data and the validation data
-	    	\item Tokenization of the split data to generate "context-question" pairs
+	    	\item Tokenization of the split data to generate ``context-question" pairs
 	    	\item Generating indexes for when an answer begins and ends in the dataset
 	    	\item Adding answer and context tokens based on their encoded positions
 	    \end{enumerate}
@@ -673,32 +674,109 @@ footskip=.25in]{geometry}
 
 
   \chapter{Architecture Creation}\label{c4}
-  
-  	The literature reviewed in chapter \ref{c2litrev} highlights some exceptional work that has been done in the field of NLP, LSTM and Transformer architectures. This chapter lays the groundwork for the improvements proposed in chapter \ref{c3researchmeth}. Starting off with a review of the drawbacks of the architectures that have been chosen for benchmarks and comparisons, then the improvements are proposed to a BERT based DistilBERT architecture are mentioned in section \ref{c42}. Finally, the refinement steps are mentioned in section \ref{c43}.
-  	
+
+  	The literature reviewed in chapter \ref{c2litrev} highlights some exceptional work that has been done in the field of NLP, LSTM and Transformer architectures. This chapter lays the groundwork for the improvements proposed in chapter \ref{c3researchmeth}. Starting off with a review of the drawbacks of the architectures that have been chosen for benchmarks and comparisons, then the improvements are proposed to a BERT based DistilBERT architecture are mentioned in section \ref{c42}.
+
 
        \section{Drawbacks Of Current Architectures}\label{c41}
 
-       The transformer based architectures reviewed in sections \ref{robertaLitrev}- \ref{distilLitrev} and the Bi-LSTM \citep{bilstmHerman} have shown great advantages. However, they suffer from certain flaws that are outlined below:
-       
-       
+       The transformer based architectures reviewed in section  and the Bi-LSTM \citep{bilstmHerman} have shown great advantages. However, they suffer from certain flaws that are outlined below:
+
+
        \section{Proposed Architecture Improvements}\label{c42}
 
-            The proposed architecture is an implementation of the transformer architecture along with a biLSTM based Answer-Pointer network. 
-            
-            The DistilBERT model that is available through the Hugging Face Library \citep{hfTransformers}, will be modified with the implementation of an Answer-Pointer network. The hypothesis is that by passing the results from DistilBERT encoder layer to the an Answer-Pointer based architecture will provide better results. 
-            
-            To achieve this the Answer-Pointer based network is designed initially with 1 LSTM cell containing 8 hidden layers and one output layer.
-            
-            The process begins by serving tokenized inputs that are created as a part of pre-processing the input data and embedding it by using the "distilbert-base-uncased" pre-trained embeddings from Hugging Face libarary. Then the input is then fed to the "DistilBertForQuestionAnsweringC" class, which is the modified class from the Hugging Face Transformers library mentioned before.
-            
+            The proposed architecture is an implementation of the transformer architecture along with a biLSTM based Answer-Pointer network.
+
+            The DistilBERT model that is available through the Hugging Face Library \citep{hfTransformers}, will be modified with the implementation of an Answer-Pointer network. The hypothesis is that by passing the results from Answer-Pointer layer to a DistilBERT based architecture will provide better results since it will already have been encoded with output pointer positions.
+
+            To achieve this the Answer-Pointer based network is designed initially with 1 LSTM cell containing 8 hidden layers and one output layer. This is described in detail section \ref{c421}.
+
+            The process begins by serving tokenized inputs that are created as a part of pre-processing the input data and embedding it by using the ``distilbert-base-uncased" pre-trained embeddings from Hugging Face libarary. Then the input is then fed to the ``DistilBertForQuestionAnsweringC" class, which is the modified class from the Hugging Face Transformers library mentioned before.
+
             The DistilBertForQuestionAnsweringC class takes a pre-trained model config file as input along with the embedded inputs, passes them through a linear layer and a dropout layer. These processed outputs are then processesed through Encoder and Decoder layers that allow the model to process and produce relevant results.
-            
-            \subsection{Answer-Pointer Layer Implementation}
-            
-            \subsection{Custom DistilBERT Model}
-            
-            
+
+                             	\begin{figure*}
+                             		\begin{center}
+                             			\begin{tikzpicture}[auto,
+                             				%decision/.style={diamond, draw=black, thick, fill=white,
+                             				%text width=8em, text badly centered,
+                             				%inner sep=1pt, font=\sffamily\small},
+                             				block_center/.style ={rectangle, draw=black,
+                             					text width=8cm, text badly centered,font=\small,},
+                             				block_left/.style ={rectangle, draw=black,
+                             					text width=5cm, text centered,font=\tiny},
+                             				line/.style ={draw, thick, -latex', shorten >=0pt}]
+                                             \tikzstyle{arrow} = [thick,->,>=stealth]
+
+                             				% outlining the flowchart using the PGF/TikZ matrix funtion
+                             				\matrix [column sep=5mm,row sep=3mm] {
+                             					% enrollment - row 1
+                             					\node [block_center] (input) {\textbf{Input}};
+                             					& \node [block_left] (inputl) {\begin{enumerate}
+                             							\item Input tokenized context and question to the model
+                             					\end{enumerate}}; \\
+                             					% enrollment - row 2
+                             					\node [block_center] (el) {\textbf{ Answer-Pointer Network Encoder Layer}};
+                             					& \node [block_left] (ell) {\begin{enumerate}
+                             							\item Embed tokenized inputs
+                             							\item Encode inputs using LSTM layer
+                             							\item Run step-wise dropouts to prevent overfitting
+                             							\item Generate encoded inputs and hidden layer parameters
+                             					\end{enumerate}}; \\
+                             					% enrollment - row 3
+                             					\node [block_center] (dl) {\textbf{Decoder Layer}};
+                             					& \node [block_left] (dll) {\begin{enumerate}
+                             							\item Process linear layer input and hidden layer weights received from Encoder
+                             							\item Process input and hidden layer information to LSTM cell
+                             							\item Feed hidden layer timestep to Attention layer
+                             							\item Retreive Attention layer output
+                             							\item Apply one-hot-encoding to outputs and obtain maximum probability of an Answer
+                             					\end{enumerate}}; \\
+                             					% enrollment - row 2
+                             					\node [block_center] (al) {\textbf{Attention Layer}};
+                             					& child {\node [block_left] (all) {\begin{enumerate}
+                             							\item Prepare Pointer network with 1 LSTM that has 1 input layer, 8 hidden layers and 1 output layer
+                             							\item Prepare Pointer Encoders and Decoders
+                             							\item Prepare DistilBERT based Transformer model
+                             							\item Modify transformer model with implementation of pointer layer
+                             					\end{enumerate}};} \\
+                             					% enrollment - row 2
+                             					\node [block_center] (results) {\textbf{Results}};\\
+                             				};% end matrix
+                             				% connecting nodes with paths
+                             				\begin{scope}[every path/.style=line]
+                             					% paths for enrollemnt rows
+                             					\path (input)   -- (inputl);
+                             					\path (input)   -- (el);
+                             					\path (el)   -- (ell);
+                             					\path (el) -- (dl);
+                             					\path (dl) -- (dll);
+                             					\path (dl)  -- (al);
+                             					\path (al) -- (all);
+                             					\path (dl)  (results);
+                             				\end{scope}
+                             			\end{tikzpicture}
+                             		\end{center}
+                             		\caption{BOLT Data Flow Diagram}\label{dataflowDiagram}
+                             	\end{figure*}
+
+            \subsection{BERT Optimized LSTM Transformer, BOLT}\label{c421}
+
+                The BOLT model begins with the implementation of a Pointer network that feeds the output to the DistilBERT implementation. To better understand the flow of this model a flow diagram is presented in \ref{dataflowDiagram}.
+
+                The Answer-Pointer network consists of 4 main parts, an Encoder layer, an Attention layer, a biLSTM layer and a Decoder layer. The implementation of this is done using PyTorch and inspired by work from \citep{pointernetGit}. This was extremely helpful as Pointer networks aren't readily available from libraries.
+
+                The network begins with taking an input sequence of embeddings and passing it through a linear layer that takes input and output dimensions. The embedded inputs are then passed through the Encoder layer.
+
+                The Encoder layer consists of LSTMs with dropout layers. The LSTM layers are doubled if implemented in biLSTM mode. The dropuout layer helps reset the input dimensions to 0 before taking the next set of inputs, this helps in preventing overfitting. The dropout layer also controls the rate at which the values are set to 0 and is a value between 0-1, with a default of 0.5. Essentially, the dropout layer retains only a small percentage of the outputs from a hidden layer, thus preventing an already large model from gaining more size.
+
+                The LSTM layer processes the input embeddings, encodes them further appropriately and produces encoded outputs for the decoder layer. The Decoder layer is a comprised of several linear layers and an attention layer. The linear layers serve as both input, hidden and output layers, however, the hidden layers are also connected to attention layers that help localize the context of the word in the input question and context.
+
+                The decoder layer generates an output using an internal LSTM layer, thus providing a tuple of output and pointer values plus a separate output of hidden layer weights.These outputs and pointer values are then fed back into the linear output layer of the DistilBERT model.
+
+                The BOLT model uses the existing implementation of the DistilBERT model from the Hugging Face library \citep{hfTransformers} and modifies its base class with an implementation of the Answer Pointer layer mentioned earlier in this chapter.
+
+                The output from that layer is then fed through to the DistilBERT based transformer where it takens the outputs from the Pointer network as input embeddings, applies an attention mask in case the input sequence is smaller in length than the current batch, before finally producing a set of output sequence tokens that serve as pointers to identify which words are the predicted outputs of the model. The architecture of the DistilBERT model is not modified but used as an extension to the pointer network.
 
     \chapter{Results}\label{c5}
 
@@ -714,7 +792,7 @@ footskip=.25in]{geometry}
         Below are some of the steps taken to prepare the dataset and some details from the same:
 
         \begin{itemize}
-        	\item \textbf{Splitting Dataset}: The dataset consists of 2 files "dev-v2.0.json" and "train-v2.0.json", which serve as validation and training sets. These consist of questions, relevant contexts and answers, respectively. The dataset is prepared by extracting these into separate data structures(lists) for use.
+        	\item \textbf{Splitting Dataset}: The dataset consists of 2 files ``dev-v2.0.json" and ``train-v2.0.json", which serve as validation and training sets. These consist of questions, relevant contexts and answers, respectively. The dataset is prepared by extracting these into separate data structures(lists) for use.
         	\item \textbf{Training Context}: Upon reading and splitting the data into training contexts, questions and answers, it can be seen that there are 86,821 contexts provided in the training set and 20,302 contexts in the validation set.
         	\item \textbf{Indexing Ends}: The training and validation datasets are then embedded with index position that help identify the answer to the questions in the context layers.
         	\item \textbf{Tokenization}: The training and validation datasets are then embedded with token positions that are obtained from the pre-trained DistilBertTokenizer available from the Hugging Face library.
@@ -724,7 +802,7 @@ footskip=.25in]{geometry}
 
      \section{Existing Architecture Benchmarks}\label{c51}
 
-     	Each of the three selected models is put through the same process of data pre-processing, as identified in \ref{c32}, this is to ensure consistency across board with all the model types and even the custom model improvements advised.
+     	Each of the three selected models is put through the same process of data pre-processing, as identified in chapter \ref{c3researchmeth}, this is to ensure consistency across board with all the model types and even the custom model improvements advised.
 
     	The experiments begin with a review of the ALBERT architecture \citep{albert}, where it is observed that at a batch size of 8 with the AdamW optimizer set to a learning rate of 5e-5, the average epoch time for training takes around 1 hour, 24 minutes at 2.15 iterations/second. Further, the vaidation set takes around 7-12 minutes, depending on the availability of the GPU in the cloud based Google Colab Pro environment.
 
@@ -761,7 +839,7 @@ footskip=.25in]{geometry}
     		\label{albertBenchmarks}
     	\end{figure*}
 
-    	Figure \ref{albertBenchmarks} shows the various measured parameters across 10 epochs for the ALBERT model. It can be seen from \ref{albertf1} that for the "albert-base-uncased" pre-trained model class the ALBERT model still suffers from a significant drop in F1 scores in the initial epochs due to the learning rate being set to a very low value of 5e-5. This behaviour is further confirmed by the \ref{albertTrainLoss} and \ref{albertValLoss} graphs where the graph peaks to a higher value for both kinds of losses before tapering down over the remaining epochs.
+    	Figure \ref{albertBenchmarks} shows the various measured parameters across 10 epochs for the ALBERT model. It can be seen from \ref{albertf1} that for the ``albert-base-uncased" pre-trained model class the ALBERT model still suffers from a significant drop in F1 scores in the initial epochs due to the learning rate being set to a very low value of 5e-5. This behaviour is further confirmed by the \ref{albertTrainLoss} and \ref{albertValLoss} graphs where the graph peaks to a higher value for both kinds of losses before tapering down over the remaining epochs.
 
     	This sudden rise in training and validation loss values that causes poor F1 and exact match scores is purely because of the learning rate. It is seems as though the learning rate is  not appropriate for the batch size of 8, however, for the sake of all the experiments to be baseline it will be observed as such.
 
@@ -812,9 +890,9 @@ footskip=.25in]{geometry}
 
 	Figure \ref{robertaBenchmarks} shows the experimental results for the RoBerta architecutre and model. Unlike the ALBERT benchmarks above, the RoBerta benchmark results seem very erratic in nature. The validation F1 and exact match scores for the RoBerta model, while performing significantly better than ALBERT, remain around 83\% and between 74.4 - 75.4\% respectively. This is a roughly 10\% better performance than the ALBERT model, although the training time for the model is around 2 hours per epoch at 1.21 iterations/second. The validation epoch takes around 21 minutes to complete at 4.06 iterations/second.
 
-	This increased training time can be attributed to the almost double number of parameters in the model at 125 million, compared to 66 million in ALBERT when using the "roberta-base" pre-trained model.
+	This increased training time can be attributed to the almost double number of parameters in the model at 125 million, compared to 66 million in ALBERT when using the ``roberta-base" pre-trained model.
 
-	Similar to the ALBERT model, a consistent and smooth decline in training loss can be observed, as shown in \ref{robertaTrainloss}. The RoBerta model is run using the "roberta-base" pre-trained class that is similar to the "albert-base-uncased" class, just optimized by the HuggingFace Team for this model.
+	Similar to the ALBERT model, a consistent and smooth decline in training loss can be observed, as shown in \ref{robertaTrainloss}. The RoBerta model is run using the ``roberta-base" pre-trained class that is similar to the ``albert-base-uncased" class, just optimized by the HuggingFace Team for this model.
 
 	The final benchmark scores for the RoBerta model at epoch 10 are:
 	\begin{itemize}
@@ -873,14 +951,14 @@ footskip=.25in]{geometry}
 While the results for the DistilBERT model aren't exactly perfect, it does allow for quick prototyping and achieves almost near accurate results.
 
 
-\section{Custom BERT Model Results}\label{c52}
+\section{BOLT Results}\label{c52}
 
-	As discussed in chapter \ref{c4}, the modifications have been applied to the DistilBERT model, specifically the DistilBertModel class offered by the HuggingFace Transformers library \citep{hfTransformers} and a modified implemetation of an Answer Pointer Network designed using PyTorch by \citep{pointernetGit} is used to generate the answer pointer layer results for these custom models. All the custom models utilised the same pre-trained "DistilBERT-base-uncased" class from the Hugging Face Transformers library.
+	As discussed in chapter \ref{c4}, the modifications have been applied to the DistilBERT model, specifically the DistilBertModel class offered by the HuggingFace Transformers library \citep{hfTransformers} and a modified implemetation of an Answer Pointer Network designed using PyTorch by \citep{pointernetGit} is used to generate the answer pointer layer results for these custom models. All the custom models utilised the same pre-trained ``DistilBERT-base-uncased" class from the Hugging Face Transformers library.
 
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[scale=0.35]{../images/AdamW5e.png}
-		\caption{Custom BERT Model with AdamW Optimizer at 5e-5 rate}\label{adam5e}
+		\caption{BOLT with AdamW Optimizer at 5e-5 rate}\label{adam5e}
 	\end{figure}
 
 	The first figure \ref{adam5e} shows the various epochs for the modified DistilBERT model with the Answer Pointer network implemented with a batch size of 8 and the AdamW optimizer with a learning rate of 5e-5, which  are the same parameters as the benchmark models.
@@ -897,19 +975,29 @@ While the results for the DistilBERT model aren't exactly perfect, it does allow
 		\begin{figure}[!h]
 			\centering
 			\includegraphics[scale=0.35]{../images/AdamW3e.png}
-			\caption{Custom BERT Model with AdamW Optimizer at 3e-5 rate}\label{adam3e}
+			\caption{BOLT with AdamW Optimizer at 3e-5 rate}\label{adam3e}
 		\end{figure}
 
 		\begin{figure}[!h]
 			\centering
 			\includegraphics[scale=0.35]{../images/AdaFactor3e.png}
-			\caption{Custom BERT Model with AdaFactor Optimizer at 3e-5 rate}\label{ada3e}
+			\caption{BOLT with AdaFactor Optimizer at 3e-5 rate}\label{ada3e}
 		\end{figure}
 
 	In the final experiment, that is shown in fig. \ref{ada3e}, the custom model is run with a modified AdaFactor optimizer with a learning rate of 3e-5, this again presents similar results to the results in the previous experiment where the lower value of the learning rate helped the custom model learn better. The training loss for this run also falls similar to the loss in the previous custom model experiments as well as the DistilBERT benchmark, while maintaing an F1 score that is higher than the DistilBERT benchmark but roughly similar to the custom model with AdamW optimizer at a learning rate of 3e-5.
 
 
-
+        Figure \ref{ada3e-output} shows the DistilBERT custom model producing correct answers to a few question asked of it. This confirms that the model is able to produce answers to some questions and can give accurate results as well. The custom model is more accurate than its base DistilBERT model, who's output can be seen in figure \ref{distilOut}. While the DistilBERT model answers the first 2 questions correctly, it fails to answer the final question, ``What problem can LSTM suffer from?", with 100\% accuracy and outputs ``vanishing gradient problem" instead of the correct answer ``exploding gradient problem".
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.35]{../images/AdaFactor3e-output.png}
+			\caption{BOLT with AdaFactor Optimizer at 3e-5 rate outputs to questions asked}\label{ada3e-output}
+		\end{figure}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.35]{../images/distilbert-answers.png}
+			\caption{DistilBERT model outputs to questions asked}\label{distilOut}
+		\end{figure}
 
 
     \chapter{Conclusions And Recommendations}\label{c6}
@@ -946,12 +1034,12 @@ While the results for the DistilBERT model aren't exactly perfect, it does allow
     	\chapter{Gantt Chart}\label{cgc}
 		    \begin{figure}[!h]
 		       	\centering
-		        \includegraphics[scale=0.55,angle=90]{../images/GanttChart-mid.png}
-		     	\caption{Mid-Thesis report Gantt Chart}\label{ganttChartMid}
+		        \includegraphics[scale=0.55,angle=90]{../images/GanttChart-final.png}
+		     	\caption{Thesis Gantt Chart}\label{ganttChartMid}
               \end{figure}
          \chapter{Research Proposal}\label{crp}
          	\includepdf[pages=1-15]{../rp.pdf}
-   
+
     \end{appendices}
 
 
