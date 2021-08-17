@@ -46,7 +46,7 @@ footskip=.25in]{geometry}
 %\usepackage{refcheck}
 
 \usepackage{datetime}
-
+		
 \newdateformat{monthyeardate}{%
     \monthname[\THEMONTH], \THEYEAR}
 
@@ -59,28 +59,49 @@ footskip=.25in]{geometry}
 
     \title{Develop New Transformer Architecture For \\ Question and Answering}
 
-    \author{Nirbhay P. Tandon\\ Master's of Science in Data Science\\Liverpool John Moore's University}
+    \author{Nirbhay P. Tandon\\ Master's of Science in Data Science}
 
-    \date{\vfill \monthyeardate\today}
+    \date{\vfill Liverpool John Moore's University\\ \monthyeardate\today}
+        \pagenumbering{roman}
+        \cleardoublepage% \clearpage
     \maketitle
+\clearpage
+\renewcommand{\abstractname}{Dedication}
+\begin{abstract}
+	 To \textit{Bebe Bua}, who even at 85 years of age, is leading our family by example and has made countless sacrifices to ensure our success. 
+	
+	To my parents, who fostered an environment of hard-work and encouragement, enabling me to learn and hone my skills through humility.
+\end{abstract}
+
+\renewcommand{\abstractname}{Acknowledgements}
+\begin{abstract}
+
+	This thesis began during one of the toughest times in human history, yet provided a sense of relief through being an area of deep interest.
+	
+	I'd like to begin by thanking my supervisor, Mr. Ankit Jha, who's timely follow-ups and regular guidance on how to tackle various problems aided in achieving the outcomes of this research work. Without his support it would have been nearly impossible.
+	
+	I'd also like to extend my thanks to my parents and my younger brother, who have helped me reach this stage through constant support and encouragement. 
+	
+\end{abstract}
+\renewcommand{\abstractname}{Abstract}
+	\begin{abstract}
+	Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of this work will be to introduce a variation of the Transformer architecture, BERT Optimized LSTM Transformer or \textit{BOLT}. BOLT is an attempt at combining LSTM based Pointer networks along with a Bidirectional Transformer variant to produce another lighter model specifically for the use of Question Answering. Compare and contrast its performance against other architectures such as RoBERTa, DistilBERT and ALBERT using the SQuAD 2.0 Dataset. Through this research it is shown that BOLT is at par with current state of the art architectures and that by combining an LSTM with a Transformer can actually yield slightly better results when correctly optimized.
+	
+\end{abstract}
+\cleardoublepage% \clearpage
 
 
-    \cleardoublepage% \clearpage
-    \pagenumbering{roman}
+
     \tableofcontents
     \newpage
     \listoffigures
     \listoftables
     \input{nomenclature.tex}
     \printnomenclature[1in]
-	\begin{abstract}
-		Attention-based Transformer architectures have become the norm of current Natural Language Processing applications. Google began this trend back in 2017 with their paper \textit{Attention Is All You Need}, by introducing the Transformer architecture that works solely on attention mechanisms. The purpose of this work will be to introduce a variation of the Transformer architecture, BERT Optimized LSTM Transformer or \textit{BOLT}. BOLT is an attempt at combining LSTM based Pointer networks along with a Bidirectional Transformer variant to produce another lighter model specifically for the use of Question Answering. Compare and contrast its performance against other architectures such as RoBerta, DistilBERT and ALBERT using the SQuAD 2.0 Dataset. Through this research it is shown that BOLT is at par with current state of the art architectures and that by combining an LSTM with a Transformer can actually yield slightly better results when correctly optimized.
 
-	\end{abstract}
-    \cleardoublepage% \clearpage
-    \pagenumbering{arabic}
+    
     \chapter{Introduction}\label{c1introduction}
-
+\pagenumbering{arabic}
     One of the most philosophical questions that anyone can encounter is \textit{``Can an answer exist without a question?"}. While that question exists to be solved by philosophers and thinkers, this work shall aim to address the \textit{answer} that can be provided to a question in terms of the context that has been asked. While the scope of exploration in the field Natural Language Processing(NLP) is vast and many unexplored areas exist, in this thesis the focus is entirely on developing a novel architecture that provides \textit{highly contextual and relevant answers} to the questions asked of it.
 
         \section{Background Of The Study}\label{c11}
@@ -101,12 +122,12 @@ footskip=.25in]{geometry}
 
 
         \section{Aims And Objectives}\label{12}
-        	The main aim of this research is to propose an improvement to the transformer architecture that can perform better at Q\&A using the SQuAD 2.0 dataset. This shall require understanding the nuances of various Transformer-type architectures like ALBERT \citep{albert}, RoBerta \citep{roberta} and DistilBERT \citep{distil} which are variations of the BERT \citep{bert} architecture.
+        	The main aim of this research is to propose an improvement to the transformer architecture that can perform better at Q\&A using the SQuAD 2.0 dataset. This shall require understanding the nuances of various Transformer-type architectures like ALBERT \citep{albert}, RoBERTa \citep{roberta} and DistilBERT \citep{distil} which are variations of the BERT \citep{bert} architecture.
 
         	To achieve the main aim of this research it  is important to first outline a few steps that will be taken:
         \begin{enumerate}
         	\item Obtain SQuAD2.0 dataset and prepare it for training
-        	\item Implement the existing models such as ALBERT, RoBerta and DistilBERT that are available via libraries such as HuggingFace \citep{hfTransformers} and PyTorch  on the dataset
+        	\item Implement the existing models such as ALBERT, RoBERTa and DistilBERT that are available via libraries such as Hugging Face \citep{hfTransformers} and PyTorch  on the dataset
         	\item Obtain F1, Exact Match(EM), Training Loss and Validation Loss scores for existing models to treat them as benchmark values
         	\item Identify drawbacks of the current architectures
         	\item Design BOLT architecture and evaluate its performance against the provided benchmark scores
@@ -130,14 +151,16 @@ footskip=.25in]{geometry}
 
         Chapter \ref{c2litrev}, looks in detail at the background studies that have been briefly mentioned in section \ref{c11}. In this chapter critical analysis is conducted how some of the work that has been selected is relevant to what this research aims to highlight, it helps in understanding the merits and shortcomings of current state of the art approaches. Detailed analysis of Long Short-Term Memory(LSTM) and Transformer architectures is written, with special attention to applications in the field of Question Answering. There is particular focus on the advancements and applications of existing architectures as well as acknowledgement of why LSTMs reigned supreme for almost 2 decades. Transformers provide a unique opportunity to perform highly accurate predictive tasks in NLP. The most key advances to both LSTMs and Transformers are their bi-directional applications which are also discussed. Finally, this chapter ends with a summary of the approaches and highlights certain drawbacks. These drawbacks are discussed in more detail in \ref{c4}.
 
-        Next, chapter \ref{c3researchmeth} proposes the research methods that have been implemented. It explains the various metrics that have been used and why they were chosen, specifically highlighting why Accuracy isn't a good measure for creating a successful model and highlighting the use of Precision, Recall and F1 as useful metrics for the experiments conducted in this particular thesis, Exact Match scores are also introduced and discussed in this chapter. The chapter ends with a research flow diagram describing the processes followed for the experiments and application stages of various methods in a visual manner.
+        Next, chapter \ref{c3researchmeth} proposes the research methods that have been implemented. The chapter begins with a research flow diagram describing the processes followed for the experiments and application stages of various methods in a visual manner. It explains the various metrics that have been used and why they were chosen, specifically highlighting why Accuracy isn't a good measure for creating a successful model and highlighting the use of Precision, Recall and F1 as useful metrics for the experiments conducted in this particular thesis, Exact Match scores are also introduced and discussed in this chapter. 
 
 
         In chapter \ref{c4} the proposed architecture is discussed along with drawbacks of current architectures. The chapter also describes ways in which the proposed architecture can be refined.
 
-        Finally, in chapters \ref{c5} and \ref{c6} the results of the models are discussed while comparing them to current architectures and their benchmarks. The outcomes and various recommendations are outlined that can help improve the work presented in this thesis further.
-
-        Appendix \ref{cgc} is where the reader can refer to the Gantt chart for the thesis work done.
+        Chapter \ref{c5} looks at the results obtained through various experiments and presents benchmark scores for existing architectures. This chapter also shows the results from testing the model on context based questions and how the model responds.
+        
+        Finally, in chapter \ref{c6} recommendations are outlined that can help improve the work presented in this thesis further. There are several options shown that can allow for model refinement, architecture scaling and various approaches are recommended as well. 
+        
+        The Appendicies hold various other relevant information. Appendix \ref{cgc} is where the reader can refer to the Gantt chart for the thesis work done. Appendix \ref{modeltrainingimages} shows the images taken for varius training steps of the models built.
 
     \chapter{Literature Review}\label{c2litrev}
 
@@ -200,7 +223,7 @@ footskip=.25in]{geometry}
                 \begin{itemize}
                     \item LSTMs deal with long time lags by bridging the gaps using constant error flow in the memory cells.
                     \item LSTMs respond well to generalization problems, even if the input sequences are widely separated.
-                    \item They work well with a variety of braod range hyper-parameters and don't usually require tuning.
+                    \item They work well with a variety of broad range hyper-parameters and don't usually require tuning.
                     \item Their time and weight update complexity is the same as BPTT, ie. $ O(1) $. The advantage for LSTMs however, is that it is local in both space and time.
                 \end{itemize}
 
@@ -462,7 +485,7 @@ footskip=.25in]{geometry}
 		\subsection{Improvements of Transformer Architectures}\label{232}
 
             Transformers have significant advantages as highlighted earlier. Improvements to the basic architecture are discussed below.
-		\subsubsection{BERT}\label{2321}
+		\subsubsection{Bidirectional Encoder Representations from Transformers, BERT}\label{2321}
 
 			The paper on \textit{Bidirectional Encoder Representations from Transformers} (BERT) \citep{bert}, introduces a new language model. This model is truly fascinating in many ways. First and foremost it is designed to pre-train deep bidirectional representations using unlabelled data. This is done by jointly conditioning context in all layers to the right and left. This pre-training allows the model to be fine-tuned simply using one additional output layer. These features make this model conceptually simple and very powerful empirically.
 
@@ -483,7 +506,7 @@ footskip=.25in]{geometry}
 %	      \citep{roberta}
 
 	    \subsubsection{DistilBERT}\label{distilLitrev}
-	    The DistilBERT model by \citep{distil} was created with a few factors in  mind such as model size, complexity, ability to generalize tasks and the high environmental cost of running larger models. Models like RoBerta \citep{roberta}, BERT \citep{bert} etc. have several hundred million model parameters that take particularly longer to train, even through use of advanced pre-training techniques.
+	    The DistilBERT model by \citep{distil} was created with a few factors in  mind such as model size, complexity, ability to generalize tasks and the high environmental cost of running larger models. Models like RoBERTa \citep{roberta}, BERT \citep{bert} etc. have several hundred million model parameters that take particularly longer to train, even through use of advanced pre-training techniques.
 
 	    Larger models often tend to exponential increase model computational requirements \citep{schwarts}, these models also fail to generalize. The DistilBERT model shows that by applying a triple loss function on top of a smaller Transformer \citep{atayl} that is trained using a knowledge distillation compression technique \citep{knowledgeDistilation} can provide similar results in 60\% less time.
 
@@ -493,9 +516,89 @@ footskip=.25in]{geometry}
 
 	    These speed and accuracy advantages make this model and architecure worthy of being explored further and will serve as the basis of the improvements suggested in this thesis.
 
-
-
+		\section{Summary}
+		
+		This chapter has provided an in-depth look at the current and past state of the art approaches to NLP applications with a particular focus on their application to Question-Answering. LSTMs and the work done by \citep{lstmoriginal} laid the basis for an architecture that could deal with a decades old problem of \textit{gradient descent} by using memory cells that would help remember information longer than regular RNNs. 
+		LSTMs provide various advantages over traditional RNNs like dealing with long time lags and the ability to deal with broad range hyper-parameters. The bidirectional kind of LSTMs or biLSTMs \citep{bilstmHerman}, showed even further improvements, allowing the LSTM to feed information for both forward and backward passes. Most notable applications showed that applying a bidirectional approach with attention layers allowed for better accuracy over all when tested on a QA dataset, as seen in table \ref{lstmhaigexperiementresults}.
+		
+		Applications of LSTMs in the field of Question-Answering led to the development of one an Answer-Pointer Network \citep{lstmhu2016question}, which utilized the SQuAD 1.1 dataset by \citep{dataset1}. This approach yielded particularly great results in the application of Question Answering. 
+		
+		Transformers came into the picture in 2017 \citep{atayl} and claimed the throne to architectural supremacy in the field of NLP, dethroning LSTMs after two decades. The transformer architecture extensively relied on self-attention, which allows them to work better than LSTMs. Self-attention lets transformer perform parallel computation, which wasn't't happening earlier through architectures like LSTMs. Improvements to this architecture in the form of BERT \citep{bert}, ALBERT \citep{albert}, DistilBERT \citep{distil} etc.. provide further improvements in terms of speed, size and the ability to generalize well across different kinds of applications. 
+		
+		The BERT model revolutionized Transformers by applying a bidirectional approach and taking it a step further by adding pre-trained bidirectional representations using unlabelled data. This allowed the model to be trained faster and perform better than the traditional Transformer architecture. However, BERT still suffers from large size and having hundreds of millions of parameters. The DistilBERT model refines BERT by implementing a smaller, ``distilled" version of the model using a ``student-teacher" approach where the DistilBERT model is trained by a pre-trained BERT model, thus reducing training time by upto 60\%, while maintaining near similar results. 
+		
     \chapter{Research Methodology}\label{c3researchmeth}
+
+	\section{Research Flow Diagram}\label{c34}
+		To be able to achieve the objectives set out in the previous chapters, it is important to organize the research in such a way that it achieves its objective. This is represented in the research flow diagram \ref{researchFlow}.
+		
+		The central boxes show the main stages, while the accompanying boxes on the right show detailed steps implemented. 
+\begin{figure*}[!h]
+	\begin{center}
+		\begin{tikzpicture}[auto,
+			%decision/.style={diamond, draw=black, thick, fill=white,
+			%text width=8em, text badly centered,
+			%inner sep=1pt, font=\sffamily\small},
+			block_center/.style ={rectangle, draw=black,
+				text width=8cm, text badly centered,font=\small,},
+			block_left/.style ={rectangle, draw=black,
+				text width=5cm, text centered,font=\tiny},
+			line/.style ={draw, thick, -latex', shorten >=0pt}]
+			% outlining the flowchart using the PGF/TikZ matrix funtion
+			\matrix [column sep=5mm,row sep=3mm] {
+				% enrollment - row 1
+				\node [block_center] (introduction) {\textbf{Data Preprocessing}};
+				& \node [block_left] (introductionLeft) {\begin{itemize}
+						\item Obtain training and validation datasets
+						\item Split both datasets into questions, answers and context lists
+				\end{itemize}}; \\
+				% enrollment - row 2
+				\node [block_center] (litreview) {\textbf{Data Preperation}};
+				& \node [block_left] (litreviewleft) {\begin{itemize}
+						\item Add index positions to both training and validation contexts and answers
+						\item Embed token positions into both sets
+						\item Add dataset lengths to both embeded and tokenized training and validation sets
+				\end{itemize}}; \\
+				% enrollment - row 3
+				\node [block_center] (researchMeth) {\textbf{Benchmarks}};
+				& \node [block_left] (researchMethleft) {\begin{itemize}
+						\item Run prepared dataset through ALBERT model and obtain results
+						\item Run prepared dataset through RoBERTa model and obtain results
+						\item Run prepared dataset through DistilBERT model and obtain results
+				\end{itemize}}; \\
+				% enrollment - row 2
+				\node [block_center] (dc) {\textbf{Custom Model Preperation and Evaluation}};
+				& \node [block_left] (dcleft) {\begin{itemize}
+						\item Prepare Pointer network with 1 LSTM that has 1 input layer, 8 hidden layers and 1 output layer
+						\item Prepare Pointer Encoders and Decoders
+						\item Prepare DistilBERT based Transformer model
+						\item Modify transformer model with implementation of pointer layer
+				\end{itemize}}; \\
+				% enrollment - row 2
+				\node [block_center] (results) {\textbf{Results}};
+				& \node [block_left] (resultsleft) {\begin{itemize}
+						\item Collect results
+						\item Draw conclusions from the results
+						\item Propose future improvements \& applications
+				\end{itemize}}; \\
+			};% end matrix
+			% connecting nodes with paths
+			\begin{scope}[every path/.style=line]
+				% paths for enrollemnt rows
+				\path (introduction)   -- (introductionLeft);
+				\path (introduction)   -- (litreview);
+				\path (litreview) -- (litreviewleft);
+				\path (litreview) -- (researchMeth);
+				\path (researchMeth)  -- (researchMethleft);
+				\path (researchMeth) -- (dc);
+				\path (dc)  -- (dcleft);
+				\path (dc)  -- (results);
+				\path (results)   -- (resultsleft);
+			\end{scope}
+		\end{tikzpicture}
+	\end{center}
+	\caption{Research Flow Diagram}\label{researchFlow}
+\end{figure*}
 
 
     \section{Data Selection}\label{c31}
@@ -563,15 +666,20 @@ footskip=.25in]{geometry}
     The hypothesis of this research is that implementing a self attention based Transformer model with:
     \begin{itemize}
     	\item Glove embeddings
-    	\item BERT base \citep{bert} type Transformer model
-    	\item Answer pointer output layer\citep{lstmPointer, lstmhu2016question}
+    	\item Answer-Pointer output layer\citep{lstmPointer, lstmhu2016question}
+    	\item BERT based \citep{bert} type DistilBERT Transformer architecture
     \end{itemize}
 
 	Will help improve the prediction capability of the transformer architecture.
 
 	The DistilBERT model \citep{distil}, which is a lighter, distilled version of the BERT model, and has 40\% less parameters at 66 million, instead of 110 million in BERT, as discussed in \citep{bert}, will be customized with the implementation of the answer pointer layer to generate answers for the questions posed.
 
-
+	The architecture of this custom model is implemented in two parts, first using an LSTM based Answer-Pointer network and then a DistilBERT model that uses the output from the Answer-Pointer model to provide final results.
+	
+	The Answer-Pointer network consists of one linear layer, one LSTM layer with 8 hidden layers and one output layer. The hidden layers are also connected to encoder, attention and decoder layers. The dimensions of these layers have been fixed due to hardware limitations. The embedded inputs produced after pre-processing the data are fed into the Answer-Pointer network that generates embedded answer pointers. These answer pointers are then fed into the DistilBERT model.
+	
+	The model implements a weighted Adam optimizer or AdamW \citep{DBLP:journals/corr/abs-1711-05101}, which is a modification of the Adam optimizer  by \citep{kingma2014adam}. The Adam optimizer first-order optimization methos that implements stocahstic gradient-based optimizations and uses extremely low amount of memory.
+	
 	\section{Model Evaluation Metrics}\label{33}
 
 		To successfully evaluate the model two metrics will be used. The \textit{F1 - Score} and \textit{Exact Match Score} will be used to measure the success of the model developed. While accuracy is a good score to measure how well a model is performing, the problem with accuracy is that it is prone to overfitting, and underfitting, which might lead to great accuracy scores but real world predictions wont be as accurate.
@@ -605,77 +713,8 @@ footskip=.25in]{geometry}
 		F1 = 2 \times \dfrac{Precision \times Recall}{Precision + Recall}
 	\end{equation}
 
-	\textbf{Exact Match} is a binary metric, i.e. it is 1 if the predicted answer matches the expected answer and 0 if it doesn't.
+	\textbf{Exact Match} is a binary metric, i.e. it is 1 if the predicted answer matches the expected answer and 0 if it doesn't. The output from each of the iteration results is summed up and percentage is calculated to obtain a final EM score for each epoch. 
 
-	\section{Research Flow Diagram}\label{c34}
-	 To be able to achieve the objectives set out in the previous chapters, it is important to organize the research in such a way that it achieves its objective. This is represented in the research flow diagram \ref{researchFlow}.
-
-	\begin{figure*}
-		\begin{center}
-			\begin{tikzpicture}[auto,
-				%decision/.style={diamond, draw=black, thick, fill=white,
-				%text width=8em, text badly centered,
-				%inner sep=1pt, font=\sffamily\small},
-				block_center/.style ={rectangle, draw=black,
-					text width=8cm, text badly centered,font=\small,},
-				block_left/.style ={rectangle, draw=black,
-					text width=5cm, text centered,font=\tiny},
-				line/.style ={draw, thick, -latex', shorten >=0pt}]
-				% outlining the flowchart using the PGF/TikZ matrix funtion
-				\matrix [column sep=5mm,row sep=3mm] {
-					% enrollment - row 1
-					\node [block_center] (introduction) {\textbf{Data Preprocessing}};
-					& \node [block_left] (introductionLeft) {\begin{itemize}
-							\item Obtain training and validation datasets
-							\item Split both datasets into questions, answers and context lists
-					\end{itemize}}; \\
-					% enrollment - row 2
-					\node [block_center] (litreview) {\textbf{Data Preperation}};
-					& \node [block_left] (litreviewleft) {\begin{itemize}
-							\item Add index positions to both training and validation contexts and answers
-							\item Embed token positions into both sets
-							\item Add dataset lengths to both embeded and tokenized training and validation sets
-					\end{itemize}}; \\
-					% enrollment - row 3
-					\node [block_center] (researchMeth) {\textbf{Benchmarks}};
-					& \node [block_left] (researchMethleft) {\begin{itemize}
-							\item Run prepared dataset through ALBERT model and obtain results
-							\item Run prepared dataset through RoBerta model and obtain results
-							\item Run prepared dataset through DistilBERT model and obtain results
-					\end{itemize}}; \\
-					% enrollment - row 2
-					\node [block_center] (dc) {\textbf{Custom Model Preperation and Evaluation}};
-					& \node [block_left] (dcleft) {\begin{itemize}
-							\item Prepare Pointer network with 1 LSTM that has 1 input layer, 8 hidden layers and 1 output layer
-							\item Prepare Pointer Encoders and Decoders
-							\item Prepare DistilBERT based Transformer model
-							\item Modify transformer model with implementation of pointer layer
-					\end{itemize}}; \\
-					% enrollment - row 2
-					\node [block_center] (results) {\textbf{Results}};
-					& \node [block_left] (resultsleft) {\begin{itemize}
-							\item Collect results
-							\item Draw conclusions from the results
-							\item Propose future improvements \& applications
-					\end{itemize}}; \\
-				};% end matrix
-				% connecting nodes with paths
-				\begin{scope}[every path/.style=line]
-					% paths for enrollemnt rows
-					\path (introduction)   -- (introductionLeft);
-					\path (introduction)   -- (litreview);
-					\path (litreview) -- (litreviewleft);
-					\path (litreview) -- (researchMeth);
-					\path (researchMeth)  -- (researchMethleft);
-					\path (researchMeth) -- (dc);
-					\path (dc)  -- (dcleft);
-					\path (dc)  -- (results);
-					\path (results)   -- (resultsleft);
-				\end{scope}
-			\end{tikzpicture}
-		\end{center}
-		\caption{Research Flow Diagram}\label{researchFlow}
-	\end{figure*}
 
 
   \chapter{Architecture Creation}\label{c4}
@@ -704,9 +743,9 @@ footskip=.25in]{geometry}
 
             To achieve this the Answer-Pointer based network is designed initially with 1 LSTM cell containing 8 hidden layers and one output layer. This is described in detail section \ref{c421}.
 
-            The process begins by serving tokenized inputs that are created as a part of pre-processing the input data and embedding it by using the ``distilbert-base-uncased" pre-trained embeddings from Hugging Face libarary. Then the input is then fed to the ``DistilBertForQuestionAnsweringC" class, which is the modified class from the Hugging Face Transformers library mentioned before.
+            The process begins by serving tokenized inputs that are created as a part of pre-processing the input data and embedding it by using the ``distilbert-base-uncased" pre-trained embeddings from Hugging Face library. Then the input is then fed to the ``DistilBertForQuestionAnsweringC" class, which is the modified class from the Hugging Face Transformers library mentioned before.
 
-            The DistilBertForQuestionAnsweringC class takes a pre-trained model config file as input along with the embedded inputs, passes them through a linear layer and a dropout layer. These processed outputs are then processesed through Encoder and Decoder layers that allow the model to process and produce relevant results.
+            The DistilBertForQuestionAnsweringC class takes a pre-trained model configuration file as input along with the embedded inputs, passes them through a linear layer and a dropout layer. These processed outputs are then processesed through Encoder and Decoder layers that allow the model to process and produce relevant results.
 
                              	\begin{figure*}[!h]
                              		\begin{center}
@@ -812,11 +851,11 @@ footskip=.25in]{geometry}
 
     \chapter{Results}\label{c5}
 
-        To establish the improvements hypothesized in the previous section it is important to have a baseline metric. The ALBERT \citep{albert}, RoBERTa \citep{roberta} and DistilBERT \citep{distil} models are available pre-trained through the HuggingFace library \citep{hfTransformers}. The library also provides the SQuAD 2.0 Dataset \citep{dataset} for use. The dataset is also available for download directly and to aid understanding of the data correctly that approach is implemented.
+        To establish the improvements hypothesized in the previous section it is important to have a baseline metric. The ALBERT \citep{albert}, RoBERTa \citep{roberta} and DistilBERT \citep{distil} models are available pre-trained through the Hugging Face library \citep{hfTransformers}. The library also provides the SQuAD 2.0 Dataset \citep{dataset} for use. The dataset is also available for download directly and to aid understanding of the data correctly that approach is implemented.
 
-        The code used to prepare the datasets as well as the results gathered are available as examples from the HuggingFace library documentation, some changes have been mde to them to accomodate upgrades from different dependencies.
+        The code used to prepare the datasets as well as the results gathered are available as examples from the Hugging Face library documentation, some changes have been made to them to accommodate upgrades from different dependencies.
 
-        For the sake of consistency of the results presented, the experiments were conducted using a Google Colab Pro account with Tesla series GPUs and 16GB of VRAM. Google Colab hosts GPUs in the cloud environment, which impacts performance but is the best alternative to investing and buying a GPU given the silicon shortage and exhorbitant prices in the current market.
+        For the sake of consistency of the results presented, the experiments were conducted using a Google Colab Pro account with Tesla series GPUs and 16GB of VRAM. Google Colab hosts GPUs in the cloud environment, which impacts performance but is the best alternative to investing and buying a GPU given the silicon shortage and exorbitant prices in the current market.
 
         \section{Experiment Data Pre-Processing And Analysis}
 
@@ -830,11 +869,12 @@ footskip=.25in]{geometry}
         	\item \textbf{Tokenization}: The training and validation datasets are then embedded with token positions that are obtained from the pre-trained DistilBertTokenizer available from the Hugging Face library.
         	\item \textbf{Training and Validation Datasets}: The encoded datasets are then modified to contain the length of each set as that is required by the modified architecture as well as the base architectures.
         \end{itemize}
-
+		
+		While pre-processing data it became evident that it wasn't necessary to implement GLoVE embeddings since the DistilBERT and Answer-Pointer based models will both be receiving pre-optimized, embedded, uncased data available from on the Hugging Face library.
 
      \section{Existing Architecture Benchmarks}\label{c51}
 
-     	Each of the three selected models is put through the same process of data pre-processing, as identified in chapter \ref{c3researchmeth}, this is to ensure consistency across board with all the model types and even the custom model improvements advised.
+     	Each of the three selected models is put through the same process of data pre-processing, as identified in chapter \ref{c3researchmeth}, this is to ensure consistency across board with all the model types including the BOLT model improvements advised.
 
     	The experiments begin with a review of the ALBERT architecture \citep{albert}, where it is observed that at a batch size of 8 with the AdamW optimizer set to a learning rate of 5e-5, the average epoch time for training takes around 1 hour, 24 minutes at 2.15 iterations/second. Further, the vaidation set takes around 7-12 minutes, depending on the availability of the GPU in the cloud based Google Colab Pro environment.
 
@@ -892,41 +932,41 @@ footskip=.25in]{geometry}
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{../images/Roberta_Val_F1.png}
-		\caption{\small RoBerta Validation F1 Score}
+		\caption{\small RoBERTa Validation F1 Score}
 		\label{robertaf1}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{../images/Roberta_Val_EM.png}
-		\caption{\small RoBerta Validation Exact Match}
+		\caption{\small RoBERTa Validation Exact Match}
 		\label{robertaem}
 	\end{subfigure}
 	\vskip\baselineskip
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{../images/Roberta_Val_Loss.png}
-		\caption{\small RoBerta Validation Loss}
+		\caption{\small RoBERTa Validation Loss}
 		\label{robertaValLoss}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{../images/Roberta_Train_Loss.png}
-		\caption{\small RoBerta Training Loss}
+		\caption{\small RoBERTa Training Loss}
 		\label{robertaTrainloss}
 	\end{subfigure}
-	\caption{RoBerta Model Benchmarks}
+	\caption{RoBERTa Model Benchmarks}
 	\label{robertaBenchmarks}
 \end{figure*}
 
-	Figure \ref{robertaBenchmarks} shows the experimental results for the RoBerta architecutre and model. Unlike the ALBERT benchmarks above, the RoBerta benchmark results seem very erratic in nature. The validation F1 and exact match scores for the RoBerta model, while performing significantly better than ALBERT, remain around 83\% and between 74.4 - 75.4\% respectively. This is a roughly 10\% better performance than the ALBERT model, although the training time for the model is around 2 hours per epoch at 1.21 iterations/second. The validation epoch takes around 21 minutes to complete at 4.06 iterations/second.
+	Figure \ref{robertaBenchmarks} shows the experimental results for the RoBERTa architecutre and model. Unlike the ALBERT benchmarks above, the RoBERTa benchmark results seem very erratic in nature. The validation F1 and exact match scores for the RoBERTa model, while performing significantly better than ALBERT, remain around 83\% and between 74.4 - 75.4\% respectively. This is a roughly 10\% better performance than the ALBERT model, although the training time for the model is around 2 hours per epoch at 1.21 iterations/second. The validation epoch takes around 21 minutes to complete at 4.06 iterations/second.
 
 	This increased training time can be attributed to the almost double number of parameters in the model at 125 million, compared to 66 million in ALBERT when using the ``roberta-base" pre-trained model.
 
-	Similar to the ALBERT model, a consistent and smooth decline in training loss can be observed, as shown in \ref{robertaTrainloss}. The RoBerta model is run using the ``roberta-base" pre-trained class that is similar to the ``albert-base-uncased" class, just optimized by the HuggingFace Team for this model.
+	Similar to the ALBERT model, a consistent and smooth decline in training loss can be observed, as shown in \ref{robertaTrainloss}. The RoBERTa model is run using the ``roberta-base" pre-trained class that is similar to the ``albert-base-uncased" class, just optimized by the Hugging Face Team for this model.
 
-	The final benchmark scores for the RoBerta model at epoch 10 are:
+	The final benchmark scores for the RoBERTa model at epoch 10 are:
 	\begin{itemize}
 		\item \textbf{F1 Score}:  $\sim$83.3\%
 		\item \textbf{Exact Match Score}: 74.6\%
@@ -935,9 +975,9 @@ footskip=.25in]{geometry}
 	\end{itemize}
 
 
-	In figure \ref{distilbertBenchmarks}, the behaviour of the model can be observed to be very different from the other models. The behaviour can be described simply as a combination of the behaviours seen for ALBERT and RoBerta models. Just like in \ref{robertaTrainloss}, the training loss for the DistilBERT model as seen in \ref{distilbertTrainloss} is extremely consistent and smooth in nature, showing a steady decline till the final epoch. training loss and validation loss, fig. \ref{distilbertValLoss} are lower compared to both models above, the validation F1 and exact match scores are not exactly comparable.
+	In figure \ref{distilbertBenchmarks}, the behaviour of the model can be observed to be very different from the other models. The behaviour can be described simply as a combination of the behaviours seen for ALBERT and RoBERTa models. Just like in \ref{robertaTrainloss}, the training loss for the DistilBERT model as seen in \ref{distilbertTrainloss} is extremely consistent and smooth in nature, showing a steady decline till the final epoch. training loss and validation loss, fig. \ref{distilbertValLoss} are lower compared to both models above, the validation F1 and exact match scores are not exactly comparable.
 
-	Using the same training criteria of a batch size of 8 and an AdamW optimizer set to a learning rate of 5e-5, it can be seen that the DistilBERT model with performs slightly poorly when compared to ALBERT and RoBerta. However, the time taken to train a DistilBERT model is significanty less than that of RoBerta and ALBERT. One epoch for a DistilBERT model takes approximately 37 minutes to complete, almost half that of ALBERT and 3x less than RoBerta. The validation set takes around 5 minutes as well.
+	Using the same training criteria of a batch size of 8 and an AdamW optimizer set to a learning rate of 5e-5, it can be seen that the DistilBERT model with performs slightly poorly when compared to ALBERT and RoBERTa. However, the time taken to train a DistilBERT model is significanty less than that of RoBERTa and ALBERT. One epoch for a DistilBERT model takes approximately 37 minutes to complete, almost half that of ALBERT and 3x less than RoBERTa. The validation set takes around 5 minutes as well.
 
   \begin{figure*}
 	\centering
@@ -985,52 +1025,51 @@ While the results for the DistilBERT model aren't exactly perfect, it does allow
 
 \section{BOLT Results}\label{c52}
 
-	As discussed in chapter \ref{c4}, the modifications have been applied to the DistilBERT model, specifically the DistilBertModel class offered by the HuggingFace Transformers library \citep{hfTransformers} and a modified implemetation of an Answer Pointer Network designed using PyTorch by \citep{pointernetGit} is used to generate the answer pointer layer results for these custom models. All the custom models utilised the same pre-trained ``DistilBERT-base-uncased" class from the Hugging Face Transformers library.
 
-	\begin{figure}[!h]
-		\centering
-		\includegraphics[scale=0.35]{../images/AdamW5e.png}
-		\caption{BOLT with AdamW Optimizer at 5e-5 rate}\label{adam5e}
-	\end{figure}
+	As discussed in chapter \ref{c4}, the modifications have been applied to the DistilBERT model, specifically the DistilBertModel class offered by the Hugging Face Transformers library \citep{hfTransformers} and a modified implementation of an Answer Pointer Network designed using PyTorch by \citep{pointernetGit} is used to generate the answer pointer layer results for these BOLT models. All the BOLT models utilised the same pre-trained ``DistilBERT-base-uncased" class from the Hugging Face Transformers library.
 
-	The first figure \ref{adam5e} shows the various epochs for the modified DistilBERT model with the Answer Pointer network implemented with a batch size of 8 and the AdamW optimizer with a learning rate of 5e-5, which  are the same parameters as the benchmark models.
-
-	In figure \ref{adam5e} it can be observed that the model takes significantly longer to train than a regular DistilBERT model which takes around 37 minutes. Though the training and validation times are higher than existing models, the training loss values track consistently down and are comparable to the ones seen in \ref{distilbertTrainloss}. The increased training and validation set times can however be less than the ones shown as there is a significant decrease in the validation set running time towards the 5th epoch. This is quite peculiar and goes to highlight the distributed nature of the cloud based training environment that is Google Colab.
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Architecture & Time/Epoch &  F1 Score & Exact Match Score (EM)\\
+		\hline
+		ALBERT & 1hr 24m &  77.5\% &  67.5\% \\
+		RoBERTa & 2 hrs & 83.3\% & 74.6\% \\
+		DistilBERT & 37m & 70.4\% & 58.5\%\\
+		BOLT - AdaFactor 3e-5 & 3 hrs 20 mins & 74.88\% & 65.21\%\\
+		BOLT - AdamW 3e-5 & 3 hrs & 74.9\% & 64.90\% \\
+		BOLT - AdamW 5e-5 & 3 hrs 20 mins & 72.5\% & 62.09\% \\
+		\hline
+	\end{tabular}
+	\caption{Comparison of  BOLT with ALBERT, RoBERTa and DistilBERT models on the SQuAD 2.0 dataset.}\label{boltResults}
+\end{table}
+	From table \ref{boltResults} it can be observed that the model takes significantly longer to train than a regular DistilBERT model which takes around 37 minutes. Though the training and validation times are higher than existing models, the training loss values track consistently down and are comparable to the ones seen in \ref{distilbertTrainloss}. The increased training and validation set times can however be less than the ones shown as there is a significant decrease in the validation set running time towards the 5th epoch. This is quite peculiar and goes to highlight the distributed nature of the cloud based training environment that is Google Colab.
 
 	The F1 scores for the model continuously hover around the 72\% mark, which is a slight improvement over the 70\% mark observed for the benchmarked DistilBERT model as seen in \ref{distilbertf1}.
-	The validation loss for the custom model hovers lower than the values in the DistilBERT model as well.
+	The validation loss for the BOLT model hovers lower than the values in the DistilBERT model as well.
 
-	In the next experiment, shown in fig. \ref{adam3e}, a different learning rate is used with the same AdamW optimizer. Using a learning rate of 3e-5 or 0.00003 there is a slight increase in F1 and exact match scores, reaching almost 75\% and 65\% values respectively. This suggests that the custom model responds well to lower learning rates.
+	The figure \ref{adam5e} shows the various epochs for the BOLT model with the Answer-Pointer network implemented with a batch size of 8 and the AdamW optimizer with a learning rate of 5e-5, which  are the same parameters as the benchmark models.
 
-	The training times remain roughly the same with a sudden drop in the validation time seen again towards the end.
-
-		\begin{figure}[!h]
-			\centering
-			\includegraphics[scale=0.35]{../images/AdamW3e.png}
-			\caption{BOLT with AdamW Optimizer at 3e-5 rate}\label{adam3e}
-		\end{figure}
-
-		\begin{figure}[!h]
-			\centering
-			\includegraphics[scale=0.35]{../images/AdaFactor3e.png}
-			\caption{BOLT with AdaFactor Optimizer at 3e-5 rate}\label{ada3e}
-		\end{figure}
-
-	In the final experiment, that is shown in fig. \ref{ada3e}, the custom model is run with a modified AdaFactor optimizer with a learning rate of 3e-5, this again presents similar results to the results in the previous experiment where the lower value of the learning rate helped the custom model learn better. The training loss for this run also falls similar to the loss in the previous custom model experiments as well as the DistilBERT benchmark, while maintaing an F1 score that is higher than the DistilBERT benchmark but roughly similar to the custom model with AdamW optimizer at a learning rate of 3e-5.
+	In the next experiment a different learning rate is used with the same AdamW optimizer. Using a learning rate of 3e-5 or 0.00003 there is a slight increase in F1 and exact match scores, reaching almost 75\% and 65\% values respectively. This suggests that the BOLT model responds well to lower learning rates. The training times remain roughly the same with a sudden drop in the validation time seen again towards the end. 	The figure \ref{adam3e} shows the various epochs for this optimizer.
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.4]{../images/AdaFactor3e-output.png}
+		\caption{BOLT with AdaFactor Optimizer at 3e-5 rate outputs to questions asked}\label{ada3e-output}
+	\end{figure}
+	
+	In the final experiment, that is shown in fig. \ref{ada3e}, the BOLT model is run with a modified AdaFactor optimizer with a learning rate of 3e-5, this again presents similar results to the results in the previous experiment where the lower value of the learning rate helped BOLT learn better. The training loss for this run also falls similar to the loss in the previous BOLT experiments and the DistilBERT benchmark, while maintaining an F1 score that is higher than the DistilBERT benchmark but roughly similar to the BOLT with AdamW optimizer at a learning rate of 3e-5.
 
 
-        Figure \ref{ada3e-output} shows the DistilBERT custom model producing correct answers to a few question asked of it. This confirms that the model is able to produce answers to some questions and can give accurate results as well. The custom model is more accurate than its base DistilBERT model, who's output can be seen in figure \ref{distilOut}. While the DistilBERT model answers the first 2 questions correctly, it fails to answer the final question, ``What problem can LSTM suffer from?", with 100\% accuracy and outputs ``vanishing gradient problem" instead of the correct answer ``exploding gradient problem".
-		\begin{figure}[!h]
-			\centering
-			\includegraphics[scale=0.35]{../images/AdaFactor3e-output.png}
-			\caption{BOLT with AdaFactor Optimizer at 3e-5 rate outputs to questions asked}\label{ada3e-output}
-		\end{figure}
+    Figure \ref{ada3e-output} shows the BOLT model producing correct answers to a few question asked of it. This confirms that the model is able to produce answers to some questions and can give accurate results as well. The BOLT is more accurate than its base DistilBERT model, who's output can be seen in figure \ref{distilOut}. While the DistilBERT model answers the first 2 questions correctly, it fails to answer the final question, ``What problem can LSTM suffer from?", with 100\% accuracy and outputs ``vanishing gradient problem" instead of the correct answer ``exploding gradient problem".
+
 		\begin{figure}[!h]
 			\centering
 			\includegraphics[scale=0.35]{../images/distilbert-answers.png}
 			\caption{DistilBERT model outputs to questions asked}\label{distilOut}
 		\end{figure}
 
+	The results described in \ref{boltResults} along with the outputs from the model seen in fig. \ref{ada3e-output} suggest stronly that the model is performing at par with current state of the art acrchitectures, while taking more time to train. This is particularly true in the case of its comparison with the DistilBERT model, which it has outdone in terms of contextual question-answering. The BOLT with AdaFactor 3e-5 learning rate implementation achieves the best results possible for the proposed architecture and dataset.
 
     \chapter{Conclusions And Recommendations}\label{c6}
 
@@ -1039,7 +1078,7 @@ While the results for the DistilBERT model aren't exactly perfect, it does allow
     The results obtained from experiments in section \ref{c52} show that the models performance is at par with the DistilBERT model. While this result isn't graphically present due to timeout issues in Google Colab, visually the various scores printed in figures \ref{adam5e}, \ref{adam3e} and \ref{ada3e}, the model does perform well initially.
 
     The experiments conducted in this thesis highlight that a properly implemented LSTM based Answer Pointer network layer that is incorporated with the Transformer architecture can perform at par with a current state of the art model.
-    While the custom model presents an opportunity for improvement in terms of training times, the results and the metrics are at par with the benchmark models.
+    While the BOLT model presents an opportunity for improvement in terms of training times, the results and the metrics are at par with the benchmark models.
 
     The benchmarked models are current state of the art approaches that are used industry wide for various applications and readily available via libraries like PyTorch, Hugging Face and TensorFlow. The model presented here has shown potential through the limited amount of testing and resources available.
 
@@ -1069,6 +1108,24 @@ While the results for the DistilBERT model aren't exactly perfect, it does allow
 		        \includegraphics[scale=0.55,angle=90]{../images/GanttChart-final.png}
 		     	\caption{Thesis Gantt Chart}\label{ganttChartMid}
               \end{figure}
+          \chapter{Model Training Images During Epochs}\label{modeltrainingimages}
+          	\begin{figure}[!h]
+          	\centering
+          	\includegraphics[scale=0.35]{../images/AdamW5e.png}
+          	\caption{BOLT with AdamW Optimizer at 5e-5 rate}\label{adam5e}
+          \end{figure}
+      
+      \begin{figure}[!h]
+      	\centering
+      	\includegraphics[scale=0.35]{../images/AdamW3e.png}
+      	\caption{BOLT with AdamW Optimizer at 3e-5 rate}\label{adam3e}
+      \end{figure}
+      
+      \begin{figure}[!h]
+      	\centering
+      	\includegraphics[scale=0.35]{../images/AdaFactor3e.png}
+      	\caption{BOLT with AdaFactor Optimizer at 3e-5 rate}\label{ada3e}
+      \end{figure}
          \chapter{Research Proposal}\label{crp}
          	\includepdf[pages=1-15]{../rp.pdf}
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -222,6 +222,17 @@ Cristian Bucilu, Rich Caruana, and Alexandru Niculescu-Mizil.
 \newblock ISBN 1595933395.
 \newblock \doi{10.1145/1150402.1150464}.
 \newblock URL \url{https://doi.org/10.1145/1150402.1150464}.
+
+\bibitem[Loshchilov and Hutter(2017)]{DBLP:journals/corr/abs-1711-05101}
+Ilya Loshchilov and Frank Hutter.
+\newblock Fixing weight decay regularization in adam.
+\newblock \emph{CoRR}, abs/1711.05101, 2017.
+\newblock URL \url{http://arxiv.org/abs/1711.05101}.
+
+\bibitem[Kingma and Ba(2014)]{kingma2014adam}
+Diederik~P Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock \emph{arXiv preprint arXiv:1412.6980}, 2014.
 
 \bibitem[Fan et~al.(2020)Fan, Lavril, Grave, Joulin, and
   Sukhbaatar]{fan2020addressing}
