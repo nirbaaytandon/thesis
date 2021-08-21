@@ -1,0 +1,266 @@
+\begin{thebibliography}{39}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Schmidhuber and Hochreiter(1997)]{lstmoriginal}
+J{\"u}rgen Schmidhuber and Sepp Hochreiter.
+\newblock Long short-term memory.
+\newblock \emph{Neural Comput}, 9\penalty0 (8):\penalty0 1735--1780, 1997.
+
+\bibitem[Graves and Schmidhuber(2005)]{lstmBiLSTM}
+A.~Graves and J.~Schmidhuber.
+\newblock Framewise phoneme classification with bidirectional lstm networks.
+\newblock 4:\penalty0 2047--2052 vol. 4, 2005.
+\newblock \doi{10.1109/IJCNN.2005.1556215}.
+
+\bibitem[Tan et~al.(2015)Tan, Xiang, and Zhou]{lstmhaighextractive}
+Ming Tan, Bing Xiang, and Bowen Zhou.
+\newblock Lstm-based deep learning models for non-factoid answer selection.
+\newblock \emph{CoRR}, abs/1511.04108, 2015.
+\newblock URL \url{http://arxiv.org/abs/1511.04108}.
+
+\bibitem[Wang and Jiang(2016)]{lstmhu2016question}
+Shuohang Wang and Jing Jiang.
+\newblock Machine comprehension using match-lstm and answer pointer.
+\newblock \emph{CoRR}, abs/1608.07905, 2016.
+\newblock URL \url{http://arxiv.org/abs/1608.07905}.
+
+\bibitem[Gennaro et~al.(2020)Gennaro, Buonanno, Girolamo, Ospedale, and
+  Palmieri]{lstmintent}
+Giovanni~Di Gennaro, Amedeo Buonanno, Antonio~Di Girolamo, Armando Ospedale,
+  and Francesco A.~N. Palmieri.
+\newblock Intent classification in question-answering using {LSTM}
+  architectures.
+\newblock \emph{CoRR}, abs/2001.09330, 2020.
+\newblock URL \url{https://arxiv.org/abs/2001.09330}.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{atayl}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N Gomez, Lukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock \emph{arXiv preprint arXiv:1706.03762}, 2017.
+
+\bibitem[Devlin et~al.(2018)Devlin, Chang, Lee, and Toutanova]{bert}
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock \emph{arXiv preprint arXiv:1810.04805}, 2018.
+
+\bibitem[Feng et~al.(2015)Feng, Xiang, Glass, Wang, and Zhou]{lstmInsuranceQA}
+Minwei Feng, Bing Xiang, Michael~R. Glass, Lidan Wang, and Bowen Zhou.
+\newblock Applying deep learning to answer selection: {A} study and an open
+  task.
+\newblock \emph{CoRR}, abs/1508.01585, 2015.
+\newblock URL \url{http://arxiv.org/abs/1508.01585}.
+
+\bibitem[Rajpurkar et~al.(2018)Rajpurkar, Jia, and Liang]{dataset}
+Pranav Rajpurkar, Robin Jia, and Percy Liang.
+\newblock Know what you don't know: Unanswerable questions for squad.
+\newblock \emph{CoRR}, abs/1806.03822, 2018.
+\newblock URL \url{http://arxiv.org/abs/1806.03822}.
+
+\bibitem[Green~Jr et~al.(1961)Green~Jr, Wolf, Chomsky, and
+  Laughery]{green1961baseball}
+Bert~F Green~Jr, Alice~K Wolf, Carol Chomsky, and Kenneth Laughery.
+\newblock Baseball: an automatic question-answerer.
+\newblock In \emph{Papers presented at the May 9-11, 1961, western joint
+  IRE-AIEE-ACM computer conference}, pages 219--224, 1961.
+
+\bibitem[Woods and WA(1977)]{lunar}
+William~A Woods and WOODS WA.
+\newblock Lunar rocks in natural english: Explorations in natural language
+  question answering.
+\newblock 1977.
+
+\bibitem[Lan et~al.(2019)Lan, Chen, Goodman, Gimpel, Sharma, and
+  Soricut]{albert}
+Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, and
+  Radu Soricut.
+\newblock Albert: A lite bert for self-supervised learning of language
+  representations.
+\newblock \emph{arXiv preprint arXiv:1909.11942}, 2019.
+
+\bibitem[Liu et~al.(2019)Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis,
+  Zettlemoyer, and Stoyanov]{roberta}
+Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer
+  Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov.
+\newblock Roberta: A robustly optimized bert pretraining approach.
+\newblock \emph{arXiv preprint arXiv:1907.11692}, 2019.
+
+\bibitem[Sanh et~al.(2019)Sanh, Debut, Chaumond, and Wolf]{distil}
+Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf.
+\newblock Distilbert, a distilled version of {BERT:} smaller, faster, cheaper
+  and lighter.
+\newblock \emph{CoRR}, abs/1910.01108, 2019.
+\newblock URL \url{http://arxiv.org/abs/1910.01108}.
+
+\bibitem[HuggingFace(2021)]{hfTransformers}
+HuggingFace.
+\newblock Transformers, June 2021.
+\newblock URL \url{https://huggingface.co/transformers/}.
+\newblock Accessed: 2021-06-20.
+
+\bibitem[Rajpurkar(2021)]{squad}
+Pranav Rajpurkar.
+\newblock Squad2.0, 2021.
+\newblock URL \url{https://rajpurkar.github.io/SQuAD-explorer/}.
+\newblock Accessed: 2021-04-16.
+
+\bibitem[Ring(1993)]{lstmRing}
+Mark~B Ring.
+\newblock Learning sequential tasks by incrementally adding higher orders.
+\newblock \emph{Advances in neural information processing systems}, pages
+  115--115, 1993.
+
+\bibitem[Hermann et~al.(2015)Hermann, Kocisk{\'{y}}, Grefenstette, Espeholt,
+  Kay, Suleyman, and Blunsom]{bilstmHerman}
+Karl~Moritz Hermann, Tom{\'{a}}s Kocisk{\'{y}}, Edward Grefenstette, Lasse
+  Espeholt, Will Kay, Mustafa Suleyman, and Phil Blunsom.
+\newblock Teaching machines to read and comprehend.
+\newblock \emph{CoRR}, abs/1506.03340, 2015.
+\newblock URL \url{http://arxiv.org/abs/1506.03340}.
+
+\bibitem[Brahma(2018)]{lstmSubilstm}
+Siddhartha Brahma.
+\newblock Suffix bidirectional long short-term memory.
+\newblock \emph{CoRR}, abs/1805.07340, 2018.
+\newblock URL \url{http://arxiv.org/abs/1805.07340}.
+
+\bibitem[Rajpurkar et~al.(2016)Rajpurkar, Zhang, Lopyrev, and Liang]{dataset1}
+Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, and Percy Liang.
+\newblock Squad: 100, 000+ questions for machine comprehension of text.
+\newblock \emph{CoRR}, abs/1606.05250, 2016.
+\newblock URL \url{http://arxiv.org/abs/1606.05250}.
+
+\bibitem[Wang and Jiang(2015)]{lstmMatch}
+Shuohang Wang and Jing Jiang.
+\newblock Learning natural language inference with {LSTM}.
+\newblock \emph{CoRR}, abs/1512.08849, 2015.
+\newblock URL \url{http://arxiv.org/abs/1512.08849}.
+
+\bibitem[Vinyals et~al.(2015)Vinyals, Fortunato, and Jaitly]{lstmPointer}
+Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly.
+\newblock Pointer networks.
+\newblock \emph{arXiv preprint arXiv:1506.03134}, 2015.
+
+\bibitem[Dietz et~al.(2017)Dietz, Verma, Radlinski, and Craswell]{trec}
+Laura Dietz, Manisha Verma, Filip Radlinski, and Nick Craswell.
+\newblock Trec complex answer retrieval overview.
+\newblock In \emph{TREC}, 2017.
+
+\bibitem[Bahdanau et~al.(2014)Bahdanau, Cho, and Bengio]{attentioneMech}
+Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio.
+\newblock Neural machine translation by jointly learning to align and
+  translate.
+\newblock \emph{arXiv preprint arXiv:1409.0473}, 2014.
+
+\bibitem[Marcus et~al.(1993)Marcus, Santorini, and Marcinkiewicz]{wsj}
+Mitchell Marcus, Beatrice Santorini, and Mary~Ann Marcinkiewicz.
+\newblock Building a large annotated corpus of english: The penn treebank.
+\newblock 1993.
+
+\bibitem[Bojar et~al.(2014)Bojar, Buck, Federmann, Haddow, Koehn, Leveling,
+  Monz, Pecina, Post, Saint-Amand, Soricut, Specia, and Tamchyna]{wmt}
+Ond{\v{r}}ej Bojar, Christian Buck, Christian Federmann, Barry Haddow, Philipp
+  Koehn, Johannes Leveling, Christof Monz, Pavel Pecina, Matt Post, Herve
+  Saint-Amand, Radu Soricut, Lucia Specia, and Ale{\v{s}} Tamchyna.
+\newblock Findings of the 2014 workshop on statistical machine translation.
+\newblock In \emph{Proceedings of the Ninth Workshop on Statistical Machine
+  Translation}, pages 12--58, Baltimore, Maryland, USA, June 2014. Association
+  for Computational Linguistics.
+\newblock \doi{10.3115/v1/W14-3302}.
+\newblock URL \url{https://www.aclweb.org/anthology/W14-3302}.
+
+\bibitem[Gehring et~al.(2017)Gehring, Auli, Grangier, Yarats, and
+  Dauphin]{convs2s}
+Jonas Gehring, Michael Auli, David Grangier, Denis Yarats, and Yann~N. Dauphin.
+\newblock Convolutional sequence to sequence learning.
+\newblock \emph{CoRR}, abs/1705.03122, 2017.
+\newblock URL \url{http://arxiv.org/abs/1705.03122}.
+
+\bibitem[Dai and Le(2015)]{dai}
+Andrew~M Dai and Quoc~V Le.
+\newblock Semi-supervised sequence learning.
+\newblock \emph{arXiv preprint arXiv:1511.01432}, 2015.
+
+\bibitem[Peters et~al.(2018)Peters, Neumann, Iyyer, Gardner, Clark, Lee, and
+  Zettlemoyer]{deepContextualized}
+Matthew~E Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark,
+  Kenton Lee, and Luke Zettlemoyer.
+\newblock Deep contextualized word representations.
+\newblock \emph{arXiv preprint arXiv:1802.05365}, 2018.
+
+\bibitem[Radford et~al.(2018)Radford, Narasimhan, Salimans, and
+  Sutskever]{radford2018improving}
+Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever.
+\newblock Improving language understanding with unsupervised learning.
+\newblock 2018.
+
+\bibitem[Wang et~al.(2018)Wang, Yan, and Wu]{wang}
+Wei Wang, Ming Yan, and Chen Wu.
+\newblock Multi-granularity hierarchical attention fusion networks for reading
+  comprehension and question answering.
+\newblock \emph{arXiv preprint arXiv:1811.11934}, 2018.
+
+\bibitem[Schwartz et~al.(2019)Schwartz, Dodge, Smith, and Etzioni]{schwarts}
+Roy Schwartz, Jesse Dodge, Noah~A. Smith, and Oren Etzioni.
+\newblock Green {AI}.
+\newblock \emph{CoRR}, abs/1907.10597, 2019.
+\newblock URL \url{http://arxiv.org/abs/1907.10597}.
+
+\bibitem[Bucilu et~al.(2006)Bucilu, Caruana, and
+  Niculescu-Mizil]{knowledgeDistilation}
+Cristian Bucilu, Rich Caruana, and Alexandru Niculescu-Mizil.
+\newblock Model compression.
+\newblock In \emph{Proceedings of the 12th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '06, page 535–541, New York,
+  NY, USA, 2006. Association for Computing Machinery.
+\newblock ISBN 1595933395.
+\newblock \doi{10.1145/1150402.1150464}.
+\newblock URL \url{https://doi.org/10.1145/1150402.1150464}.
+
+\bibitem[Loshchilov and Hutter(2017)]{DBLP:journals/corr/abs-1711-05101}
+Ilya Loshchilov and Frank Hutter.
+\newblock Fixing weight decay regularization in adam.
+\newblock \emph{CoRR}, abs/1711.05101, 2017.
+\newblock URL \url{http://arxiv.org/abs/1711.05101}.
+
+\bibitem[Kingma and Ba(2014)]{kingma2014adam}
+Diederik~P Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock \emph{arXiv preprint arXiv:1412.6980}, 2014.
+
+\bibitem[Fan et~al.(2020)Fan, Lavril, Grave, Joulin, and
+  Sukhbaatar]{fan2020addressing}
+Angela Fan, Thibaut Lavril, Edouard Grave, Armand Joulin, and Sainbayar
+  Sukhbaatar.
+\newblock Addressing some limitations of transformers with feedback memory.
+\newblock \emph{arXiv preprint arXiv:2002.09402}, 2020.
+
+\bibitem[Gur(2017)]{pointernetGit}
+Shir Gur.
+\newblock Pointer net, Sep 2017.
+\newblock URL
+  \url{https://github.com/shirgur/PointerNet/blob/master/PointerNet.py}.
+\newblock Accessed: 2021-07-4.
+
+\bibitem[Pal et~al.(2019)Pal, Ebrahimi, Zulfiqar, Fu, Zhang, Migacz, Nellans,
+  and Gupta]{multigpu1}
+Saptadeep Pal, Eiman Ebrahimi, Arslan Zulfiqar, Yaosheng Fu, Victor Zhang,
+  Szymon Migacz, David~W. Nellans, and Puneet Gupta.
+\newblock Optimizing multi-gpu parallelization strategies for deep learning
+  training.
+\newblock \emph{CoRR}, abs/1907.13257, 2019.
+\newblock URL \url{http://arxiv.org/abs/1907.13257}.
+
+\bibitem[Giacaglia(2020)]{multigpu2}
+Giuliano Giacaglia.
+\newblock How to scale training on multiple gpus, Dec 2020.
+\newblock URL
+  \url{https://towardsdatascience.com/how-to-scale-training-on-multiple-gpus-dae1041f49d2}.
+
+\end{thebibliography}

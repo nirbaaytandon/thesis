@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: FinalThesis.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: unsrtnat.bst
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Database file #1: FinalThesis.bib
+Warning--I'm ignoring squad's extra "author" field
+--line 141 of file FinalThesis.bib
+Warning--I'm ignoring hfTransformers's extra "author" field
+--line 159 of file FinalThesis.bib
+Warning--empty journal in lstmBiLSTM
+Warning--empty journal in lunar
+Warning--empty journal in wsj
+Warning--empty journal in radford2018improving
+You've used 39 entries,
+            2481 wiz_defined-function locations,
+            777 strings with 11873 characters,
+and the built_in function-call counts, 14813 in all, are:
+= -- 1148
+> -- 1005
+< -- 18
++ -- 378
+- -- 300
+* -- 1130
+:= -- 2510
+add.period$ -- 142
+call.type$ -- 39
+change.case$ -- 78
+chr.to.int$ -- 39
+cite$ -- 43
+duplicate$ -- 749
+empty$ -- 1215
+format.name$ -- 355
+if$ -- 3092
+int.to.chr$ -- 1
+int.to.str$ -- 40
+missing$ -- 35
+newline$ -- 226
+num.names$ -- 117
+pop$ -- 329
+preamble$ -- 1
+purify$ -- 39
+quote$ -- 0
+skip$ -- 483
+stack$ -- 0
+substring$ -- 263
+swap$ -- 124
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 273
+warning$ -- 4
+while$ -- 91
+width$ -- 0
+write$ -- 542
+(There were 6 warnings)
